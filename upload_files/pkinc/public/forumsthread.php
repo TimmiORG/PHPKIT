@@ -5,13 +5,13 @@
 # YOU ARE NOT AUTHORISED TO CREATE ILLEGAL COPIES OF THIS
 # FILE AND/OR TO REMOVE THIS INFORMATION
 #
-# SIE SIND NICHT BERECHTIGT, UNRECHTMÄSSIGE KOPIEN DIESER
+# SIE SIND NICHT BERECHTIGT, UNRECHTMï¿½SSIGE KOPIEN DIESER
 # DATEI ZU ERSTELLEN UND/ODER DIESE INFORMATIONEN ZU ENTFERNEN
 #
 # This file / the PHPKIT software is no freeware! For further 
 # information please visit our website or contact us via email:
 #
-# Diese Datei / die PHPKIT Software ist keine Freeware! Für weitere
+# Diese Datei / die PHPKIT Software ist keine Freeware! Fï¿½r weitere
 # Informationen besuchen Sie bitte unsere Website oder kontaktieren uns per E-Mail:
 #
 # email     : info@phpkit.com
@@ -128,7 +128,7 @@ pkLoadClass($BBCODE,'bbcode');
 pkLoadFunc('user');
 		
 		
-if(!eregi('showthread',$record_referer) && !eregi('threadid='.$threadid,$record_referer))
+if(stripos('showthread',$record_referer) === FALSE && stripos('threadid='.$threadid,$record_referer) === FALSE)
 	{
 	$lastpost=$SQL->fetch_array($SQL->query("SELECT forumpost_autor, forumpost_autorid, forumpost_time FROM ".pkSQLTAB_FORUM_POST." WHERE forumpost_threadid='".$threadid."' ORDER by forumpost_time DESC LIMIT 1"));
 
@@ -214,7 +214,7 @@ foreach($post_cache as $forumpost)
 			
 			if(trim($userinfo['user_hpage'])!='')
 				{
-				if(ereg("http://",$userinfo['user_hpage']))
+				if(stripos("http://",$userinfo['user_hpage']) !== FALSE)
 					$info_link=pkEntities($userinfo['user_hpage']);
 				else
 					$info_link='http://'.pkEntities($userinfo['user_hpage']);

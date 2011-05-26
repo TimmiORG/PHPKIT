@@ -5,13 +5,13 @@
 # YOU ARE NOT AUTHORISED TO CREATE ILLEGAL COPIES OF THIS
 # FILE AND/OR TO REMOVE THIS INFORMATION
 #
-# SIE SIND NICHT BERECHTIGT, UNRECHTMÄSSIGE KOPIEN DIESER
+# SIE SIND NICHT BERECHTIGT, UNRECHTMï¿½SSIGE KOPIEN DIESER
 # DATEI ZU ERSTELLEN UND/ODER DIESE INFORMATIONEN ZU ENTFERNEN
 #
 # This file / the PHPKIT software is no freeware! For further 
 # information please visit our website or contact us via email:
 #
-# Diese Datei / die PHPKIT Software ist keine Freeware! Für weitere
+# Diese Datei / die PHPKIT Software ist keine Freeware! Fï¿½r weitere
 # Informationen besuchen Sie bitte unsere Website oder kontaktieren uns per E-Mail:
 #
 # email     : info@phpkit.com
@@ -23,7 +23,8 @@
 if(!defined('pkFRONTEND') || pkFRONTEND!='public')
 	die('Direct access to this location is not permitted.');
 
-
+//presets
+$search_user = $search_result = $buddy_list = $search_notifcation = '';
 $pkDISPLAYPOPUP=true;
 
 $modehash=array('smilies','finduser','help','forumsticker');
@@ -72,7 +73,7 @@ switch($mode)
 		eval("\$site_body.=\"".pkTpl("forumsticker")."\";");	
 		break;
 	case 'finduser' :
-		if($_GET['search_user']!='')
+		if(!empty($_GET['search_user']))
 			{
 			$usercount=0;
 			$search_result='';
@@ -112,8 +113,8 @@ switch($mode)
 			$sqlcommand.=(empty($sqlcommand) ? '' : ',').$buddy['buddy_friendid'];
 			}
 		
-		unset($buddy_list);
-		if($sqlcommand!='')
+		$buddy_list = '';
+		if(!empty($sqlcommand))
 			{
 			$getuserinfo=$SQL->query("SELECT 
 					user_nick, 

@@ -5,13 +5,13 @@
 # YOU ARE NOT AUTHORISED TO CREATE ILLEGAL COPIES OF THIS
 # FILE AND/OR TO REMOVE THIS INFORMATION
 #
-# SIE SIND NICHT BERECHTIGT, UNRECHTMÄSSIGE KOPIEN DIESER
+# SIE SIND NICHT BERECHTIGT, UNRECHTMÃ„SSIGE KOPIEN DIESER
 # DATEI ZU ERSTELLEN UND/ODER DIESE INFORMATIONEN ZU ENTFERNEN
 #
 # This file / the PHPKIT software is no freeware! For further 
 # information please visit our website or contact us via email:
 #
-# Diese Datei / die PHPKIT Software ist keine Freeware! Für weitere
+# Diese Datei / die PHPKIT Software ist keine Freeware! FÃ¼r weitere
 # Informationen besuchen Sie bitte unsere Website oder kontaktieren uns per E-Mail:
 #
 # email     : info@phpkit.com
@@ -139,16 +139,16 @@ return array(
 'news'										=> 'News',
 'newsletter'								=> 'Newsletter',
 'new_comment'								=> 'Neuer Kommentar',
-'new_comment_pn_notify'						=> "[b]%s[/b] hat soeben einen neuen Kommentar verfasst.\r\n\r\nWenn Sie den Eintrag jetzt ansehen möchten, [url=include.php?%s]klicken Sie bitte hier [/url].",
-'new_gbentry'								=> 'Neuer Gästebucheintrag',
-'new_gbentry_pn_notify'						=> "[b]%s[/b] hat soeben einen neuen Gästebucheintrag verfasst.\r\n\r\nWenn Sie den Eintrag jetzt ansehen möchten, [url=include.php?path=guestbook&gbid=%s]klicken Sie bitte hier [/url].",
+'new_comment_pn_notify'						=> "[b]%s[/b] hat soeben einen neuen Kommentar verfasst.\r\n\r\nWenn Sie den Eintrag jetzt ansehen m&ouml;chten, [url=include.php?%s]klicken Sie bitte hier [/url].",
+'new_gbentry'								=> 'Neuer G&auml;stebucheintrag',
+'new_gbentry_pn_notify'						=> "[b]%s[/b] hat soeben einen neuen G&uuml;stebucheintrag verfasst.\r\n\r\nWenn Sie den Eintrag jetzt ansehen m&ouml;chten, [url=include.php?path=guestbook&gbid=%s]klicken Sie bitte hier [/url].",
 'new_instantmessage'						=> 'Neue Kurznachricht',
 'new_private_message'						=> 'Neue PN',
 'new_post'									=> 'Neuer Forenbeitrag',
-'newpost_pn_notify'							=> "[b]%s[/b] hat soeben einen neuen Forenbeitrag verfasst.\r\n\r\nWenn Sie den Eintrag jetzt ansehen möchten, [url=include.php?path=forumsthread&threadid=%s&postid=%s]klicken Sie bitte hier [/url].",
+'newpost_pn_notify'							=> "[b]%s[/b] hat soeben einen neuen Forenbeitrag verfasst.\r\n\r\nWenn Sie den Eintrag jetzt ansehen m&ouml;chten, [url=include.php?path=forumsthread&threadid=%s&postid=%s]klicken Sie bitte hier [/url].",
 'new_submission'							=> 'Neue Einsendung',
 'new_user'									=> 'Neuer Benutzer',
-'new_user_pn_text'							=> "[b]%s[/b] hat sich soeben als neuer Benutzer angemeldet.\r\n\r\nWenn Sie das Benutzerprofil einsehen möchten, klicken Sie bitte auf den folgenden Link: [url=include.php?path=userinfo&id=%s]Benutzerprofil von %s[/url]",
+'new_user_pn_text'							=> "[b]%s[/b] hat sich soeben als neuer Benutzer angemeldet.\r\n\r\nWenn Sie das Benutzerprofil einsehen m&ouml;chten, klicken Sie bitte auf den folgenden Link: [url=include.php?path=userinfo&id=%s]Benutzerprofil von %s[/url]",
 'next'										=> 'Weiter',
 'no'										=> 'keine',
 'No'										=> 'Nein',

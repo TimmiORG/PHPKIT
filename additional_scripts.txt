@@ -1,20 +1,20 @@
 PHPKIT WCMS Zusatzdateien (Version 1.6.5)
 -----------------------------------------------------------
 
-Der Ordner "additional_scripts" enthält Zusatzsdateien die
-beim Betrieb von PHPKIT auf ihrem Server nützlich sein
-können. 
+Der Ordner "additional_scripts" enthÃ¤lt Zusatzsdateien die
+beim Betrieb von PHPKIT auf Ihrem Server nÃ¼tzlich sein
+kÃ¶nnen.
 
-Für die ordnungsgemäße Funktionalität der Website sind sie
+FÃ¼r die ordnungsgemÃ¤ÃŸe FunktionalitÃ¤t der Website sind sie
 jedoch nicht erforderlich. Jede Datei stellt Ihnen eine 
-bestimmte Funktionalität zur Verfügung. Diese sind
+bestimmte FunktionalitÃ¤t zur VerfÃ¼gung. Diese sind
 nachfolgend beschrieben.
 
 
 WARNUNG:
 LADEN SIE DIESE DATEIEN NUR AUF IHREN WEBSERVER WENN SIE
-DIE JEWEILS BEREITGESTELLTE FUNKTION BENÖTIGEN. LESEN SIE
-DIE BESCHREIBUNGEN ZU DEN EINZELNEN DATEIEN SORGFÄLLTIG.
+DIE JEWEILS BEREITGESTELLTE FUNKTION BENÃ–TIGEN. LESEN SIE
+DIE BESCHREIBUNGEN ZU DEN EINZELNEN DATEIEN SORGFÃ„LLTIG.
 
 
 
@@ -22,13 +22,13 @@ pksppw.php
 -----------
 
 Beschreibung:
-Löscht das Setup-Passwort.
+LÃ¶scht das Setup-Passwort.
 
 Verwendung:
-Datei ins Root-/Installationsverzeichnis ihrer PHPKIT 
+Datei ins Root-/Installationsverzeichnis Ihrer PHPKIT
 Installation kopieren (Upload mittels FTP).
 
-Ausführen der Datei im Webbrowser.
+AusfÃ¼hren der Datei im Webbrowser.
 
 
 pkblocker.php
@@ -37,9 +37,9 @@ pkblocker.php
 Beschreibung:
 Sicherheitsdatei die verhindert, dass die Funktionen der
 Scripte aus dem "additional_scripts" Verzeichnis 
-unbeabsichtig ausgeführt werden.
+unbeabsichtig ausgefÃ¼hrt werden.
 
 Verwendung:
-Damit die Funktionalitäten der anderen Dateien zur
-Verfügung stehen, darf sich diese Datei nich gemeinsam mit 
+Damit die FunktionalitÃ¤ten der anderen Dateien zur
+VerfÃ¼gung stehen, darf sich diese Datei nich gemeinsam mit
 den anderen im selben Verzeichnis befinden.

@@ -13,7 +13,7 @@
 	 <tr>
 	  <td colspan="2">
 		<input type="text" name="search_text" value="$search_text" size="15" style="width:90%;" /><br />
-		<font class="small">Begriffe durch OR (-) bzw. AND (+) verkn&uuml;pfen.</font></td>
+		<span class="small">Begriffe durch OR (-) bzw. AND (+) verkn&uuml;pfen.</span></td>
 	 </tr>
 	</table>
   </td>
@@ -21,18 +21,23 @@
 	<table border="0" cellspacing="2" cellpadding="0" width="100%">
 	 <tr>
 	  <td colspan="2">
-		<input type="text" name="search_user" value="$search_user" size="10" style="width:90%;" /></td>
-	 <tr>
-	  <td width="1%">
-		<input type="radio" name="search_useroption" value="0" style="border:0;background:none;"$search_useroption0 /></td>
-	  <td width="99%">
-		<font class="small">irgendeine &Uuml;bereinstimmung</font></td>
+		<input type="text" name="search_user" value="$search_user" size="10" style="width:90%;" />
+	  </td>
 	 </tr>
 	 <tr>
 	  <td width="1%">
-		<input type="radio" name="search_useroption" value="1" style="border:0;background:none;"$search_useroption1 /></td>
+		<input type="radio" name="search_useroption" value="0" style="border:0;background:none;"$search_useroption0 />
+	  </td>
+	  <td width="99%">
+		<span class="small">irgendeine &Uuml;bereinstimmung</span></td>
+	 </tr>
+	 <tr>
+	  <td width="1%">
+		<input type="radio" name="search_useroption" value="1" style="border:0;background:none;"$search_useroption1 />
+	  </td>
 	  <td width="99%"> 
-		<font class="small">exakter Name</font></td>
+		<span class="small">exakter Name</span>
+	  </td>
 	 </tr>
 	</table>
   <td class="right" valign="top">
@@ -42,7 +47,7 @@
 	 </tr>
 	 <tr>
 	  <td rowspan="2" colspan="2" valign="top" nowrap="nowrap">
-		<font class="small">oder nach Benutzer-ID</font></td>
+		<span class="small">oder nach Benutzer-ID</span></td>
 	 </tr>
 	</table>
   </td>
@@ -59,7 +64,7 @@
 	<option value="-1">Alle Foren durchsuchen</option>
 	$cat_option
 	</select><br />
-	<font class="small">Mehrfachauswahl durch dr&uuml;cken der STRG/CTRL-Taste</font></td>
+	<span class="small">Mehrfachauswahl durch dr&uuml;cken der STRG/CTRL-Taste</span></td>
  </tr>
  <tr>
   <td class="right">
@@ -67,12 +72,12 @@
 	 <tr>
 	  <td width="1%">
 		<input type="radio" name="search_textoption" value="0" style="border:0;background:none;"$search_textoption0 /></td>
-	  <td width="99%"><font class="small">Titel und Text</font></td>
+	  <td width="99%"><span class="small">Titel und Text</span></td>
 	 </tr>
 	 <tr>
 	  <td>
 		<input type="radio" name="search_textoption" value="1" style="border:0;background:none;"$search_textoption1 /></td>
-	  <td><font class="small">nur Titel</font></td>
+	  <td><span class="small">nur Titel</span></td>
 	 </tr>
 	</table>
   </td>
@@ -82,13 +87,13 @@
 	  <td width="1%">
 		<input type="radio" name="rorder" value="0" style="border:0;background:none;"$rorder0 /></td>
 	  <td width="99%">
-		<font class="small">neueste zuerst</font></td>
+		<span class="small">neueste zuerst</span></td>
 	 </tr>
 	 <tr>
 	  <td>
 		<input type="radio" name="rorder" value="1" style="border:0; background:none;"$rorder1 /></td>
 	  <td>
-		<font class="small">&auml;lteste zuerst</font></td>
+		<span class="small">&auml;lteste zuerst</span></td>
 	 </tr>
 	</table>
   </td>
@@ -98,13 +103,13 @@
 	  <td width="1%">
 		<input type="radio" name="rshow" value="1" style="border:0;background:none;"$rshow1 /></td>
 	  <td width="99%">
-		<font class="small">als Themen</font></td>
+		<span class="small">als Themen</span></td>
 	 </tr>
 	 <tr>
 	  <td>
 		<input type="radio" name="rshow" value="0" style="border:0;background:none;"$rshow0/></td>
 	  <td>
-		<font class="small">als Beitr&auml;ge</font></td>
+		<span class="small">als Beitr&auml;ge</span></td>
 	 </tr>
 	</table>
   </td>

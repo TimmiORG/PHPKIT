@@ -5,13 +5,13 @@
 # YOU ARE NOT AUTHORISED TO CREATE ILLEGAL COPIES OF THIS
 # FILE AND/OR TO REMOVE THIS INFORMATION
 #
-# SIE SIND NICHT BERECHTIGT, UNRECHTMÄSSIGE KOPIEN DIESER
+# SIE SIND NICHT BERECHTIGT, UNRECHTMï¿½SSIGE KOPIEN DIESER
 # DATEI ZU ERSTELLEN UND/ODER DIESE INFORMATIONEN ZU ENTFERNEN
 #
 # This file / the PHPKIT software is no freeware! For further 
 # information please visit our website or contact us via email:
 #
-# Diese Datei / die PHPKIT Software ist keine Freeware! Für weitere
+# Diese Datei / die PHPKIT Software ist keine Freeware! Fï¿½r weitere
 # Informationen besuchen Sie bitte unsere Website oder kontaktieren uns per E-Mail:
 #
 # email     : info@phpkit.com
@@ -245,7 +245,6 @@ function pkEvent($key='',$redirect=true,$link='')
 			break;
 		case 'guestbook' :
 			$url=pkLink('guestbook');
-			
 			pkDocmeta(pkGetSpecialHtml('__docmeta_refresh__',pkGetConfig('time_refresh'),$url));
 			
 			$msg=pkGetSpecialLang('event_'.$key,$url);
@@ -254,9 +253,7 @@ function pkEvent($key='',$redirect=true,$link='')
 			$url=$ENV->_get('moveto');
 			$url=$url ? pkLinkUnEntities(urldecode($url)) : '';
 			$link=pkLink('','',$url);
-			
 			pkDocmeta(pkGetSpecialHtml('__docmeta_refresh__',pkGetConfig('time_refresh'),$link));
-			
 			$msg=pkGetSpecialLang('event_'.$key,$link);
 			break;
 		case 'webmaster_message_sent' :
@@ -265,7 +262,6 @@ function pkEvent($key='',$redirect=true,$link='')
 			break;
 		case 'profileupdate' :
 			$link=pkLink('userprofile');
-		
 			pkDocmeta(pkGetSpecialHtml('__docmeta_refresh__',pkGetConfig('time_refresh'),$link));
 			$msg.=pkGetSpecialLang('event_moving_link',$link);
 			break;
@@ -280,9 +276,11 @@ function pkEvent($key='',$redirect=true,$link='')
 		case 'privatemessage_not_found' :
 			$link=pkLink('privatemessages');
 			$msg.=pkGetSpecialLang('event_moving_link',$link);
+			pkDocmeta(pkGetSpecialHtml('__docmeta_refresh__',pkGetConfig('time_refresh'),$link));
 			break;		
 		case 'firstlogin' :
 			$link=pkLink('userprofile','edit');
+			pkDocmeta(pkGetSpecialHtml('__docmeta_refresh__',pkGetConfig('time_refresh'),$link));
 			$msg.=pkGetSpecialLang('event_moving_link',$link);
 			break;
 		case 'thread_does_not_exists' :
@@ -438,7 +436,7 @@ function pkCaptchaField($fieldname='',$colspan=0,$colspan2=0) #2nd colpsan param
 	$name = empty($fieldname) ? pkCAPTCHAVARNAME : $fieldname;
 	$nameImage = $name.'Image';
 
-	
+	$captcha_field = '';
 	eval("\$captcha_field=\"".pkTpl("captcha_formrow")."\";");
 	
 	return $captcha_field;

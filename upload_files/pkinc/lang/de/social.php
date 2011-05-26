@@ -24,10 +24,10 @@ return array(
 'social_networks_settings'			=> 'Soziale Netzwerke',
 'social_twitter'					=> 'Twitter.com',
 'social_twitter_username_label'		=> 'twitter.com Benutzername',
-'social_twitter_username_desc'		=> 'Hier k&ouml;nnen Sie ihren twitter.com Benutzernamen eintragen. Sollten Sie &uuml;ber keinen Benutzerkonto verf&uuml;gen, k&ouml;nnen Sie sich unter <a href="https://twitter.com/signup">http://twitter.com</a> anmelden.',
+'social_twitter_username_desc'		=> 'Hier k&ouml;nnen Sie Ihren twitter.com Benutzernamen eintragen. Sollten Sie &uuml;ber keinen Benutzerkonto verf&uuml;gen, k&ouml;nnen Sie sich unter <a href="https://twitter.com/signup">http://twitter.com</a> anmelden.',
 'social_twitter_label_default'		=> '%s auf twitter.com',
 'social_twitter_label_label'		=> 'Individuelle Linkbeschriftung',
-'social_twitter_label_desc'			=> 'Tragen Sie hier eine Beschriftung f&uuml;r Verlinkungen zu ihrem twitter.com Benutzerkonto ein. Wenn Sie keine individuelle Beschriftung angeben wird ein Standardtext verwendet.',
+'social_twitter_label_desc'			=> 'Tragen Sie hier eine Beschriftung f&uuml;r Verlinkungen zu Ihrem twitter.com Benutzerkonto ein. Wenn Sie keine individuelle Beschriftung angeben wird ein Standardtext verwendet.',
 
 
 );

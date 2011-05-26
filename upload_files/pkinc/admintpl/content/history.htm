@@ -32,21 +32,21 @@ function ContAction() {	if(document.myform.change_to.options[document.myform.cha
 		<input type="hidden" name="search" value="$LANG[search]" /></td>
 	 </tr>
 	 <tr>
-	  <td><font class="small">$side_link</font></td>
+	  <td><span class="small">$side_link</span></td>
 	 </tr>
 		</form>
 	</table>
   </td>
  </tr>
  <tr>
-  <td class="heads" width="1%" align="center"><font class="headssmall"><a class="headssmall" href="include.php?path=contentarchive"><img border="" height="16" width="20" alt="Auswahl zur&uuml;cksetzen" src="../images/reset.gif" /></a></font></td>
-  <td class="heads" width="1%" align="center"><font class="headssmall"><a class="headssmall" href="include.php?path=contentarchive&entries=$entries&searchtext=$searchtext&searchtype=$searchtype&searchid=$searchid&searchcat=$searchcat&action=search&order=$orderstatus" title="nach Status sortieren">#</a></font></td>
-  <td class="heads" width="47%"><font class="headssmall"><a class="headssmall" href="include.php?path=contentarchive&entries=$entries&searchtext=$searchtext&searchtype=$searchtype&searchid=$searchid&searchcat=$searchcat&action=search&order=$ordertitle" title="nach Titel sortieren">Titel</a></font></td>
-  <td class="heads" width="30%" nowrap><font class="headssmall"><a class="headssmall" href="include.php?path=contentarchive&entries=$entries&searchtext=$searchtext&searchtype=$searchtype&searchid=$searchid&searchcat=$searchcat&action=search&order=$ordercat" title="nach Kategorie sortieren">Kategorie</a> &amp; Thema</font></td>
-  <td class="heads" width="10%"><font class="headssmall"><a class="headssmall" href="include.php?path=contentarchive&entries=$entries&searchtext=$searchtext&searchtype=$searchtype&searchid=$searchid&searchcat=$searchcat&action=search&order=$ordertime" title="nach Datum sortieren">Datum</a></font></td>
-  <td class="heads" width="5%"><font class="headssmall"><a class="headssmall" href="include.php?path=contentarchive&entries=$entries&searchtext=$searchtext&searchtype=$searchtype&searchid=$searchid&searchcat=$searchcat&action=search&order=$ordertype" title="nach Typ sortieren">Typ</a></font></td>
-  <td class="heads" width="1%"><font class="headssmall"><a class="headssmall" href="include.php?path=contentarchive&entries=$entries&searchtext=$searchtext&searchtype=$searchtype&searchid=$searchid&searchcat=$searchcat&action=search&order=$orderid" title="nach ID-Nummer sortieren">ID</a></font></td>
-  <td class="heads" width="5%"><font class="headssmall">Optionen</font></td>
+  <td class="heads" width="1%" align="center"><span class="headssmall"><a class="headssmall" href="include.php?path=contentarchive"><img border="" height="16" width="20" alt="Auswahl zur&uuml;cksetzen" src="../images/reset.gif" /></a></span></td>
+  <td class="heads" width="1%" align="center"><span class="headssmall"><a class="headssmall" href="include.php?path=contentarchive&entries=$entries&searchtext=$searchtext&searchtype=$searchtype&searchid=$searchid&searchcat=$searchcat&action=search&order=$orderstatus" title="nach Status sortieren">#</a></span></td>
+  <td class="heads" width="47%"><span class="headssmall"><a class="headssmall" href="include.php?path=contentarchive&entries=$entries&searchtext=$searchtext&searchtype=$searchtype&searchid=$searchid&searchcat=$searchcat&action=search&order=$ordertitle" title="nach Titel sortieren">Titel</a></span></td>
+  <td class="heads" width="30%" nowrap><span class="headssmall"><a class="headssmall" href="include.php?path=contentarchive&entries=$entries&searchtext=$searchtext&searchtype=$searchtype&searchid=$searchid&searchcat=$searchcat&action=search&order=$ordercat" title="nach Kategorie sortieren">Kategorie</a> &amp; Thema</span></td>
+  <td class="heads" width="10%"><span class="headssmall"><a class="headssmall" href="include.php?path=contentarchive&entries=$entries&searchtext=$searchtext&searchtype=$searchtype&searchid=$searchid&searchcat=$searchcat&action=search&order=$ordertime" title="nach Datum sortieren">Datum</a></span></td>
+  <td class="heads" width="5%"><span class="headssmall"><a class="headssmall" href="include.php?path=contentarchive&entries=$entries&searchtext=$searchtext&searchtype=$searchtype&searchid=$searchid&searchcat=$searchcat&action=search&order=$ordertype" title="nach Typ sortieren">Typ</a></span></td>
+  <td class="heads" width="1%"><span class="headssmall"><a class="headssmall" href="include.php?path=contentarchive&entries=$entries&searchtext=$searchtext&searchtype=$searchtype&searchid=$searchid&searchcat=$searchcat&action=search&order=$orderid" title="nach ID-Nummer sortieren">ID</a></span></td>
+  <td class="heads" width="5%"><span class="headssmall">Optionen</span></td>
  </tr>
 	<form name="myform" method="post" action="include.php?path=contentarchive&mode=revise">
 	$archiv_row
@@ -66,7 +66,7 @@ function ContAction() {	if(document.myform.change_to.options[document.myform.cha
 		</select></td>
 	  <td>&nbsp;</td>
 	  <td><input type="submit" name="action" value="OK" /></td>
-	  <td align="right" width="100%"><font class="small">$side_link</font></td>
+	  <td align="right" width="100%"><span class="small">$side_link</span></td>
 	 </tr>
 	</table>
   </td>

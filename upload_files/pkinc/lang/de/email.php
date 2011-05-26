@@ -5,13 +5,13 @@
 # YOU ARE NOT AUTHORISED TO CREATE ILLEGAL COPIES OF THIS
 # FILE AND/OR TO REMOVE THIS INFORMATION
 #
-# SIE SIND NICHT BERECHTIGT, UNRECHTMÄSSIGE KOPIEN DIESER
+# SIE SIND NICHT BERECHTIGT, UNRECHTMÃ„SSIGE KOPIEN DIESER
 # DATEI ZU ERSTELLEN UND/ODER DIESE INFORMATIONEN ZU ENTFERNEN
 #
 # This file / the PHPKIT software is no freeware! For further 
 # information please visit our website or contact us via email:
 #
-# Diese Datei / die PHPKIT Software ist keine Freeware! Für weitere
+# Diese Datei / die PHPKIT Software ist keine Freeware! FÃ¼r weitere
 # Informationen besuchen Sie bitte unsere Website oder kontaktieren uns per E-Mail:
 #
 # email     : info@phpkit.com
@@ -49,13 +49,13 @@ return array(
 Klicken Sie bitte  auf den folgenden Link um sich den Eintrag anzusehen: %s',#1.sitename 2. author 3.link
 
 #CONTACT 
-'contact_main_subject'							=> 'Feedback für %s: %s',
-'contact_main_body_sender'						=> "Ihre Nachricht wurde an den Webmaster von %s gesendet. Für weitere Fragen, können Sie auch die folgende E-Mail-Adresse verwenden: %s
+'contact_main_subject'							=> 'Feedback f&uuml;r %s: %s',
+'contact_main_body_sender'						=> "Ihre Nachricht wurde an den Webmaster von %s gesendet. F&uuml;r weitere Fragen, k&ouml;nnen Sie auch die folgende E-Mail-Adresse verwenden: %s
 \r\nSie schrieben die folgende Nachricht: 
 
 %s", #1.site_name, 2.email 3.message
 
-'contact_main_body_master'						=> 'Am %s hat %s die folgende Nachricht über das Kontaktformular auf %s gesendet:
+'contact_main_body_master'						=> 'Am %s hat %s die folgende Nachricht &uuml;ber das Kontaktformular auf %s gesendet:
 
 %s', #1.time, 2.sender_name 3.site name 4. message
 
@@ -77,7 +77,7 @@ Klicken Sie auf den folgenden Link um sich den Bettrag jetzt anzusehen:
 %s
 
 
-Mit freundlichen Grüßen
+Mit freundlichen Gr&uuml;&szlig;en
 
 Das %s Team
 %s
@@ -93,8 +93,8 @@ Klicken Sie bitte auf den folgenden Link um sich den Eintrag anzusehen:
 %s
 
 
-Sie haben diese E-Mail erhalten, weil Sie bei neuen Beiträgen benachrichtigt werden wollten. 
-Wenn Sie keine weiteren Benachrichtigungen mehr erhalten möchten, so klicken Sie bitte hier:
+Sie haben diese E-Mail erhalten, weil Sie bei neuen Beitr&auml;gen benachrichtigt werden wollten.
+Wenn Sie keine weiteren Benachrichtigungen mehr erhalten m&uuml;chten, so klicken Sie bitte hier:
 %s
 '.$dontanswer,
 
@@ -107,8 +107,8 @@ Klicken Sie bitte auf den folgenden Link um sich den Eintrag anzusehen:
 %s
 
 
-Sie haben diese E-Mail erhalten, weil Sie bei neuen Beiträgen benachrichtigt werden wollten. 
-Wenn Sie keine weiteren Benachrichtigungen mehr erhalten möchten, so wenden Sie sich bitte an 
+Sie haben diese E-Mail erhalten, weil Sie bei neuen Beitr&auml;gen benachrichtigt werden wollten.
+Wenn Sie keine weiteren Benachrichtigungen mehr erhalten m&ouml;chten, so wenden Sie sich bitte an
 das Forenteam.
 
 '.$dontanswer,
@@ -119,7 +119,7 @@ das Forenteam.
 
 soeben wurde von %s ein neuer Forenbeitrag / ein neues Forenthema erstellt (Titel des Themas: %s).
 
-Wenn Sie sich den Beitrag jetzt ansehen möchten, [url=%s]klicken Sie bitte hier [/url].
+Wenn Sie sich den Beitrag jetzt ansehen m&ouml;chten, [url=%s]klicken Sie bitte hier [/url].
 ',
 
 
@@ -127,7 +127,7 @@ Wenn Sie sich den Beitrag jetzt ansehen möchten, [url=%s]klicken Sie bitte hier 
 'suggest_title_plain'							=> 'Interessante Seite auf %s gefunden',
 'suggest_text'									=> 'Hallo%s,
 
-ich habe eine Seite gefunden, die dich interessieren könnte:
+ich habe eine Seite gefunden, die dich interessieren k&ouml;nnte:
 
 %s',
 
@@ -137,38 +137,38 @@ ich habe eine Seite gefunden, die dich interessieren könnte:
 'lostpassword_mail_text'						=> 'Hallo %s,
 
 
-wie angefordert, erhalten Sie hiermit einen Link zu Ihrem Benutzerprofil für unsere Coummnity. Bitte vergessen Sie nicht, ein neues, individuelles Passwort in Ihrem Benutzerprofil festzulegen.
+wie angefordert, erhalten Sie hiermit einen Link zu Ihrem Benutzerprofil f&uuml;r unsere Coummnity. Bitte vergessen Sie nicht, ein neues, individuelles Passwort in Ihrem Benutzerprofil festzulegen.
 
-Benutzen Sie bitte den folgenden Link um sich direkt einzuloggen:
+Benutzen Sie bitte den folgenden Link, um sich direkt einzuloggen:
 %s
 
 Sollten Sie Ihr Passwort nicht vergessen haben und trotzdem diese E-Mail erhalten haben, brauchen Sie nichts zu tun.
 
-Beachten Sie außerdem bitte, das Ihr Browser die Annahme von Cookies akzeptieren muss, damit Sie sich einloggen können!
+Beachten Sie au&szlig;erdem bitte, das Ihr Browser die Annahme von Cookies akzeptieren muss, damit Sie sich einloggen k&ouml;nnen!
 '.$dontanswer,
 
 
 #USER REGISTRATION
-'registration_mail_title'						=> 'Registrierung für die %s Website',
-'registration_mail_body_activate_true'			=> 'Benutzen Sie bitte diesen Link um sich direkt anzumelden: 
+'registration_mail_title'						=> 'Registrierung f&uuml;r die %s Website',
+'registration_mail_body_activate_true'			=> 'Benutzen Sie bitte diesen Link, um sich direkt anzumelden: 
 
 %s
 
-Sollten Sie Schwierigkeiten haben oder Link nicht korrekt dargestellt werden, können Sie sich hier direkt auf unserer Webseite anmelden:
+Sollten Sie Schwierigkeiten haben oder der Link nicht korrekt dargestellt werden, k&ouml;nnen Sie sich hier direkt auf unserer Website anmelden:
 
 %s
 
 Benutzen Sie dann bitte die folgenden Daten:',#1.mail link, 2.login link
 
 
-'registration_mail_body_activate_false'			=> 'Ihr Benutzeraccount wird umgehend von einem der %s Administratoren geprüft. Sie erhalten nach der Freischaltung eine weitere E-Mail als Benachrichtigung.
+'registration_mail_body_activate_false'			=> 'Ihr Benutzeraccount wird umgehend von einem der %s Administratoren gepr&uuml;ft. Sie erhalten nach der Freischaltung eine weitere E-Mail als Benachrichtigung.
 
 Die Daten Ihres Benutzeraccounts mit der ID %s lauten:',#1. sitename, 2.userid
 
 'registration_mail_body'						=> 'Willkommen %s,
 
 
-Ihre Registrierung für die %s Website war erfolgreich und ein Benutzeraccount wurde für Sie angelegt.
+Ihre Registrierung f&uuml;r die %s Website war erfolgreich und ein Benutzerkonto wurde f&uuml;r Sie angelegt.
 
 %s
 
@@ -178,11 +178,11 @@ Aktivierungscode: %s
 
 Merken Sie sich dieses Passwort oder legen Sie ein individuelles Passwort in Ihrem Benutzerprofil fest.
 
-Beachten Sie bitte, das Ihr Browser die Annahme von Cookies akzeptieren muss, damit Sie sich einloggen können!
+Beachten Sie bitte, dass Ihr Browser die Annahme von Cookies akzeptieren muss, damit Sie sich einloggen k&ouml;nnen!
 
 
 
-Mit freundlichen Grüssen
+Mit freundlichen Gr&uuml;&szlig;en
 
 Das %s-Team
 %s',#1.usernick,2.sitename,3.mailaddtext,4.loginname,5.password,6.uid,7.sitename,8.siteurl
@@ -191,7 +191,7 @@ Das %s-Team
 'registration_mail_body_novalidation'			=> 'Willkommen %s,
 
 
-Ihre Registrierung für die %s Website war erfolgreich und ein Benutzeraccount wurde für Sie angelegt.
+Ihre Registrierung f&uuml;r die %s Website war erfolgreich und ein Benutzerkonto wurde f&uuml;r Sie angelegt.
 
 %s
 
@@ -200,12 +200,12 @@ Passwort:     %s
 
 Merken Sie sich dieses Passwort oder legen Sie ein individuelles Passwort in Ihrem Benutzerprofil fest.
 
-Beachten Sie bitte, das Ihr Browser die Annahme von Cookies akzeptieren muss, damit Sie sich einloggen können!
+Beachten Sie bitte, dass Ihr Browser die Annahme von Cookies akzeptieren muss, damit Sie sich einloggen k&ouml;nnen!
 
 
 
 
-Mit freundlichen Grüssen
+Mit freundlichen Gr&uuml;&szlig;en
 
 
 Das %s-Team
@@ -225,21 +225,21 @@ Benutzen Sie den folgenden Link um zu seinem Benutzerprofil zu gelangen: %s',#1.
 
 
 #USER LOST PASSWORD
-'lostpassword_mail_title'						=> 'Passwort vergessen für die %s Website',#sitename
+'lostpassword_mail_title'						=> 'Passwort vergessen f&uuml;r die %s Website',#sitename
 'lostpassword_mail_text'						=> 'Hallo %s,
 
 
-Sollten Sie diese E-Mail nicht angefordert haben bzw. Ihr Passwort nicht vergessen haben, können Sie diese E-Mail löschen. Sie brauchen nichts weiter tun, ihr Passwort wurde nicht verändert.
+Sollten Sie diese E-Mail nicht angefordert haben bzw. Ihr Passwort nicht vergessen haben, k&ouml;nnen Sie diese E-Mail l&ouml;schen. Sie brauchen nichts weiter tun, Ihr Passwort wurde nicht ver&auml;ndert.
 
-Wenn Sie diese E-Mail angefordert haben, erhalten Sie hiermit einen Zugangscode um ein neues Passwort für die %s Website festzulegen. Klicken Sie hierzu auf den folgenden Direktlink.
+Wenn Sie diese E-Mail angefordert haben, erhalten Sie hiermit einen Zugangscode um ein neues Passwort f&uuml;r die %s Website festzulegen. Klicken Sie hierzu auf den folgenden Direktlink.
 
 %s
 
-Ihr Benutzername für die Anmeldung lautet: %s
+Ihr Benutzername f&uuml;r die Anmeldung lautet: %s
 
 
 
-Mit freundlichen Grüßen
+Mit freundlichen Gr&uuml;&szlig;en
 
 
 Das %s Team
@@ -249,14 +249,14 @@ Das %s Team
 'user_mailer_body'								=> '%s
 
 
-Diese Nachricht wurde Ihnen über %s gesendet.
+Diese Nachricht wurde Ihnen &uuml;ber %s gesendet.
 %s',
 
 
 #PN NOTIFY
 'pncenter_mail_notify'							=> 'Hallo %s,
 
-auf %s liegt eine neue Kurznachricht von %s für Sie bereit.
+auf %s liegt eine neue Kurznachricht von %s f&uuml;r Sie bereit.
 
 
 Betreff der Nachricht: %s
@@ -266,13 +266,13 @@ Klicken Sie bitte auf den folgenden Link um sich die Nachricht anzusehen:
 %s
 
 
-Beachten Sie bitte, das Sie sich ggf. erst einloggen müssen damit Sie die Nachricht lesen können.',
+Beachten Sie bitte, dass Sie sich ggf. erst einloggen m&uuml;ssen damit Sie die Nachricht lesen k&ouml;nnen.',
 #1.usernick, 2.sitename, 3.author, 4.pn title 5.link
 
 
 #CONTENT SUBMITED
 'content_submit_notify_mailtitle'				=> 'Neue Einsendung auf %s: %s',
-'content_submit_notify_mail'					=> 'Es wurde auf %s ein %s eingesendet und liegt zur Überprüfung und Bearbeitung bereit.
+'content_submit_notify_mail'					=> 'Es wurde auf %s ein %s eingesendet und liegt zur &uuml;berpr&uuml;fung und Bearbeitung bereit.
 
 Autor: %s
 E-Mail-Adresse: %s
@@ -282,11 +282,11 @@ Titel: %s
 Benutzen Sie den folgenden Link, um die Einsendung in der Administration zu kontrollieren: %s',
 
 #GUESTBOOK COMMENT NOTIFY
-'guestbook_comment_mail_title'					=> 'Kommentar zu Ihrem Gästebucheintrag auf %s',#sitename
+'guestbook_comment_mail_title'					=> 'Kommentar zu Ihrem G&auml;stebucheintrag auf %s',#sitename
 'guestbook_comment_mail_text'					=> 'Hallo %s,
 
 
-Gerade wurde ein Kommentar zu Ihrem Gästebucheintrag auf %s verfasst.
+Gerade wurde ein Kommentar zu Ihrem G&auml;stebucheintrag auf %s verfasst.
 
 %s schrieb:
 
@@ -298,14 +298,14 @@ Klicken Sie bitte auf den folgenden Link um sich den Kommentar auf %s anzusehen:
 
 
 
-Mit freundlichen Grüßen
+Mit freundlichen Gr&uuml;&szlig;en
 
 
 Das %s Team
 %s',#1.gbook author2.sitename,3.comment author,4.comment_text,5.sitename,6.link,7.sitename,8.siteurl
 
 #GUESTBOOK NOTIFY MAIL
-'guestbook_notify_mail_text'					=>'Auf %s hat %s einen neuen Gästebucheintrag erstellt.
+'guestbook_notify_mail_text'					=>'Auf %s hat %s einen neuen G&auml;stebucheintrag erstellt.
 
 Klick Sie auf den folgenden Link um sich den Eintrag anzusehen: %s',#!.sitename,2.author,3.link
 );

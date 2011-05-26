@@ -5,13 +5,13 @@
 # YOU ARE NOT AUTHORISED TO CREATE ILLEGAL COPIES OF THIS
 # FILE AND/OR TO REMOVE THIS INFORMATION
 #
-# SIE SIND NICHT BERECHTIGT, UNRECHTMÄSSIGE KOPIEN DIESER
+# SIE SIND NICHT BERECHTIGT, UNRECHTMï¿½SSIGE KOPIEN DIESER
 # DATEI ZU ERSTELLEN UND/ODER DIESE INFORMATIONEN ZU ENTFERNEN
 #
 # This file / the PHPKIT software is no freeware! For further 
 # information please visit our website or contact us via email:
 #
-# Diese Datei / die PHPKIT Software ist keine Freeware! Für weitere
+# Diese Datei / die PHPKIT Software ist keine Freeware! Fï¿½r weitere
 # Informationen besuchen Sie bitte unsere Website oder kontaktieren uns per E-Mail:
 #
 # email     : info@phpkit.com
@@ -23,6 +23,8 @@
 if(!defined('pkFRONTEND') || pkFRONTEND!='public')
 	die('Direct access to this location is not permitted.');
 
+//presets
+$main_row = $subcat_row = '';
 
 $path='forumsdisplay';
 
@@ -114,7 +116,11 @@ if(is_array($forumcat_cache) && !empty($forumcat_cache))
 				else
 					{
 					$forumthread=$forumthread_cache[$forumcat['forumcat_lastreply_threadid']];
-					$userinfo=$userinfo_cache[$forumthread['forumthread_lastreply_autorid']];
+					$userinfo='';
+					if(!empty($userinfo_cache[$forumthread['forumthread_lastreply_autorid']]))
+					{
+						$userinfo=$userinfo_cache[$forumthread['forumthread_lastreply_autorid']];
+					}
 					
 					$forumthread_title=pkEntities(pkStringCut($forumthread['forumthread_title'],$config['forum_threadtitle_cut']));
 					$forumthread_time=pkTimeFormat($forumthread['forumthread_lastreply_time']);

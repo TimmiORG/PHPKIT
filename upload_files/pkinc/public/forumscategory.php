@@ -5,13 +5,13 @@
 # YOU ARE NOT AUTHORISED TO CREATE ILLEGAL COPIES OF THIS
 # FILE AND/OR TO REMOVE THIS INFORMATION
 #
-# SIE SIND NICHT BERECHTIGT, UNRECHTMÄSSIGE KOPIEN DIESER
+# SIE SIND NICHT BERECHTIGT, UNRECHTMï¿½SSIGE KOPIEN DIESER
 # DATEI ZU ERSTELLEN UND/ODER DIESE INFORMATIONEN ZU ENTFERNEN
 #
 # This file / the PHPKIT software is no freeware! For further 
 # information please visit our website or contact us via email:
 #
-# Diese Datei / die PHPKIT Software ist keine Freeware! Für weitere
+# Diese Datei / die PHPKIT Software ist keine Freeware! Fï¿½r weitere
 # Informationen besuchen Sie bitte unsere Website oder kontaktieren uns per E-Mail:
 #
 # email     : info@phpkit.com
@@ -23,6 +23,9 @@
 if(!defined('pkFRONTEND') || pkFRONTEND!='public')
 	die('Direct access to this location is not permitted.');
 
+//preset
+$forumthread_cache =$newpostlink = $sidelink = $showcat_subcat = '';
+$savecatinfo = $userinfo = array('');
 
 include(pkDIRPUBLICINC.'forumsheader'.pkEXT);
 
@@ -96,7 +99,7 @@ if((getrights($forumcat['forumcat_rrights'])=="true" || userrights($forumcat['fo
 	
 	if($maxfixed==0)
 		$loaded=1;
-	unset($sqlcommand);
+	$sqlcommand = '';
 	
 	while($loaded<2)
 		{
@@ -206,7 +209,7 @@ if((getrights($forumcat['forumcat_rrights'])=="true" || userrights($forumcat['fo
 			if($forumthread['forumthread_autorid']!=0)
 				$userinfo=$user_cache[$forumthread['forumthread_autorid']];
 			
-			if($userinfo['user_id']>0)
+			if(!empty($userinfo['user_id']) && $userinfo['user_id']>0)
 				{
 				$userinfo['user_nick']=pkEntities(pkStringCut($userinfo['user_nick'],$config['forum_threadautor_cut']));
 				
@@ -219,7 +222,7 @@ if((getrights($forumcat['forumcat_rrights'])=="true" || userrights($forumcat['fo
 			if($forumthread['forumthread_lastreply_autorid']>0)
 				$userinfo=$user_cache[$forumthread['forumthread_lastreply_autorid']];
 			
-			if(trim($userinfo['user_nick'])!='')
+			if(isset($userinfo['user_nick']) && trim($userinfo['user_nick'])!='')
 				{
 				$userinfo['user_nick']=pkEntities(pkStringCut($userinfo['user_nick'],$config['forum_threadautor_cut']));
 				$thread_last_autor=$lang['by'].' ';
@@ -234,13 +237,13 @@ if((getrights($forumcat['forumcat_rrights'])=="true" || userrights($forumcat['fo
 			
 			eval("\$thread_row.= \"".pkTpl("forum/showcat_thread_row")."\";");
 			
-			unset($thread_title);
-			unset($userinfo);
-			unset($sidelink);
-			unset($userinfo);
-			unset($thread_last_autor);
-			unset($i);
-			unset($newpostlink);
+			$thread_title = '';
+			$userinfo = '';
+			$sidelink = '';
+			$userinfo = '';
+			$thread_last_autor = '';
+			$i = '';
+			$newpostlink = '';
 			}
 		
 		$sidelink=sidelinkfull($threads[0], $forumcat['forumcat_threads'], $entries, 'include.php?path=forumscategory&catid='.$catid,'sitebodysmall');

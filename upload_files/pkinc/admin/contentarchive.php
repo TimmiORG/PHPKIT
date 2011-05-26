@@ -296,7 +296,7 @@ while($contentinfo=$SQL->fetch_array($getcontentinfo))
 
 	
 	if(empty($contentinfo['content_title']))
-		$content_title='<font class="highlight">'.$lang['no_title'].'</font>';
+		$content_title='<span class="highlight">'.$lang['no_title'].'</span>';
 	else
 		$content_title=pkEntities($contentinfo['content_title']);
 	

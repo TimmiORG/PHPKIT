@@ -19,6 +19,8 @@
 # licence   : http://www.phpkit.com/licence
 # copyright : Copyright (c) 2002-2009 mxbyte gbr | http://www.mxbyte.com
 
+if(!defined('pkFRONTEND') || pkFRONTEND!='public')
+	die('Direct access to this location is not permitted.');
 
 pkLoadLang('social');
 
@@ -53,10 +55,7 @@ $twitter_feed_enable = 1;
 
 
 #presets
-$twitter_img = '';
-$twitter_account_link = '';
-$twitter_feed_link = '';
-
+$twitter_img = $twitter_account_link = $twitter_feed_link = $twitter_acoount = $boxlinks = '';
 
 if(!empty($twitter_account))
 	{
@@ -69,7 +68,7 @@ if(!empty($twitter_account))
 	if(isset($twitter_images[$twitter_image]))
 		{
 		$path = $fx_base.$twitter_images[$twitter_image];
-		$alt = pkEntities(sprintf(twitter_imgalt,$twitter_acoount));
+		$alt = pkEntities(sprintf($twitter_imgalt,$twitter_acoount));
 		$img = pkHtmlImage($path,$alt);
 		
 		$twitter_img = pkHtmlLink($twitter_account_link,$img,'','','small',$twitter_account_label);
@@ -89,7 +88,6 @@ if(!empty($twitter_account))
 			' '.#a space makes it a bit more beautiful
 			pkHtmlLink($link,$label,'','','small',$label);
 		}
-
 	eval("\$boxlinks[]=\"".pkTpl("navigation/twitter")."\";");
 	}
 

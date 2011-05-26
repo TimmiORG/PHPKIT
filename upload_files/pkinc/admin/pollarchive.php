@@ -138,7 +138,7 @@ while($votetheme=$SQL->fetch_array($getvotetheme))
 	$counter=($summ[0]>0) ? $summ[0] : 0;
 	$expired=($votetheme['votetheme_expire']) ? ($votetheme['votetheme_expire']>pkTIME ? 0 : 1) : 0;
 	
-	$votetheme_title=(empty($votetheme['votetheme_title'])) ? '<font class="highlight">'.$lang['no_title'].'</font>' : pkEntities($votetheme['votetheme_title']);
+	$votetheme_title=(empty($votetheme['votetheme_title'])) ? '<span class="highlight">'.$lang['no_title'].'</span>' : pkEntities($votetheme['votetheme_title']);
 	$expired_msg=$expired ? pkGetLang('validity_period_expired') : '';
 	$votetheme_description=pkEntities($votetheme['votetheme_description']);
 	$votetheme_maxvotes=$votetheme['votetheme_maxvotes'];

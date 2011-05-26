@@ -43,7 +43,7 @@ while($faq=$SQL->fetch_array($getfaq))
 	$row=rowcolor($row);
 	
 	if(trim($faq_title=$faq['faq_title'])=='') 
-		$faq_title='<font class="highlight">'.$lang['no_title'].'</font>';
+		$faq_title='<span class="highlight">'.$lang['no_title'].'</span>';
 	else
 		$faq_title=pkEntities($faq['faq_title']);
 	

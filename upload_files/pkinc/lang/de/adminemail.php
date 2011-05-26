@@ -79,7 +79,7 @@ Das %s Team
 'user_edit_mail_title'							=> 'Benutzerkonto %s auf %s bearbeitet',
 'user_edit_mail_text'							=> 'Hallo %s,
 
-Ihr Benutzeraccount auf %s wurde soeben durch einen Administrator bearbeitet.
+Ihr Benutzerkonto auf %s wurde soeben durch einen Administrator bearbeitet.
 %s
 Benutzen Sie für die nächste Anmeldung bitte den folgenden Link:
 

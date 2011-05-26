@@ -4,13 +4,13 @@
 	<form name="pkform" method="post" action="include.php?path=forumcategory&editcat=$editcat">
  <tr>
   <td class="left">Forenname<br />
-	<font class="small">Bezeichnung der Forenkategorie.</font></td>
+	<span class="small">Bezeichnung der Forenkategorie.</span></td>
   <td class="right">
 	<input type="text" name="cat_name" value="$forumcat_name" size="25" class="w90" /></td>
  </tr>
  <tr>
   <td class="left">Beschreibung<br />
-	<font class="small">Eine kurze Beschreibung die unter dem Forennamen in der Foren&uuml;bersicht angezeigt wird.</font></td>
+	<span class="small">Eine kurze Beschreibung die unter dem Forennamen in der Foren&uuml;bersicht angezeigt wird.</span></td>
   <td class="right">
 	<textarea name="cat_description" rows="2" cols="30" class="w90">$forumcat_description</textarea>
 	<select name="cat_description_show" size="1" class=w90>
@@ -21,7 +21,7 @@
  </tr>
  <tr>
   <td class="left">Unterforenanzeige<br />
-  	<font class="small">Bestimmt wie eventuelle Unterforen angezeigt werden. Wenn <b>"verbergen"</b> gew&auml;hlt wurde, werden die Unterforen nur auf der Foren&uuml;bersicht verborgen, ansonsten in Kurzform ausgegeben.</font></td>
+  	<span class="small">Bestimmt wie eventuelle Unterforen angezeigt werden. Wenn <b>"verbergen"</b> gew&auml;hlt wurde, werden die Unterforen nur auf der Foren&uuml;bersicht verborgen, ansonsten in Kurzform ausgegeben.</span></td>
   <td class="right">
 	<select name="cat_option" size="3" class="w90">
 	<option value="0" $option0>verbergen</option>
@@ -32,7 +32,7 @@
  </tr>
  <tr>
   <td class="left">Status<br />
-  	<font class="small">Das Forum f&uuml;r neue Themen &amp; Antworten sperren.</font></td>
+  	<span class="small">Das Forum f&uuml;r neue Themen &amp; Antworten sperren.</span></td>
   <td class="right">
 	<select name="cat_status" size="2" class="w90">
 	<option value="0" $status0>geschlossen</option>
@@ -43,7 +43,7 @@
   <td class="heads" colspan="2">Rechte</td>
  <tr>
   <td class="left">Lese-Rechte<br />
-	<font class="small">Benutzerstatus der ben&ouml;tigt wird, um in dieser Kategorie zu lesen.</font></td>
+	<span class="small">Benutzerstatus der ben&ouml;tigt wird, um in dieser Kategorie zu lesen.</span></td>
   <td class="right">
   	<select name="cat_rrights" size="5" class="w90">
 	<option value="guest" $rrights0>G&auml;ste</option>
@@ -55,7 +55,7 @@
  </tr>
  <tr>
   <td class="left">Schreib-Rechte<br />
-  	<font class="small">Benutzerstatus der ben&ouml;tigt wird, um zu Antworten.</font></td>
+  	<span class="small">Benutzerstatus der ben&ouml;tigt wird, um zu Antworten.</span></td>
   <td class="right">
 	<select name="cat_wrights" size="5" class="w90">
 	<option value="guest" $wrights0>G&auml;ste</option>
@@ -67,7 +67,7 @@
  </tr>
  <tr>
   <td class="left">Schreib-Rechte 2<br />
-  	<font class="small">Benutzerstatus der ben&ouml;tigt wird, um Themen zu erstellen.</font></td>
+  	<span class="small">Benutzerstatus der ben&ouml;tigt wird, um Themen zu erstellen.</span></td>
   <td class="right">
 	<select name="cat_trights" size="5" class="w90">
 	<option value="guest" $trights0>G&auml;ste</option>
@@ -94,7 +94,7 @@
  </tr> 
  <tr>
   <td class="left" valign="top">Benutzer<br />
- 	<font class="small">Die ausgew&auml;hlten Benutzer erhalten Lese-, Schreib- und Antwortrechte f&uuml;r diese Kategorie.</font></td>
+ 	<span class="small">Die ausgew&auml;hlten Benutzer erhalten Lese-, Schreib- und Antwortrechte f&uuml;r diese Kategorie.</span></td>
   <td class="right" valign="top">
   	<table border="0" cellspacing="0" cellpadding="0" width="100%">
 	 <tr>
@@ -113,7 +113,7 @@
  </tr>
  <tr>
   <td class="left">Themen erlauben<br />
-  	<font class="small">Legt fest ob das Er&ouml;ffnen von Themen m&ouml;glich ist.</font></td>
+  	<span class="small">Legt fest ob das Er&ouml;ffnen von Themen m&ouml;glich ist.</span></td>
   <td class="right">
 	<select name="cat_threads_option" size="2" class="w90">
 	<option value="0" $threads_option0>nein</option>
@@ -123,25 +123,25 @@
  </tr>
  <tr>
   <td class="left">Antworten<br />
-	<font class="small">Anzahl der Antworten die notwendig sind, damit Themen als "heiss" gelten.</font></td>
+	<span class="small">Anzahl der Antworten die notwendig sind, damit Themen als "heiss" gelten.</span></td>
   <td class="right">
 	<input type="text" name="cat_replys" value="$forumcat[forumcat_replys]" size="3" maxlength="3" /></td>
  </tr>
  <tr>
   <td class="left">Aufrufe<br />
-	<font class="small">Anzahl der Aufrufe die n&ouml;tig sind, damit Themen als "heiss" gelten.</font></td>
+	<span class="small">Anzahl der Aufrufe die n&ouml;tig sind, damit Themen als "heiss" gelten.</span></td>
   <td class="right">
 	<input type="text" name="cat_views" value="$forumcat[forumcat_views]" size="6" maxlength="5" /></td>
  </tr>
  <tr>
   <td class="left">Themen<br />
-  	<font class="small">Anzahl der Themen die pro Seite angezeigt werden.</font></td>
+  	<span class="small">Anzahl der Themen die pro Seite angezeigt werden.</span></td>
   <td class="right">
 	<input type="text" name="cat_threads" value="$forumcat[forumcat_threads]" size="3" maxlength="3" /></td>
  </tr>
  <tr>
   <td class="left">Beitr&auml;ge<br />
-	<font class="small">Anzahl der Beitr&auml;ge die pro Seite angezeigt werden.</font></td>
+	<span class="small">Anzahl der Beitr&auml;ge die pro Seite angezeigt werden.</span></td>
   <td class="right">
 	<input type="text" name="cat_posts" value="$forumcat[forumcat_posts]" size="3" maxlength="3" /></td>
  </tr>

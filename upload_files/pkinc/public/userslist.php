@@ -5,13 +5,13 @@
 # YOU ARE NOT AUTHORISED TO CREATE ILLEGAL COPIES OF THIS
 # FILE AND/OR TO REMOVE THIS INFORMATION
 #
-# SIE SIND NICHT BERECHTIGT, UNRECHTMÄSSIGE KOPIEN DIESER
+# SIE SIND NICHT BERECHTIGT, UNRECHTMï¿½SSIGE KOPIEN DIESER
 # DATEI ZU ERSTELLEN UND/ODER DIESE INFORMATIONEN ZU ENTFERNEN
 #
 # This file / the PHPKIT software is no freeware! For further 
 # information please visit our website or contact us via email:
 #
-# Diese Datei / die PHPKIT Software ist keine Freeware! Für weitere
+# Diese Datei / die PHPKIT Software ist keine Freeware! Fï¿½r weitere
 # Informationen besuchen Sie bitte unsere Website oder kontaktieren uns per E-Mail:
 #
 # email     : info@phpkit.com
@@ -27,7 +27,10 @@ if(!defined('pkFRONTEND') || pkFRONTEND!='public')
 if(!getrights($config['member_infoshow'])=="true")
 	pkHeaderLocation('','','event=access_refused');
 
-
+// presets
+$member_letterlinks = $searchstr = $row  = $member_overview_rows = $order1 = $order2 = $order3 = '';
+$counter = array('','');
+$a = array('','');
 $letterhash=array($lang['all'],"A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z");
 $orderhash=array('os','osup','signin','signinup','nickup','up');
 
@@ -53,7 +56,7 @@ foreach($letterhash as $h)
 	$link_letter=pkLink('userslist','','order='.$order.'&letter='.$h.'&entries='.$entries);
 	
 	eval("\$member_letterlinks.= \"".pkTpl("member_letter_link")."\";");
-	unset($a);
+	$a = array('','');
 	}
 	
 
@@ -107,6 +110,8 @@ $getuserinfo=$SQL->query("SELECT
 	WHERE user_activate=1 ".$searchstr."
 	ORDER by ".$order."
 	LIMIT ".$entries.", ".$epp);
+
+$member_overview_rows = '';
 while($userinfo=$SQL->fetch_array($getuserinfo))
 	{
 	$userinfo['user_nick']=pkEntities($userinfo['user_nick']);  

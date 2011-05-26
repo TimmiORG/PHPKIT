@@ -5,13 +5,13 @@
 # YOU ARE NOT AUTHORISED TO CREATE ILLEGAL COPIES OF THIS
 # FILE AND/OR TO REMOVE THIS INFORMATION
 #
-# SIE SIND NICHT BERECHTIGT, UNRECHTMÄSSIGE KOPIEN DIESER
+# SIE SIND NICHT BERECHTIGT, UNRECHTMÃ„SSIGE KOPIEN DIESER
 # DATEI ZU ERSTELLEN UND/ODER DIESE INFORMATIONEN ZU ENTFERNEN
 #
 # This file / the PHPKIT software is no freeware! For further 
 # information please visit our website or contact us via email:
 #
-# Diese Datei / die PHPKIT Software ist keine Freeware! Für weitere
+# Diese Datei / die PHPKIT Software ist keine Freeware! FÃ¼r weitere
 # Informationen besuchen Sie bitte unsere Website oder kontaktieren uns per E-Mail:
 #
 # email     : info@phpkit.com
@@ -32,8 +32,8 @@ return array(
 
 #access_refused
 'eventtitle_access_refused'		=> 'Zugriff verweigert',
-'event_access_refused'			=> 'Der Zugriff auf die von Ihnen angew&auml;hlte Seite wurde unterbunden. Diese kann einen der folgende Gr&uuml;nde haben :<br /><br />
-<table border="0" cellspacing="0" cellpadding="5"><tr><td><ul><li>Sie sind haben sich nicht angemeldet oder haben sich noch nicht registriert.</li><li>Sie verf&uuml;gen nicht &uuml;ber die notwendigen Rechte um diese Seite zu betreten.</li><li>Ihre Sitzung wurde wegen zu langer Inaktivit&auml;t beendet.</li><li>Jemand anderes verwendet Ihr Benutzerkonto.</li></ul></td></tr></table>',
+'event_access_refused'			=> 'Der Zugriff auf die von Ihnen angew&auml;hlte Seite wurde unterbunden. Dies kann einen der folgenden Gr&uuml;nde haben :<br /><br />
+<table border="0" cellspacing="0" cellpadding="5"><tr><td><ul><li>Sie haben sich nicht angemeldet oder haben sich noch nicht registriert.</li><li>Sie verf&uuml;gen nicht &uuml;ber die notwendigen Rechte, um diese Seite betreten zu k&ouml;nnen.</li><li>Ihre Sitzung wurde wegen zu langer Inaktivit&auml;t beendet.</li><li>Jemand anderes verwendet Ihr Benutzerkonto.</li></ul></td></tr></table>',
 
 #login (success)
 'eventtitle_login'				=> 'Anmeldung erfolgreich',
@@ -72,7 +72,7 @@ return array(
 'event_comment_data_missing'=>'Autor und Kommentar m&uuml;ssen eingetragen werden!',
 #13
 'eventtitle_constribution_thank'=>'Vielen Dank f&uuml;r Ihren Beitrag',
-'event_constribution_thank'=>'Vielen Dank für Ihren Beitrag.<br /><br /><span class="small">Sie werden weitergeleitet. Wenn Sie nicht warten m&ouml;chten, <a href="%s">klicken Sie bitte hier</a>.</span>',
+'event_constribution_thank'=>'Vielen Dank f&uuml;r Ihren Beitrag.<br /><br /><span class="small">Sie werden weitergeleitet. Wenn Sie nicht warten m&ouml;chten, <a href="%s">klicken Sie bitte hier</a>.</span>',
 #14
 'eventtitle_article_not_available'=>'Artikel nicht verf&uuml;gbar',
 'event_article_not_available'=>'Der von Ihnen gew&uuml;nschte Artikel ist nicht verf&uuml;gbar.<br /><br />M&ouml;glicherweise hat sich die URL ge&auml;ndert oder der Artikel wird zur Zeit &uuml;berarbeitet.',
@@ -108,7 +108,7 @@ return array(
 'event_suggestion_sent'=>'Vielen Dank!<br /><br />Ihre Empfehlung wurde erfolgreich gesendet.',
 #27
 'eventtitle_account_inactive'=>'Benutzerkonto nicht aktiviert',
-'event_account_inactive'=>'Ihr Benutzerkonto wurde noch nicht aktiviert.<br /><br />Sie werden von uns per E-Mail &uuml;ber die Aktivierung ihres Benutzerkontos benachrichtigt.',
+'event_account_inactive'=>'Ihr Benutzerkonto wurde noch nicht aktiviert.<br /><br />Sie werden von uns per E-Mail &uuml;ber die Aktivierung Ihres Benutzerkontos benachrichtigt.',
 #28
 'eventtitle_forum_closed'=>'Forum geschlossen',
 'event_forum_closed'=>'Das Forum wurde durch den Webmaster geschlossen.',
@@ -135,7 +135,7 @@ return array(
 'event_email_error'=>'Ein Fehler ist w&auml;hrend des Versands Ihrer Nachricht aufgetreten. Die E-Mail konnte nicht abgeschickt werden!<br /><br />Bitte versuchen Sie es erneut.',
 #36
 'eventtitle_thread_closed'=>'Thema geschlossen',
-'event_thread_closed'=>'Dieses Thema wurde geschlossen.<br />Antworten sind nicht mehr m&oumlglich.',
+'event_thread_closed'=>'Dieses Thema wurde geschlossen.<br />Antworten sind nicht mehr m&ouml;glich.',
 'eventtitle_thread_does_not_exists'=>'Thema nicht verf&uuml;gbar',
 'event_thread_does_not_exists'=>'Das von Ihnen angew&auml;hlte Forenthema wurde nicht gefunden. M&ouml;glicherweise wurde das Thema gel&ouml;scht.',
 #37
@@ -143,13 +143,13 @@ return array(
 'event_forum_closed'=>'Dieses Forum wurde geschlossen.<br />Das Erstellen von Antworten und neuen Themen ist nicht m&ouml;glich.',
 #38
 'eventtitle_entry_repeat'=>'Antworten nicht m&ouml;glich',
-'event_entry_repeat'=>'Sie d&uuml;rfen nicht noch einmal antworten. Der letzte Beitrag in diesem Thema stammt bereits von Ihnen.<br />Editieren Sie ihren letzten Beitrag oder warten Sie bis jemand anderes Antwortet.',
+'event_entry_repeat'=>'Sie d&uuml;rfen nicht noch einmal antworten. Der letzte Beitrag in diesem Thema stammt bereits von Ihnen.<br />Editieren Sie Ihren letzten Beitrag oder warten Sie bis jemand anderes Antwortet.',
 #39
 'eventtitle_buddy_addself'=>'Fehler',
 'event_buddy_addself'=>'Sie k&ouml;nnen sich nicht selber zu Ihren Freunden hinzuf&uuml;gen.',
 #40
 'eventtitle_profile_update_disabled'=>'Profil&auml;nderung nicht m&ouml;glich',
-'event_profile_update_disabled'=>'Sie d&uuml;rfen Ihr Profil nicht bearbeiten!<br />Diese M&ouml;glichkeit wurde für ihr Benutzerkonto gesperrt.',
+'event_profile_update_disabled'=>'Sie d&uuml;rfen Ihr Profil nicht bearbeiten!<br />Diese M&ouml;glichkeit wurde f&uuml;r Ihr Benutzerkonto gesperrt.',
 #41
 'eventtitle_account_marked_deleted'=>'L&ouml;schung des Benutzerkontos',
 'event_account_marked_deleted'=>'Ihr Benutzerkonto wurde f&uuml;r eine L&ouml;schung markiert.<br /><br />Die L&ouml;schung wird umgehend durch einen der Administratoren erfolgen.',
@@ -158,10 +158,10 @@ return array(
 'event_name_in_use'=>'Verwenden Sie bitte einen anderen Namen. Der von Ihnen gew&auml;hlte Name wird bereits verwendet oder darf nicht benutzt werden!<br />Bitte beachten Sie dabei, dass der verwendete Name nur zwischen '.pkGetConfig('user_namemin').' und '.pkGetConfig('user_namemax').' Zeichen lang sein darf.',
 #43
 'eventtitle_privatemessage_not_found'=>'Nachricht nicht gefunden',
-'event_privatemessage_not_found'=>'Die von Ihnen gew&uuml;schte private Nachricht konnte nicht gefunden werden.',
+'event_privatemessage_not_found'=>'Die von Ihnen gew&uuml;nschte private Nachricht konnte nicht gefunden werden.',
 #44
 'eventtitle_privatemessages_disabled'=>'Kurznachrichten deaktiviert',
-'event_privatemessages_disabled'=>'Sie haben die Nutzung der privaten Nachrichten abgeschaltet. Sie k&ouml;nnen erst private Nachrichten versenden, wenn Sie in den &quot;Erweiterten Einstellungen&quot; Ihres Benutzerprofils die Nutzung reaktivieren.<br /><br /><a href="include.php?path=userprofile&mode=options">Klicken Sie hier wenn sie dies jetzt vornehmen möchten.</a>',
+'event_privatemessages_disabled'=>'Sie haben die Nutzung der privaten Nachrichten abgeschaltet. Sie k&ouml;nnen erst private Nachrichten versenden, wenn Sie in den &quot;Erweiterten Einstellungen&quot; Ihres Benutzerprofils die Nutzung reaktivieren.<br /><br /><a href="include.php?path=userprofile&mode=options">Klicken Sie hier wenn sie dies jetzt vornehmen m&ouml;chten.</a>',
 #45
 'eventtitle_comment_wait_loop'=>'Bitte warten',
 'event_comment_wait_loop'=>'Sie m&uuml;ssen nach dem Schreiben eines Kommentars '.pkGetConfigf('comment_floodctrl').' Minute(n) warten, bis Sie einen weiteren Kommentar schreiben d&uuml;rfen.',
@@ -191,7 +191,7 @@ return array(
 'eventtitle_account_not_displayable'=>'Profil nicht anzeigbar',
 'event_account_not_displayable'=>'Das angew&auml;hlte Benutzerprofil kann nicht angezeigt werden. Das Benutzerkonto ist nicht vorhanden oder wurde m&ouml;glicherweise noch nicht aktiviert.',
 'eventtitle_entries_incomplete'=>'Eintragungen unvollst&auml;ndig',
-'event_entries_incomplete'=>'Ihre Eintragungen sind leider nicht vollst&auml;ndig. Bitte komplettieren Sie ihre Angaben und f&uuml;llen Sie alle Felder aus.',
+'event_entries_incomplete'=>'Ihre Eintragungen sind leider nicht vollst&auml;ndig. Bitte komplettieren Sie Ihre Angaben und f&uuml;llen Sie alle Felder aus.',
 'eventtitle_password_changed'=>'Passwort ge&auml;ndert',
 'event_password_changed'=>'Ihr Passwort wurde erfolgreich ge&auml;ndert. Sie k&ouml;nnen sich nun mit Ihrem neuem Passwort anmelden.',
 
@@ -208,7 +208,7 @@ return array(
 'eventtitle_profileupdate_email_empty'=>'Keine E-Mail-Adresse angegeben',
 'event_profileupdate_email_empty'=>'Beim Update Ihres Benutzerprofils ist leider ein Fehler aufgetreten!<br /><br />Sie haben keine E-Mail-Adresse angegeben. Die Angabe einer g&uuml;ltigen E-Mail-Adresse ist notwendig.',
 'eventtitle_profileupdate_email_invalid'=>'Ung&uuml;tige E-Mail-Adresse',
-'event_profileupdate_email_invalid'=>'Beim Update Ihres Benutzerprofils ist leider ein Fehler aufgetreten!<br /><br />Die von Ihnen angegebene E-Mail-Adresse scheint nicht g&uuml;ltig zu sein. Bitte kontrollieren Sie ihre Eingabe noch einmal.',
+'event_profileupdate_email_invalid'=>'Beim Update Ihres Benutzerprofils ist leider ein Fehler aufgetreten!<br /><br />Die von Ihnen angegebene E-Mail-Adresse scheint nicht g&uuml;ltig zu sein. Bitte kontrollieren Sie Ihre Eingabe noch einmal.',
 'eventtitle_profileupdate_email_in_use'=>'E-Mail-Adresse bereits in Verwendung',
 'event_profileupdate_email_in_use'=>'Beim Update Ihres Benutzerprofils ist leider ein Fehler aufgetreten!<br /><br />Die von Ihnen angegebene E-Mail-Adresse ist bereits in Verwendung durch einen anderen Benutzer. Bitte w&auml;hlen Sie eine andere E-Mail-Adresse.',
 

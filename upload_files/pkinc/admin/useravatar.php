@@ -125,7 +125,7 @@ elseif($avatargroups!="" or $avatartype!="")
 				$id=str_replace("avauser_","",$datei);
 				$id=explode(".",$id);
 				
-				$avatar_list.='<br /><font class="small"><a target="_blank" href="'.pkLink('useredit','','editid='.$id[0]).'">Benutzerprofil</a></font>';
+				$avatar_list.='<br /><span class="small"><a target="_blank" href="'.pkLink('useredit','','editid='.$id[0]).'">Benutzerprofil</a></span>';
 				}
 			
 			$avatar_list.='<br /><input class="checkbox" type="checkbox" name="delete_avatar[]" value="'.$datei.'" /></th>'; 

@@ -229,7 +229,7 @@ SONSTIGE ÄNDERUNGEN:
 
 # Sonstiges: Designexport-Dateien (*.pxstyle-Dateien) werden nun als valides xml gespeichert. Die Dateien bleiben abwärtskompatibel.
 
-# Lokalisierung: Es wurden global englische bzw. halb-englische Begriff in ihre deutschen Entsprechungen geändert:
+# Lokalisierung: Es wurden global englische bzw. halb-englische Begriff in Ihre deutschen Entsprechungen geändert:
 
     - Account, Benutzeraccount, Useraccount -> Benutzerkonto
     - Userstatus -> Benutzerstatus

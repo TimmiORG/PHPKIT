@@ -5,13 +5,13 @@
 # YOU ARE NOT AUTHORISED TO CREATE ILLEGAL COPIES OF THIS
 # FILE AND/OR TO REMOVE THIS INFORMATION
 #
-# SIE SIND NICHT BERECHTIGT, UNRECHTMÄSSIGE KOPIEN DIESER
+# SIE SIND NICHT BERECHTIGT, UNRECHTMï¿½SSIGE KOPIEN DIESER
 # DATEI ZU ERSTELLEN UND/ODER DIESE INFORMATIONEN ZU ENTFERNEN
 #
 # This file / the PHPKIT software is no freeware! For further 
 # information please visit our website or contact us via email:
 #
-# Diese Datei / die PHPKIT Software ist keine Freeware! Für weitere
+# Diese Datei / die PHPKIT Software ist keine Freeware! Fï¿½r weitere
 # Informationen besuchen Sie bitte unsere Website oder kontaktieren uns per E-Mail:
 #
 # email     : info@phpkit.com
@@ -24,7 +24,7 @@ if(!defined('pkFRONTEND') || pkFRONTEND!='public')
 	die('Direct access to this location is not permitted.');
 
 
-if(!isset($_REQUEST['type']) || (intval($_REQUEST['type'])<1 && intval($_REQUEST['type'])>4))
+if(!isset($_GET['type']) || (intval($_GET['type']) < 1 || intval($_GET['type']) > 4))
 	{
 	eval("\$site_body.= \"".pkTpl("content/submit_select")."\";");
 	return;

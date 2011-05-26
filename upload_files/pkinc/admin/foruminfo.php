@@ -192,7 +192,7 @@ else
 			
 			
 			if(empty($foruminfo['foruminfo_title']))
-				$foruminfo_title='<font class="highlight">'.$lang['no_title'].'</font>';
+				$foruminfo_title='<span class="highlight">'.$lang['no_title'].'</span>';
 			else
 				$foruminfo_title=pkEntities($foruminfo['foruminfo_title']);
 			

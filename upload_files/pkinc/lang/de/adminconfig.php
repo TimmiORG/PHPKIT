@@ -43,7 +43,7 @@ return array(
 'config_site_closure_label'					=> 'Seitenabschlu&szlig;',
 'config_site_closure_desc'					=> 'Hier k&ouml;nnen Sie HTML f&uuml;r den Seitenabschlu&szlig; eingeben, z.B. zur Einbindung von externen Statistiken. Ihre Eingaben werden vor dem schlie&szlig;enden Body-Tag ausgegeben.',
 
-'config_avatar_path_error' 					=> '<br /><font class="smallhighlight">Das gew&auml;hlte Verzeichnis erf&uuml;llt nicht alle Bedingungen!</font>',
+'config_avatar_path_error' 					=> '<br /><span class="smallhighlight">Das gew&auml;hlte Verzeichnis erf&uuml;llt nicht alle Bedingungen!</span>',
 
 'config_contact_page_title_label'			=> 'Titel des Kontaktformulars',
 'config_contact_page_title_desc'			=> 'Tragen Sie hier einen Titel f&uuml;r das Kontaktformular ein. Geben Sie keinen Titel an wird der Standardtitel verwendet.',

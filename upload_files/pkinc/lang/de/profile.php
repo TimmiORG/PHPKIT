@@ -5,13 +5,13 @@
 # YOU ARE NOT AUTHORISED TO CREATE ILLEGAL COPIES OF THIS
 # FILE AND/OR TO REMOVE THIS INFORMATION
 #
-# SIE SIND NICHT BERECHTIGT, UNRECHTMÄSSIGE KOPIEN DIESER
+# SIE SIND NICHT BERECHTIGT, UNRECHTMÃ„SSIGE KOPIEN DIESER
 # DATEI ZU ERSTELLEN UND/ODER DIESE INFORMATIONEN ZU ENTFERNEN
 #
 # This file / the PHPKIT software is no freeware! For further 
 # information please visit our website or contact us via email:
 #
-# Diese Datei / die PHPKIT Software ist keine Freeware! Für weitere
+# Diese Datei / die PHPKIT Software ist keine Freeware! FÃœr weitere
 # Informationen besuchen Sie bitte unsere Website oder kontaktieren uns per E-Mail:
 #
 # email     : info@phpkit.com
@@ -25,14 +25,14 @@ return array(
 'user_profile'=>'Benutzerprofil',
 'user_profile_description'=>'Hier k&ouml;nnen Sie Ihre pers&ouml;nlichen Angaben festlegen oder &auml;ndern.',
 'extended_settings'=>'Erweiterte Einstellungen',
-'extended_settings_description'=>'Hier k&ouml;nnen weitere Einstellungen vorgenommen werden (z.B.: Benutzerkonto l&ouml;schen, Einstellungen für private Nachrichten anpassen).<br />',
+'extended_settings_description'=>'Hier k&ouml;nnen weitere Einstellungen vorgenommen werden (z.B.: Benutzerkonto l&ouml;schen, Einstellungen fÃ¼r private Nachrichten anpassen).<br />',
 'show_my_profile'=>'<a href="%s">Hier</a></b> finden Sie Ihre Profilansicht, wie Sie f&uuml;r andere Benutzer sichtbar ist.',
 'pm_center'=>'PN-Center',
 'pm_center_description'=>'&Uuml;bersicht Ihrer empfangenen und gesendeten privaten Nachrichten.',
 'buddies'=>'Freunde',
 'buddies_description'=>'Die Liste Ihrer Freunde.<br /> Hier finden Sie Links zu deren Profilen, Onlinestatus und weitere Angaben.',
 'members_description'=>'&Uuml;bersicht aller registrierten Mitglieder der "%s"-Community.',
-'team_description'=>'Auflistung der Adminstratoren und Moderatoren der "%s"-Website.<br />',
+'team_description'=>'Auflistung der Administratoren und Moderatoren der "%s"-Website.<br />',
 'login_data'=>'angemeldet als "%s" online seit: %s',
 'logoff'=>'ausloggen',
 'favorites_description'=>'Hier finden Sie die von Ihnen favorisierten Forenthemen.',

@@ -134,6 +134,7 @@ function pkBBCodeAdd(text)
 	if(window.getSelection)
 		{
 		pos=pkBBArea.selectionStart + text.length;
+		scrollPos = pkBBArea.scrollTop;
 		pkBBArea.value=pkBBArea.value.substr(0,pkBBArea.selectionStart) + text + pkBBArea.value.substr(pkBBArea.selectionEnd);
 		pkBBArea.selectionStart=pos;
 		pkBBArea.selectionEnd=pos;		
@@ -147,6 +148,7 @@ function pkBBCodeAdd(text)
 		pkBBArea.value+=text
 	
 	pkBBFocus();
+	pkBBArea.scrollTop = scrollPos;
 	}
 
 function pkBBCode(bbcode)

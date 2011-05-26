@@ -118,7 +118,7 @@ array(
 	),
 array(#@TODO: Revise the HTML-Code an single div-container with headline is much smarter
 	'tag'	=> 'quote',
-	'html'	=> '<table class="quote" width="98%" cellpadding="4" cellspacing="1" align="center"><tr><td class="quote"><b>'.pkGetLang('quote').'</b><br /><font class="quote">{text}</font></td></tr></table><br />',
+	'html'	=> '<table class="quote" width="98%" cellpadding="4" cellspacing="1" align="center"><tr><td class="quote"><b>'.pkGetLang('quote').'</b><br /><span class="quote">{text}</span></td></tr></table><br />',
 	'type'	=> '',#empty=default
 	),
 array(

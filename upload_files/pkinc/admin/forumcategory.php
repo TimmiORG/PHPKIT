@@ -449,7 +449,7 @@ if(!$editcat)
 		$catid=$forumcat['forumcat_id'];
 		
 		if(trim($catname=pkEntities($forumcat['forumcat_name']))=='')
-			$catname='<font class="highlight">'.$lang['no_title'].'</font>';
+			$catname='<span class="highlight">'.$lang['no_title'].'</span>';
 		
 		if($forumcat['forumcat_rrights']=="guest")
 			$rrights=$lang['guest'];

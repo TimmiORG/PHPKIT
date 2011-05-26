@@ -83,5 +83,5 @@ und Texte in anderen elektronischen oder gedruckten Publikationen ist ohne ausdr
 <br />
 <p>Dieser Haftungsausschluss ist als Teil des Internetangebotes zu betrachten, von dem aus auf diese Seite verwiesen wurde. Sofern Teile oder einzelne 
 Formulierungen dieses Textes der geltenden Rechtslage nicht, nicht mehr oder nicht vollst&#228;ndig entsprechen sollten, bleiben die &#252;brigen Teile des 
-Dokumentes in ihrem Inhalt und ihrer G&#252;ltigkeit davon unber&#252;hrt.</p>');
+Dokumentes in Ihrem Inhalt und Ihrer G&#252;ltigkeit davon unber&#252;hrt.</p>');
 ?>

@@ -167,7 +167,7 @@ return array(
 'enter_your_loginname'									=> 'Ihr Anmeldename',
 'enter_your_password'									=> 'Ihr Passwort',
 'password_repeat'										=> 'Passwort wiederholen',
-'repeat_your_password'									=> 'Wiederholen Sie ihr Passwort',
+'repeat_your_password'									=> 'Wiederholen Sie Ihr Passwort',
 'enter_your_emailaddress'								=> 'Tragen Sie hier Ihre E-Mail-Adresse ein',
 'version'												=> 'Version',
 'website_url'											=> 'Website-URL',
@@ -175,7 +175,7 @@ return array(
 'website_url_alias'										=> 'URL-Alias',
 'website_url_alias_description'							=> 'Alias der Website-URL.',
 'sitename'												=> 'Name der Website',
-'sitename_description'									=> 'Der Name ihres Webauftritts.',
+'sitename_description'									=> 'Der Name Ihres Webauftritts.',
 'sitetitle'												=> 'Slogan der Website',
 'sitetitle_description'									=> 'Ihr Motto oder Werbeslogan.',
 'email_address'											=> 'E-Mail-Adresse',
@@ -333,7 +333,7 @@ Sie werden sich fragen "Was ist das"? Die Antwort auf diese Frage, finden Sie au
 
 [b]PHPKIT[/b] wurde erfolgreich eingerichtet. Beginnen Sie jetzt mit Ausarbeitung der Website - hilfreiche Tipps hierzu finden Sie im nächsten Abschnitt.
 
-Wenn Sie Hilfe benötigen, nutzen Sie für ihre Fragen das [url=http://www.phpkit.com/de/forum]offizielle PHPKIT Supportforum[/URL].',
+Wenn Sie Hilfe benötigen, nutzen Sie für Ihre Fragen das [url=http://www.phpkit.com/de/forum]offizielle PHPKIT Supportforum[/URL].',
 'setup_preset_content_title_5'							=> 'Bei der Installation vorgenommene Eintragungen',
 'setup_preset_content_text_5'							=> 'Bei der Installation wurden bereits folgende Beispieleintragungen durch das System für Sie erzeugt:
 [list]
@@ -356,7 +356,7 @@ Diesen Artikel sowie auch alle anderen erzeugten Inhalte können Sie löschen oder
 'setup_preset_content_title_7'							=> 'Das offizielle PHPKIT Supportforum',
 'setup_preset_content_text_7'							=> 'Möchten Sie mit anderen [b]PHPKIT[/b]-Anwendern Ihre Erfahrungen austauschen? Sie suchen Anregungen oder haben Fragen? Werfen Sie doch einen Blick in das offizielle [b]PHPKIT[/b] Supportforum.',
 'setup_preset_content_title_8'							=> 'Erste Schritte nach der Installation',
-'setup_preset_content_text_8'							=> '[imgr]http://www.phpkit.com/external/images/cheer-phpkit.jpg[/imgr]<strong>Passen Sie nun wichtige Texte und Einstellungen an ihre Bedürfnisse an.</strong>
+'setup_preset_content_text_8'							=> '[imgr]http://www.phpkit.com/external/images/cheer-phpkit.jpg[/imgr]<strong>Passen Sie nun wichtige Texte und Einstellungen an Ihre Bedürfnisse an.</strong>
 
 Nachfolgend finden Sie eine Übersicht, was als erstes von Ihnen angepasst werden sollte. Nehmen Sie sich etwas Zeit, um diese Checkliste durchzugehen.
 
@@ -402,7 +402,7 @@ In der Administration unter [B]Konfiguration > Stammdaten > Sicherheitsgrafik ve
 
 'setup_preset_gbook_author'								=> 'PHPKIT',
 'setup_preset_gbook_title'								=> 'PHPKIT erfolgreich installiert',
-'setup_preset_gbook_text'								=> 'Dies ist ihr neues Gästebuch! Damit es hier nicht so leer ist, haben wir bereits den ersten Eintrag für Sie vorgenommen. Wenn Sie möchten ändern Sie diesen Eintrag einfach und begrüßen Sie hier Ihre Gäste mit einer individuellen Nachricht.',
+'setup_preset_gbook_text'								=> 'Dies ist Ihr neues Gästebuch! Damit es hier nicht so leer ist, haben wir bereits den ersten Eintrag für Sie vorgenommen. Wenn Sie möchten ändern Sie diesen Eintrag einfach und begrüßen Sie hier Ihre Gäste mit einer individuellen Nachricht.',
 
 'setup_preset_poll_title_1'								=> 'Wie gefällt Ihnen meine Website?',
 'setup_preset_poll_description_1'						=> '',
