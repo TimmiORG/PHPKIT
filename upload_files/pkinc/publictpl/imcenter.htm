@@ -1,0 +1,32 @@
+<script type="text/javascript" src="fx/main.js"></script>
+<table class="userbody" cellspacing="1" cellpadding="4" width="100%">
+ <tr>
+  <td class="heads">$user_navigation PN-Center</td>
+ </tr>
+ <tr>
+  <td class="standard">
+	<table border="0" cellspacing="0" cellpadding="1" width="100%">
+	 <tr>
+	  <td nowrap="nowrap"><font class="small">[
+	    $h[0]<a class="small" href="include.php?path=privatemessages">alle ($countertotal)</a>$h[1] |
+		$h[2]<a class="small" href="include.php?path=privatemessages&amp;view=receive">empfangene ($counterreceive)</a>$h[3] |
+		$h[4]<a class="small" href="include.php?path=privatemessages&amp;view=send">gesendete ($countersend)</a>$h[5] ]
+	  	</font></td>
+	  <td align="right" width="100%" nowrap="nowrap"><a class="small" href="include.php?path=privatemessages&amp;writeim=1">Neue Kurznachricht verfassen</a></td>
+	</tr>
+	<tr>
+	 <td>$imcenter_new</td>
+	</tr>   	  
+	 <tr>
+	  <td colspan="3"><p style="padding-top:10px;text-align:center;">$lang_pncenter_message</p></td>
+	 </tr>
+	</table>
+	<form name="myform" method="post" action="include.php?path=privatemessages">
+	<input type="hidden" name="delete" value="$lang[delete]" />		
+	<br />
+ 	$imcenter_receive
+	$imcenter_send
+ 	</form>
+  </td> 
+ </tr>
+</table>

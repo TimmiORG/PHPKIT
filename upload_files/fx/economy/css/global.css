@@ -1,0 +1,95 @@
+h1.site-name,
+h2.site-slogan {
+top:20px;
+left:20px;
+display:block;
+}
+
+h1.site-name a,
+h2.site-slogan a {
+color:#FFF;
+font-size:28px;
+font-weight:bold;
+font-family:Verdana, Arial, Helvetica, sans-serif;
+text-decoration:none;
+outline:0;
+}
+
+h2.site-slogan {
+top:55px;
+}
+
+h2.site-slogan a {
+font-size:14px;
+}
+
+.heads,.heads * {
+font-weight:bold; 
+}
+
+table#pkcontent {
+border-bottom:1px dotted black;
+border-top:1px dotted black;
+}
+
+td#pkcontent_left {
+border-right:1px dotted black;
+}
+
+td#pkcontent_right {
+border-left:1px dotted black;
+}
+
+div#pksitecopyright {
+padding-top:25px
+}
+
+li.pkcontent_hl_left,
+li.pkcontent_hl_right {
+padding:4px;
+}
+
+div#pkadview {
+position:absolute;
+top:20px;
+right:20px;
+width:468px;
+}
+
+div#pksitedate {
+position:absolute;
+top:85px;
+right:20px;
+width:225px;
+text-align:right;
+font-size:92.5%;
+color:white;
+}
+
+#pkbody {
+width:1000px;
+margin:0 auto;
+background:transparent url(./fx/economy/bg/page.png) repeat-y center;
+}
+
+#pkouterpage {
+padding:0 0 10px 0;
+}
+
+#pkcontent_top {
+border-top:1px solid #BBB;
+}
+
+#pkpagefooter {
+width:980px;
+margin:0 auto;
+}
+
+#pkC, #pksiteparser,#pksiteadminlogin {
+background:#454545;
+}
+
+#pkC *, #pksiteparser *,#pksiteadminlogin * {
+color:#E0E0E0;
+font-size:90%;
+}

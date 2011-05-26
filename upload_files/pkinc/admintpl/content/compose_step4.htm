@@ -1,0 +1,35 @@
+<table class="standard" cellspacing="1" cellpadding="4" width="100%">
+ <tr>
+  <td class="heads" colspan="2">Inhalt verfassen - Schritt 4/4</td>
+ </tr>
+	<form method="post" action="include.php?path=contentcompose">
+	<input type="hidden" name="step" value="$step" />
+	<input type="hidden" name="contentid" value="$contentid" />
+ <tr>
+  <td class="left">Aufmacher-Grafik<br />
+  	<font class="small">&nbsp;</font></td>
+  <td class="right">
+	<input type="text" name="cont_teaser" size="40" class="w90" value="$cont_teaser" />
+	</td>
+ </tr>
+ <tr>
+  <td class="left" width="50%">Freigabe</td>
+  <td class="right" width="50%">
+  	<input class="radio" type="radio" name="cont_status" value="1" $status1 /> Ja &nbsp; 
+  	<input class="radio" type="radio" name="cont_status" value="0" $status0 /> Nein</td>
+ </tr>
+ <tr>
+  <td class="left" width="50%" valign="top">Neuen Link erstellen<br />
+  	<font class="small">Kategorie ausw&auml;hlen in der ein Link erstellt werden soll.</font></td>
+  <td class="right" width="50%">
+	<select name="selectcat" class="w90" size="1">	
+	<option value="-1">verlinken in</option>
+	$link_cats
+	</select><br />
+	<font class="small">$linkinfo</font>
+  </td>
+ </tr>
+	$content_relations
+	$compose_navigation
+	</form>
+</table>

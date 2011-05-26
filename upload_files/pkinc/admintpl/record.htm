@@ -1,0 +1,34 @@
+<table class=standard cellspacing=1 cellpadding=4 width="100%">
+ <tr>
+  <td class="heads" colspan="2">Seitenzugriffe</td>
+ </tr>
+ <tr> 
+  <td class="right" width="50%"><b><u>Heute - $t_date:</u></b><br />
+	<b>$counter_t[calender_picount]</b> Seitenzugriffe bei<br />
+	<b>$counter_t[calender_counter]</b> Besuchern.</td>
+  <td class="right" width="50%"><b><u>Gestern - $y_date:</u></b><br />
+	<b>$counter_y[calender_picount]</b> Seitenzugriffe bei<br />
+	<b>$counter_y[calender_counter]</b> Besuchern.</td>
+ </tr>
+</table>
+<table cellspacing="1" cellpadding="2" width="100%">
+ <tr>
+  <td align="right"><font class="small">Zugriffe auf den Adminbereich nicht gewertet<br /><br /></font></td>
+ </tr>
+</table>
+<table class="standard" cellspacing="1" cellpadding="4" width="100%">
+ <tr>
+  <td class="heads" colspan="4">Wer ist online?</td>
+ </tr>
+ <tr>
+  <td class="highlight" width="25%"><font class="small">Wer?<font></td>
+  <td class="highlight" width="60%"><font class="small">Zuletzt besuchte Seite<font></td>
+  <td class="highlight" width="5%" align="center"><font class="small">Zeit<font></td>
+  <td class="highlight" width="10%" align="center"><font class="small">IP<font></td>
+ </tr>
+	$record_useronline_row
+ <tr>
+  <td class="heads" colspan="4">G&auml;ste</td>
+ </tr>
+	$record_guestonline_row
+</table>

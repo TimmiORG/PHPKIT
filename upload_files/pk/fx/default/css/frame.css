@@ -1,0 +1,189 @@
+body
+	{
+	margin:0px;
+	padding:0px;
+	background:white;
+	font-family:verdana;
+	font-size:12px;
+	}
+
+img
+	{
+	border:none;
+	}
+
+div#sitebody
+	{
+	margin:0px;
+	padding:0px;
+	}
+
+
+div#frameheader
+	{
+	position:relative;
+	top:0px;
+	left:0px;
+	height:55px;
+	padding:0px;
+	margin:0px;
+	background:#445588;
+	background-image:url(./../bg/bgtop.gif);
+	background-repeat:repeat-x;
+
+	font-family:tahoma, verdana, arial;
+	font-size:11px;
+	color:white;	
+	}
+
+
+div#logo
+	{
+	position:absolute;
+	left:40px;
+	top:0px;
+	width:104px;
+	height:37px;
+	z-index:3;
+	text-align:right;	
+	}
+
+div#curve
+	{
+	position:absolute;
+	left:175px;
+	top:0px;
+	width:75px;
+	height:37px;
+	z-index:2;
+	}
+
+div#icurve
+	{
+	position:absolute;	
+	right:175px;
+	top:0px;
+	width:75px;
+	height:37px;
+	z-index:2;	
+	}
+	
+div#curveext
+	{
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:175px;
+	height:37px;
+	z-index:2;	
+	background-image:url(./../bg/curveext.gif);
+	}
+
+div#icurveext		
+	{
+	position:absolute;
+	right:0px;
+	top:0px;
+	width:175px;
+	height:37px;
+	z-index:2;
+	background-image:url(./../bg/curveext.gif);	
+	}
+
+div#cube
+	{
+	position:absolute;
+	right:10px;
+	top:4px;
+	width:27px;
+	height:27px;
+	z-index:3;
+	}
+	
+div#sitelink
+	{
+	position:absolute;
+	left:235px;
+	top:38px;
+	height:16px;
+	z-index:1;
+	}
+
+div#userinfo
+	{
+	position:absolute;
+	left:235px;
+	top:20px;
+	height:16px;
+	z-index:1;
+	}
+
+div#time
+	{
+	position:absolute;
+	right:10px;
+	top:38px;
+	width:300px;
+	height:16px;
+	z-index:1;
+	text-align:right;
+	}
+
+div#version
+	{
+	position:absolute;
+	right:50px;
+	top:11px;
+	width:300px;
+	height:16px;
+	z-index:5;
+	text-align:right;	
+	color:#999999;
+	}
+
+div#pm
+	{
+	position:absolute;
+	left:5px;
+	top:41px;
+	width:19px;
+	height:14px;
+	z-index:1;
+	}
+
+div#pmcount
+	{
+	position:absolute;
+	left:26px;
+	top:38px;
+	height:16px;
+	z-index:1;
+	}
+
+#pmcount a,
+#userinfo a,
+#sitelink a
+	{
+	color:white;
+	text-decoration:none;	
+	}
+
+#pmcount a:hover,
+#userinfo a:hover,
+#sitelink a:hover
+	{
+	color:white;
+	text-decoration:underline;	
+	}
+
+a#new 
+	{
+	color:#CC0000;
+	text-decoration:none;	
+	}
+
+a#new:hover
+	{
+	color:#CC0000;
+	text-decoration:underline;	
+	}

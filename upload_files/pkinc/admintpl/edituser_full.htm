@@ -1,0 +1,79 @@
+ <tr>
+  <td class="standard" colspan="2">Weitere Angaben</td>
+ </tr>
+ <tr>
+  <td class="left">ICQ UIN</td>
+  <td class="right">
+	<input type="text" size="16" name="edit_icqid" value="$info_icqid" maxlength="12" /></td>
+ </tr>
+ <tr>
+  <td class="left">AIM Screename</td>
+  <td class="right">
+	<input type="text" size="25" name="edit_aimid" value="$userinfo[user_aimid]" class="w90" maxlength="30" /></td>
+ </tr>
+ <tr>
+  <td class="left">Yahoo! ID</td>
+  <td class="right">
+	<input type="text" size="25" name="edit_yim" value="$userinfo[user_yim]" maxlength="50" class="w90" /></td>
+ </tr>
+ <tr>
+  <td class="left">Homepage</td>
+  <td class="right">
+	<input type="text" size="30" name="edit_hpage" value="$userinfo[user_hpage]" class="w90" /></td>
+ </tr>
+ <tr>
+  <td class="left">Signatur</td>
+  <td class="right"><textarea rows="8" name="edit_sig" cols="30" class="w90">$userinfo[user_sig]</textarea></td>
+ </tr>
+ <tr>
+  <td class="left">Zitat</td>
+  <td class="right"><textarea rows="5" name="edit_qou" cols="30" class="w90">$userinfo[user_qou]</textarea></td>
+ </tr>
+ <tr>
+  <td class="left">Hobbies</td>
+  <td class="right"><textarea rows="5" name="edit_hobby" cols="30" class="w90">$userinfo[user_hobby]</textarea></td>
+ </tr>
+	$edituser_profilefields
+ <tr>
+  <td class="standard" colspan="2">Erweiterte Einstellungen</td>
+ </tr>
+ <tr>
+  <td class="left">Avatar</td>
+  <td class="right">
+	<table border="0" cellspacing="0" cellpadding="0">
+	 <tr>
+	  <td><input class="checkbox" type="checkbox" name="edit_remove_avatar" value="1" />
+	  <td><font class="small"> entfernen</font>&nbsp;&nbsp;</td>
+	  <td width="100%"><img border="0" src="$info_avatar" /></td>
+	 </tr>
+	</table>
+  </td>
+ </tr>
+ <tr>
+  <td class="left">PN-Nutzung</td>
+  <td class="right">
+	<table border="0" cellspacing="0" cellpadding="0">
+	 <tr>
+	  <td><input class="radio" type="radio" name="user_imoption" value="1" $info_user_imoption1></td>
+	  <td><font class="small"> aktiviert</td>
+	  <td>&nbsp;</td>
+	  <td><input class="radio" type="radio" name="user_imoption" value="0" $info_user_imoption0></td>
+	  <td><font class="small"> deaktiviert</td>
+	 </tr>
+	</table>
+  </td>
+ </tr>
+ <tr>
+  <td class="left">Geistmodus</td>
+  <td class="right">
+	<table border="0" cellspacing="0" cellpadding="0">
+	 <tr>
+	  <td><input class="radio" type="radio" name="edit_ghost" value="1" $info_ghost1></td>
+	  <td><font class="small"> aktiviert</td>
+	  <td>&nbsp;</td>
+	  <td><input class="radio" type="radio" name="edit_ghost" value="0" $info_ghost0></td>
+	  <td><font class="small"> deaktiviert</td>
+	 </tr>
+	</table>
+  </td>
+ </tr>

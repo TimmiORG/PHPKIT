@@ -1,0 +1,318 @@
+Changelog PHPKIT 1.6.5 (Build 1650012)
+--------------------------
+Veränderungen und Fehlerbehebungen gegenüber PHPKIT Version 1.6.5 (Build 1650011)
+
+
+SICHERHEITSFIX
+-------------------------------------
+# Suchfunktion: Es wurde ein SQL-Injection in der Suchefunktion für Inhalte behoben.
+
+
+GLOBALE ÄNDERUNGEN:
+-------------------------------------
+# BB-Code: Es wurde ein Fehler behoben der Links die bereits mit BB-Code formatiert waren, doppelt von der automatischen Linkerkennung erfasst wurden.
+# Newsübersicht: Ein kleiner Fehler behoben, so das es nun wieder möglich ist die jeweils aktuellste News direkt einzel aufzurufen.
+
+
+ÖFFENTLICHER BEREICH:
+-------------------------------------
+# Ein Fehler in Bildgrößenanpassung wurde behoben, bei dem die Bildgröße fehlerhaft erkannt wurde und die verkleinerten Grafiken falsch skalierte.
+# Bildgrößenanpassung: Die maximale Größe skalierter Grafiken kann nun über die Konfiguration festgelegt werden.
+
+
+ADMINISTRATIONSBEREICH:
+-------------------------------------
+# Das Formular zur Eingabe des Lizenzschlüssels enthielt 2 überflüssige Buttons. Diese wurden entfernt.
+# Grafikarchiv: Darstellungsprobleme im Internet Explorer (Version 7 und 8 behoben).
+
+
+Veränderte Dateien: 	
+			pk/fx/default/css/event.css
+			pkinc/admin/config/master.php
+			pkinc/admin/licencekey.php
+			pinkc/admintpl/config_master.htm
+			pinkc/admintpl/images.htm
+			pkinc/class/bbcode.php
+			pkinc/lang/de/adminconfig.php
+			pkinc/lang/de/default.php
+			pkinc/lang/de/setup.php
+			pkinc/public/article.php
+			pkinc/public/news.php
+			pkinc/public/search.php
+			pkinc/main.php
+			pkinc/media.php
+			pkinc/version.php
+
+
+Changelog PHPKIT 1.6.5 (Build 1650011)
+--------------------------
+Veränderungen und Fehlerbehebungen gegenüber PHPKIT Version 1.6.5 (Build 1650010)
+
+
+GLOBALE ÄNDERUNGEN:
+------------------------
+
+# BBCode: Geringfügige Anpassung zur Validierung
+# Sidelinks: Anpassung zur Validierung der Sidelinks
+# Sicherheit: Zugriffe auf PHPKIT, die als Angriffe erkannt und unterbunden werden, liefern nun eine 403 Fehlermeldung.
+# Downloads: Die Aufmachergrafik im Template wird nun korrekt angezeigt.
+
+
+ÄNDERUNGEN IM ÖFFENTLICHEN BEREICH:
+-------------------------------------
+# Forum: Es wurde ein Fehler beseitigt, bei dem Themen fälschlicherweise als "Hot" klassifiziert wurden.
+# RSS: RSS-Titel werden nun korrekt codiert.
+# Profil: Die Methode zum Hochladen von Avataren wurde überarbeitet um Kompatibilität zu unterschiedlichen Serverplattformen zu gewährleisten.
+# Forum: Es wurde ein Fehler beseitigt, der verursachte, dass ein Benutzer im Geistmodus denoch im Forum angezeigt wurde. 
+# Kontaktformular Ein Tagfehler wurde behoben und das Formular ist jetzt valide.
+
+
+ÄNDERUNGEN IM ADMINISTRATIONSBEREICH:
+-------------------------------------
+# Konfiguration: Feld zur Eingabe des Lizenzschlüssels zur korrekten Darstellung im IE8 angepasst.
+# Verbliebene Testausgabe in einem Script entfernt.
+# Konfiguration: Eine Konfigurationsoption wurde strukturell ausgelagert, um einem Loop-Fehler (Wiederholtes Neuladen der Website) vorzubeugen, der bei Neuinstallationen auftrat, die ohne Voreinstellungen angelegt wurden.
+# Ein Problem wurde beseitigt, das Fehler beim Designexport mit dem Internet Explorer verursachte.
+
+SONSTIGE ÄNDERUNGEN:
+--------------------
+# Setup: Umlautkodierung der Lizenzbedingungen im Setup.
+# Setup: Die bei einer Installation erstellten Binärfelder erhalten nun keine Kollation mehr - diese Methode führte zu Problemen in älteren MySql-Versionen.
+# Lokalisierung: Diverse Rechtschreibfehler in den Sprachdateien korrigiert.
+
+
+Veränderte Dateien: 	
+			/pkinc/admin/templates.php
+			/pkinc/admintpl/config_licensekey.htm
+			/pkinc/admintpl/config_forum.htm	
+			/pkinc/cfg/bbcode.php
+			/pkinc/cfg/config.php
+			/pkinc/class/sqlutilities.php
+			/pkinc/class/style.php
+			/pkinc/func/default.php
+			/pkinc/lang/de/licence.php
+			/pkinc/lang/de/contact.php
+			/pkinc/lang/de/profile.php
+			/pkinc/public/forumscategory.php
+			/pkinc/public/rss.php
+			/pkinc/public/userprofil.php
+			/pkinc/publicinc/forumsfooter.php
+			/pkinc/publictpl/sidelink.htm
+			/pkinc/publictpl/contact.htm
+			/pkinc/publictpl/extoption_avatar.htm
+			/pkinc/publictpl/extoption.htm
+			/pkinc/publictpl/content/download_teaser.htm
+			/pkinc/setup/preset.php	
+			/pkinc/main.php
+			/pkinc/version.php		
+
+
+
+Changelog PHPKIT 1.6.5 
+--------------------------
+Veränderungen und Fehlerbehebungen gegenüber PHPKIT Version 1.6.4pl3
+
+
+GLOBALE ÄNDERUNGEN:
+-----------------------------------------------------------
+
+# Global: Die Systemanforderungen wurden angepasst. PHPKIT erfordert ab Version 1.6.5 PHP 5.2 oder höher und MySQL 4.1.2 oder höher.
+
+# Global: Neue und überarbeitete Designs für PHPKIT. Die Designs der Economy Line haben ein Facelifting erhalten und wurden um 6 weitere Farbvarianten ergänzt.
+PHPKIT Designs: New Economy Line.
+
+# Global: RSS-Feeds für alle Inhaltsbereiche (Inhaltstexte, Artikel, News, externe Links und Downloads) und das Forum wurden integriert. Die Feeds sind über die Administration individuell konfigurierbar. Zu den Einstellungsmöglichkeiten zählen die Festlegung des Namens des jeweiligen Feeds und die Anzahl der angezeigten Einträge. Die RSS-Feeds können einzeln aktiviert werden.
+
+# Global: Seitentitel sind nun für viele Bereiche festlegbar und können über die Administration konfiguriert werden.
+
+# Global: Eine neue Navigationsbox für twitter.com.
+
+# Global: Umstellung des Zeichsatz von ISO-8859-1 auf UTF-8.
+
+# Global: Änderung des HTML-Doctypes von HTML 4.01 Transitional auf XHTML 1.0 Transitional.
+
+# Global: Es wurden alle öffentlichen einsehbaren Versionsnummern entfernt. Die neu eingeführte Buildnummer findet sich auf der Startseite der Administration. Dies erleichtert zukünftig die exakte Festellung der installierten Version, wenn zum Beispiel mit Hotfixes gepatcht werden musste.
+
+# Global: Wegfall des Infomailers als Bestandteil von PHPKIT. Der Mailer wird als eigenständiges Modul zu einem späteren Zeitpunkt wieder veröffentlicht.
+
+# Global: Entfernung verbliebener Übergaben der Sitzungs-ID per URL.
+
+# Global: Tippfehler korrigiert, Webseite zu Website geändert (fehlerhafte Übersetzung).
+
+# Global: Fehlerseiten senden nun korrekt einen 404 Fehler, wenn eine angewählte Seite nicht angezeigt werden kann.
+
+# Global / Mailversand: Tippfehler korrigiert.
+
+# Global / Smilies: Smilies am Anfang von Texten werden nun korrekt geparst.
+
+
+ÄNDERUNGEN IM ÖFFENTLICHEN BEREICH:
+-----------------------------------------------------------
+
+# Öffentlicher Bereich: Tippfehler korrigiert, Beschreibung zur Sicherheitsgrafik in allen Formularen.
+
+# Öffentlicher Bereich: Tippfehler korrigiert, Profilbearbeitung.
+
+# Öffentlicher Bereich: Tippfehler korrigiert, Mailversand.
+
+# Öffentlicher Bereich: Die Bildgrößenanpassung wurde überarbeitet und funktioniert nun wie vorgesehen für PNG-Grafiken.
+
+# Öffentlicher Bereich / Registrierung: Tippfehler korrigiert, Bestätigung der Accounterstellung.
+
+# Öffentlicher Bereich / PN-Center: Beschriftung für Sender/Empfänger/Titel in privaten Nachrichten korrigiert.
+
+# Öffentlicher Bereich / PN-Center: Entfernung mehrerer Templatedateien, die für Fehlerausgaben bei privaten Nachrichten zuständig waren.
+
+# Öffentlicher Bereich / PN-Center: Es ist nicht länger möglich, private Nachrichten an sich selbst zu versenden.
+
+# Öffentlicher Bereich / PN-Center: Das Einfügen gesuchter Benutzer beim Verfassen von privaten Nachrichten funktioniert nun wie vorgesehen.
+
+# Öffentlicher Bereich / Profilbearbeitung: Benutzer denen die Profilbearbeitung untersagt wurde, bekommen nun die korrekte Fehlermeldung angezeigt.
+
+# Öffentlicher Bereich / Forenübersicht: Fehler in der Darstellung der Forenmoderatoren wurde behoben.
+
+# Öffentlicher Bereich / Forum: Benutzer die einzelnen Foren zugewiesen wurden, zu denen sie keinen Zugriff hätten, erhalten nun wie vorgesehen Vollzugriff.
+
+# Öffentlicher Bereich / Forum: Das Editieren von Forenbeiträgen bei denen Formatierung deaktiviert sind funktioniert nun wieder.
+
+# Öffentlicher Bereich / Forensuche: Es ist nicht mehr möglich als Moderator nach Beiträgen in Administrationsforen zu suchen.
+
+# Öffentlicher Bereich / Profilansicht: Leere Felder verfügen nun über eine genauere Kennzeichnung.
+
+# Öffentlicher Bereich / Download: Nicht vorhandene Kategoriesymbole werden nun nicht mehr fehlerhaft angezeigt.
+
+# Öffentlicher Bereich / Linkarchiv: Texte werden nun wie vorgesehen gekürzt.
+
+# Öffentlicher Bereich / Navigationsboxen: Es wurde ein Fehler behoben durch den es möglich war, dass in der Navigationsbox für zufällige Artikel nichts angezeigt wurde.
+
+
+ÄNDERUNGEN IM ADMINISTRATIONSBEREICH:
+-----------------------------------------------------------
+
+# Administration: Die Startseite der Administration wurde um statische Angaben zu Besuchern, Seitenimpressionen und einer Angabe über die Anzahl der Kommentare (Inhalte) seit der letzten Anmeldung erweitert.
+
+# Administration: Die nicht-automatische Authenifizierung verlängert nun korrekt die bestehende Sitzung anstatt eine neue zu initialisieren.
+
+# Administration: Die Darstellung von Formularfeldern funktioniert nun wie vorgesehen im Internet Explorer 6.
+
+# Administration: Tippfehler korrigiert, Eingabe des Lizenzschlüssels.
+
+# Administration: Tippfehler korrigiert, Erklärungen zu zahlreichen Eingabefeldern wurden überarbeitet.
+
+# Administration: Tippfehler korrigiert, Fehlermeldung beim Versuch das Benutzerkonto des Hauptadministrators zu bearbeiten.
+
+# Administration / Profilbearbeitung: Der Hauptadministrator ist nicht mehr in der Lage sein Benutzerkonto selbst zu deaktivieren.
+
+# Administration / Benutzerübersicht: Die Suchfunktion wurde überarbeitet. Sie ermöglicht nun auch die Suche innerhalb der gesperrten Accounts, der Benutzergruppen und der Benutzerstati.
+
+# Administration / Benutzergruppen: Es wurde ein Fehler im Zusammenhang mit der Löschung von Gruppen behoben, in denen sich noch Benutzer befinden.
+
+# Administration / Foreninformation: Die Textformatierung und das Einfügen von Smilies funktioniert nun wie vorgesehen.
+
+# Administration / Inhaltserstellung: Das Erstellen von Inhaltstypen für die keine Berechtigung vorhanden ist, wird nun unterbunden.
+
+# Administration / Inhaltserstellung: Die Angabe mehrer Quellen bei der Erstellen von News ist nun möglich.
+
+# Administration / Konfiguration: Verweis auf den entfallenen Bereich "Eingeschränkte Seiten" entfernt.
+
+# Administration / Konfiguration: Die Konfiguration wurde überarbeitet und bietet nun diverse neue Einstellungsmöglichkeiten. Es ist nun unter Anderem möglich ein Präfix und Suffix für den Seitentitel festzulegen.
+
+# Administration / Kommentarverwaltung: Die Anzeige von Smilies in Kommentaren funktioniert nun korrekt.
+
+
+SONSTIGE ÄNDERUNGEN:
+-----------------------------------------------------------
+
+# Setup: Tippfehler korrigiert, Eingabe der Datenbankverbindungsdaten.
+
+# Setup: Die Authenifizierung wurde auf ein Sitzungsmodell zur Speicherung von Daten geändert.
+
+# Sonstiges: Designexport-Dateien (*.pxstyle-Dateien) werden nun als valides xml gespeichert. Die Dateien bleiben abwärtskompatibel.
+
+# Lokalisierung: Es wurden global englische bzw. halb-englische Begriff in ihre deutschen Entsprechungen geändert:
+
+    - Account, Benutzeraccount, Useraccount -> Benutzerkonto
+    - Userstatus -> Benutzerstatus
+    - Offline-Modus -> Wartungsmodus
+
+# API-Änderung: Die Speicherung der Konfigurationswerte wurde verändert. Die entsprechende MySQL-Tabelle verfügt nun über ein flexibles Design zu Speicherung der Daten. Addon- und Modulentwickler können nun, ohne Erstellung zusätzlicher Datenbankspalten, Moduldaten in der globalen Konfiguration speichern. Das Speicherungsformat unterstützt Objekte und Arrays.
+
+# API-Änderung: Die Konfiguration läßt sich nun um eigene Sektionen bzw. Gruppen erweitern, ohne das Eingriffe in Core-Scripte notwendig sind. Die Gruppendefintion wurde in die Datenbank ausgelagert (neue DB-Tabelle pkSQLTAB_CONFIG_GROUP). Das Nachladen eigener Sprachdateien wird unterstützt.
+
+# API-Änderung: Die Navigation der Administration wurde überarbeitet und die Menüpunkt in die Datenbank verlagert. Dies vereinfacht zukünftig die Einbindung von Addons und Erweiterungen. Das Nachladen von Sprachdateien wird unterstützt.
+
+# API-Änderung: Die Aliasnamen der Datenbanktabellen wurden vollständig auf die entsprechenden pkSQLTAB Konstanten geändert. Das global verwendete Array $db_tab entfällt.
+
+# API-Änderung: Das Datanbankobjekt wurde in allen Scripten auf den neuen Namen $SQL geändert. Der alte Objektname $DB entfällt.
+
+
+Entfernte Verzeichnisse:
+		pkinc/setup/style
+
+Entfernte Dateien:
+		images/download.gif
+
+		pkinc/admin/mailer.php
+
+		pkinc/admintpl/activate_mail_text.htm
+		pkinc/admintpl/activate_mail_title.htm
+		pkinc/admintpl/config_avatar_patherror.htm
+		pkinc/admintpl/config_basic.htm
+		pkinc/admintpl/config_overview.htm
+		pkinc/admintpl/edituser_delete_mailtext.htm
+		pkinc/admintpl/edituser_delete_mailtitle.htm
+		pkinc/admintpl/edituser_delete_notify_true.htm
+		pkinc/admintpl/edituser_delete_notify_false.htm
+		pkinc/admintpl/edituser_notify_title.htm
+		pkinc/admintpl/edituser_notify_body.htm
+		pkinc/admintpl/edituser_notify_bodytext.htm
+		pkinc/admintpl/infomail.htm
+		pkinc/admintpl/infomail_error.htm
+		pkinc/admintpl/infomail_body_text.htm
+		pkinc/admintpl/infomail_body_html.htm
+		pkinc/admintpl/logout_small.htm
+		pkinc/admintpl/main_submited_content_count.htm
+
+		pkinc/publictpl/blank_1_5.htm
+		pkinc/publictpl/blank_18_18.htm
+		pkinc/publictpl/comment_im_notify.htm
+		pkinc/publictpl/comment_mail_notify.htm
+		pkinc/publictpl/contact_title.htm
+		pkinc/publictpl/contact_body_master.htm
+		pkinc/publictpl/contact_body_sender.htm
+		pkinc/publictpl/imcenter_write_error_1.htm
+		pkinc/publictpl/imcenter_write_error_2.htm
+		pkinc/publictpl/imcenter_write_error_3.htm
+		pkinc/publictpl/imcenter_write_notify_text.htm
+		pkinc/publictpl/mailer_text.htm
+		pkinc/publictpl/register_error_1.htm
+		pkinc/publictpl/register_error_2.htm
+		pkinc/publictpl/register_error_3.htm
+		pkinc/publictpl/register_error_4.htm
+		pkinc/publictpl/register_error_5.htm
+		pkinc/publictpl/register_error_6.htm
+		pkinc/publictpl/register_error_7.htm
+		pkinc/publictpl/register_error_8.htm
+		pkinc/publictpl/register_error_9.htm
+		pkinc/publictpl/register_mail_1.htm
+		pkinc/publictpl/register_mail_2.htm
+		pkinc/publictpl/register_mail_title.htm
+		pkinc/publictpl/register_mail_activate0.htm
+		pkinc/publictpl/register_mail_activate1.htm
+		pkinc/publictpl/register_mail_notify.htm
+		pkinc/publictpl/register_im_notify.htm
+		pkinc/publictpl/subpass_mail_text.htm
+		pkinc/publictpl/subpass_mail_title.htm
+		pkinc/publictpl/content/contentvote_multivote.htm
+		pkinc/publictpl/forum/kopf_help.htm
+		pkinc/publictpl/forum/newpost_im_notify.htm
+		pkinc/publictpl/forum/newpost_mail_text.htm
+		pkinc/publictpl/forum/newpost_mail_notify.htm
+		pkinc/publictpl/guestbook/email_title.htm
+		pkinc/publictpl/guestbook/email_text.htm
+		pkinc/publictpl/guestbook/signgb_im_notify.htm
+		pkinc/publictpl/guestbook/signgb_mail_notify.htm
+		pkinc/publictpl/navigation/calender_bd_info.htm
+
+		pkinc/setup/update.164pl1.php
+		pkinc/setup/update.164pl2.php

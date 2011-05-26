@@ -1,0 +1,156 @@
+ <tr>
+  <td class="heads" colspan="2">Kategorie bearbeiten</td>
+ </tr>
+	<form name="pkform" method="post" action="include.php?path=forumcategory&editcat=$editcat">
+ <tr>
+  <td class="left">Forenname<br />
+	<font class="small">Bezeichnung der Forenkategorie.</font></td>
+  <td class="right">
+	<input type="text" name="cat_name" value="$forumcat_name" size="25" class="w90" /></td>
+ </tr>
+ <tr>
+  <td class="left">Beschreibung<br />
+	<font class="small">Eine kurze Beschreibung die unter dem Forennamen in der Foren&uuml;bersicht angezeigt wird.</font></td>
+  <td class="right">
+	<textarea name="cat_description" rows="2" cols="30" class="w90">$forumcat_description</textarea>
+	<select name="cat_description_show" size="1" class=w90>
+	<option value="0" $descrition_show0>verbergen</option>
+	<option value="1" $descrition_show1>anzeigen</option>
+	</select>
+  </td>
+ </tr>
+ <tr>
+  <td class="left">Unterforenanzeige<br />
+  	<font class="small">Bestimmt wie eventuelle Unterforen angezeigt werden. Wenn <b>"verbergen"</b> gew&auml;hlt wurde, werden die Unterforen nur auf der Foren&uuml;bersicht verborgen, ansonsten in Kurzform ausgegeben.</font></td>
+  <td class="right">
+	<select name="cat_option" size="3" class="w90">
+	<option value="0" $option0>verbergen</option>
+	<option value="1" $option1>vollst&auml;ndig anzeigen</option>
+	<option value="2" $option2>in Kurzform anzeigen</option>
+	</select>
+  </td>
+ </tr>
+ <tr>
+  <td class="left">Status<br />
+  	<font class="small">Das Forum f&uuml;r neue Themen &amp; Antworten sperren.</font></td>
+  <td class="right">
+	<select name="cat_status" size="2" class="w90">
+	<option value="0" $status0>geschlossen</option>
+	<option value="1" $status1>offen</option>
+	</select>
+  </td>
+ </tr>
+  <td class="heads" colspan="2">Rechte</td>
+ <tr>
+  <td class="left">Lese-Rechte<br />
+	<font class="small">Benutzerstatus der ben&ouml;tigt wird, um in dieser Kategorie zu lesen.</font></td>
+  <td class="right">
+  	<select name="cat_rrights" size="5" class="w90">
+	<option value="guest" $rrights0>G&auml;ste</option>
+	<option value="user" $rrights1>User</option>
+	<option value="member" $rrights2>Member</option>
+	<option value="mod" $rrights3>Moderatoren</option>
+	<option value="admin" $rrights4>Administratoren</option>
+	</select></td>
+ </tr>
+ <tr>
+  <td class="left">Schreib-Rechte<br />
+  	<font class="small">Benutzerstatus der ben&ouml;tigt wird, um zu Antworten.</font></td>
+  <td class="right">
+	<select name="cat_wrights" size="5" class="w90">
+	<option value="guest" $wrights0>G&auml;ste</option>
+	<option value="user" $wrights1>User</option>
+	<option value="member" $wrights2>Member</option>
+	<option value="mod" $wrights3>Moderatoren</option>
+	<option value="admin" $wrights4>Administratoren</option>
+	</select></td>
+ </tr>
+ <tr>
+  <td class="left">Schreib-Rechte 2<br />
+  	<font class="small">Benutzerstatus der ben&ouml;tigt wird, um Themen zu erstellen.</font></td>
+  <td class="right">
+	<select name="cat_trights" size="5" class="w90">
+	<option value="guest" $trights0>G&auml;ste</option>
+	<option value="user" $trights1>User</option>
+	<option value="member" $trights2>Member</option>
+	<option value="mod" $trights3>Moderatoren</option>
+	<option value="admin" $trights4>Administratoren</option>
+	</select></td>
+ </tr>
+ <tr>
+  <td class="left" valign="top">Moderatoren</td>
+  <td class="right" valign="top">
+  	<table border="0" cellspacing="0" cellpadding="0" width="100%">
+	 <tr>
+	  <td width="90%">
+	  	<select id="cat_mods" name="cat_mods[]" multiple size="6" class="w100" ondblclick="pkUnselect(document.getElementById('cat_mods'));">
+		$mod_optionlist
+		</select></td>
+	  <td>&#160;</td>
+	  <td width="10%"><a href="javascript:pkWindowOpen('$link_finduser','pkFinduserWindow','height=400,width=400,resizable=1,scrollbars=1');" onclick="pkSetFormElement(document.getElementById('cat_mods'));"><img border="0" alt="Ausw&auml;hlen" title="Benutzer ausw&auml;hlen" src="./../images/buddie.gif" /></a><br />
+		<a href="javascript:pkUnselect(document.getElementById('cat_mods'))"><img border="0" alt="Ausw&auml;hlen" title="Auswgew&auml;hlte Benutzer entfernen" src="./../images/false.gif" /></a></td>
+	 </tr>
+	</table></td>
+ </tr> 
+ <tr>
+  <td class="left" valign="top">Benutzer<br />
+ 	<font class="small">Die ausgew&auml;hlten Benutzer erhalten Lese-, Schreib- und Antwortrechte f&uuml;r diese Kategorie.</font></td>
+  <td class="right" valign="top">
+  	<table border="0" cellspacing="0" cellpadding="0" width="100%">
+	 <tr>
+	  <td width="90%">
+	  	<select id="cat_user" name="cat_user[]" multiple size="6" class="w100" ondblclick="pkUnselect(document.getElementById('cat_user'));">
+		$user_optionlist
+		</select></td>
+	  <td>&#160;</td>
+	  <td width="10%"><a href="javascript:pkWindowOpen('$link_finduser','pkFinduserWindow','height=400,width=400,resizable=1,scrollbars=1');" onclick="pkSetFormElement(document.getElementById('cat_user'));"><img border="0" alt="Ausw&auml;hlen" title="Benutzer ausw&auml;hlen" src="./../images/buddie.gif" /></a><br />
+		<a  href="javascript:pkUnselect(document.getElementById('cat_user'))"><img border="0" alt="Ausw&auml;hlen" title="Auswgew&auml;hlte Benutzer entfernen" src="./../images/false.gif" /></a></td>
+	 </tr>
+	</table></td>
+ </tr> 
+ <tr>
+  <td class="heads" colspan="2">Einstellungen</td>
+ </tr>
+ <tr>
+  <td class="left">Themen erlauben<br />
+  	<font class="small">Legt fest ob das Er&ouml;ffnen von Themen m&ouml;glich ist.</font></td>
+  <td class="right">
+	<select name="cat_threads_option" size="2" class="w90">
+	<option value="0" $threads_option0>nein</option>
+	<option value="1" $threads_option1>ja</option>
+	</select>
+  </td>
+ </tr>
+ <tr>
+  <td class="left">Antworten<br />
+	<font class="small">Anzahl der Antworten die notwendig sind, damit Themen als "heiss" gelten.</font></td>
+  <td class="right">
+	<input type="text" name="cat_replys" value="$forumcat[forumcat_replys]" size="3" maxlength="3" /></td>
+ </tr>
+ <tr>
+  <td class="left">Aufrufe<br />
+	<font class="small">Anzahl der Aufrufe die n&ouml;tig sind, damit Themen als "heiss" gelten.</font></td>
+  <td class="right">
+	<input type="text" name="cat_views" value="$forumcat[forumcat_views]" size="6" maxlength="5" /></td>
+ </tr>
+ <tr>
+  <td class="left">Themen<br />
+  	<font class="small">Anzahl der Themen die pro Seite angezeigt werden.</font></td>
+  <td class="right">
+	<input type="text" name="cat_threads" value="$forumcat[forumcat_threads]" size="3" maxlength="3" /></td>
+ </tr>
+ <tr>
+  <td class="left">Beitr&auml;ge<br />
+	<font class="small">Anzahl der Beitr&auml;ge die pro Seite angezeigt werden.</font></td>
+  <td class="right">
+	<input type="text" name="cat_posts" value="$forumcat[forumcat_posts]" size="3" maxlength="3" /></td>
+ </tr>
+	$edit_cat
+ <tr>
+  <td class="heads" colspan="2" align="center">
+	<input type="submit" name="action" value="$LANG[save]" onclick="pkSelectAll('pkform','cat_mods[]',true);pkSelectAll('pkform','cat_user[]',true);" />
+	<input type="hidden" name="save" value="$LANG[save]" />
+	<input type="submit" name="action" value="$LANG[cancel]" />
+	<input type="hidden" name="cancel" value="$LANG[cancel]" /></td>
+ </tr>
+	</form>

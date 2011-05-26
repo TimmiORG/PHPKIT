@@ -1,0 +1,68 @@
+<script type="text/javascript" src="fx/main.js"></script>
+<form id="pkform" method="post" name="myform" action="include.php?path=forumsnewpost">
+<input type="hidden" name="post_uid" value="$post_uid" />
+<input type="hidden" name="catid" value="$catid" />
+<input type="hidden" name="threadid" value="$threadid" />
+<input type="hidden" name="replyto" value="$replyto" />
+<table class="forumbody" cellspacing="1" cellpadding="4" width="100%">
+ <tr>
+  <td class="heads" colspan="2">$action_type</td>
+ </tr>
+	$post_error
+	$cat_option
+	$user_info
+ <tr>
+   <td class="left" width="15%">Titel</td>
+   <td class="right" width="85%">
+	<input type="text" name="post_title" value="$post_title" size="20" style="width:50%" /></td>
+ </tr>
+ <tr>
+  <td class="left">Icon</td>
+  <td class="right">
+	<table border="0" cellspacing="0" cellpadding="2">
+		$theme_icon
+	</table>
+  </td>
+ </tr>
+ <tr>
+  <td class="left" valign="top">
+	<table border="0" cellspacing="0" cellpadding="0">
+	 <tr>
+	  <td>Nachricht</td>
+	 </tr>
+	</table>
+  </td>
+  <td class="right">
+	<table border="0" cellspacing="2" cellpadding="0" width="100%">
+	 <tr>
+	  <td width="80%" valign="top"><textarea id="pkBBArea" name="content" cols="40" rows="20" onfocus="pkBBSelection(this);" onclick="pkBBSelection(this);" onchange="pkBBSelection(this);" ondblclick="pkBBSelection(this);">$post_text</textarea></td>
+	  <td width="20%" valign="top">$sign_format</td>
+	 </tr>
+	</table>
+  </td>
+ </tr>
+ <tr>
+  <td class="left" valign="top">Optionen</td>
+  <td class="right">
+	<table border="0" cellspacing="2" cellpadding="0">
+	 <tr>
+	  <td><input class="checkbox" type="checkbox" value="1" name="post_notify" $notify /></td>
+	  <td class="small"> per E-Mail &uuml;ber Antworten benachrichtigen</td>
+	 </tr>
+		$option_notify
+		$option_bbcode
+		$option_smilies
+		$option_vote
+	</table>
+	</td>
+ </tr>
+ $captcha
+ <tr>
+  <td class="heads" colspan="2" align="center">
+	<input type="submit" name="action" value="$LANG[save]" />
+	<input type="hidden" name="save" value="$LANG[save]" />
+	<input type="submit" name="action" value="$LANG[preview]" />
+	<input type="hidden" name="preview" value="$LANG[preview]" /></td>
+ </tr>
+</table>
+</form>

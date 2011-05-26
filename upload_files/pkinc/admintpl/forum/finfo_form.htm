@@ -1,0 +1,63 @@
+ <tr>
+  <td class="heads" colspan="2">Foreninformation bearbeiten</td>
+ </tr>
+	<form name="myform" method="post" action="include.php?path=foruminfo" />
+	<input type="hidden" name="finfoid" value="$finfoid" />
+ <tr>
+  <td class="left">G&uuml;ltigkeitszeitraum<br />
+	<span class="small">Zeitraum in der die Information angezeigt werden soll.<br/>$error_validity_period</span></td>
+  <td class="right" nowrap="nowrap">
+	<input type="text" name="finfo_time_d" value="$finfo_time_d" size="2" maxlength="2" />
+	<input type="text" name="finfo_time_m" value="$finfo_time_m" size="2" maxlength="2" />
+	<input type="text" name="finfo_time_y" value="$finfo_time_y" size="4" maxlength="4" /> &nbsp;
+	<input type="text" name="finfo_time_h" value="$finfo_time_h" size="2" maxlength="2" />
+	<input type="text" name="finfo_time_mm" value="$finfo_time_mm" size="2" maxlength="2" /><br />
+
+	<input type="text" name="finfo_expire_d" value="$finfo_expire_d" size="2" maxlength="2" />
+	<input type="text" name="finfo_expire_m" value="$finfo_expire_m" size="2" maxlength="2" />
+	<input type="text" name="finfo_expire_y" value="$finfo_expire_y" size="4" maxlength="4" /> &nbsp;
+	<input type="text" name="finfo_expire_h" value="$finfo_expire_h" size="2" maxlength="2" />
+	<input type="text" name="finfo_expire_mm" value="$finfo_expire_mm" size="2" maxlength="2" />
+  </td>
+ </tr>
+ <tr>
+  <td class="left">Autor<br />
+  	<font class="small">Nickname des Autors, kann vom eigenen abweichen.</font></td>
+  <td class="right">
+	<input type="text" name="finfo_autor" value="$finfo_autor" size="40" class="w90" />
+ </tr>
+ <tr>
+  <td class="left">Titel</td>
+  <td class="right">
+	<input type="text" name="finfo_title" value="$foruminfo[foruminfo_title]" size="40" class="w90" />
+ </tr>
+ <tr>
+  <td class="right" colspan="2">
+	<table border="0" cellspacing="2" cellpadding="0" width="100%">
+	 <tr>
+	  <td width="80%" valign="top"><textarea id="pkBBArea" name="content" cols="60" rows="15" onfocus="pkBBSelection(this);" onclick="pkBBSelection(this);" onchange="pkBBSelection(this);" ondblclick="pkBBSelection(this);">$foruminfo_text</textarea></td>
+	  <td width="20%" valign="top">$finfo_bbcode $format_smilies</td>
+	  </tr>
+	</table>
+  </td>
+ </tr>
+ <tr>
+  <td class="left" width="50%" valign="top">Foren<br />
+	<span class="small">Die Foren in denen die Information angezeigt wird.<br />
+	Mehrfachselektierung durch gleichzeitiges dr&uuml;cken der STRG/CTRL oder SHIFT-Taste.<br />
+	<br />
+	<strong>Ausgew&auml;hlte Foren</strong>: $forumlist</span>
+  <td class="right" width="50%">
+	<select name="finfo_cat[]" size="8" multiple="multiple" class="w90">
+		<option value="0" $selected0>In allen Foren anzeigen</option>
+		$finfo_catoption
+	</select></td>
+ </tr>
+ <tr>
+  <td class="heads" colspan="2" align="center">
+	<input type="submit" name="action" value="$LANG[save]" />
+	<input type="hidden" name="save" value="$LANG[save]" />
+	<input type="submit" name="action" value="$LANG[delete]" class="highlight" />
+	<input type="hidden" name="delete" value="$LANG[delete]" /></td>
+  </tr>
+	</form>

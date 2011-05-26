@@ -1,0 +1,122 @@
+<script language="JavaScript">
+function returnLink(code) {
+ opener.document.$return_form.$return_element.value = $return_code;
+ opener.$return_form.$return_element.focus();
+ }
+</script>
+<table class="standard" border="0" cellspacing="1" cellpadding="4" width="100%">
+ <tr>
+  <td class="heads" colspan="2">
+  	<table border="0" cellspacing="0" cellpadding="0" width="100%">
+	 <tr>
+	  <td nowrap><font class="heads">Eintragbare Links</font></td>	 
+	  <td align="right" nowrap><font class="headssmall">[ <a class="headssmall" href="javascript:self.close()">Fenster schlie&szlig;en</a> ]</font></td>
+	 </tr>
+	</table>
+  </td>
+ </tr>
+ <tr>
+  <td class="heads" colspan="2" align="center"><b>Standard-Links</b></td>
+ </tr>
+ 	$morelinkswindow_frontpage
+ <tr>
+  <td class="left" width="30%">Kontaktformular</td>
+  <td class="right" width="70%"><a href="javascript:;" onclick="returnLink('$link[contact]');">$link[contact]</a></td> 
+ </tr>
+ <tr>
+  <td class="left">Team-&Uuml;bersicht</td>
+  <td class="right"><a href="javascript:;" onclick="returnLink('$link[team]');">$link[team]</a></td> 
+ </tr>
+ <tr>
+  <td class="left">Mitglieder&uuml;bersicht</td>
+  <td class="right"><a href="javascript:;" onclick="returnLink('$link[member]');">$link[member]</a></td> 
+ </tr>
+
+ <tr>
+  <td class="heads" colspan="2" align="center"><b>Forum</b></td>
+ </tr>
+ <tr>
+  <td class="left">&Uuml;bersicht</td>
+  <td class="right"><a href="javascript:;" onclick="returnLink('$link[forum_main]');">$link[forum_main]</a></td> 
+ </tr>
+ <tr>
+  <td class="left">Forensuche</td>
+  <td class="right"><a href="javascript:;" onclick="returnLink('$link[forum_search]');">$link[forum_search]</a></td> 
+ </tr>
+ <tr>
+  <td class="left">Foren-Team</td>
+  <td class="right"><a href="javascript:;" onclick="returnLink('$link[forum_team]');">$link[forum_team]</a></td> 
+ </tr> 
+ <tr>
+  <td class="heads" colspan="2" align="center"><b>Content-Bereich</b></td>
+ </tr>
+ <tr>
+  <td class="left">Artikel&uuml;bersicht</td>
+  <td class="right"><a href="javascript:;" onclick="returnLink('$link[content_overview]');">$link[content_overview]</a></td> 
+ </tr> 
+ <tr>
+  <td class="left">Artikel einsenden</td>
+  <td class="right"><a href="javascript:;" onclick="returnLink('$link[content_submit_1]');">$link[content_submit_1]</a></td> 
+ </tr>
+ <tr>
+  <td class="left">News&uuml;bersicht</td>
+  <td class="right"><a href="javascript:;" onclick="returnLink('$link[content_news]');">$link[content_news]</a></td> 
+ </tr>
+ <tr>
+  <td class="left">Die "neuste" News</td>
+  <td class="right"><a href="javascript:;" onclick="returnLink('$link[content_news_last]');">$link[content_news_last]</a></td> 
+ </tr>
+ <tr>
+  <td class="left">Newsarchiv</td>
+  <td class="right"><a href="javascript:;" onclick="returnLink('$link[content_news_archive]');">$link[content_news_archive]</a></td> 
+ </tr>
+ <tr>
+  <td class="left">News einsenden</td>
+  <td class="right"><a href="javascript:;" onclick="returnLink('$link[content_news_submit]');">$link[content_news_submit]</a></td> 
+ </tr> 
+ <tr>
+  <td class="left">Linkarchiv</td>
+  <td class="right"><a href="javascript:;" onclick="returnLink('$link[content_links]');">$link[content_links]</a></td> 
+ </tr> 
+ <tr>
+  <td class="left">Link einsenden</td>
+  <td class="right"><a href="javascript:;" onclick="returnLink('$link[content_links_sbumit]');">$link[content_links_sbumit]</a></td> 
+ </tr> 
+ <tr>
+  <td class="left">Download&uuml;bersicht</td>
+  <td class="right"><a href="javascript:;" onclick="returnLink('$link[content_downloads]');">$link[content_downloads]</a></td> 
+ </tr> 
+ <tr>
+  <td class="heads" colspan="2" align="center"><b>Eigene Inhaltsseiten</b></td>
+ </tr>
+ 	$morelinkswindow_mycontent
+ <tr>
+  <td class="heads" colspan="2" align="center"><b>G&auml;stebuch</b></td>
+ </tr>
+ <tr>
+  <td class="left">Eintr&auml;ge ansehen</td>
+  <td class="right"><a href="javascript:;" onclick="returnLink('$link[gbook_view]');">$link[gbook_view]</a></td> 
+ </tr>
+ <tr>
+  <td class="left">Eintrag verfassen</td>
+  <td class="right"><a href="javascript:;" onclick="returnLink('$link[gbook_sign]');">$link[gbook_sign]</a></td> 
+ </tr>
+ <tr>
+  <td class="heads" colspan="2" align="center"><b>Abestimmungen</b></td>
+ </tr>
+ <tr>
+  <td class="left">Archiv</td>
+  <td class="right"><a href="javascript:;" onclick="returnLink('$link[vote_archive]');">$link[vote_archive]</a></td> 
+ </tr>
+ <tr>
+  <td class="heads" colspan="2" align="center"><b>FAQ</b></td>
+ </tr>
+ <tr>
+  <td class="left">&Uuml;bersicht</td>
+  <td class="right"><a href="javascript:;" onclick="returnLink('$link[faq]');">$link[faq]</a></td> 
+ </tr>
+	$morelinkswindow_misc
+ <tr>
+  <td class="heads" colspan="2" align="center"><font class="headssmall">[ <a class="headssmall" href="javascript:self.close()">Fenster schlie&szlig;en</a> ]</font></td>
+ </tr>
+</table>

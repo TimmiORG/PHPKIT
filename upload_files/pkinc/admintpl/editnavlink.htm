@@ -1,0 +1,55 @@
+<script language="Javascript" src="fx/main.js"></script>
+<script language="JavaScript">
+<!--
+function LinkCat() {if(document.linkcats.selectcat.options[document.linkcats.selectcat.selectedIndex].value != -1) document.linkcats.submit();}
+function OrderCat() {if(document.linkorder.ordercat.options[document.linkorder.ordercat.selectedIndex].value != -1) document.linkorder.submit();}
+function LinkLink() {if(document.linklinks.linklink.options[document.linklinks.linklink.selectedIndex].value != -1) document.linklinks.submit();}
+function setcode(code) {document.newlink.link_link.value = code;}
+-->
+</script>
+
+<table class="standard" cellspacing="1" cellpadding="4" width="100%">
+ <tr>
+  <td class="heads" colspan="2">Links verwalten</td>
+ </tr>
+	<form name="linkcats" method="post" action="include.php?path=navigationlink">
+ <tr>
+  <td class="left" width="50%" valign="top">Neuen Link erstellen<br />
+	<font class="small">W&auml;hlen Sie die Kategorie, in der Sie einen neuen Link erstellen wollen.<br />
+	Wird keine Kategorie zur Auswahl angezeigt, muss zu n&auml;chst eine neue Kategorie erstellt werden.</font></td>
+  <td class="right" width="50%">
+	<select name="selectcat" class="w90" onchange="LinkCat()" size="1">	
+		<option value="-1">Kategorie ausw&auml;hlen</option>
+		$link_cats
+	</select>
+	<input class="small" type="submit" value="Ausw&auml;hlen" />
+  </td>
+ </tr>
+	</form>
+	<form name="linklinks" method="post" action="include.php?path=navigationlink">
+ <tr>
+  <td class="left" width="50%" valign="top">Link editieren<br />
+	<font class="small">W&auml;hlen Sie einen Link, der editiert werden soll.</font></td>
+  <td class=right width="50%">
+	<select name="linklink" class="w90" onchange="LinkLink()" size="10">
+		$link_links
+		</select>
+	<input class="small" type="submit" value="Ausw&auml;hlen" />
+  </td>
+ </tr>
+	</form>
+	<form name="linkorder" method="post" action="include.php?path=navigationlink">
+ <tr>
+  <td class="left" width="50%" valign="top">Links sortieren<br />
+	<font class="small">W&auml;hlen Sie die Kategorie, in der Sie die Links sortieren wollen.</font></td>
+  <td class="right" width="50%">
+	<select name="ordercat" class="w90" onchange="OrderCat()" size="1">	
+		<option value="-1">Kategorie ausw&auml;hlen</option>
+		$link_cats
+	</select>
+	<input class="small" type="submit" value="Ausw&auml;hlen" />
+  </td>
+ </tr>
+	</form>
+$link_edit
+</table>

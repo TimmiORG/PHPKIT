@@ -1,0 +1,34 @@
+<script>
+<!--
+function pkAdminframehiddenUpdater() 
+	{
+	var win;
+	var obj;
+	
+	try {
+		if($reload_header)
+			{
+			window.top.frames[1].location.href='$link_header';
+			}
+	
+		win=window.top.frames[1].document;
+	
+		obj=win.getElementById('time');
+		obj.innerHTML='$ctime';
+	
+		obj=win.getElementById('pmcount');
+		obj.innerHTML='$pmcount';
+
+		obj=win.getElementById('userinfo');
+		obj.innerHTML='$userinfo';
+		}
+	catch(e)
+		{
+		setTimeout("pkAdminframehiddenUpdater();",1000);
+		}	
+	}
+
+setTimeout("pkAdminframehiddenUpdater();",10);
+setTimeout("location.reload();",$reloadtime);
+-->
+</script>

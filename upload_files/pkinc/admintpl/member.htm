@@ -1,0 +1,56 @@
+<table class="standard" cellspacing="1" cellpadding="4" width="100%">
+  <tr>
+  <td class="heads" colspan="7">
+	<table border="0" cellspacing="0" cellpadding="0" width="100%">
+	 <tr>
+	  <td width="50%"><font class="heads">Benutzer</font></td>
+	  <td width="50%" align="right" nowrap><font class="headssmall">$counter[0] von $count[0] Benutzern ($countpercent%)</font></td>
+	 </tr>
+	</table>
+   </td>
+  </tr>
+  <tr>
+   <td class="standard" colspan="7">
+	<table border="0" cellspacing="0" cellpadding="0" width="100%">
+		<form method="post" action="include.php?path=userslist">
+	 <tr>
+	  <td align="right">
+      	<input type="text" name="svalue" value="$svalue" size="25" />
+		<select name="soption" size="1">
+            <option value="all">Alle anzeigen</option>
+            <option value="id" $select3>Benutzer-ID</option>
+            <option value="usernick" $select0>Name &amp; E-Mail-Adresse</option>
+            <option value="lastvisit" $select1>Online in den letzten x Tagen</option>
+            <option value="ilastvisit" $select2>Nicht online in den letzten x Tagen</option>
+            <option value="ban" $selectban>Gesperrte Benutzerkonten</option>
+            <option value="usergroup" $selectusergroup>In Benutzergruppe</option>
+            <option value="$soption">______________</option>
+            <option value="$soption">Nur Benutzerstatus:</option>
+            <option value="admin" $selectadmin>- $lang[admin]</option>
+            <option value="mod" $selectmod>- $lang[mod]</option>
+            <option value="member" $selectmember>- $lang[member]</option>
+            <option value="user" $selectuser>- $lang[user]</option>
+		</select>
+		<input type="submit" value="$lang[go]" /></td>
+	 </tr>
+	 <tr>
+	  <td>$total_side</td>
+	 </tr>
+		</form>
+	</table>
+   </td>
+  </tr>
+  <tr>
+   <th class="highlight" width="1%"><a href="include.php?path=userslist"><img border="0" height="16" width="20" alt="alle anzeigen" src="../images/reset.gif" /></a></th>
+   <th class="highlight" width="30%"><font class="small">Nickname</font></th>
+   <th class="highlight" width="10%"><font class="small">Benutzerstatus</font></th>
+   <th class="highlight" width="15%"><font class="small">Benutzergruppe</font></th>
+   <th class="highlight" width="30%"><font class="small">E-Mail-Adresse</font></th>
+   <th class="highlight" width="13%" nowrap><font class="small">Letzter Besuch</font></th>
+   <th class="highlight" width="1%" nowrap><font class="small">ID</font></th>
+  </tr>
+	$member_row
+ <tr>
+  <td class="standard" colspan="7" align="right">$total_side</td>
+ </tr>
+</table>

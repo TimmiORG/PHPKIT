@@ -1,0 +1,35 @@
+<br />
+<form name="login" method="post" action="include.php">
+<input type="hidden" name="remove_path" value="$current_path" />
+<input type="hidden" name="login" value="1" />
+<table class="userbody" cellspacing="1" cellpadding="4" width="350" align="center">
+ <tr>
+  <td class="heads" colspan="3"><b>Login</b></td>
+ </tr>
+ <tr>
+  <td class="left" width="10%">Benutzername</td>
+  <td class="right" width="80%">
+    	<input style="width:100%" type="text" name="user" size="30" maxlength="50" tabindex="101" /></td>
+  <td class=right width="10%"><font class=small><a href="include.php?path=registration">Registrieren</a></font></td>
+ </tr>
+ <tr>
+  <td class="left">Passwort</td>
+  <td class="right">
+	<input style="width:100%" type="password" name="userpw" size="30" tabindex="102" /></td>
+  <td class="right" nowrap="nowrap"><font class="small"><a href="include.php?path=login&amp;mode=lostpassword">Passwort vergessen?</a></font></td>
+ </tr>
+ <tr>
+  <td class="heads" colspan="3">
+	<table border="0" cellspacing="0" cellpadding="0" width="100%">
+	 <tr>
+	  <td width="10%"><font class="headssmall">Speichern</font></td>
+	  <td width="23%">&nbsp;&nbsp;<input class="checkbox" type="checkbox" name="login_setcookie" value="1" tabindex="103" /></td>
+	  <td width="34%" align="center">
+		<input type="submit" name="action" value="Login" tabindex="104" /></td>
+	  <td width="33%">&nbsp;</td>
+	 </tr>
+	</table>
+  </td>
+ </tr>
+</table>
+</form>

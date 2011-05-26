@@ -1,0 +1,110 @@
+<script language="Javascript" src="fx/main.js"></script>
+
+<table class="standard" border="0" cellpadding="4" cellspacing="1" width="100%">
+	<form name="myform" method="post" action="include.php?path=contentcompose">
+	<input type="hidden" name="step" value="$step" />
+	<input type="hidden" name="contentid" value="$contentid" />
+	<input type="hidden" name="catid" value="$catid" />
+	<input type="hidden" name="type" value="$type" />
+ <tr>
+  <td class="heads" colspan="2">Inhalt verfassen - Schritt 3/4</td>
+ </tr>
+ <tr>
+  <td class="left" width="50%">Themenbereich w&auml;hlen</td>
+  <td class="right" width="50%">
+	<select name="cont_themeid" size="1" class="w90">
+	<option value="new">keinem Themenbereich zuordnen</option>
+	$theme_option
+	</select></td>
+ </tr>
+ <tr>
+  <td class="left">Neuen Themenbereich erstellen</td>
+  <td class="right">
+  	<input type="text" name="newtheme_title" size="25" class="w90" /></td>
+ </tr>
+ <tr>
+  <td class="left">Titel</td>
+  <td class="right">
+	<input type="text" name="cont_title" value="$cont_title" size="25" maxlength="150" class="w90" /></td>
+ </tr>
+ <tr>
+  <td class="left">Autor</td>
+  <td class="right">
+	<input type="text" name="cont_autor" value="$cont_autor" size="25" maxlength="150" class="w90" /></td>
+ </tr> 
+ <tr>
+  <td class="left">G&uuml;ltigkeitszeitraum<br />
+  	<font class="small">Zeitraum, in dem der Content verf&uuml;gbar bleibt.<br />
+	Angabe in der Form TT.MM.JJJJ &nbsp; SS:MM.<br />$error_validity_period</td>
+  <td class="right">
+	<table border="0" cellpacing="0" cellpadding="0" width="100%">
+	 <tr>
+	  <td nowrap>
+		<input type="text" name="cont_time_d" value="$content_time_d" size="2" maxlength="2">
+		<input type="text" name="cont_time_m" value="$content_time_m" size="2" maxlength="2">
+		<input type="text" name="cont_time_y" value="$content_time_y" size="4" maxlength="4"> &nbsp;
+		<input type="text" name="cont_time_h" value="$content_time_h" size="2" maxlength="2">
+		<input type="text" name="cont_time_mm" value="$content_time_mm" size="2" maxlength="2"></td>
+	 </tr>
+	 <tr>
+	  <td nowrap>
+		<input type="text" name="cont_expire_d" value="$content_expire_d" size="2" maxlength="2">
+		<input type="text" name="cont_expire_m" value="$content_expire_m" size="2" maxlength="2">
+		<input type="text" name="cont_expire_y" value="$content_expire_y" size="4" maxlength="4"> &nbsp;
+		<input type="text" name="cont_expire_h" value="$content_expire_h" size="2" maxlength="2">
+		<input type="text" name="cont_expire_mm" value="$content_expire_mm" size="2" maxlength="2"></td>
+ 	 </tr>
+	</table>
+  </td>
+ </tr>
+ <tr>
+  <td class="right" colspan="2" align="center">
+	<table border="0" cellspacing="0" cellpadding="0" width="100%">
+	 <tr>
+	  <td width="80%" valign="top"><textarea id="pkBBArea" name="content" cols="60" rows="20" onfocus="pkBBSelection(this);" onclick="pkBBSelection(this);" onchange="pkBBSelection(this);" ondblclick="pkBBSelection(this);">$content_text</textarea></td>
+	  <td width="20%" valign="top">$compose_bbcode $format_smilies</td>
+	 </tr>
+	 <tr>
+	  <td colspan="3"><a class="small" href="javascript:;" onClick="readfilewindow(400,400,'content');">Datei einlesen</a></td>
+	 </tr>
+	</table>
+  </td>
+ </tr>
+	$content_body
+ <tr>
+  <td class="left" valign="top">Optionen<br />
+  	<font class="small">* Z&auml;hler f&uuml;r Views, Downloadanzahl und Bewertungen zur&uuml;cksetzen<br />
+	** nur Artikel, Links und Downloads<br />
+	*** nur Artikel, News, Links und Downloads	
+	
+	</font></td>
+  <td class="right">
+	<table border="0" cellspacing="0" cellpadding="0" width="100%">
+	 <tr>
+	  <td valign="top" nowrap>
+		<input type="checkbox" name="cont_html" value="1" $option1> <font class="small">HTML verwenden</font><br />
+		<input type="checkbox" name="cont_ubb" value="1" $option2> <font class="small">BB-Code</font><br />
+		<input type="checkbox" name="cont_smilies" value="1" $option3> <font class="small">Smilies verwenden</font></td>
+	  <td>&nbsp;&nbsp;</td>
+	  <td valign="top" nowrap>
+		<input type="checkbox" name="cont_rating" value="1" $option4> <font class="small">Bewertungen m&ouml;glich**</font><br />
+		<input type="checkbox" name="cont_comment" value="1" $option5> <font class="small">Kommentare m&ouml;glich***</font><br />
+		<input type="checkbox" name="cont_status" value="1" $option6> <font class="small">Freigabe</font></td>
+	  <td>&nbsp;&nbsp;</td>
+	  <td rowspan="3" valign="top" width="100%">
+  	  	<input type="reset" name="$lang[reset]" class="w100" />
+  	  	<input type="button" value="$lang[preview]" class="w100" onclick="previewWindow(800,600)" />
+		<input type="submit" name="action" value="$lang[save]" class="w100" />
+		<input type="hidden" name="save" value="$lang[save]" /></td>		
+	  <td>&nbsp;&nbsp;</td>
+	 </tr>
+	 <tr>
+ 	 $ext_option
+	  <td>&nbsp;</td>
+	 </tr>	
+	</table>
+  </td>
+ </tr> 
+  	$compose_navigation
+	</form>
+ </table>

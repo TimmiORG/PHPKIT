@@ -1,0 +1,26 @@
+<form name="pkform" method="post" action="$form_action">
+<table class="table" border="0" cellspacing="1" cellpadding="4" width="100%">
+ <tr>
+  <td class="heads">$L_select_users</td>
+ </tr>
+ <tr>
+   <td class="standard center"><select name="user" size="14" class="w100" multiple="multiple" 
+   	ondblclick="if(pkSelectionCheck(document.pkform.user)) pkSelectionToOpener(document.pkform.user);">
+	$optionlist
+	</select><br clear="all" />
+   	<div style="padding-top:2px;"><input class="submit small" type="button" 
+	onclick="if(pkSelectionCheck(document.pkform.user)) pkSelectionToOpener(document.pkform.user);" value="$L_add" /></div></td>
+ </tr>
+</table>
+<br clear="all" />
+<table class="table" border="0" cellspacing="1" cellpadding="4" width="100%">
+ <tr>
+  <td class="heads">$L_search_users</td>
+ </tr>
+ <tr>
+  <td class="standard center"><input type="text" name="searchstr" value="$searchstr" class="input w100" /><br clear="all" />
+  	<div style="padding-top:2px;"><input class="submit small" type="submit" name="action" value="$L_search" accesskey="s" />
+		<input type="hidden" name="search" value="$L_search" /></div></td>
+ </tr>
+</table>
+</form>

@@ -1,0 +1,27 @@
+<form name="finduser" method="get" action="include.php">
+<input type="hidden" name="path" value="popup" />
+<input type="hidden" name="mode" value="finduser" />
+<table border="0" class="contentbody" cellspacing="1" cellpadding="4" width="100%">
+ <tr>
+  <td class="heads" colspan="2">
+  	<table border="0" cellspacing="0" cellpadding="0" width="100%">
+	 <tr>
+	  <td nowrap="nowrap"><font class="heads">Benutzer suchen</font></td>
+	  <td nowrap="nowrap" align="right"><font class="headssmall">[ <a class="headssmall" href="javascript:self.close();">Fenter schlie&szlig;en</a> ]</font></td>
+	 </tr>
+	</table>		
+  </td>
+ </tr>
+ <tr>
+   <td class="left" width="50%" nowrap="nowrap">Benutzername</td>
+   <td class="right" width="50%">
+   	<input type="text" size="15" name="search_user" value="$search_user" /><br />
+	<input type="submit" name="action" value="$LANG[search]" /></td>
+ </tr>
+ 	$search_result
+	$buddy_list
+ <tr>	
+  <td class="heads" colspan="2" align="center"><span class="headssmall">&nbsp;</span></td>
+ </tr>
+</table>
+</form>

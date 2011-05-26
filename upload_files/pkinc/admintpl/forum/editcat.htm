@@ -1,0 +1,39 @@
+<script language="JavaScript">
+function ForumCat() {if(document.cat.editcat.options[document.cat.editcat.selectedIndex].value != -1) document.cat.submit();}
+</script>
+
+<table class="standard" cellspacing="1" cellpadding="4" width="100%">
+ <tr>
+  <td class="heads" colspan="2">Foren bearbeiten</td>
+ </tr>
+	<form name="cat" method="post" action="$form_action">
+ <tr>
+  <td class="left" width="50%" valign="top">Aktion w&auml;hlen</td>
+  <td class="right" width="50%">
+	<select name="editcat" size="8" class="w90" onchange="ForumCat()">
+	<option value="new" $selectnew>Neue Kategorie erstellen</option>
+	<option value="0" $select0>Hauptkategorien sortieren</option>
+	<optgroup label="oder bestehendes Forum editieren">
+	$forum_cat
+	</optgroup>
+	</select>
+	<table border="0" cellspacing="0" cellpadding="0">
+	 <tr>
+	  <td><input class="radio" type="radio" name="todo" value="0" $todo0 /></td>
+	  <td><font class="small">editieren</font></td>
+	  <td>&nbsp;&nbsp;</td>
+	  <td><input class="radio" type="radio" name="todo" value="1" $todo1 /></td>
+	  <td nowrap><font class="small">Unterforen sortieren</font></td>
+  	  <td>&nbsp;&nbsp;</td>
+  	  <td nowrap><input class="small" type="submit" value="$LANG[select]" />
+	  <input type="submit" name="action" value="$LANG[cancel]" class="small" />
+	  <input type="hidden" name="cancel" value="$LANG[cancel]" /></td>
+	 </tr>
+	</table>
+ </tr>
+	</form>
+	$edit_cat
+</table>
+
+
+

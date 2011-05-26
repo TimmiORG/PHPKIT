@@ -1,0 +1,24 @@
+<form method="post" action="include.php?path=pollcompose&mode=delete&voteid=$voteid">
+<table class="standard" cellspacing="1" cellpadding="4" width="100%">
+ <tr>
+  <td class="heads" colspan="2">Abstimmung l&ouml;schen</td>
+ </tr>
+ <tr>
+  <td class="highlight" colspan="2">$voteinfo[votetheme_title]</td>
+ </tr>
+ <tr>
+  <td class="left" width="50%">Best&auml;tigen</td>
+  <td class="right" width="50%">
+	<select name="confirm" size="2" class="w90">
+	<option value="yes">endg&uuml;ltig l&ouml;schen</option>
+	<option value="">nicht l&ouml;schen</option>
+	</select></td>
+ </tr>
+ <tr>
+  <td colspan="2" class="heads" align="center">
+	<input type="submit" name="action" value="$lang[delete]" class="highlight" />
+	<input type="hidden" name="delete" value="$lang[delete]" />
+	<input type="submit" name="action" value="$lang[cancel]" /></td>
+ </tr>
+</table>
+</form>

@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="content-type" content="text/html; charset=$LANG[__CHARSET__]" />
+<meta http-equiv="content-language" content="$LANG[__LANGCODE__]" />
+<title>$site_title</title>
+$site_metatags
+$site_design
+$site_header_script
+$site_refresh
+</head>
+
+<body>
+<div id="pkbody">
+	<a id="head"></a>
+	<div id="pkouterpage">
+		<div id="pkpageheader"></div>
+		<div id="pkpagedecoration">
+			<div id="pkpage">
+				<h1 class="site-name"><a href="$site_link_home" title="$site_name - $site_slogan">$site_name</a></h1>
+				<h2 class="site-slogan"><a href="$site_link_home" title="$site_name - $site_slogan">$site_slogan</a></h2>
+			
+				<div id="pkbranding">
+					<div id="pkbrandingimage">
+						<a href="$site_link_home" title="$site_name - $site_slogan"><img src="$link_brandinglogo_overlay" alt="$logo_imgalt" /></a>
+					</div>
+				</div>
+			
+				<div id="pkadview"$displayadview>
+					<div id="pkadviewbox">$adview</div>
+				</div>
+	
+				<a id="navigation"></a>
+				<div id="pkcontent_top"$displaycontent_top>$navigation_top</div>
+				<div id="pkcontent_sub_top"$displaycontent_sub_top>$navigation_sub_top</div>
+				<div id="pksitedate">$site_date</div>
+				
+				<div id="pkcontent">
+					<a id="content"></a>
+					<div id="pkbreadcrumbnavigation"$displaycontent_breadcrumb>$navigation_breadcrumb</div>
+					<table class="pkcontent" cellspacing="0" cellpadding="0">
+					 <tr>
+					  <td class="pkcontent_left"$displaycontent_left>
+						<div id="pkcontent_left">$navigation_left
+							<div class="pkcontentclear">&#160;</div>
+						</div></td>
+					  <td class="pkcontent_main">
+						<div id="pkcontent_main">$site_body
+							<div class="pkcontentclear">&#160;</div>
+						</div></td>
+					  <td class="pkcontent_right"$displaycontent_right>
+						<div id="pkcontent_right">$navigation_right
+							<div class="pkcontentclear">&#160;</div>
+						</div></td>
+					 </tr>
+					</table>
+				</div>
+		
+				<div id="pkcontent_bottom"$displaycontent_bottom>$navigation_bottom</div>
+				<div id="pkcontent_sub_bottom"$displaycontent_sub_bottom>$navigation_sub_bottom</div>
+				
+				<div id="pksitecopyright"$displaycontent_site_copyright>$site_copyright</div>
+			</div>
+		</div>
+		<div id="pkpagefooter"></div>
+		<div id="pksiteparser"><span>$lang_parsertime_stopped</span></div>
+		<div id="pksiteadminlogin">$site_adminlogin</div>
+	</div>
+	<a id="foot"></a>
+</div>
+$site_closure
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+<table class="standard" border="0" cellspacing="1" cellpadding="4" width="100%">
+	<form method="post" action="include.php?path=comment">
+	<input type="hidden" name="editid" value="$editid" />
+	<input type="hidden" name="entries" value="$entries" />
+ <tr>
+  <td class="heads" colspan="2">Kommentar bearbeiten</td>
+ </tr>
+ <tr>
+  <td class="left" width="20%">Autor</td>
+  <td class="right" width="80%"><input type="text" name="comment_autor" value="$comment_autor" size="25" /></td>
+ </tr> 
+  <td class="left" valign="top">Kommentar</td>
+  <td class="right"><textarea name="comment_text" cols="35" rows="10" class="w90">$comment_text</textarea></td>
+ <tr>
+  <td class="heads" colspan="2" align="center">
+  	<input type="submit" name="action" value="$lang[save]" />
+	<input type="hidden" name="save" value="$lang[save]" />
+	<input type="submit" name="action" value="$lang[cancel]" />
+	<input type="hidden" name="cancel" value="$lang[cancel]" /></td>
+ </tr>
+	</form>
+</table>

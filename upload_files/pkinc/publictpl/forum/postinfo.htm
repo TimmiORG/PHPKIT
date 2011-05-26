@@ -1,0 +1,37 @@
+<table class="forumbody" cellspacing="1" cellpadding="4" width="100%">
+ <tr>
+  <td class="heads" colspan="4">Beitrags-Informationen</td>
+ </tr>
+ <tr>
+  <td class="left">Thema</td>
+  <td class="right" colspan="3"><a href="include.php?path=forumsthread&amp;threadid=$threadid&amp;postid=$postinfo[forumpost_id]">$forumthreadinfo[forumthread_title]</a></td>
+ </tr>
+ <tr>
+  <td class="left">Ersteller</td>
+  <td class="right" colspan="3">$post_autor</td>
+ </tr>
+ <tr>
+  <td class="left" nowrap="nowrap">Datum</td>
+  <td class="right" colspan="3">$post_time</td> 
+ </tr>
+ <tr>
+  <td class="left" nowrap="nowrap">IP-Adresse</td>
+  <td class="right" colspan="3">$post_ip</td>
+ </tr>
+ <tr>
+  <td class="left" colspan="4" align="center"><br /><a href="include.php?path=forumspostinfo&amp;mode=report&amp;postid=$postinfo[forumpost_id]">Diesen Beitrag einem anderen Administrator oder Moderator melden</a><br /><br /></td>
+ </tr>
+ <tr>
+  <td class="heads" colspan="4">Weitere Beitr&auml;ge*</td>
+ </tr>
+ <tr>
+  <td class="highlight" width="25%"><b>Datum</b></td>
+  <td class="highlight" width="25%"><b>Titel</b></td>
+  <td class="highlight" width="25%"><b>Autor</b></td>
+  <td class="highlight" width="25%"><b>IP-Adresse</b></td>   
+ </tr>
+		$postinfo_row
+ <tr>
+  <td class="heads" colspan="4" align="right"><font class="headssmall">* Beitr&auml;ge die in Benutzer-ID bzw. IP-Adresse identisch sind</font></td>
+ </tr>
+</table>

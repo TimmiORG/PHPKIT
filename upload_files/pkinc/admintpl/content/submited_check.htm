@@ -1,0 +1,31 @@
+<table class="standard" cellspacing="1" cellpadding="4" width="100%">
+ <tr>
+  <td class="heads" colspan="2">$content_type Einsendung</td>
+ </tr>
+ <tr>
+  <td class="left" width="20%">Autor</td>
+  <td class="right" width="80%">$info_autor</td>
+ </tr>
+ <tr>
+  <td class="left">Titel</td>
+  <td class="right">$contentinfo[content_submited_title]</td>
+ </tr>
+ <tr>
+  <td class="left">Beitrag</td>
+  <td class="right">$submited_text</td>
+ </tr>
+ <tr>
+  <td class="left">Quelle bzw .URL</td>
+  <td class="right"><a target="_blank" href="$contentinfo[content_submited_altdat]">$contentinfo[content_submited_altdat]</a></td>
+ </tr>
+	<form name="content" method="post" action="include.php?path=contentsubmited">
+	<input type="hidden" name="contentid" value="$contentid" />
+ <tr>
+  <td class="heads" colspan="2" align="center">
+	<input type="submit" name="action" value="$lang[save]" />
+	<input type="hidden" name="save" value="$lang[save]" />	
+	<input type="submit" name="action" value="$lang[delete]" class="highlight" />
+	<input type="hidden" name="delete" value="$lang[delete]" /> </td>
+ </tr>
+	</form>
+</table>

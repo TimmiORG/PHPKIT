@@ -1,0 +1,28 @@
+ <tr>
+  <td class="heads" colspan="2">Unterforen sortieren</td>
+ </tr>
+	<form method="post" action="include.php?path=forumcategory">
+	<input type="hidden" name="todo" value="$todo" />
+	<input type="hidden" name="editcat" value="$editcat" />
+ <tr>
+  <td class="left" valign="top">Forum w&auml;hlen</td>
+  <td class="right">
+	<select name="subcat" size="$count" class="w90">
+	$move_fcat
+	</select>
+	<table border="0" cellspacing="1" cellpadding="0" width="90%">
+	 <tr>
+	  <td align="center" nowrap="nowrap">
+		<input type="submit" name="action" value="$lang[up]" class="small" />
+		<input type="hidden" name="up" value="$lang[up]" />
+		<input type="submit" name="action" value="$lang[edit]" class="small" />
+		<input type="hidden" name="edit" value="$lang[edit]" />
+		<input type="submit" name="action" value="$lang[down]" class="small" />
+		<input type="hidden" name="down" value="$lang[down]" /><br />
+		<input type="submit" name="action" value="$lang[cancel]" class="small" />
+		<input type="hidden" name="cancel" value="$lang[cancel]" /></td>
+	 </tr>
+	</table>
+  </td>
+ </tr>
+	</form>

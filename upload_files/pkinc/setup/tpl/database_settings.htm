@@ -1,0 +1,77 @@
+<script language="JavaScript">
+function pkHideShow(i)
+	{
+	sobj2=document.getElementById('simplelink');
+	aobj=document.getElementById('advanced');
+	aobj2=document.getElementById('advancedlink');
+	obj=document.getElementById('avar');
+	obj.value=(i ? '1' : '0');
+	
+	if(i)
+		{
+		sobj2.className='hide';
+		aobj.className='show';
+		aobj2.className='small none show';		
+		}
+	else
+		{
+		aobj.className='hide';
+		aobj2.className='hide';
+		sobj2.className='small none show';				
+		}
+	
+	}
+</script>
+
+<p>$lang_status</p>
+<div style="text-align:right;padding:5px;">&#187;
+<a id="simplelink" class="small none" href="$link_advanced_mode">$lang_advanced_mode</a>
+<a id="advancedlink" class="small none hide" href="$link_simple_mode">$lang_simple_mode</a></div>
+<table border="0" cellspacing="0" cellpadding="4" width="100%" class="form">
+ <tr class="odd">
+  <td width="30%" nowrap="nowrap"><strong>$lang_setup_database_host</strong></td>
+  <td width="20%"><input type="text" name="sqlhost" size="15" value="$sqlhost" class="input w100" onfocus="javascript:this.select();" /></td>
+  <td width="50%" class="small">$lang_setup_database_host_description</td>
+ </tr>		
+ <tr>
+  <td nowrap="nowrap"><strong>$lang_setup_database_user</strong></td>
+  <td><input type="text" name="sqluser" size="15" value="$sqluser" class="input w100" onfocus="javascript:this.select();" /></td>
+  <td class="small">$lang_setup_database_user_description</td>
+ </tr>
+ <tr class="odd">
+  <td nowrap="nowrap"><strong>$lang_setup_database_password</strong></td>
+  <td><input type="password" name="sqlpass" size="15" value="$sqlpass" class="input w100" onfocus="javascript:this.select();" /></td>
+  <td class="small">$lang_setup_database_password_description</td>
+ </tr>
+ <tr>
+  <td nowrap="nowrap"><strong>$lang_setup_database_name</strong></td>
+  <td><input type="text" name="database" size="15" value="$database" class="input w100" onfocus="javascript:this.select();" /></td>
+  <td class="small">$lang_setup_database_name_description</td>
+ </tr>
+ <tr class="odd">
+  <td nowrap="nowrap"><strong>$lang_setup_database_tableprefix</strong></td>
+  <td><input type="text" name="sqlprefix" size="15" value="$sqlprefix" class="input w100" maxlength="30" onfocus="javascript:this.select();" /></td>
+  <td class="small">$lang_setup_database_tableprefix_description</td>
+ </tr>
+ <tr>
+  <td nowrap="nowrap"><strong>$lang_setup_database_createdb</strong></td>
+  <td><input type="checkbox" id="setdbcreate" name="dbcreate" value="1"$checkeddbcreate /></td>
+  <td class="small"><a class="none" href="javascript:pkSetOption('setdbcreate');">$lang_setup_database_createdb_description</a>
+  </td>
+ </tr>
+</table>
+<div id="advanced" class="hide">
+<h4>&#187; $lang_tablenames</h4>
+<p>$lang_setup_databasesettings_advanced_description</p>
+<table border="0" cellspacing="0" cellpadding="4" width="100%" class="form">
+ <tr>
+  <td width="25%" nowrap="nowrap"><strong>$lang_alias</strong></td>
+  <td width="25%" nowrap="nowrap"><strong>$lang_prefix</strong></td>
+  <td width="50%"><strong>$lang_suffix</strong></td>
+ </tr>
+	$database_settings_advanced_own
+
+	$database_settings_advanced
+</table>
+</div>
+	<input id="avar" type="hidden" name="advanced" value="$advanced" />

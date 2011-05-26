@@ -1,0 +1,63 @@
+ <tr>
+  <td colspan="2" class="$row">
+  	Beitrag im Thema: $thread_icon <a href="include.php?path=forumsthread&amp;threadid=$forumthread[forumthread_id]&amp;postid=$forumpost[forumpost_id]"><strong>$forumthread_title</strong></a>
+  	</td>
+ </tr> 
+ <tr>
+  <td class="$row">
+	<table border="0" cellspacing="0" cellpadding="0" width="100%"> 
+	 <tr>	
+	  <td width="10%">$info_os</td>
+	  <th width="80%">$post_autor</th>
+	  <td width="10%"><a name="post$forumpost[forumpost_id]">&nbsp;</a></td>
+	 </tr>
+	</table>
+  </td>
+  <td class="$row">
+	<table border="0" cellspacing="0" cellpadding="0" width="100%">
+	 <tr>
+		$post_icon
+	  <td nowrap="nowrap" width="88%"><strong>$forumpost[forumpost_title]</strong></td>
+	  <td width="10%" align="right" nowrap="nowrap">$post_edit $quote_answer</td>
+	 </tr>
+	</table>
+  </td>
+ </tr>
+ <tr>
+  <td class="$row" valign="top">
+	<table border="0" cellspacing="1" cellpadding="0" width="100%">
+	 <tr>
+	  <td class="small">
+		$post_autor_status
+		$post_count
+	  </td>
+	 </tr>
+	 <tr>
+	  <td colspan="2">$avatar_show</td>
+	 </tr>
+	</table>
+  </td>
+  <td class="$row" valign="top">
+	$post_text<br />
+	$info_sig
+	$edit_message
+  </td>
+ </tr>
+ <tr>
+  <td class="$row" style="border-bottom: 1px #000000 solid" nowrap="nowrap"><font class="small">eingetragen am $post_time</font></td>
+  <td class="$row" style="border-bottom: 1px #000000 solid">
+	<table border="0" cellspacing="0" cellpadding="0" width="100%">
+	 <tr>
+	  <td>
+		$info_user
+		$info_email
+		$info_im
+		$info_hpage
+		$info_buddie
+		$info_icq
+	  </td>
+	  <td align="right"><a href="#head"><img border="0" alt="Zum Anfang der Seite" src="$config[forum_button]/pageup.gif" /></a></td>
+	 </tr>
+	</table>
+  </td>
+ </tr>

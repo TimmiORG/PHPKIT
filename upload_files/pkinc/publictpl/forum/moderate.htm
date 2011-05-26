@@ -1,0 +1,54 @@
+<form method="post" action="include.php?path=forumsmoderate&amp;threadid=$forumthread[forumthread_id]">
+<table class="forumbody" cellspacing="1" cellpadding="4" width="100%">
+ <tr>
+  <td class="heads" colspan="2">Thema moderieren</td>
+ </tr>
+ <tr>
+  <td class="left" width="50%">Titel<br />
+	<font class="small">Titel des Themas editieren.</font></td>
+  <td class="right">
+	<input type="text" name="alter_title" value="$forumthread[forumthread_title]" size="25" class="w90" /></td>
+ </tr>
+ <tr>
+  <td class="left">Icon</td>
+  <td class="right">
+	<table border="0" cellspacing="0" cellpadding="2">
+		$theme_icon
+	</table>
+  </td>
+ </tr>
+ <tr>
+  <td class="left">Themenstatus<br />
+	<font class="small">&Auml;ndert den Status des Themas.</font></td>
+  <td class="right">
+	<select name="alter_status" size="4" class="w90">
+	<option value="1" $status1>ge&ouml;ffnet</option>
+	<option value="0" $status0>geschlossen</option>
+	<option value="2" $status2>fixiert & offen</option>
+	<option value="3" $status3>fixiert & geschlossen</option>
+	</select></td>
+ </tr>
+ <tr>
+  <td class="left">Verschieben<br />
+	<font class="small">Dieses Thema in eine andere Kategorie verschieben.</font></td>
+  <td class="right">
+	<select name="alter_cat" size="1" class="w90">
+	<option value="0" selected="selected">Thema nicht verschieben</option>
+	$option_cat
+	</select></td>
+ </tr>
+ <tr>
+  <td class="left">L&ouml;schen<br />
+	<font class="small">L&ouml;scht das Thema und alle dazugeh&ouml;rigen Beitr&auml;ge vollst&auml;ndig.</font></td>
+  <td class="right">
+	<input class="checkbox" type="checkbox" name="alter_delete" value="1" /></td>
+ </tr>
+ <tr>
+  <td class="heads" align="center" colspan="2">
+	<input type="submit" name="action" value="$lang[save]" />
+	<input type="hidden" name="save" value="$lang[save]" />
+	<input type="submit" name="action" value="$lang[cancel]" />
+	<input type="hidden" name="cancel" value="$lang[cancel]" /></td>
+ </tr>
+</table>
+</form>

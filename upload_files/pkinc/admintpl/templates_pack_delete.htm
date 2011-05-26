@@ -1,0 +1,24 @@
+<table class="standard" border="0" cellspacing="1" cellpadding="4" width="100%">
+	<form name="templateselect" method="post" post="include.php?path=templates">
+	<input type="hidden" name="ispack" value="1" />
+	<input type="hidden" name="templatepack_id" value="$templatepack_id" />
+ <tr>
+  <td class="heads" colspan="2">Vorlagenpaket l&ouml;schen</td>
+ </tr>
+ <tr>
+  <td class="left" width="50%">Vorlagenpaket <b>$templatepack_name</b> und alle dazugeh&ouml;rigen Vorlagen l&ouml;schen?</td>
+  <td class="right" width="50%">
+	<select name="confirm" size="2" class="w90">
+	<option value="no">nicht l&ouml;schen</option>
+	<option value="true">endg&uuml;ltig l&ouml;schen</option>
+ 	</select></td>
+ </tr>
+ <tr>
+  <td class="heads" colspan="2" align="center">
+	<input type="submit" name="action" value="$lang[delete]" class="highlight" />
+	<input type="hidden" name="delete" value="$lang[delete]" />	
+	<input type="submit" name="action" value="$lang[cancel]" />
+	<input type="hidden" name="cancel" value="$lang[cancel]" /></td>
+ </tr>
+	</form>
+</table>

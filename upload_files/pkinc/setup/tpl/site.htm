@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="content-type" content="text/html; charset=$LANG[__CHARSET__]" />
+<meta http-equiv="content-language" content="$LANG[__LANGCODE__]" />
+<title>$lang_setup_pagetitle</title>
+<link rel="stylesheet" href="fx/setup/css/main.css" type="text/css" />
+<link rel="shortcut icon" href="fx/phpkit.ico" type="image/x-icon">
+<!--[if gt IE 5]>
+<style>
+div.body {height:355px; width:750px; overflow:auto;}
+</style>
+<![endif]-->
+
+<script language="javascript" src="fx/form.js"></script>
+<script language="javascript">
+function pkSetupResetButtons()
+	{
+	document.getElementById('pkSetupButton').className='button';
+	document.getElementById('pkSetupButtonDis').className='hide';
+	}
+</script>
+</head>
+
+<body marginheight="0" marginwidth="0" topmargin="0" leftmargin="0" onUnload="pkSetupResetButtons();">
+<table border="0" cellspacing="0" cellpadding="0" width="100%" height="100%">
+ <tr>
+  <td valign="middle" align="center">
+	<form name="pkform" method="$form_method" action="$form_action">
+	$form_hiddenfields
+	<input type="hidden" name="button" value="$button" />
+	<input type="hidden" name="button_form" value="$this->button_form" />
+	<table class="inner" border="0" cellspacing="0" cellpadding="0" width="770" align="center">
+
+	 <tr>
+	  <td class="top" colspan="2">
+		<table border="0" cellpadding="0" cellspacing="0" width="770">
+		<tr>
+		 <td><img border="0" height="40" width="400" src="fx/setup/setup.jpg" /></td>
+		 <td class="version">$version</td>		 
+		</tr>
+		</table>
+	 </tr>
+	 <tr>
+	  <td><img height="375" width="1" src="fx//blank.gif" /></td>
+	  <td class="body"><div class="body"><h4>&#187; $title</h4>$body</div></td>
+	 </tr>
+	 <tr>
+	  <td colspan="2" class="bottom">$button_form
+      	<input id="pkSetupButton" class="button" type="submit" name="action" value="$button" onClick="this.className='hide';document.getElementById('pkSetupButtonDis').className='button';" />
+      	<input id="pkSetupButtonDis" class="hide" type="submit" name="action" value="$button" disabled="disabled" /></td>
+	 </tr>
+	</table>																																																																															$this->pkC
+	</form>
+  </td>
+ </tr>
+</table>
+</body>
+</html>

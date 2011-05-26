@@ -1,0 +1,25 @@
+<form name="login" method="post" action="include.php?path=registration">
+<input type="hidden" name="disclaimer" value="$disclaimer" />
+<table class="standard" cellspacing="1" cellpadding="4" width="100%">
+ <tr>
+  <td class="heads" colspan="3">$lang_registration</td>
+ </tr>
+	$error_message
+ <tr>
+  <td class="left" width="15%" nowrap="nowrap">$lang_username</td>
+  <td class="right" width="35%"><input type="text" name="newuser" value="$newuser" size="10" style="width: 90%" /></td>
+  <td class="right small" width="50%">$lang_registration_username_hlp</td>
+ </tr>
+ <tr>
+  <td class="left" nowrap="nowrap">$lang_email_address</td>
+  <td class="right"><input type="text" name="newemail" value="$newemail" size="10" style="width: 90%" /></td>
+  <td class="right small">$lang_registration_emailaddress_hlp</td>
+ </tr>
+ 	$captcha
+ <tr>
+  <td class="heads" colspan="3" align="center">
+	<input type="submit" name="action" value="$lang[send]" />
+ 	<input type="hidden" name="send" value="$lang[send]" /></td>
+ </tr>
+</table>
+</form>

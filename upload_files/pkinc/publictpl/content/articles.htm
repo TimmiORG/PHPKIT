@@ -1,0 +1,57 @@
+<table class="contentbody" cellspacing="1" cellpadding="4" width="100%">
+ <tr>
+  <td class="heads" width="80%">$content_article_head</td>
+  <td class="heads" width="20%" align="center">Artikel-Infos</td>
+ </tr>
+ <tr>
+  <td class="standard" valign="top">
+  	<table border="0" cellspacing="0" cellpadding="0" align="right">
+	 <tr>
+	  <td>&nbsp;</td>
+	  <td align="right">$article_pagelink &nbsp;</td>
+	 </tr>  
+	</table>
+	<br />  
+	$content_teaser $content_catimage <font class="big">&#160; $content_title</font><br />
+	<span class="small">$content_time von $autor_info</span><br />
+	<br />	
+	<div class="contenttext">$content_article_body</div><br />
+	<br /> 
+   </td>
+  <td class="highlight" valign="top">
+ <table class="standard" border="0" cellspacing="1" cellpadding="2" width="100%">
+ <tr>
+  <td class="standard">
+	   <table border="0" cellspacing="0" cellpadding="0" width="100%">
+		 <tr>
+		  <td width="100%" align="right"><a class="small" target="printable" title="druckbare Version anzeigen" href="?path=content&amp;mode=print&amp;contentid=$contentinfo[content_id]"><b>Druckansicht</b></a></td>
+		  <td>&nbsp;</td>
+	      <td><a target="printable" title="druckbare Version anzeigen" href="?path=content&amp;mode=print&amp;contentid=$contentinfo[content_id]"><img src="images/print.gif" border="0" alt="druckbare Version anzeigen" width="20" height="16" align="top" /></a></td>
+		 </tr>
+		 <tr>
+		  <td align="right" nowrap="nowrap"><a class="small" title="Seite empfehlen" href="?path=contact&amp;mode=suggest&amp;suggest_path=$suggest_url"><b>Seite empfehlen</b></a></td>
+		  <td>&nbsp;</td>
+		  <td><a title="Seite empfehlen" href="?path=contact&amp;mode=suggest&amp;suggest_path=$suggest_url"><img src="images/suggest.gif" border="0" alt="Seite empfehlen" width="20" height="16" align="top" /></a></td>
+		 </tr>
+			$content_submit
+			$content_comment
+			$content_rate
+		</table>
+  </td>
+ </tr>
+</table>
+		$related_boxes
+  </td>
+ </tr>
+ <tr>
+  <td class="highlight" colspan="2">
+	<table border="0" cellspacing="0" cellpadding="0" width="100%">
+	 <tr>
+	  <td width="100%">$article_pagelink</td>
+	  <td><a href="#head"><b>Seitenanfang</b></a></td>
+	  <td><a href="#head"><img src="images/pageup.gif" border="0" alt="nach oben" width="20" height="16" align="top" /></a></td>
+	 </tr>
+	</table>
+  </td>
+ </tr>
+</table>

@@ -1,0 +1,42 @@
+<form method="post" action="$form_action">
+<table class="standard" cellspacing="1" cellpadding="4" width="100%">
+ <tr>
+  <td class="heads" colspan="2">$page_title</td>
+ </tr>
+ <tr>
+  <td class="standard" colspan="2" align="center">$page_text</td>
+ </tr>
+	$error_message
+ <tr>
+  <td class="left" width="25%" nowrap="nowrap">$LANG[contact_your_name]</td>
+  <td class="right" width="75%">
+	<input type="text" name="contact_name" size="40" value="$contact_name" /></td>
+ </tr>
+ <tr>
+  <td class="left" nowrap="nowrap">$LANG[contact_your_emailaddress]</td>
+  <td class="right">
+	<input type="text" name="contact_email" size="40" value="$contact_email" /></td>
+ </tr>
+ <tr>
+  <td class="left" nowrap="nowrap">$LANG[contact_your_subject]</td>
+  <td class="right">
+	<input type="text" name="contact_subject" size="40" value="$contact_subject" class="w90" /></td>
+ </tr>
+ <tr>
+  <td class="left" valign="top" nowrap="nowrap">$LANG[contact_your_message]</td>
+  <td class="right">
+	<textarea name="contact_message" cols="30" rows="10" class="w90">$contact_message</textarea></td>
+ </tr>
+ <tr>
+  <td class="left">$LANG[contact_your_copy]</td>
+  <td class="right"><input class="checkbox" type="checkbox" name="contact_copy" value="1" $copy_option /></td>
+ </tr>
+	$captcha
+ <tr>
+  <td class="heads" colspan="2" align="center">
+	<input type="submit" name="action" value="$LANG[bl_send]" />
+	<input type="hidden" name="send" value="$LANG[bl_send]" />
+	<input type="reset" value="$LANG[bl_reset]" /></td>
+ </tr>
+</table>
+</form>

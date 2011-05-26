@@ -1,0 +1,6 @@
+# http://de.selfhtml.org/diverses/robots.htm
+
+User-agent: *
+Disallow: /fx/
+Disallow: /pk/
+Disallow: /pkinc/

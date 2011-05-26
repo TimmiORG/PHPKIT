@@ -1,0 +1,21 @@
+ <tr>
+  <th class="forum2" width="3%"><img border="0" alt="Threadstatus" width="20" height="16" src="images/$threadstatus.gif" /></th>
+  <th class="forum3" width="2%"><img border="0" height="15" width="15" alt="Themenicon '$thread_title'" src="images/$forumthread_icon" /></th>
+  <td class="forum3">
+	<table border="0" cellspacing="1" cellpadding="0" width="100%">
+	 <tr>
+	  <td width="1%" rowspan="2">$newpostlink</td>
+	  <td width="99%"><a class="forumthread" href="include.php?path=forumsthread&amp;threadid=$forumthread[forumthread_id]">$thread_title</a></td>
+	 </tr>
+	 <tr>
+	  <td><font class="small">im Forum: <a class="small" href="include.php?path=forumscategory&amp;catid=$forumcat[forumcat_id]">$category_name</a> $sidelink</font></td>
+	 </tr>
+	</table>
+  </td>
+  <td class="forum1" align="center">$thread_replys</td>
+  <td class="forum1" align="center">$forumthread[forumthread_viewcount]</td>
+  <td class="forum4" align="center">$thread_autor</td>
+  <td class="forum4" align="center" nowrap="nowrap">
+	<font class="small">$thread_time<br />
+	von $thread_last_autor</font></td>
+ </tr>

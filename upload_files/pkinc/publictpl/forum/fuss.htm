@@ -1,0 +1,45 @@
+<script type="text/javascript">
+function JumpSelect() {
+	if(document.forumjump.jumpid.options[document.forumjump.jumpid.selectedIndex].value != -1)
+		document.forumjump.submit();
+	}
+</script>
+<br />
+<table class="forumbottom" cellspacing="1" cellpadding="2" width="100%">
+ <tr>
+  <td class="heads">
+	<form id="pkformforumsjump" method="post" action="include.php?path=forumsjump">
+	<input type="hidden" name="remove_path" value="$current_path" />
+	<table border="0" cellspacing="0" cellpadding="0" width="100%">
+	  <tr>
+		$forum_action
+	  <td align="right" width="100%" nowrap="nowrap"><font class="headssmall">Gehe zu: &nbsp;</font></td>
+	  <td nowrap="nowrap">
+		<select id="pkformselectjumpid" name="jumpid" size="1" onchange="if(document.getElementById('pkformselectjumpid').options[document.getElementById('pkformselectjumpid').selectedIndex].value != -1) {document.getElementById('pkformforumsjump').submit();}">
+		<option value="main" $jump_main>Foren&uuml;bersicht</option>
+		<option value="search" $jump_search>Suche</option>
+		<option value="newthread" $jump_newthread>Neues Thema</option>
+		<option value="-1">_______________</option>
+		<option value="-1" $jump_target>Zielforum w&auml;hlen:</option>
+		$forum_jump
+		</select>
+		<input type="submit" name="jump" value="$LANG[bl_go]" /></td>
+	 </tr>
+	</table>
+	</form>
+  </td>
+ </tr>
+ <tr>
+  <td class="standard small">Es ist / sind gerade $online_usercount registrierte(r) Benutzer und $online_guest online. Neuester Benutzer: <strong>$new_user</strong><br />
+	Mit $mv_count Besuchern waren am $mv_time die meisten Besucher gleichzeitig online.<br />
+	$online_user</td>
+ </tr>
+	$fuss_adds_inner
+ <tr>
+  <td class="standard small number">
+	<a href="include.php?path=forumsearch&amp;mode=result&amp;search=activ&amp;rshow=1">Aktive Themen der letzten 24 Stunden</a> | 
+	<a href="include.php?path=forumstopuser">Foren-Topuser</a>
+  </td>
+ </tr>
+</table>
+	$fuss_adds_outer

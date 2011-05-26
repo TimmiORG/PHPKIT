@@ -1,0 +1,62 @@
+ <tr>
+  <td class="heads" colspan="2">Kategorie bearbeiten</td>
+ </tr>
+	<form action="include.php?path=contentcategory" method="post" name="editcat">
+	<input type="hidden" name="catid" value="$catid" />
+ <tr>
+  <td class="left">Kategoriename</td>
+  <td class="right">
+	<input type="text" name="cat_name" value="$cat_name" class="w90" /></td>
+ </tr>
+ <tr>
+  <td class="left">Beschreibung</td>
+  <td class="right">
+	<textarea name="cat_description" cols="40" rows="3" class="w90">$cat_description</textarea></td>
+ </tr>
+ <tr>
+  <td class="left">Benutzerstatus<br />
+	<font class="small">Ben&ouml;tigter Benutzerstatus damit die Kategorie und deren Inhalte angezeigt werden.</font></td>
+  <td class="right">
+	<select name="cat_rights" size="1" class="w90">
+	<option value="guest" $rights0>G&auml;ste</option>
+	<option value="user" $rights1>User</option>
+	<option value="member" $rights2>Mitglieder</option>
+	<option value="mod" $rights3>Moderatoren</option>
+	<option value="admin" $rights4>Administratoren</option>
+	</select></td>
+ </tr>
+ <tr>
+  <td class="left">Kategorietyp<br />
+	<font class="small">F&uuml;r welche Content-Bereiche soll diese Kategorie zur Verf&uuml;gung stehen.</font></td>
+  <td class="right">
+	<table border="0" cellpadding="0" cellspacing="0" width="90%">
+	 <tr>
+	  <td width="25%" valign="top" nowrap>
+		<input class="checkbox" type="checkbox" name="cat_type0" value="1" $type0> <font class="small">Inhalte</font><br />
+		<input class="checkbox" type="checkbox" name="cat_type1" value="1" $type1> <font class="small">Artikel</font>
+	  <td width="25%" valign="top" nowrap>
+		<input class="checkbox" type="checkbox" name="cat_type2" value="1" $type2> <font class="small">News</font><br />
+		<input class="checkbox" type="checkbox" name="cat_type3" value="1" $type3> <font class="small">Links</font></td>
+	  <td width="50%" valign="top" nowrap>
+		<input class="checkbox" type="checkbox" name="cat_type4" value="1" $type4> <font class="small">Downloads</font></td>
+	 </tr>  
+	</table>
+  </td>
+ </tr>
+ <tr>
+  <td class="left" rowspan="2" valign="top">Kategoriesymbol<br/>
+	  <font class="small">Vorschausymbole in 32x32 Pixeln</font></td>
+  <td class="right">
+	<input type="hidden" name="cat_symbol" value="$cat_symbol">
+	<img style="margin:5px;" height="32" width="32" name="description" border="0" alt="Kategoriesymbol" src="../images/catimages/$cat_symbol" /></td>
+ </tr>
+  <td class="right">$cat_symbols</td>
+	$edit_option
+ <tr>
+  <td class="heads" colspan="2" align="center">
+	<input type="submit" name="action" value="$lang[save]" />
+	<input type="hidden" name="save" value="$lang[save]" />
+	<input type="submit" name="action" value="$lang[cancel]" />
+	<input type="hidden" name="cancel" value="$lang[cancel]" /></td>
+ </tr>
+	</form>

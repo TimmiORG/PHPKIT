@@ -1,0 +1,8 @@
+<form method="post" action="$form_action">
+	<input type="hidden" name="login_setcookie" value="1" />
+	<input type="hidden" name="remove_path" value="$login_remove_path" />
+	
+	<input class="navform" type="text" name="user" size="15" maxlength="50" value="$lang_username" onblur="if(value==''){value='$lang_username'}" onfocus="if(value=='$lang_username'){this.select()}" />
+	<input class="navform" type="password" name="userpw" size="15" maxlength="50" value="$lang_password" onfocus="if(value=='$lang_password'){value=''}" />
+	<input class="navform" type="submit" value="$lang_bl_login" />
+</form>

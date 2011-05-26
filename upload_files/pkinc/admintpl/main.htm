@@ -1,0 +1,119 @@
+<div style="margin:20px;text-align:center;">
+	<div style="margin-left:auto;margin-right:auto;width:525px;margin-bottom:0px;color:#506080;font-family:verdana;">
+		<img src="fx/default/bg/cubebg.gif" alt="PHPKIT cube" style="float:left;" />
+		<h2 style="margin:0 0 5px 0;padding:10px 0 0 0;font-family:verdana;font-size:18px;">PHPKIT Web Content Management System</h2>
+		<span style="font-size:9px;">$phpkitversion</span>
+	</div>
+</div>
+<br />
+<br />
+<table class="standard" cellspacing="1" cellpadding="4" width="100%" border="0">
+ <colgroup>
+  <col width="25%" />
+  <col width="25%" />
+  <col width="25%" />
+  <col width="25%" />    
+ </colgroup>
+ <tr>
+  <td class="heads" colspan="4">Statistik</td>
+ </tr>
+	$main_infooffline
+ <tr>
+  <td  class="even">Besucher &amp; Seitenimpressionen (heute)</td>
+  <td  class="odd">$visitors_today &nbsp;/&nbsp; $picount_today</td>
+  <td  class="even">Besucher &amp; Seitenimpressionen (gestern)</td>
+  <td  class="odd">$visitors_yesterday &nbsp;/&nbsp; $picount_yesterday</td>
+ </tr>
+ <tr>
+  <td  class="even">Benutzer &amp; G&auml;ste online</td>
+  <td  class="odd">$phpkit_status[online_total] &nbsp; <a class="small" href="include.php?path=pageimpressions">&#187; anzeigen</a></td>
+  <td  class="even">Besucher &amp; Seitenimpressionen <span style="white-space:nowrap;">(seit $stats_since)</span></td>
+  <td  class="odd">$visitors_total &nbsp;/&nbsp; $picount_total</td>
+ </tr>
+</table>
+<br />
+<table class="standard" cellspacing="1" cellpadding="4" width="100%" border="0">
+ <colgroup>
+  <col width="25%" />
+  <col width="25%" />
+  <col width="25%" />
+  <col width="25%" />    
+ </colgroup>
+ <tr>
+  <td class="heads" colspan="4">Schnellfinder</td>
+ </tr>
+ <tr>
+  <td  class="even" nowrap="nowrap">Benutzer suchen</td>
+  <td  class="odd">
+  	<table border="0" cellspacing="0" cellpadding="0" width="100%">
+	  	<form method="post" action="include.php?path=userslist">
+	 <tr>
+	  <td>
+	  	<input type="text" name="svalue" size="20" class="small" />
+		<input type="hidden" name="soption" value="usernick" />
+		<input type="submit" value="$lang[search]" class="small" /></td>
+	 </tr>	
+	 	</form>
+	</table>
+  </td>
+  <td  class="even" nowrap="nowrap">Inhalte suchen</td>
+  <td  class="odd" nowrap="nowrap">
+   	<table border="0" cellspacing="0" cellpadding="0" width="100%">
+	  	<form method="post" action="include.php?path=contentarchive">
+	 <tr>
+	  <td>
+		<input type="text" name="searchtext" size="20" class="small" />
+		<input type="submit" name="action" value="$lang[search]" class="small" />
+		<input type="hidden" name="search" value="$lang[search]" />	</td>
+	 </tr>
+		</form>
+	</table>
+  </td>
+ </tr> 
+ <tr>
+  <td  class="even"  nowrap="nowrap">Nicht aktivierte Benutzerkonten</td>
+  <td  class="odd" >$toactivate &nbsp; <a class="small" href="include.php?path=userslist&mode=activate">&#187; anzeigen</a></td> 
+  <td class="even">Unbearbeitete Einsendungen</td>
+  <td class="odd">$submited_content_count &nbsp; <a class="small" href="include.php?path=contentsubmited">&#187; anzeigen</a></td>
+ </tr>
+ <tr>
+  <td  class="even" width="25%" nowrap="nowrap">Ungenutzte Benutzerkonten</td>
+  <td  class="odd" width="25%">$notused &nbsp; <a class="small" href="include.php?path=userslist&mode=unused">&#187; anzeigen</a></td>
+  <td  class="even">Neue Kommentare (Inhalte)</td>
+  <td  class="odd">$comment_count &nbsp; <a class="small" href="include.php?path=comment">&#187; anzeigen</a></td>
+ </tr>
+ <tr>
+  <td  class="even" nowrap="nowrap">Zu l&ouml;schende Benutzerkonten</td>
+  <td  class="odd">$todelete &nbsp; <a class="small" href="include.php?path=userslist&mode=canceled">&#187; anzeigen</a></td>
+  <td  class="even">&nbsp;</td>
+  <td  class="odd">&nbsp;</td>
+ </tr>
+</table>
+
+<br />
+
+<table class="standard" cellspacing="1" cellpadding="4" width="100%" border="0"> 
+ <tr>
+  <td class="heads" width="50%">Neue Benutzer</td>
+  <td class="heads" width="50%">Neue Inhalte</td>
+ </tr>
+ <tr>
+  <td class="even">
+   <table border="0" cellspacing="0" cellpadding="2" width="100%">
+   $newest_user
+   </table>  
+  </td>
+  <td  class="even">
+   <table border="0" cellspacing="0" cellpadding="2" width="100%">
+   $newest_content
+   </table>  
+  </td>
+ </tr>
+</table>
+
+<div style="margin:60px 20px 20px;width:450px;margin-left:auto;margin-right:auto;">
+	<div style="margin:0;text-align:center;width:150px;float:left;"><a href="http://www.phpkit.com/de/forum" target="_blank"><strong>Supportforum</strong></a></div>
+	<div style="margin:0;text-align:center;width:150px;float:left;"><a href="http://www.phpkit.com/de/contact" target="_blank"><strong>Kontakt</strong></a></div>
+	<div style="margin:0;text-align:center;width:150px;float:left;"><a href="javascript:;" onclick="window.open('include.php?path=popup&amp;mode=credits','pkcredits','toolbar=no,scrollbars=yes,resizable=yes,location=no,directories=no,status=no,menubar=no,width=500,height=500');"><strong>Danksagungen</strong></a></div>
+</div>	
+<div style="margin:0;margin-left:auto;margin-right:auto;width:550px;clear:both;text-align:center;padding-top:20px;color:#506080;font-family:verdana;"><a class="none" href="$link_copyright" target="_blank">$lang_copyright</a></div>

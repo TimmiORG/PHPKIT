@@ -1,0 +1,75 @@
+<script language="Javascript" src="fx/main.js"></script>
+<script language="JavaScript">
+function ContAction() {	if(document.myform.change_to.options[document.myform.change_to.selectedIndex].value != -1) document.myform.submit();}
+</script>
+<table class="standard" cellspacing="1" cellpadding="4" width="100%">
+ <tr>
+  <td class="heads" colspan="8">Content Archiv</td>
+ </tr>
+ <tr>
+  <td class="standard" colspan="8">
+	<table cellspacing="1" cellpadding="0" border="0" width="100%">
+		<form method="post" action="include.php?path=contentarchive">
+	 <tr>
+	  <td valign="top" width="100%" nowrap>
+		<input type="text" name="searchid" value="ID" size="4" onblur="if (value =='') {value = 'ID'}" onfocus="if (value == 'ID') {value =''}" />
+		<input type="submit" name="action" value="$LANG[search]" class="small" /></td>
+	  <td align="right" rowspan="2" nowrap>
+		<select name="searchcat" size="1">
+		<option value="">Alle Kategorien</option>
+		$option_cats
+		</select>
+		<select name="searchtype" size="1">
+		<option value="-1" $type>Alle Inhaltstypen</option>
+		<option value="0" $type0>Inhalte</option>
+		<option value="1" $type1>Artikel</option>
+		<option value="2" $type2>News</option>
+		<option value="3" $type3>Links</option>
+		<option value="4" $type4>Downloads</option>
+		</select><br />
+		Text oder Titel enth&auml;lt: <input type="text" name="searchtext" value="$searchtext" size="25" onfocus="if (value == '$searchtext') {value =''}" />
+		<input type="submit" name="action" value="$LANG[search]" />
+		<input type="hidden" name="search" value="$LANG[search]" /></td>
+	 </tr>
+	 <tr>
+	  <td><font class="small">$side_link</font></td>
+	 </tr>
+		</form>
+	</table>
+  </td>
+ </tr>
+ <tr>
+  <td class="heads" width="1%" align="center"><font class="headssmall"><a class="headssmall" href="include.php?path=contentarchive"><img border="" height="16" width="20" alt="Auswahl zur&uuml;cksetzen" src="../images/reset.gif" /></a></font></td>
+  <td class="heads" width="1%" align="center"><font class="headssmall"><a class="headssmall" href="include.php?path=contentarchive&entries=$entries&searchtext=$searchtext&searchtype=$searchtype&searchid=$searchid&searchcat=$searchcat&action=search&order=$orderstatus" title="nach Status sortieren">#</a></font></td>
+  <td class="heads" width="47%"><font class="headssmall"><a class="headssmall" href="include.php?path=contentarchive&entries=$entries&searchtext=$searchtext&searchtype=$searchtype&searchid=$searchid&searchcat=$searchcat&action=search&order=$ordertitle" title="nach Titel sortieren">Titel</a></font></td>
+  <td class="heads" width="30%" nowrap><font class="headssmall"><a class="headssmall" href="include.php?path=contentarchive&entries=$entries&searchtext=$searchtext&searchtype=$searchtype&searchid=$searchid&searchcat=$searchcat&action=search&order=$ordercat" title="nach Kategorie sortieren">Kategorie</a> &amp; Thema</font></td>
+  <td class="heads" width="10%"><font class="headssmall"><a class="headssmall" href="include.php?path=contentarchive&entries=$entries&searchtext=$searchtext&searchtype=$searchtype&searchid=$searchid&searchcat=$searchcat&action=search&order=$ordertime" title="nach Datum sortieren">Datum</a></font></td>
+  <td class="heads" width="5%"><font class="headssmall"><a class="headssmall" href="include.php?path=contentarchive&entries=$entries&searchtext=$searchtext&searchtype=$searchtype&searchid=$searchid&searchcat=$searchcat&action=search&order=$ordertype" title="nach Typ sortieren">Typ</a></font></td>
+  <td class="heads" width="1%"><font class="headssmall"><a class="headssmall" href="include.php?path=contentarchive&entries=$entries&searchtext=$searchtext&searchtype=$searchtype&searchid=$searchid&searchcat=$searchcat&action=search&order=$orderid" title="nach ID-Nummer sortieren">ID</a></font></td>
+  <td class="heads" width="5%"><font class="headssmall">Optionen</font></td>
+ </tr>
+	<form name="myform" method="post" action="include.php?path=contentarchive&mode=revise">
+	$archiv_row
+ <tr>
+  <td class="standard" colspan="8">
+	<table border="0" cellspacing="0" cellpadding="0" width="100%">
+	 <tr>
+	  <td><input class="checkbox" type="checkbox" onClick="checkall(this.checked,'content_id')" /></td>
+	  <td>&nbsp;</td>
+	  <td>
+	  	<select name="change_to" size="1" onchange="ContAction()">
+		<option value="-1">markierte:</option>
+		<option value="-1" disabled>__________</option>
+		<option value="open">freigeben</option>
+		<option value="close">sperren</option>
+		<option value="del">l&ouml;schen</option>
+		</select></td>
+	  <td>&nbsp;</td>
+	  <td><input type="submit" name="action" value="OK" /></td>
+	  <td align="right" width="100%"><font class="small">$side_link</font></td>
+	 </tr>
+	</table>
+  </td>
+ </tr>
+	</form>
+</table>

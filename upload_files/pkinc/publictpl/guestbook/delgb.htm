@@ -1,0 +1,15 @@
+<form method="post" action="include.php?path=guestbook&amp;mode=delete&amp;id=$id">
+<table class="standard" cellspacing="1" cellpadding="4" width="100%">
+ <tr>
+  <td class="heads" colspan="3">Soll dieser Eintrag wirklich gel&ouml;scht werden?</td>
+ </tr>
+	$delete_row
+ <tr>
+  <td class="heads" colspan="3" align="center">
+	<input type="submit" name="action" value="$lang[Yes]" />
+	<input type="hidden" name="Yes" value="$lang[Yes]" />
+	<input type="submit" name="action" value="$lang[No]" />
+	<input type="hidden" name="No" value="$lang[No]" /></td>
+ </tr>
+</table>
+</form>

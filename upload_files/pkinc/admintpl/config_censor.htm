@@ -1,0 +1,37 @@
+ <tr>
+  <td class="left" width="50%" valign="top">Benutzer- und Nicknamen<br />
+	<font class="small">Legt fest welche Benutzer- und Nickname nicht gew&auml;hlt werden k&ouml;nnen.<br />
+	Hinweis zur Verwendung:<br />
+	&nbsp; &#149; <b>du</b> sperrt alle &Uuml;bereinstimmungen<br />
+	&nbsp; &#149; f&uuml;r die Sperrung einzelner Namen verwenden Sie die Angabe: <b>{du}</b><br />
+	Je Zeile nur eine Angabe.</font></td>
+  <td class="right" width="50%">
+	<textarea name="censor_username" cols="30" rows="8" class="w90">$censor_username</textarea></td>
+ </tr>
+ <tr>
+  <td class="left" valign="top">E-Mail-Adressen<br />
+	<font class="small">Tragen Sie hier die E-;ail-Adessen ein, die nicht verwendet werden d&uuml;rfen.<br />
+	Verwenden Sie * als Platzhalter um eine Domain zu bannen.<br />
+	(Bsp: *@domain.de - sperrt alle domain.de E-Mail-Adressen)<br />
+	Je Zeile nur eine Angabe.</font></td>
+  <td class="right">
+	<textarea name="censor_email" cols="30" rows="8" class="w90">$censor_email</textarea></td>
+ </tr>
+ <tr>
+  <td class="left" valign="top">IP-Adressen sperren<br />
+	<font class="small">Tragen Sie hier die IP-Adessen ein, die Sie sperren m&ouml;chten. Verwenden Sie * als Platzhalter 
+	um IP-Bereiche zu sperren.<br />
+	Je Zeile nur eine Angabe.</font></td>
+  <td class="right">
+	<textarea name="censor_ip" cols="30" rows="8" class="w90">$censor_ip</textarea></td>
+ </tr>
+ <tr>
+  <td class="left" valign="top">Textzensur<br />
+	<font class="small">Tragen Sie hier die Begriffe ein, die automatisch zensiert werden sollen.<br />
+	Hinweis zur Verwendung:<br />
+	&nbsp; &#149; <b>und</b> ersetzt alle &Uuml;bereinstimmungen, z.B. Hund wird zu H***<br />
+	&nbsp; &#149; f&uuml;r Einzelw&ouml;rter verwenden Sie die Angabe: <b>{und}</b><br />
+	Je Zeile nur eine Angabe.</font></td>
+  <td class="right">
+	<textarea name="censor_badword" cols="30" rows="8" class="w90">$censor_badword</textarea></td>
+ </tr>

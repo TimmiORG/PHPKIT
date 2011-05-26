@@ -1,0 +1,26 @@
+<h5 id="formdesc">$login_message</h5>
+<form name="login" method="post" action="$form_action" target="_top">
+<input type="hidden" name="login" value="1" />
+<input type="hidden" name="remove_page" value="$link_back" />
+<input type="hidden" name="remove_path" value="$remove_path" />
+<table border="0" cellspacing="0" cellpadding="5" width="100%">
+ <tr>
+  <td width="40%" align="right"><strong>$lang_username</strong></td>
+  <td width="60%"><input type="text" name="user" value="$username" size="25"$error_name/></td>
+ </tr>
+ <tr>
+  <td align="right"><strong>$lang_password</strong></td>
+  <td><input type="password" name="userpw" size="25"$error_pass/></td>
+ </tr>
+ <tr>
+  <td align="right" nowrap="nowrap">&#160;</td>
+  <td><input class="checkbox" type="checkbox" name="login_setcookie" value="1"$log_setcookie/> &#160; $lang_save_logindata_permanently</td>
+ </tr>
+ <tr>
+  <td>&#160;</td>
+  <td><input type="submit" name="action" value="$bl_login" /></td>
+ </tr> 
+</table>
+
+<a href="$link_public" target="_top">&#187; $lang_website</a>
+</form>

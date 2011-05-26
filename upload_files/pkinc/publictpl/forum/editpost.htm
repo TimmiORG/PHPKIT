@@ -1,0 +1,49 @@
+<script type="text/javascript" src="fx/main.js"></script>
+<form method="post" name="myform" action="include.php?path=forumseditpost">
+<input type="hidden" name="postid" value="$postid" />
+<table class="forumbody" cellspacing="1" cellpadding="4" width="100%">
+ <tr>
+  <td class="heads" colspan="2">Beitrag editieren</td>
+ </tr>
+	$post_error
+	$user_info
+ <tr>
+   <td class="left" width="20%">Titel</td>
+   <td class="right" width="80%">
+	<input type="text" name="post_title" value="$post_title" size="35" /></td>
+ </tr>
+ <tr>
+  <td class="left">Icon</td>
+  <td class="right">
+	<table border="0" cellspacing="0" cellpadding="2">
+	$theme_icon
+	</table>
+  </td>
+ </tr>
+ <tr>
+  <td class="left" valign="top">
+	<table border="0" cellspacing="0" cellpadding="0">
+	 <tr>
+	  <td>Nachricht</td>
+	 </tr>
+	</table>
+  </td>
+  <td class="right">
+	<table border="0" cellspacing="2" cellpadding="0" width="100%">
+	 <tr>
+	  <td width="80%" valign="top"><textarea id="pkBBArea" name="content" cols="60" rows="20" onfocus="pkBBSelection(this);" onclick="pkBBSelection(this);" onchange="pkBBSelection(this);" ondblclick="pkBBSelection(this);">$post_text</textarea></td>
+	  <td width="20%" valign="top">$sign_format</td>
+	 </tr>
+	</table>
+  </td>
+ </tr>
+	$editpost_option
+ <tr>
+  <td class="heads" colspan="2" align="center">
+	<input type="submit" name="action" value="$lang[save]" />
+	<input type="hidden" name="save" value="$lang[save]" />
+	<input type="submit" name="action" value="$lang[cancel]" />
+	<input type="hidden" name="cancel" value="$lang[cancel]" /></td>
+ </tr>
+</table>
+</form>

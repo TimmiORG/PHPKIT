@@ -1,0 +1,17 @@
+<script language="Javascript" src="fx/main.js"></script>
+<table class="standard" cellspacing="1" cellpadding="4" width="100%">
+	<colgroup>
+    	<col width="250" />
+    	<col />
+    </colgroup>
+	<form name="config" method="post" action="$form_action">
+
+ $parsed_config_modes
+ <tr>
+  <td class="heads" colspan="2" align="center">
+	<input type="submit" name="action" value="$LANG[save]" />
+	<input type="hidden" name="save" value="$LANG[save]" />
+	<input type="reset" value="$LANG[reset]" /></td>
+ </tr>
+	</form>
+</table>

@@ -1,0 +1,25 @@
+	<input type="hidden" name="faq_id" value="$faq_id" />
+ <tr>
+  <td class="left">Frage</td>
+  <td class="right">
+	<input type="text" size="40" name="faq_title" value="$faq_title" class="w90" maxlength="250" /></td>
+ </tr>
+ <tr>
+  <td class="left">Erl&auml;uterung<br />
+	<font class="small">Kurz Erkl&auml;rung zur Fragestellung. Kann frei bleiben</font></td>
+  <td class="right">
+	<textarea name="faq_question" cols="40" rows="4" class="w90">$faq_question</textarea></td>
+ </tr>
+ <tr>
+  <td class="left" valign="top">Antwort<br />
+  	<font class="small">HTML, BB-Code &amp; Smilies m&ouml;glich.<br />
+	<a class="small" href="javascript:;" onClick="readfilewindow(400,400,'faq');"><b>Datei einlesen</b></a></font></td>
+  <td class="right"><textarea name="content" cols="30" rows="12" class="w90">$faq_answer</textarea></td>
+ </tr>
+ <tr>
+  <td class="heads" align="center" colspan="2">
+	<input type="submit" name="action" value="$lang[save]" />	
+	<input type="hidden" name="save" value="$lang[save]" />
+	<input type="submit" name="action" value="$lang[delete]" class="highlight" />
+	<input type="hidden" name="delete" value="$lang[delete]" />	</td>
+ </tr>

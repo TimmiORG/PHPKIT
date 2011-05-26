@@ -1,0 +1,42 @@
+<form method="post" action="$form_action">
+<table class="standard" width="100%" cellspacing="1" cellpadding="4">
+ <tr>
+  <td class="heads" colspan="3">$lang_login</td>
+ </tr>
+ <tr>
+  <td class="left" colspan="3" align="center">
+	<h5 class="small">$login_message</h5></td>
+ </tr>
+ <tr>
+  <td class="left" width="15%"><strong>$lang_username</strong></td>
+  <td class="right" width="35%">
+      <input type="text" name="user" value="$username" size="15" maxlength="50" tabindex="1" style="width:90%" /></td>
+  <td class="right" width="50%">
+	<font class="small">$register_now</font></td>
+ </tr>
+ <tr>
+  <td class="left"><strong>$lang_password</strong></td>
+  <td class="right">
+      <input type="password" name="userpw" size="15" maxlength="50" tabindex="2" style="width:90%" /></td>
+  <td class="right">
+	<font class="small"><a href="include.php?path=login&amp;mode=lostpassword">$lang_username_or_password_lost</a></font></td>
+ </tr>
+$firstlogin_activation
+ <tr>
+  <td class="left" nowrap="nowrap">&#160;</td>
+  <td class="right" colspan="2">
+	<table border="0" cellspacing="0" cellpadding="0" width="100%">
+	 <tr>
+	  <td width="1%"><input class="checkbox" type="checkbox" name="login_setcookie" value="1" tabindex="3" /></td>
+	  <td>&nbsp;</td>
+	  <td width="99%"><font class="small">$lang_save_logindata_permanently</font></td>
+ 	 </tr>
+	</table>
+  </td>
+ </tr>
+ <tr>
+  <td class="heads" align="center" colspan="3">
+	<input type="submit" value="$bl_login" tabindex="4" /></td>
+ </tr>
+</table>
+</form>

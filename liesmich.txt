@@ -1,0 +1,34 @@
+Readme zur PHPKIT Version 1.6.5
+-----------------------------------------------------------
+
+Die Begleitmaterialien zum PHPKIT Web Content Management 
+System bieten wir im PDF-Format an. Dieses Dateiformat zum
+Austausch von Dokumenten kann mit dem kostenlos verfügbaren 
+Adobe(R) Reader(R) gelesen werden.
+
+
+Was ist eine .PDF Datei?
+-----------------------------------------------------------
+
+Das Dateiformat .PDF (Portable Document Format) wurde vor
+über 15 Jahren von der Firma Adobe Systems Incorporated
+entwickelt.
+
+PDF ermöglicht die Darstellung von Inhalten anderer Formate
+in nur einer einzigen PDF-Datei. Heutzutage ist PDF zum
+Standard geworden, wenn es um den einfachen Austausch von
+Informationen geht.
+
+Laden Sie sich den Adobe(R) Reader(R) unter der folgenden 
+Internet-Adresse herunter:
+
+
+http://www.adobe.com/de/
+
+
+
+http://www.phpkit.com
+mxbyte GbR - 19.08.2009
+
+
+

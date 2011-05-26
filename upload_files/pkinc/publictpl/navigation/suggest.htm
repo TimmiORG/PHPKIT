@@ -1,0 +1,8 @@
+<form method="get" action="$form_action">
+	$form_action_add
+	<input type="hidden" name="suggest_path" value="$suggest_path" />
+	
+	<input class="navform" type="text" name="suggest_name" size="20" value="$lang_receiver" onblur="if(value==''){value='$lang_receiver'}" onfocus="if(value=='$lang_receiver'){value=''}" />
+	<input class="navform" type="text" name="suggest_email" size="20" value="$lang_email_address" onblur="if(value==''){value='$lang_email_address'}" onfocus="if(value=='$lang_email_address'){value=''}" />
+	<input class="navform" type="submit" value="$lang_bl_go" />
+</form>

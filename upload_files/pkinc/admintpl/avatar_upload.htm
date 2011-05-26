@@ -1,0 +1,27 @@
+ <tr>
+  <td class="heads" colspan="2">Avatar hochladen</td>
+ </tr>
+	<form enctype="multipart/form-data" method="post" action="include.php?path=useravatar">
+ <tr>
+  <td class=left width="50%">Verf&uuml;gbarkeit</td>
+  <td class=right width="50%">
+	<select name="avatar_type" class=w90>
+	<option value="avatar">&#187; ALLE &#171;</option>
+	<option value="avamember">ab Benutzerstatus "Member"</option>
+	<option value="avamod">ab Benutzerstatus "Moderator"</option>
+	<option value="avaadmin">nur Administratoren</option>
+	</select></td>
+ </tr>
+ <tr>
+  <td class="left">Datei w&auml;hlen</td>
+  <td class="right">
+	<input type="file" name="avatar_file" class="w90" /></td>
+ </tr>
+ <tr>
+  <td class="heads" colspan="2" align="center">
+	<input type="submit" name="action" value="$LANG[upload]" />
+	<input type="hidden" name="upload" value="$LANG[upload]" />
+	<input type="submit" name="action" value="$LANG[cancel]" />
+	<input type="hidden" name="cancel" value="$LANG[cancel]" /></td>
+ </tr>
+	</form>

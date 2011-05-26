@@ -1,0 +1,39 @@
+<table class="standard" cellspacing="1" cellpadding="4" width="100%">
+ <tr>
+  <td class="heads">Kommentare</td>
+ </tr>
+ <tr>
+  <td class="standard" >
+	<table border="0" cellspacing="0" cellpadding="0" width="100%">
+		<form method="post" action="include.php?path=comment">
+		<input type="hidden" name="delete" value="$lang[delete]" />
+	 <tr>
+	  <td width="65%"><font class="small">$page_link</font></td>
+	  <td align="right" width="35%" nowrap>
+		<select name="delete_time" size="1">
+		<option value="-1" selected>Kommentare</option>
+		<option value="2">&auml;lter als 2 Tage</option>
+		<option value="5">&auml;lter als 5 Tage</option>
+		<option value="7">&auml;lter als 7 Tage</option>
+		<option value="14">&auml;lter als 14 Tage</option>
+		<option value="21">&auml;lter als 21 Tage</option>
+		<option value="28">&auml;lter als 28 Tage</option>
+		<option value="35">&auml;lter als 35 Tage</option>
+		<option value="all">alle l&ouml;schen</option>
+		</select>
+		<input type="submit" name="action" value="$lang[delete]" class="highlight" /></td>
+	 </tr>
+		</form>
+	</table>
+  </td>
+ </tr>
+	$comment_row
+ <tr>
+  <td class="standard" align="center">
+	<table border="0" cellspacing="0" cellpadding="0" width="100%">
+	 <tr>
+	  <td><font class="small">$page_link</font></td>
+	 </tr>
+	</table>
+ </tr>
+</table>

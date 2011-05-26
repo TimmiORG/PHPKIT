@@ -1,0 +1,36 @@
+ <tr>
+  <td class="left" width="50%">Verwendung von Avataren<br />
+	<font class="small">Legt fest ob Benutzer Avatare benutzen k&ouml;nnen.</font></td>
+  <td class="right" width="50%">
+	<select name="avatar_eod" size="3" class="w90">
+	<option value="2"$info_avatar_eod2>Hochladen &amp; Verwendung von Avataren erlaubt</option>
+	<option value="1"$info_avatar_eod1>nur vorgegebenen Avatare</option>
+	<option value="0"$info_avatar_eod0>keine Verwendung von Avataren</option>
+	</select></td>
+ </tr>
+ <tr>
+  <td class="left">Avatarverzeichnis<br />
+	<font class="small">Speicherort f&uuml;r alle Avatare. Dieses Verzeichnis muss vorhanden sein und Schreibrechte 
+	besitzen. Angabe ausgehend vom Installationsverzeichnis.</font> $path_error</td>
+  <td class="right">
+	<input type="text" maxlength="250" size="25" name="avatar_path" value="$avatar_path" class="w90" /></td>
+ </tr>
+ <tr>
+  <td class="left">Dateigr&ouml;&szlig;e<br />
+	<font class="small">Legt die maximale Dateigr&ouml;&szlig;e von Benutzeravataren fest (Angabe in kB).</font></td>
+  <td class="right">
+	<input type="text" name="avatar_size" value="$avatar_size" maxlength="5" size="5" />
+ </tr>
+ <tr>
+  <td class="left">Abmessungen<br />
+	<font class="small">Maximale Gr&ouml;&szlig;e von Avataren in Pixeln. H&ouml;he x Breite</font></td>
+  <td class="right">
+	<table border="0" cellspacing="0" cellpadding="1">
+ 	 <tr>
+	  <td><input type="text" name="avatar_height" value="$avatar_height" maxlength="3" size="2" /></td>
+	  <td>&nbsp;x&nbsp;</td>
+	  <td><input type="text" name="avatar_width" value="$avatar_width" maxlength="3" size="2" /></td>
+	 </tr>
+	</table>
+  </td>
+ </tr>

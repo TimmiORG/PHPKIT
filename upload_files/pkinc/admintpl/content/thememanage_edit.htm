@@ -1,0 +1,42 @@
+	<form method="post" action="include.php?path=contentcategory&mode=theme">
+	<input type="hidden" name="themeid" value="$themeinfo[contenttheme_id]" />
+ <tr>
+  <td class="heads" colspan="2">Themenbereich editieren</td>
+ </tr>
+ <tr>
+  <td class="left" width="50%">Titel<br />
+  	<font class="small">Bezeichnung des Themenbereiches &auml;ndern.</font></td>
+  <td class="right" width="50%">
+	<input type="text" name="theme_name" value="$themeinfo[contenttheme_name]" class="w90" size="25" /></td>
+ </tr>
+  <td class="left">Verschieben<br />
+  	<font class="small">Themenbereich und alle Artikel in eine andere Kategorie verschieben.</font></td>
+  <td class="right">
+	<select name="theme_catid" size="1" class="w90">
+	<option value="0">nicht verschieben</option>
+	$new_cats
+	</select></td>
+ </tr>
+ <tr>
+  <td class="left">Leeren<br />
+  	<font class="small">Allen Artikel einem anderem Themenbereich zuweisen.</font></td>
+  <td class="right">
+	<select name="theme_clear" size="1" class="w90">
+	<option value="0">nicht verschieben</option>
+	$theme_new
+	</select></td>
+ </tr>
+ <tr>
+  <td class="left">L&ouml;schen<br />
+  	<font class="small">Themenbereich l&ouml;schen, Inhalte nach den Einstellungen f&uuml;r &quot;Verschieben&quot; / &quot;Leeren&quot; behandelt.</font></td>
+  <td class="right">
+	<input class="checkbox" type="checkbox" name="theme_delete" value="1" /></td>
+ </tr>
+ <tr>
+  <td class="heads" colspan="2" align="center">
+	<input type="submit" name="action" value="$LANG[save]" />
+	<input type="hidden" name="save" value="$LANG[save]" />
+	<input type="submit" name="action" value="$LANG[cancel]" />
+	<input type="hidden" name="cancel" value="$LANG[cancel]" /></td>
+ </tr>
+	</form>

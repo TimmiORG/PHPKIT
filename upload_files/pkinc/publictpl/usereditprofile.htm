@@ -1,0 +1,149 @@
+<form name="updateprofil" method="post" action="$action_target">
+<table class="userbody" border="0" cellspacing="1" cellpadding="4" width="100%">
+ <tr>
+  <td class="heads" colspan="2">$user_navigation $L_editprofile_edit_profile</td>
+ </tr>
+ <tr>
+  <td class="left" width="50%">$L_editprofile_username<br />
+	<span class="small">$L_editprofile_username_description</span></td>
+  <td class="right" width="50%"><b>$user_name</b></td>
+ </tr>
+ <tr>
+    <td class="left">$L_editprofile_userstatus<br />
+	<span class="small">$L_editprofile_userstatus_description</span></td>
+    <td class="right"><b>$user_status</b></td>
+ </tr>
+ <tr>
+  <td class="left">$L_editprofile_member_since</td>
+  <td class="right">$user_signin</td>
+ </tr>
+ <tr>
+    <td class="heads" colspan="2">$L_editprofile_account_information</td>
+ </tr>
+ <tr>
+  <td class="left">$L_editprofile_current_password<br />
+	<span class="small">$L_editprofile_current_password_description</span></td>
+  <td class="right">
+	<input type="password" name="cur_password" size="15" maxlength="50" style="width:90%;" /></td>
+ </tr>
+ <tr>
+  <td class="left">$L_editprofile_nickname<br />
+	<span class="small">$L_editprofile_nickname_description</span></td>
+  <td class="right">
+	<input type="text" name="ud_nick" size="15" value="$user_nick" maxlength="50" style="width:90%;" /></td>
+ </tr>
+ <tr>
+  <td class="left">$L_editprofile_password<br />
+  	<span class="small">$L_editprofile_password_description</span></td>
+  <td class="right">
+	<input type="password" name="ud_newpw1" size="15" maxlength="50" style="width:90%;" /></td>
+ </tr>
+ <tr>
+  <td class="left">$L_editprofile_confirm_password<br />
+	<span class="small">$L_editprofile_confirm_password_description</span></td>
+  <td class="right">
+	<input type="password" name="ud_newpw2" size="15" maxlength="50" style="width:90%;" /></td>
+ </tr>
+ <tr>
+  <td class="left">$L_email_address<br />
+	<span class="small">$L_editprofile_email_description</span></td>
+  <td class="right">
+	<input type="text" name="ud_email" size="15" value="$user_email" maxlength="75" style="width:90%;" /></td>
+ </tr>
+ <tr>
+    <td class="heads" colspan="2">$L_editprofile_optional_specifications</td>
+ </tr>
+ <tr>
+  <td class="left">$L_editprofile_show_email<br />
+	<span class="small">$L_editprofile_show_email_description</span></td>
+  <td class="right">
+	<input class="radio" type="radio" name="ud_emailshow" value="1" $user_email_option_1 /> <span class="small">anzeigen</span> &nbsp;
+	<input class="radio" type="radio" name="ud_emailshow" value="0" $user_email_option_0 /> <span class="small">verbergen</span></td>
+ </tr>
+ <tr>
+  <td class="left">$L_editprofile_sex<br />
+	<span class="small">$L_editprofile_sex_description</span></td>
+  <td class="right">
+	<select name="ud_sex" size="1">
+		<option $user_sex_option_0 value="d">$L_editprofile_sex_not_specified</option>
+		<option $user_sex_option_1 value="w">$L_editprofile_sex_female</option>
+		<option $user_sex_option_2 value="m">$L_editprofile_sex_male</option>
+	</select></td> 
+ </tr>
+ <tr>
+  <td class="left">$L_editprofile_dateofbirth<br />
+	<span class="small">$L_editprofile_dateofbirth_description</span></td>
+  <td class="right">
+	<select name="user_bd_day" size="1">
+	<option value="0">$L_editprofile_dateofbirth_day</option>
+		$bd_option_day
+	</select>
+	<select name="user_bd_month" size="1">
+	<option value="0">$L_editprofile_dateofbirth_month</option>
+		$bd_option_month
+	</select>
+	<select name="user_bd_year" size="1">
+	<option value="0">$L_editprofile_dateofbirth_year</option>
+		$bd_option_year
+	</select>
+  </td> 
+ </tr>
+ <tr>
+  <td class="left">$L_editprofile_origin<br />
+	<span class="small">$L_editprofile_origin_description</span></td>
+  <td class="right">
+	<select name="ud_country" size="1" style="width:90%;">
+		$user_country
+	</select></td>
+ </tr>
+ <tr>
+  <td class="left">$L_editprofile_homepage<br />
+	<span class="small">$L_editprofile_homepage_description</span></td>
+  <td class="right">
+	<input type="text" name="ud_hpage" size="15" value="$user_hpage" maxlength="75" style="width:90%;" /></td>
+ </tr>
+ <tr>
+  <td class="left">$L_editprofile_aim_screenname<br />
+	<span class="small">$L_editprofile_aim_screenname_description</span></td>
+  <td class="right">
+	<input type="text" name="ud_aimid" size="15" value="$user_aimid" maxlength="30" style="width:90%;" /></td>
+ </tr>
+ <tr>
+  <td class="left">$L_editprofile_yim<br />
+	<span class="small">$L_editprofile_yim_description</span></td>
+  <td class="right">
+	<input type="text" name="ud_yim" size="15" value="$user_yim" maxlength="50" style="width:90%;" /></td>
+ </tr>
+ <tr>
+  <td class="left">$L_editprofile_icq<br />
+	<span class="small">$L_editprofile_icq_description</span></td>
+  <td class="right">
+	<input type="text" name="ud_icqid" size="20" value="$user_icqid" maxlength="15" /></td>
+ </tr>
+ <tr>
+  <td class="left" valign="top">$L_editprofile_signature<br />
+	<span class="small">$L_editprofile_signature_description</span></td>
+  <td class="right">
+	<textarea rows="8" name="ud_usersig" cols="15" style="width:90%;">$user_sig</textarea></td>
+ </tr>
+ <tr>
+  <td class="left" valign="top">$L_editprofile_quotation<br />
+	<span class="small">$L_editprofile_quotation_description</span></td>
+  <td class="right">
+	<textarea rows="5" name="ud_userqou" cols="15" style="width:90%;">$user_qou</textarea></td>
+ </tr>
+ <tr>
+  <td class="left" valign="top">$L_editprofile_hobbies<br />
+	<span class="small">$L_editprofile_hobbies_description</span></td>
+  <td class="right">
+	<textarea rows="5" name="ud_userhobby" cols="15" style="width:90%;">$user_hobby</textarea></td>
+ </tr>
+	$editprofile_userfield
+ <tr>
+  <td class="heads" colspan="2" align="center">
+	<input type="submit" name="action" value="$L_save" />
+	<input type="hidden" name="save" value="$L_save" />
+	<input type="reset" value="$L_reset" /></td>
+ </tr>
+</table>
+</form>

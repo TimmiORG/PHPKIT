@@ -1,0 +1,23 @@
+<table class="standard" cellspacing="1" cellpadding="4" width="100%">
+ <tr>
+  <td class="heads" colspan="2">L&ouml;schen best&auml;tigen</td>
+ </tr>
+	<form method="post" action="$form_action">
+	<input type="hidden" name="editcat" value="$editcat" />
+ <tr>
+  <td class="left" width="50%">Soll die Forenkategorie <b>"$forumcat[forumcat_name]"</b> und alle dazu geh&ouml;rigen Themen und Posts wirklich gel&ouml;scht werden?</td>
+  <td class="right">
+	<select name="confirm" class="w90" size="2">
+	<option value="no" selected>nicht l&ouml;schen</option>
+	<option value="true">Kategorie endg&uuml;ltig l&ouml;schen</option>
+	</select> 
+ </tr>
+ <tr>
+  <td class="heads" colspan="2" align="center">
+	<input type="submit" name="action" value="$LANG[delete]" class="highlight" />
+	<input type="hidden" name="delete" value="$LANG[delete]" />
+	<input type="submit" name="action" value="$LANG[cancel]" />
+	<input type="hidden" name="cancel" value="$LANG[cancel]" /></td>
+ </tr>
+	</form>
+</table>

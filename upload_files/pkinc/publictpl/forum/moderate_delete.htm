@@ -1,0 +1,23 @@
+<form method="post" action="include.php?path=forumsmoderate">
+<input type="hidden" name="threadid" value="$threadid" />
+<table class="forumbody" border="0" cellspacing="1" cellpadding="4" width="100%">
+ <tr>
+  <td class="heads" colspan="2">L&ouml;schen best&auml;tigen</td>
+ </tr>
+ <tr>
+  <td class="left" width="50%">Soll das Thema &quot;$forumthread[forumthread_title]&quot; wirklich gel&ouml;scht werden?</td>
+  <td class="right" width="50%">
+	<select name="delete_confirm" size="2" class="w90">
+	<option value="no">Nicht l&ouml;schen</option>
+	<option value="confirmed">Thema und Beitr&auml;ge l&ouml;schen</option>
+	</select></td>
+ </tr>
+ <tr>
+  <td class="heads" colspan="2" align="center">
+	<input type="submit" name="action" value="$LANG[delete]" />
+	<input type="hidden" name="delete" value="$LANG[delete]" />
+	<input type="submit" name="action" value="$LANG[cancel]" />
+	<input type="hidden" name="cancel" value="$LANG[cancel]" /></td>
+ </tr>
+</table>
+</form>

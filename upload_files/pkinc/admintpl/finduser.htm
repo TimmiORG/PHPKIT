@@ -1,0 +1,43 @@
+<script language="Javascript">
+function selectIDfromBuddy() {
+ if(document.finduser.Buddy.options[document.finduser.Buddy.selectedIndex].value != -1) {
+  opener.document.config.$option_element.value += "\\n" + document.finduser.Buddy.options[document.finduser.Buddy.selectedIndex].value;
+  opener.config.$option_element.focus();
+  }
+ }
+function selectIDfromUser() {
+ if(document.finduser.User.options[document.finduser.User.selectedIndex].value != -1) {
+  opener.document.config.$option_element.value += "\\n" + document.finduser.User.options[document.finduser.User.selectedIndex].value;
+  opener.config.$option_element.focus();
+  }
+ }
+</script>
+
+<table border="0" class="standard" cellspacing="1" cellpadding="4" width="100%">
+ <tr>
+  <td class="heads" colspan="2">
+  	<table border="0" cellspacing="0" cellpadding="0" width="100%">
+	 <tr>
+	  <td nowrap><font class="heads">Benutzer suchen</font></td>
+	  <td nowrap align="right"><font class="headssmall">[ <a class="headssmall" href="javascript:self.close()">Fenter schlie&szlig;en</a> ]</font></td>
+	 </tr>
+	</table>		
+  </td>
+ </tr>
+ 	<form name="finduser" method="get" action="include.php">
+	<input type="hidden" name="path" value="popup" />
+	<input type="hidden" name="mode" value="finduser" />
+	<input type="hidden" name="option" value="$option" />
+ <tr>
+   <td class="left" width="50%" nowrap>Benutzername</td>
+   <td class="right" width="50%">
+   	<input type="text" size="15" name="search_user" value="$search_user" /><br />
+	<input type="submit" name="action" value="$lang[search]" /></td>
+ </tr>
+ 	$search_result
+	$buddy_list
+ 	</form>
+ <tr>	
+  <td class="heads" colspan="2" align="center"><font class="headssmall">&nbsp;</font></td>
+ </tr>
+</table>

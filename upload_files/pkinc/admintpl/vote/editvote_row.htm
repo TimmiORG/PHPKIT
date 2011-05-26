@@ -1,0 +1,14 @@
+	<form method="post" action="include.php?path=pollcompose&step=2&voteid=$voteid">
+	<input type="hidden" name="id" value="$voteinfo[vote_id]" />
+ <tr>
+  <td class="$row" align="right" nowrap>$voteinfo[vote_order]</td>
+  <td class="$row" width="100%">$voteinfo[vote_text]</td>
+  <td class="$row" nowrap>
+	<input type="submit" name="action" value="$lang[edit]" class="small" />
+	<input type="hidden" name="edit" value="$lang[edit]" />
+	<input type="submit" name="action" value="$lang[up]" class="small" />
+	<input type="hidden" name="up" value="$lang[up]" />
+	<input type="submit" name="action" value="$lang[down]" class="small" />
+	<input type="hidden" name="down" value="$lang[down]" /></td>
+ </tr>
+	</form>

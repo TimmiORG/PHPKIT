@@ -1,0 +1,30 @@
+<script language="JavaScript">
+function ContCat() {
+ if(document.catmanage.catselect.options[document.catmanage.catselect.selectedIndex].value != -1) document.catmanage.submit();}
+function setDescription(imgName) {
+ document.description.src="../images/catimages/"+ imgName +"" 
+ document.editcat.cat_symbol.value = imgName;
+ }
+</script>
+<table class="standard" cellspacing="1" cellpadding="4" width="100%">
+	<form name="catmanage" method="post" action="include.php?path=contentcategory">
+ <tr>
+  <td class="heads" colspan="2">Kategorien verwalten</td>
+ </tr>
+ <tr>
+  <td class="left" width="50%" valign="top">Aktion w&auml;hlen</td>
+  <td class="right" width="50%">
+	<select class="w90" name="catselect" size="8" onchange="ContCat()">
+		<option value="new">neue Kategorie erstellen</option>
+		<option value="upload">neues Symbol hochladen</option>
+		<optgroup label="oder bestehende Kategorie editieren">
+		$content_cat
+		</optgroup>
+	</select><br />
+	<input class="small" type="submit" value="$LANG[select]" />
+	<input type="hidden" name="select" value="$LANG[select]" />
+  </td>
+ </tr>
+	</form>
+	$edit_cat
+</table>

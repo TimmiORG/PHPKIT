@@ -1,0 +1,72 @@
+<script language="JavaScript">
+function setDescription(imgName) {document.image.imgurl.value ="[img]$dirpath/"+ imgName +"[/img]"}
+</script>
+
+<form name="image" method="post" action="include.php?path=mediaarchive&entries=$entries">
+<table class="standard" cellspacing="1" cellpadding="4" width="100%">
+ <colgroup>
+ 	<col width="66%" />
+	<col width="33%" />
+ </colgroup>
+ <tr>
+  <td class="heads" colspan="2">Grafikarchiv</td>
+ </tr>
+ <tr>
+  <td class="standard">
+  	<table border="0" cellspacing="0" cellpadding="0" width="100%">
+
+	 <tr>
+	  <td nowrap><a href="include.php?path=mediaarchive&upload=1">Neue Grafik hochladen</a></td>
+	  <td align="right" width="100%">Markierte Grafik:</td>
+	  <td>&nbsp;</td>
+	  <td>
+	  	<input type="submit" name="action" value="$LANG[delete]" class="smallhighlight" />
+		<input type="hidden" name="delete" value="$LANG[delete]" />
+		</td>
+	 </tr>
+	</table>
+  </td>
+  <td class="standard"><b>Verzeichnis "$dirpath"</b></td>
+  </tr>
+
+ <tr>
+	<td valign="top" class="standard"><font class="small"><b>BB-Code:</b></font><br />
+		<input type="text" name="imgurl" value="" size="20" style="width:80%;margin:0;padding:0;" readonly="readonly" /></td>
+		
+	<td class="left" valign="top" rowspan="2">
+	<table border="0" cellspacing="0" cellpadding="0" width="100%">
+		$imagedir_uplink
+	 <tr>
+	  <td><img border="0" height="1" width="10" alt="" src="../images/blank.gif" /></td>
+	  <td valign="top" width="100%">
+		<table border="0" cellspacing="0" cellpadding="1" width="100%">
+			$dirlist 
+			$filelist
+		 <tr>
+		  <td>&nbsp;</td>
+		  <td width="100%">&nbsp;</td>
+		 </tr>
+		</table>
+	  </td>
+	 </tr>
+	</table>
+  </td>
+
+ </tr>
+
+
+  <tr valign="top">
+   <td class="left" width="65%" valign="top">
+	$page_link
+	<br />   
+	<table border="0" cellspacing="4" cellpadding="0" width="100%">
+	 <tr>
+		$show_images
+	 </tr>
+	</table>
+	<br />
+	$page_link
+  </td>
+ </tr>
+</table>
+</form>

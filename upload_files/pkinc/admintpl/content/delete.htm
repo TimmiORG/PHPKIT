@@ -1,0 +1,25 @@
+<table class="standard" cellspacing="1" cellpadding="4" width="100%">
+	<form method="post" action="include.php?path=contentarchive&mode=delete&contentid=$contentid">
+ <tr>
+  <td class="heads" colspan="2">Inhalt l&ouml;schen</td>
+ </tr>
+ <tr>
+  <th class="highlight" colspan="2">$contentinfo[content_title]</th>
+ </tr>
+ <tr>
+  <td class="left" width="50%">Wirklich l&ouml;schen?</td>
+  <td class="right" width="50%">
+	<select name="confirm" size="2" class="w90">
+	<option value="yes">endg&uuml;ltig l&ouml;schen</option>
+	<option value="">nicht l&ouml;schen</option>
+	</select></td>
+ </tr>
+ <tr>
+  <td colspan="2" class="heads" align="center">
+	<input type="submit" name="action" value="$LANG[delete]" class="highlight" />
+	<input type="hidden" name="delete" value="$LANG[delete]" />
+	<input type="submit" name="action" value="$LANG[cancel]" />
+	<input type="hidden" name="cancel" value="$LANG[cancel]" /></td>
+ </tr>
+	</form>
+</table>

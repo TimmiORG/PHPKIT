@@ -1,0 +1,30 @@
+<table class="standard" border="0" cellspacing="1" cellpadding="4" width="100%">
+ <tr>
+  <td class="heads">Design l&ouml;schen</td>
+ </tr>
+	<form method="post" action="$form_action">
+	<input type="hidden" name="styleid" value="$styleid" />
+ <tr>
+  <td class="standard" align="center"><br />
+  	M&ouml;chten Sie dieses Design <b>$thisstylename</b> wirklich l&ouml;schen?
+	<br />
+	<br />
+	<font class="small">
+	<input class="radio" type="radio" name="confirmed" value="true" />
+	Ja
+	&nbsp; &nbsp;
+	<input class="radio" type="radio" name="confirmed" value="FALSE" checked />
+	Nein</font>
+	<br />
+	<br />
+  </td> 
+ </tr>	
+ <tr>
+  <td class="heads" align="center">
+  	<input type="submit" name="action" value="$lang[delete]" class="highlight" />
+	<input type="hidden" name="delete" value="$lang[delete]" />
+  	<input type="submit" name="action" value="$lang[cancel]" />
+	<input type="hidden" name="cancel" value="$lang[cancel]" /></td> 
+ </tr>
+	</form>
+</table>

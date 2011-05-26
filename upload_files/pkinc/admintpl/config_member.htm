@@ -1,0 +1,109 @@
+ <tr>
+  <td class="left" width="50%">Benutzerinformationen<br />
+	<span class="small">Benutzerstatus der ben&ouml;tigt wird um die Benutzer &amp; Profile einzusehen.</span></td>
+  <td class="right" width="50%">
+	<select name="member_infoshow" size="1" class="w90">
+	<option value="admin" $member_showinfo1>$lang[admin]</option>
+	<option value="mod" $member_showinfo2>$lang[mod]</option>
+	<option value="member" $member_showinfo3>$lang[member]</option>
+	<option value="user" $member_showinfo4>$lang[user]</option>
+	<option value="guest" $member_showinfo0>$lang[guest]</option>
+	</select></td>
+ </tr>
+ <tr>
+  <td class="left">Benutzerkonten l&ouml;schen<br />
+	<span class="small">Legen Sie fest ob eine L&ouml;schung von Benutzerkonten m&ouml;glich ist.</span></td>
+  <td class="right">
+	<select name="user_delete" size="3" class="w90">
+	<option value="0" $info_delete0>L&ouml;schoption nicht verf&uuml;gbar</option>
+	<option value="1" $info_delete1>Benutzer d&uuml;rfen nur markieren</option>
+	<option value="2" $info_delete2>Automatische L&ouml;schung durch Benutzer</option>
+	</select></td>
+ </tr> 
+ <tr>
+  <td class="left">Benutzer- und Nicknamen<br />
+	<span class="small">Bestimmt die minimale und maximale Anzahl an Zeichen die in Benutzer- und Nicknamen vorkommen d&uuml;rfen.<br />
+	Die maximale L&auml;nge darf 50 Zeichen nicht &uuml;berschreiten.</span></td>
+  <td class="right">
+	<table border="0" cellspacing="1" cellpadding="0">
+	 <tr>
+	  <td>min.</td>
+	  <td>&nbsp;<input type="text" size="2" name="user_namemin" value="$config[user_namemin]" maxlength="2" />&nbsp;</td>
+	  <td>Zeichen</td>
+	 </tr>
+	 <tr>
+	  <td>max.</td>
+	  <td>&nbsp;<input type="text" size="2" name="user_namemax" value="$config[user_namemax]" maxlength="2" />&nbsp;</td>
+	  <td>Zeichen</td>
+	 </tr>
+	</table>
+ </tr>
+ <tr>
+  <td class="highlight" colspan="2">$LANG[user_config_pm_settings]</td>
+ </tr>
+ <tr>
+  <td class="left">$LANG[user_config_pm_ratetime_label]<br />
+	<span class="small">$LANG[user_config_pm_ratetime_label]</span></td>
+  <td class=right>
+	<input type="text" name="user_pndelete" value="$user_pndelete" maxlength="3" size="3" />
+ </tr> 
+
+ <tr>
+  <td class="highlight" colspan="2">Sonstiges</td>
+ </tr>
+ <tr>
+  <td class="left">Textformatierungen<br />
+	<span class="small">BB-Code f&uuml;r Signaturen, private Nachrichten usw. zulassen.</span></td>
+  <td class="right">
+	<input class="radio" type="radio" name="text_ubb" value="1" $info_ubb1><span class="small"> aktiviert</span>
+	<input class="radio" type="radio" name="text_ubb" value="0" $info_ubb0><span class="small"> deaktiviert</span></td>
+ </tr>
+ <tr>
+  <td class="left">Smilies<br />
+	<span class="small">Smilies in Signaturen, Kurznachrichten usw. zulassen.</span></td>
+  <td class="right">
+	<input class="radio" type="radio" name="text_smilies" value="1" $info_smilies1><span class="small"> aktiviert</span>
+	<input class="radio" type="radio" name="text_smilies" value="0" $info_smilies0><span class="small"> deaktiviert</span></td>
+ </tr>
+ <tr>
+  <td class="left">Grafiken<br />
+	<span class="small">Grafiken und Bilder in Signaturen, Kurznachrichten usw. zulassen.</span></td>
+  <td class="right">
+	<input class="radio" type="radio" name="text_images" value="1" $info_images1><span class="small"> aktiviert</span>
+	<input class="radio" type="radio" name="text_images" value="0" $info_images0><span class="small"> deaktiviert</span></td>
+ </tr>
+ <tr>
+  <td class="left">G&auml;stebuch<br />
+	<span class="small">Aktiviert bzw. deaktivert das pers&ouml;nliche G&auml;stebuch der Mitglieder.</span></td>
+  <td class="right">
+	<input class="radio" type="radio" name="member_gbook" value="1" $info_gbook1><span class="small"> aktiviert</span>
+	<input class="radio" type="radio" name="member_gbook" value="0" $info_gbook0><span class="small"> deaktiviert</span></td>
+ </tr>
+ <tr>
+  <td class="left">Formularmailer<br />
+	<span class="small">Legt fest ob E-Mails an die Benutzer, direkt &uuml;ber die Website versendet werden.</span></td>
+  <td class="right">
+	<input class="radio" type="radio" name="member_mailer" value="1" $info_mailer1><span class="small"> aktiviert</span>
+	<input class="radio" type="radio" name="member_mailer" value="0" $info_mailer0><span class="small"> deaktiviert</span></td>
+ </tr>
+ <tr>
+  <td class="left">Geistmodus erlauben<br />
+	<span class="small">Wenn aktiviert k&ouml;nnen im &ouml;ffentlichen Bereich die Anzeigen f&uuml;r den Onlinestatus umgangen werden.
+	Der Geistmodus kann dann in den Erweiterten Profileinstellungen gew&auml;hlt werden.</span></td>
+  <td class="right">
+	<input class="radio" type="radio" name="user_ghost" value="1" $info_ghost1><span class="small"> aktiviert</span>
+	<input class="radio" type="radio" name="user_ghost" value="0" $info_ghost0><span class="small"> deaktiviert</span></td>
+ </tr>
+ <tr>
+  <td class="left">Individuelle Designs gestatten<br />
+	<span class="small">Wenn aktiviert, kann jeder Benutzer ein individuelles Design aus den daf&uuml;r freigegbenen Designs w&auml;hlen. Designs k&ouml;nnen in den Erweiterten Profileinstellungen gew&auml;hlt werden.</span></td>
+  <td class="right">
+	<input class="radio" type="radio" name="user_design" value="1" $info_design1><span class="small"> aktiviert</span>
+	<input class="radio" type="radio" name="user_design" value="0" $info_design0><span class="small"> deaktiviert</span></td>
+ </tr>
+ <tr>
+  <td class="left">Seitenanzeige<br />
+	<span class="small">Legt fest wieviele Benutzer auf den &Uuml;bersichtsseiten angezeigt werden.</span></td>
+  <td class=right>
+	<input type="text" name="member_epp" value="$config[member_epp]" maxlength="3" size="3" />
+ </tr> 

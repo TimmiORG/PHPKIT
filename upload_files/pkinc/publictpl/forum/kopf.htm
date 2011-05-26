@@ -1,0 +1,53 @@
+$kopf_extension
+<table class="forumhead" cellspacing="1" cellpadding="2" width="100%">
+ <tr> 
+  <td class="heads">
+	<table border="0" cellspacing="0" cellpadding="0" width="100%">
+	 <tr>
+	  <td align="center">
+		<a href="$config[forum_start]"><img border="0" alt="Start" src="$config[forum_button]/start.gif" /></a>
+		$kopf_logreg
+		<a href="include.php?path=userslist"><img border="0" alt="Die Mitglieder" src="$config[forum_button]/member.gif" /></a>
+		<a href="include.php?path=forumsteam"><img border="0" alt="Das Foren-Team" src="$config[forum_button]/team.gif" /></a>
+		$kopf_favorit
+		$kopf_admin
+		<a href="include.php?path=forumsearch"><img border="0" alt="Suchfunktion" src="$config[forum_button]/search.gif" /></a>
+	  </td>
+	 </tr>
+	</table>
+  </td>
+ </tr>
+ <tr>
+  <td class="standard">
+	<table border="0" cellpadding="1" cellspacing="0" width="100%">
+	 <tr>
+	  <td width="100%" valign="top">
+		<table border="0" cellspacing="0" cellpadding="0" width="100%">
+		 <tr>
+		  <td nowrap="nowrap"><span class="small">$lang_posts_and_threads_in_forums</span></td>
+		 </tr>
+		 <tr>
+		  <td><span class="small">$lang_newpostings<br />$lang_mark_all_forums_readed</span></td>
+		 </tr>
+		</table>
+	  </td>
+	  <td valign="top" align="right">
+			$kopf_login
+			$kopf_userinfo
+	  </td>
+	 </tr>
+	</table>
+  </td>
+ </tr>
+ <tr>
+  <td class="heads">
+	<table border="0" cellspacing="0" cellpadding="0" width="100%">
+	 <tr>
+	  <td width="100%" class="small"><a href="include.php?path=forumsdisplay">$LANG[forumsdisplay]</a>$forum_path</td>
+		$forum_action
+	 </tr>
+	</table>
+  </td>
+ </tr>
+</table>
+<br />

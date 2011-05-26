@@ -1,0 +1,19 @@
+<table class="standard" border="0" cellspacing="1" cellpadding="4" width="100%">
+	<form method="post" action="include.php?path=smilies" />
+	$smilies_row
+ <tr>
+  <td class="heads" colspan="3">Smilie-Verzeichnis</td>
+ </tr>
+	$smilies_dirrow
+ <tr>
+  <td class="heads" colspan="3">
+	<select name="action" size="1">
+	<option value="view">Zur &Uuml;bersicht</option>
+	<option value="$lang[create]">Erstellen</option>
+	<option value="showdir">Verzeichnisinhalt anzeigen</option>
+	</select>
+	<input type="submit" value="Los" />
+	<input type="hidden" name="create" value="$lang[create]" /></td>
+ </tr>
+	
+</table>

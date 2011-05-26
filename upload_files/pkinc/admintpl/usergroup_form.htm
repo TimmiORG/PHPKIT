@@ -1,0 +1,108 @@
+<table class="standard" cellspacing="1" cellpadding="4" width="100%">
+ <tr>
+  <td class="heads" colspan="2">Benutzergruppe bearbeiten</td>
+ </tr>
+	<form method="post" action="include.php?path=usergroup">
+	<input type="hidden" name="grpid" value="$grpid" />
+ <tr>
+  <td class="left" width="50%">Gruppenname</td>
+  <td class="right" width="50%">
+	<input type="text" name="usergroup_name" size="25" value="$usergroup_name" class="w90" /></td>
+ </tr>
+ <tr>
+  <td class="left">Gruppenbeschreibung</td>
+  <td class="right">
+	<textarea name="usergroup_description" cols="25" rows="4" class="w90">$usergroup_description</textarea></td>
+ </tr>
+ <tr>
+  <td class="heads" colspan="2">Zugriffsrechte dieser Gruppe</td>
+ </tr>
+ <tr>
+  <td class="left" valign="top">Inhaltsverwaltung</td>
+  <td class="right"><font class="small">
+	<input class="checkbox" type="checkbox" value="1" name="access_content" $access_content /> Inhalte verfassen<br />
+	<input class="checkbox" type="checkbox" value="1" name="access_article" $access_article /> Artikel schreiben<br />
+	<input class="checkbox" type="checkbox" value="1" name="access_news" $access_news /> News verfassen<br />
+	<input class="checkbox" type="checkbox" value="1" name="access_links" $access_links /> Links anlegen<br />
+	<input class="checkbox" type="checkbox" value="1" name="access_download" $access_download /> Downloads hinzuf&uuml;gen<br />
+	<input class="checkbox" type="checkbox" value="1" name="access_submit" $access_submit /> Einsendungen kontrollieren<br />
+	<input class="checkbox" type="checkbox" value="1" name="access_contentcat" $access_contentcat /> Kategorien &amp; Themen verwalten<br />
+	<input class="checkbox" type="checkbox" value="1" name="access_contfree" $access_contfree /> Freigaberechte*<br />
+	<input class="checkbox" type="checkbox" value="1" name="access_contdelete" $access_contdelete /> L&ouml;schrechte*<br />
+	* Nur in Verbingung mit mindestens einer weiteren Rechtezuweisung</font></td>
+ </tr> 
+ <tr>
+  <td class="left">FAQ</td>
+  <td class="right"><font class="small">
+  	<input class="checkbox" type="checkbox" value="1" name="access_faq" $access_faq /> Eintr&auml;ge verwalten<br />
+  	<input class="checkbox" type="checkbox" value="1" name="access_faqcat" $access_faqcat /> Rubriken verwalten</font></td>
+ </tr> 
+ <tr>
+  <td class="left" valign="top">Forenverwaltung</td>
+  <td class="right"><font class="small">
+	<input class="checkbox" type="checkbox" value="1" name="access_fedit" $access_fedit /> Foren anlegen &amp; editieren<br />
+	<input class="checkbox" type="checkbox" value="1" name="access_fdelete" $access_fdelete /> Foren l&ouml;schen*<br />
+	<input class="checkbox" type="checkbox" value="1" name="access_frank" $access_frank /> Forenr&auml;nge &auml;ndern<br />
+	<input class="checkbox" type="checkbox" value="1" name="access_finfo" $access_finfo /> Foreninfos verwalten<br />
+ 	* nur in Verbindung mit Editierrechten.</font></td>
+ </tr>
+ <tr>
+  <td class="left" valign="top">G&auml;stebuch</td>
+  <td class="right"><font class="small">
+	<input class="checkbox" type="checkbox" value="1" name="access_gbedit" $access_gbedit /> Eintr&auml;ge editieren<br />
+	<input class="checkbox" type="checkbox" value="1" name="access_gbdelete" $access_gbdelete /> Eintr&auml;ge l&ouml;schen</font></td>
+ </tr>
+ <tr>
+  <td class="left">Abstimmungen</td>
+  <td class="right"><font class="small">
+  	<input class="checkbox" type="checkbox" value="1" name="access_vote" $access_vote /> Abstimmungen verwalten</font></td>
+ </tr>
+ <tr>
+  <td class="left" valign="top">Navigation</td>
+  <td class="right"><font class="small">
+	<input class="checkbox" type="checkbox" value="1" name="access_navcat" $access_navcat /> Kategorien verwalten<br />
+	<input class="checkbox" type="checkbox" value="1" name="access_navlink" $access_navlink /> Links verwalten</font></td> 
+  </tr> 
+ <tr>
+  <td class="left" valign="top">Benutzerverwaltung</td> 
+  <td class="right"><font class="small">
+	<input class="checkbox" type="checkbox" value="1" name="access_user" $access_user /> User verwalten<br />
+	<input class="checkbox" type="checkbox" value="1" name="access_usergroup" $access_usergroup /> Benutzergruppen editieren
+	<!-- 
+	<br />
+	<input class="checkbox" type="checkbox" value="1" name="access_userinfo" $access_userinfo /> Mitgliederinformation versenden
+	-->
+	</font></td>
+ </tr>
+ <tr>
+  <td class="left" valign="top">Sonstiges</td>
+  <td class="right"><font class="small"> 
+	<input class="checkbox" type="checkbox" value="1" name="access_avatar" $access_avatar /> Avatare verwalten<br />
+ 	<input class="checkbox" type="checkbox" value="1" name="access_adview" $access_adview /> Banner editieren<br />
+ 	<input class="checkbox" type="checkbox" value="1" name="access_images" $access_images /> Grafiken verwalten<br />
+ 	<input class="checkbox" type="checkbox" value="1" name="access_comment" $access_comment /> Kommentare verwalten<br />
+ 	<input class="checkbox" type="checkbox" value="1" name="access_smilies" $access_smilies /> Smilies verwalten<br />
+	<input class="checkbox" type="checkbox" value="1" name="access_style" $access_style /> Designs bearbeiten<br >
+	<input class="checkbox" type="checkbox" value="1" name="access_templates" $access_templates /> Templates bearbeiten<br /> 
+	<input class="checkbox" type="checkbox" value="1" name="access_database" $access_database /> Datenbanksicherung</font></td>
+ </tr>
+ <tr>
+  <td class="left" valign="top">Zugriffstatistik</td>
+  <td class="right"><font class="small">
+	<input class="checkbox" type="checkbox" value="1" name="access_stats" $access_stats /> Seitenzugriffe einsehen<br />
+	<input class="checkbox" type="checkbox" value="1" name="access_refferer" $access_refferer /> Referrerlinks einsehen</font></td> 
+ </tr>
+ <tr>
+  <td class="left">Konfiguration</td>
+  <td class="right"><font class="small">
+  	<input class="checkbox" type="checkbox" value="1" name="access_config" $access_config /> Einstellungen &auml;ndern</font></td>
+ </tr>
+ <tr>
+  <td class="heads" colspan="4" align="center">
+	<input type="submit" name="action" value="$lang[save]" />
+	<input type="hidden" name="save" value="$lang[save]" />
+	<input type="submit" name="action" value="$lang[cancel]" />
+	<input type="hidden" name="cancel" value="$lang[cancel]" />	</td>
+ </tr>
+	</form>	
+</table>

@@ -1,0 +1,18 @@
+ <tr>
+  <td class="heads" colspan="2">Eigenschaften bearbeiten</td>
+ </tr>
+ <tr>
+  <td class="left">Name<br />
+  	<font class="small">Name des Vorlagenpaketes.</font></td>
+  <td class="right"><input type="text" name="templatepack_name" size="25" value="$templatepack_name" class="w90" /></td> 
+ </tr>
+	<input type="hidden" name="templatepack_dir" value="" />
+	<input type="hidden" name="templatepack_opt" value="0" />
+ 	$templatepack_delete
+ <tr>
+  <td class="heads" colspan="2" align="center">
+	<input type="submit" name="action" value="$LANG[save]" />
+	<input type="hidden" name="save" value="$LANG[save]" />
+	<input type="submit" name="action" value="$LANG[cancel]" />
+	<input type="hidden" name="cancel" value="$LANG[cancel]" /></td>
+ </tr>

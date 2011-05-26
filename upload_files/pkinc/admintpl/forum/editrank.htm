@@ -1,0 +1,32 @@
+<table class="standard" cellspacing="1" cellpadding="4" width="100%">
+ <tr>
+  <td class="heads" colspan="4">Forenr&auml;nge</td>
+ </tr>
+ <tr>
+  <td class="standard" width="10%">Postanzahl</td>
+  <td class="standard" width="40%">Rangtitel</td>
+  <td class="standard" width="50%">Optionen</td>
+ </tr>
+ <tr>
+  <td class="highlight" colspan="4">Rang hinzuf&uuml;gen</td>
+ </tr>
+	<form method="post" action="include.php?path=forumrank">
+	<input type="hidden" name="rankid" value="new" />
+ <tr>
+   <td class="right">
+	<input type="text" name="newrank_post" size="10" class="w90" /></td>
+   <td class="right">
+	<input type="text" name="newrank_title" size="25" class="w90" /></td>
+   <td class="right">
+	<input type="submit" name="action" value="$lang[save]" />
+	<input type="hidden" name="save" value="$lang[save]" /></td>
+ </tr>
+	</form>
+ <tr>
+  <td class="highlight" colspan="4">Bestehende R&auml;nge</td>
+ </tr>
+	$editrank_row
+ <tr>
+  <td class="heads" colspan="4">&nbsp;</td>
+ </tr>
+</table>

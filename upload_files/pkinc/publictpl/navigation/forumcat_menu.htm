@@ -1,0 +1,13 @@
+<form name="forumjump" method="post" action="$form_action">
+<input type="hidden" name="remove_path" value="$current_path" />
+<select class="navform" name="jumpid" size="1">
+	<option value="main">$lang_forumsdisplay</option>
+	<option value="search">$lang_search</option>
+	<option value="newthread">$lang_new_thread</option>
+	<option value="-1">_______________</option>
+	<option value="-1" selected="selected">$lang_select_target_forum</option>
+	<option value="-1"></option>
+	$list
+	</select>
+	<input class="navform" type="submit" name="jump" value="$LANG[bl_go]" />
+</form>

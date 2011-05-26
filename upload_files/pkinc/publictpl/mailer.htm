@@ -1,0 +1,29 @@
+<table class="standard" cellspacing="1" cellpadding="4" width="100%">
+ <tr>
+  <td class="heads" colspan="2">E-Mail senden</td>
+ </tr>
+	<form method="post" action="$form_action">
+	<input type="hidden" name="userid" value="$userinfo[user_id]" />
+	$mailer_msg
+ <tr>
+  <td class="left" width="20%">Empf&auml;nger</td>
+  <td class="right" width="80%"><b><a href="include.php?path=userinfo&amp;id=$userinfo[user_id]">$userinfo[user_nick]</a></b></td>
+ </tr>
+ <tr>
+  <td class="left">Betreff</td>
+  <td class="right">
+	<input type="text" size="25" name="mailer_title" value="$mailer_title" /></td>
+ </tr>
+ <tr>
+  <td class="left" valign="top" nowrap="nowrap">Ihre Nachricht</td>
+  <td class="right">
+	<textarea name="mailer_text" cols="40" rows="12" style="w90">$mailer_text</textarea></td>
+ </tr>
+ <tr>
+  <td class="heads" colspan="2" align="center">
+	<input type="submit" name="action" value="$lang[send]" />
+	<input type="hidden" name="send" value="$lang[send]" />
+	<input type="reset" value="$lang[reset]" /></td>
+ </tr>
+	</form>
+</table>

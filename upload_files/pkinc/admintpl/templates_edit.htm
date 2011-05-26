@@ -1,0 +1,54 @@
+<script language="Javascript" src="fx/main.js"></script>
+
+<table class="standard" border="0" cellspacing="1" cellpadding="4" width="100%">
+	<form name="edittemplate" method="post" action="include.php?path=templates">
+	<input type="hidden" name="template_id" value="$template_id" />
+	<input type="hidden" name="save" value="$LANG[save]" />
+	<input type="hidden" name="delete" value="$LANG[delete]" />
+	<input type="hidden" name="cancel" value="$LANG[cancel]" />
+ <tr>
+  <td class="heads" colspan="4">Vorlage bearbeiten</td>
+ </tr>
+	$template_edit_error
+ <tr>
+  <td class="even" width="10%">Vorlagenname</td>
+  <td class="odd" width="40%">
+	<input type="text" name="template_name" value="$template_name" size="15" class="w90" /></td>
+  <td class="even" width="10%">Vorlagenpaket</td>
+  <td class="odd" width="40%">
+	<select name="templatepack_id" size="1" class="w90">
+	<option value="0" $select0>$LANG[templatepack_modified]</option>
+	$pack_select
+	</select></td>
+ </tr>
+ <tr>
+  <td class="even" colspan="4">
+	<table border="0" cellspacing="0" cellpadding="0" width="100%">
+	 <tr>
+	  <td nowrap>
+		<input type="button" value="$LANG[preview]" onclick="javascript:previewTemplate()" />
+		<input type="button" value="$LANG[copy]" onclick="javascript:HighlightAndCopy()" />
+		<input type="reset" value="$LANG[reset]" /></td>
+	  <td nowrap align="right">
+		<input name="searchstring" type="text" size="10" onchange="n=0;" />
+		<input type="button" value="$LANG[search]" onclick="javascript:highlightSearch(document.edittemplate.searchstring.value)" /></td>
+	 </tr>
+	</table>
+  </td>
+ </tr>
+ <tr>
+  <td class="odd" colspan="4">
+	<table border="0" cellspacing="0" cellpadding="0" width="100%">
+	 <tr>
+	  <td><textarea class="code" name="template_value" cols="60" rows="30" wrap="off" style="width: 100%">$template_code</textarea></td>
+	 </tr>
+	</table></td>
+ </tr>
+ <tr>
+  <td class="heads" colspan="4" align="center">
+	<input type="submit" name="action" value="$LANG[save]" />
+	<input type="submit" name="action" value="$LANG[cancel]" />
+	<input type="submit" name="action" value="$LANG[delete]" class="highlight" /></td>
+ </tr>
+	</form>
+</table>

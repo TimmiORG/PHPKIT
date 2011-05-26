@@ -1,0 +1,63 @@
+<script type="text/javascript" src="fx/main.js"></script>
+<form name="myform" method="post" action="include.php?path=guestbook&amp;mode=sign">
+<table class="standard" cellspacing="1" cellpadding="4" width="100%">
+ <tr>
+  <td class="heads" colspan="3">Eintragen</td>
+ </tr>
+ <tr>
+  <td class="left" width="15%">Autor</td>
+  <td class="right" width="35%">
+	<input type="text" size="30" name="gbook_autor" value="$gbook_autor" style="width:90%" /></td>
+  <td class="right" width="50%" rowspan="5" align="center">$sign_message</td>
+ </tr>
+ <tr>
+  <td class="left" nowrap="nowrap">E-Mail-Adresse</td>
+  <td class="right">
+	<input type="text" size="30" name="gbook_email" value="$gbook_email" style="width:90%" /></td>
+ </tr>
+ <tr>
+  <td class="left" nowrap="nowrap">E-Mail-Optionen</td>
+  <td class="right">
+	<input class="checkbox" type="checkbox" name="gbook_check" value="1" $check1 /> <font class="small">Im G&auml;stebuch anzeigen</font>
+	$sign_comment
+  </td>
+ </tr>
+ <tr>
+  <td class="left">Homepage</td>
+  <td class="right">
+	<input type="text" size="30" name="gbook_hpage" value="$gbook_hpage" style="width:90%" /></td>
+ </tr>
+ <tr>
+  <td class="left">ICQ</td>
+  <td class="right">
+	<input type="text" size="10" name="gbook_icqnr" value="$gbook_icqnr" maxlength="10" /></td>
+ </tr>
+ <tr>
+  <td class="left">Titel</td>
+  <td class="right" colspan="2">
+	<input type="text" size="60" name="gbook_title" value="$gbook_title" />
+  </td>
+ </tr>
+ <tr>
+  <td class="left" valign="top">Text</td>
+  <td class="right" colspan="2">
+	<table width="100%" cellpadding="0" cellspacing="0" border="0">
+	 <tr>
+	  <td width="80%" valign="top" rowspan="2"><textarea id="pkBBArea" name="content" cols="60" rows="12" onfocus="pkBBSelection(this);" onclick="pkBBSelection(this);" onchange="pkBBSelection(this);" ondblclick="pkBBSelection(this);">$gbook_text</textarea></td>
+	  <td width="20%" valign="top">$sign_format</td>
+	 </tr>
+	</table>
+  </td>
+ </tr>
+	$captcha 
+ <tr>
+  <td class="heads" colspan="3" align="center">
+	<input type="hidden" name="gbook_time" value="$gbook_time" />
+	<input type="hidden" name="gb_uid" value="$gb_uid" />
+	<input type="submit" name="action" value="$lang[preview]" />
+	<input type="hidden" name="preview" value="$lang[preview]" />
+	<input type="submit" name="action" value="$lang[save]" />
+	<input type="hidden" name="save" value="$lang[save]" /></td>
+ </tr>
+</table>
+</form>

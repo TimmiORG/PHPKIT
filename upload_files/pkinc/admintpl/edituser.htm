@@ -1,0 +1,78 @@
+<table class="standard" cellspacing="1" cellpadding="4" width="100%">
+ <colgroup>
+  <col width="250" />
+  <col />
+ </colgroup>
+ <tr>
+  <td class="heads" colspan="2">Benutzerkonto $edit_type</td>
+ </tr>
+	<form name="edituser" method="post" action="$form_action">
+	<input type="hidden" name="editid" value="$editid">
+	$info_delete
+	$error_message
+ <tr>
+  <td class="left">Benutzer- und Loginname</td>
+  <td class="right"><input type="text" size="25" name="edit_name" value="$edit_name" maxlength="50" class="w90" /></td>
+ </tr>
+ <tr>
+  <td class="left">Nickname</td>
+  <td class="right"><input type="text" size="25" name="edit_nick" value="$edit_nick" maxlength="50" class="w90" /></td>
+ </tr>
+ <tr>
+  <td class="left">Passwort</td>
+  <td class="right"><input type="password" name="edit_password" size="25" class="w90" /></td>
+ </tr>
+ <tr>
+  <td class="left">E-Mail-Adresse</td>
+  <td class="right"><input type="text" size="25" name="edit_email" value="$edit_email" class="w90" /></td>
+ </tr>
+ <tr>
+  <td class="left">Benutzerstatus</td>
+  <td class="right">
+	<select name="edit_status" size="1" class="w90">
+	<option value="ban" $info_status0>gesperrt</option>
+	<option value="user" $info_status1>$lang[user]</option>
+	<option value="member" $info_status2>$lang[member]</option>
+	<option value="mod" $info_status3>$lang[mod]</option>
+	<option value="admin" $info_status4>$lang[admin]</option>
+	</select></td>
+ </tr>
+ <tr>
+  <td class="left">Benutzergruppe</td>
+  <td class="right">
+	<select name="edit_groupid" size="1" class="w90" />
+	<option value="0" $info_selected_group0>keiner Benutzergruppe zuweisen</option>
+	$info_group
+	</td>
+ </tr>
+	$edituser_full
+ <tr>
+  <td class="standard" colspan="2">Admin-Optionen</td>
+ </tr>
+ <tr>
+  <td class="left">Benutzerkonto aktivieren<br />
+	<font class="small">Wird das Benutzerkonto deaktiviert, kann es bis zur Aufhebung nicht genutzt werden.</font></td>
+  <td class="right">
+	<input class="checkbox" type="checkbox" name="edit_activate" value="1" $info_activate /></td>
+ </tr>
+ <tr>
+  <td class="left">Profilbearbeitung sperren<br />
+	<font class="small">Wird diese Option aktiviert darf der Benutzer sein Profil nicht mehr selbst &auml;ndern.</font></td>
+  <td class="right">
+	<input class="checkbox" type="checkbox" name="edit_profillock" value="1" $info_profillock /></td>
+ </tr>
+	$edituser_delete
+ <tr>
+  <td class="left">Benachrichtigen<br />
+	<font class="small">Den Benutzer per E-Mail &uuml;ber die Bearbeitung informieren.</font></td>
+  <td class="right">
+	<input class="checkbox" type="checkbox" name="edit_notify" value="1" /></td>
+ </tr>
+ <tr>
+  <td class="heads" colspan="2" align="center">
+	<input type="submit" name="action" value="$lang[save]" />
+ 	<input type="hidden" name="save" value="$lang[save]" />
+	<input type="reset" value="$lang[reset]" /></td>
+ </tr>
+	</form>
+</table>

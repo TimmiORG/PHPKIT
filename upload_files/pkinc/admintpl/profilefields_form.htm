@@ -1,0 +1,35 @@
+<table class="standard" border="0" cellspacing="1" cellpadding="4" width="100%">
+	<form method="post" action="include.php?path=userprofilefields">
+	<input type="hidden" name="id" value="$fieldid" />
+ <tr>
+  <td class="heads" colspan="2">Profilfeld bearbeiten</td>
+ </tr>
+ <tr>
+  <td class="left" width="50%">Feldname<br />
+  	<font class="small">&nbsp;</font></td>
+  <td class="right" width="50%"><input type="text" name="field_name" value="$fieldname" size="25" class="w90" /></td>
+ </tr>
+ <tr>
+  <td class="left" valign="top">Beschreibung<br />
+  	<font class="small">&nbsp;</font></td>
+  <td class="right"><textarea name="field_description" cols="30" rows="3" class="w90">$fielddescription</textarea></td>
+ </tr>
+ <tr>
+  <td class="left">Maximale Feldl&auml;nge<br />
+  	<font class="small">&nbsp;</font></td>
+  <td class="right"><input type="text" name="field_maxlength" value="$fieldmaxlength" size="5" /></td>
+ </tr>
+ <tr>
+  <td class="left">Ordnungsnummer<br />
+  	<font class="small">&nbsp;</font></td>
+  <td class="right"><input type="text" name="field_order" value="$fieldorder" size="5" /></td>
+ </tr>
+ <tr>
+  <td class="heads" colspan="2" align="center">
+  	<input type="submit" name="action" value="$lang[save]" />
+	<input type="hidden" name="save" value="$lang[save]" />
+  	<input type="submit" name="action" value="$lang[cancel]" />
+	<input type="hidden" name="cancel" value="$lang[cancel]" /></td>
+ </tr>
+ 	</form>
+</table>

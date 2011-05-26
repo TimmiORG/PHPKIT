@@ -1,0 +1,55 @@
+ <tr>
+  <td class="left" width="50%">Sortierung<br />
+	<font class="small">Legt die Reihenfolge fest in der die Kommentare angezeigt werden.</font></td>
+  <td class="right" width="50%">
+	<select name="comment_order" size="2" class="w90">
+	<option value="ASC" $info_orderA>&auml;lteste zuerst</option>
+	<option value="DESC" $info_orderD>neuste zuerst</option>
+	</select></td>
+ </tr>
+ <tr>
+  <td class="left">BB-Code<br />
+	<font class="small">Legt fest ob BB-Code in Kommentaren verwendet werden darf.</font></td>
+  <td class="right">
+	<select name="comment_bbcode" size="2" class="w90">
+	<option value="1" $info_bbcode1>erlauben</option>
+	<option value="0" $info_bbcode0>nicht erlauben</option>
+	</select></td>
+ </tr>
+ <tr>
+  <td class="left">Smilies<br />
+	<font class="small">Legt fest ob Smilies in Kommentaren verwendet werden d&uuml;rfen.</font></td>
+  <td class="right">
+	<select name="comment_smilies" size="2" class="w90">
+	<option value="1" $info_smilies1>erlauben</option>
+	<option value="0" $info_smilies0>nicht erlauben</option>
+	</select></td>
+ </tr>
+ <tr>
+  <td class="left">Grafiken<br />
+	<font class="small">Bilder und Grafiken per BB-Code erlauben.</font></td>
+  <td class="right">
+	<select name="comment_images" size="2" class="w90">
+	<option value="1" $info_images1>erlauben</option>
+	<option value="0" $info_images0>nicht erlauben</option>
+	</select></td>
+ </tr>
+ <tr>
+  <td class="left">Wer darf kommentieren?<br />
+	<font class="small">Bestimmt ob die Abgabe von Kommentaren registrierten Benutzer vorbehalten ist.</font></td>
+  <td class="right">
+	<select name="comment_register" size="2" class="w90">
+	<option value="1" $info_register1>registrierte Benutzer</option>
+	<option value="0" $info_register0>alle Benutzer und G&auml;ste</option>
+	</select></td>
+ </tr>
+ <tr>
+  <td class="left">Spamschutz<br />
+  	<font class="small">Geben Sie hier die Zeit in Minuten an, die gewartet werden muss bevor ein weiterer Kommentar gestattet ist.</font></td>
+  <td class="right"><input type="text" name="comment_floodctrl" value="$comment_floodctrl" size="14" /></td>
+ </tr>
+ <tr>
+  <td class="left">Maximal erlaubt Zeichen<br />
+  	<font class="small">Anzahl der maximal pro Kommentar erlaubten Zeichen.</font></td>
+  <td class="right"><input type="text" name="comment_maxchars" value="$comment_maxchars" size="14" /></td>
+ </tr>

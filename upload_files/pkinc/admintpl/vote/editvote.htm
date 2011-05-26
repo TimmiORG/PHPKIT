@@ -1,0 +1,87 @@
+<table class="standard" cellspacing="1" cellpadding="4" width="100%">
+	<form method="post" action="include.php?path=pollcompose&voteid=$voteid">
+ <tr>
+  <td class="heads" colspan="2">Abstimmung bearbeiten</td>
+ </tr>
+ <tr>
+  <td class="left" width="50%">Titel<br />
+	<font class="small">Titel der Abstimmung.</font></td>
+  <td class="right" width="50%">
+	<input type="text" name="votetheme_title" size="40" value="$votetheme_title" class="w90" /></td>
+ </tr>
+ <tr>
+  <td class="left">Beschreibung<br />
+	<font class="small">Beschreibung welchem Zweck die Abstimmung dient. Kann frei bleiben.</font></td>
+  <td class="right">
+	<textarea name="votetheme_description" cols="30" rows="4" class="w90">$votetheme_description</textarea></td>
+ </tr>
+ <tr>
+  <td class="left">Benutzerstatus<br />
+	<font class="small">Ben&ouml;tigter Benutzerstatus um an der Abstimmung teilzunehmen.</font></td>
+  <td class="right">
+	<select name="votetheme_rights" size="1" class="w90">
+	<option value="guest" $rights0>G&auml;ste</option>
+	<option value="user" $rights1>User</option>
+	<option value="member" $rights2>Mitglied</option>
+	<option value="mod" $rights3>Moderatoren</option>
+	<option value="admin" $rights4>Administratoren</option>
+	</select></td>
+ </tr>
+ <tr>
+  <td class="left">G&uuml;ltigkeitszeitraum<br />
+	<span class="small">Legt den Zeitraum fest, in dem die Abstimmung verf&uuml;gbar bleibt. Keine Angabe bedeutet unendliche G&uuml;ltigkeit.<br />$error_validity_period</span></td>
+  <td class="right" nowrap>
+	<input type="text" name="vote_time_d" value="$vote_time_d" size="2" maxlength="2" />
+	<input type="text" name="vote_time_m" value="$vote_time_m" size="2" maxlength="2" />
+	<input type="text" name="vote_time_y" value="$vote_time_y" size="4" maxlength="4" /> &nbsp;
+	<input type="text" name="vote_time_h" value="$vote_time_h" size="2" maxlength="2" />
+	<input type="text" name="vote_time_mm" value="$vote_time_mm" size="2" maxlength="2" /><br />
+	<input type="text" name="vote_expire_d" value="$vote_expire_d" size="2" maxlength="2" />
+	<input type="text" name="vote_expire_m" value="$vote_expire_m" size="2" maxlength="2" />
+	<input type="text" name="vote_expire_y" value="$vote_expire_y" size="4" maxlength="4" /> &nbsp;
+	<input type="text" name="vote_expire_h" value="$vote_expire_h" size="2" maxlength="2" />
+	<input type="text" name="vote_expire_mm" value="$vote_expire_mm" size="2" maxlength="2" />
+  </td>
+ </tr>
+ <tr>
+  <td class="left">Beenden<br />
+	<font class="small">Anzahl der Antworten, nach der die Abstimmung automatisch beendet wird (0 f&uuml;r unendlich).</font></td>
+  <td class="right" width="50%">
+	<input type="text" name="votetheme_maxvotes" size="5" value="$votetheme_maxvotes" maxlength="5" /></td>
+ </tr>
+ <tr>
+  <td class="left">Kommentare<br />
+	<font class=small>Legt fest ob Kommentare zu diesem Abstimmung m&ouml;glich sind.</font></td>
+  <td class="right">
+	<input type="checkbox" name="votetheme_comment" value="1" $comment1 /></td>
+ </tr>
+ <tr>
+  <td class="left">Multiple Antworten<br />
+	<font class="small">Legt fest ob mehrere Antworten ausgew&auml;hlt werden d&uuml;rfen.</font></td>
+  <td class="right">
+	<input type="checkbox" name="votetheme_multianswer" value="1" $multi1 /></td>
+ </tr>
+ <tr>
+  <td class="left">Ergebnisse verstecken<br />
+	<font class="small">Wenn ausgew&auml;hlt werden die Antworten erst nach Ablauf angezeigt.</font></td>
+  <td class="right">
+	<input type="checkbox" name="votetheme_hidden" value="1" $hidden1 /></td>
+ </tr>
+ <tr>
+  <td class="left">Status<br />
+	<font class="small">Bestimmt ob die Abstimmung aktiv ist oder beendet.</font></td>
+  <td class="right">
+	<select name="votetheme_status" size="1" class="w90">
+		<option value="1" $status1>aktiv</option>
+		<option value="0" $status0>inaktiv</option>
+	</select></td>
+ </tr>
+ <tr>
+  <td class="heads" colspan="2" align="center">
+	<input type="submit" name="action" value="$LANG[save]" />
+	<input type="hidden" name="save" value="$LANG[save]" />
+	<input type="submit" name="action" value="$LANG[next]" />
+	<input type="hidden" name="next" value="$LANG[next]" /></td>
+ </tr>
+	</form>
+</table>

@@ -1,0 +1,102 @@
+ <tr>
+  <td class="heads" colspan="2">Kategorie $type</td>
+ </tr>
+	<form name="edit_navcat" method="post" action="include.php?path=navigationcategory">
+	<input type="hidden" name="select_navcat" value="$select_navcat" />
+	<input type="hidden" name="save" value="$lang[save]" />
+ <tr>
+  <td class="left">Titel<br />
+  	<font class="small">Angezeigter Name der Kategorie.</font></td>
+  <td class="right">
+	<input type="text" name="cat_title" value="$info[navigationcat_title]" size="25" maxlength="255" class="w90" /></td>
+ </tr>
+ <tr>
+  <td class="left">Titel anzeigen<br />
+  	<span class="small">Soll der Kategorietitel im &ouml;ffentlichen Bereich angezeigt werden?</span></td>
+  <td class="right">
+  	<table border="0" cellspacing="0" cellpadding="0">
+	 <tr>
+	  <td><input class="radio" type="radio" name="cat_showtitle" value="1" $show1></td>
+	  <td>&nbsp;Ja</td>
+	  <td>&nbsp;&nbsp;&nbsp;</td>
+	  <td><input class="radio" type="radio" name="cat_showtitle" value="0" $show0></td>
+	  <td>&nbsp;Nein</td>
+	 </tr>
+	</table>
+  </td>
+ </tr>
+ <tr>
+  <td class="left">Titel-Link<br />
+  	<font class="small">Tragen Sie einen Verweis ein um den Titel zu verlinken? Kann frei bleiben wenn keine Verlinkung erw&uuml;nscht ist.</font></td>
+  <td class="right">
+	<input type="text" name="cat_link" value="$info[navigationcat_link]" size="25" maxlength="255" class="w90" /></td>
+ </tr>
+ <tr>
+  <td class="left">Link in neuem Fenster &ouml;ffnen<br />
+  	<span class="small">Soll der Verweis des verlinkten Titels in einem neuen Fenster ge&ouml;ffnet werden?</span></td>
+  <td class="right">
+  	<table border="0" cellspacing="0" cellpadding="0">
+	 <tr>
+	  <td><input class="radio" type="radio" name="cat_link_target" value="_blank" $target1></td>
+	  <td>&nbsp;Ja</td>
+	  <td>&nbsp;&nbsp;&nbsp;</td>
+	  <td><input class="radio" type="radio" name="cat_link_target" value="" $target0></td>
+	  <td>&nbsp;Nein</td>
+	 </tr>
+	</table>  	  
+  </td>
+ </tr>
+	$navigation_box
+ <tr>
+  <td class="left">Ausrichtung<br />
+  	<font class="small">Bestimmt wo die Kategorie angezeigt wird.</font></td>
+  <td class="right">
+	<select name="cat_align" size="1" class="w90">
+	<option value="2" $align2>oben</option>
+	<option value="0" $align0>links</option>
+	<option value="1" $align1>rechts</option>
+	<option value="3" $align3>unten</option>
+	</select></td>
+ </tr>
+ <tr>
+  <td class="left">Aufklappbar<br />
+  	<span class="small">Soll die Kategorie erst durch anklicken ge&ouml;ffnet dargestellt werden?</span></td>
+  <td class="right">
+	<select name="cat_open" size="1" class="w90">
+	<option value="1" $open1>immer offen</option>
+	<option value="0" $open0>&ouml;ffnen durch anklicken</option>
+	</select></td>
+ </tr>
+ <tr>
+  <td class="left">Benutzerstatus<br />
+	<font class="small">Benutzerstatus der notwendig ist damit die Kategorie angezeigt wird.</font></td>
+  <td class="right">
+	<select name="cat_rights" size="1" class="w90">
+	<option value="guest" $rights0>$lang[guest]</option>
+	<option value="user" $rights1>$lang[user]</option>
+	<option value="member" $rights2>$lang[member]</option>
+	<option value="mod" $rights3>$lang[mod]</option>
+	<option value="admin" $rights4>$lang[admin]</option>
+	</select></td>
+ </tr>
+ <tr>
+  <td class="left">Sortierungsnummer</td>
+  <td class="right"><input type="text" name="cat_order" value="$info[navigationcat_order]" size="5" maxlength="2" class="number" /></td>
+ </tr>
+ <tr>
+  <td class="left">Kategorie-Status</td>
+  <td class="right">
+	<select name="cat_status" size="1" class="w90">
+	<option value="1" $status1>offen</option>
+	<option value="0" $status0>geschlossen</option>
+	</select></td>
+ </tr>
+	$navigation_delete
+ <tr>
+  <td class="heads" colspan="2" align="center">
+	<input type="submit" name="action" value="$lang[save]" />
+	<input type="hidden" name="save" value="$lang[save]" />
+	<input type="submit" name="action" value="$lang[cancel]" />
+	<input type="hidden" name="cancel" value="$lang[cancel]" /></td>
+ </tr>
+	</form>

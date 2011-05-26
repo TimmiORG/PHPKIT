@@ -1,0 +1,22 @@
+<script language="Javascript" src="fx/main.js"></script>
+<script language="JavaScript">
+function FAQCat() {if(document.faqcat.catid.options[document.faqcat.catid.selectedIndex].value != -1) document.faqcat.submit();}
+</script>
+<table class="standard" border="0" cellspacing="1" cellpadding="4" width="100%">
+ <tr>
+  <td class="heads" colspan="2" valign="top">FAQ-Eintrag erstellen/&auml;ndern</td>
+ </tr>
+	<form name="faqcat" method="post" action="include.php?path=faqcompose">
+	<input type="hidden" name="save" value="$LANG[save]" />
+ <tr>
+  <td class="left" width="50%">Rubrik ausw&auml;hlen</td>
+  <td class="right" width="50%">
+	<select name="catid" class="w90" onchange="FAQCat()" size="1">
+	$faqcat_option
+	</select><br />
+	<input class="small" type="submit" name="action" value="$LANG[select]" />
+  </td>
+ </tr>
+	$faqcat_body
+	</form>
+</table>

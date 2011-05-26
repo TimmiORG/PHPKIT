@@ -1,0 +1,47 @@
+<script type="text/javascript" src="fx/main.js"></script>
+<form name="myform" method="post" action="include.php?path=privatemessages&amp;writeim=1">
+<table class="userbody" cellspacing="1" cellpadding="4" width="100%">
+  <tr>
+    <td class="heads" colspan="2">$user_navigation <a class="heads" href="include.php?path=privatemessages">PN-Center</a> &#187; Kurznachricht verfassen</td>
+  </tr>
+  	$write_error
+  <tr>
+    <td class="left" width="15%" nowrap="nowrap">Kurznachricht an</td>
+    <td class="right" width="85%"><input type="text" size="25" name="im_receiver" value="$im_receiver" />
+	<a href="javascript:;" onclick="finduserID(400,250);">Benutzer suchen</a></td>
+  </tr>
+  <tr>
+    <td class="left">Titel</td> 
+    <td class="right"><input type="text" name="im_title" size="35" value="$im_title" /></td>
+  </tr>
+  <tr>
+    <td class="left" valign="top">Nachricht</td> 
+    <td class="right">
+	<table border="0" cellspacing="0" cellpadding="0" width="100%">
+	 <tr>
+	  <td width="80%" valign="top"><textarea id="pkBBArea" name="content" cols="60" rows="20" onfocus="pkBBSelection(this);" onclick="pkBBSelection(this);" onchange="pkBBSelection(this);" ondblclick="pkBBSelection(this);">$im_text</textarea></td>
+	  <td width="20%" valign="top">$sign_format</td>
+	 </tr>
+	</table>
+   </td>
+  </tr>
+  <tr>
+    <td class="left" valign="top">Optionen</td> 
+    <td class="right">
+	<table border="0" cellspacing="0" cellpadding="0" width="100%">
+	 <tr>
+	  <td><input class="checkbox" type="checkbox" name="im_savemessage" value="1" $savemessage /></td>
+	  <td width="100%"><font class="small">Nachricht speichern</font></td>
+	 </tr>
+	</table>	
+  </td>
+ </tr>
+ <tr>
+  <td class="heads" colspan="2" align="center">
+	<input type="submit" name="action" value="$LANG[send]" />
+	<input type="hidden" name="send" value="$LANG[send]" />
+	<input type="submit" name="action" value="$LANG[cancel]" />
+	<input type="hidden" name="cancel" value="$LANG[cancel]" /></td>
+ </tr>
+</table>
+</form>

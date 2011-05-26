@@ -1,0 +1,38 @@
+<script type="text/javascript" src="fx/main.js"></script>
+<br />
+<form name="myform" method="post" action="$form_action">
+<input type="hidden" name="comcat" value="$comcat" />
+<input type="hidden" name="subid" value="$subid" />
+<table class="commentbody" cellspacing="1" cellpadding="4" width="100%">
+ <tr>
+  <td class="heads" colspan="2">
+  	<table border="0" cellspacing="0" cellpadding="0" width="100%">
+	 <tr>
+	  <td width="100%"><a class="heads" name="write">$comment_title</a></td>
+	  <td><a href="#head"><img src="images/pageup.gif" border="0" alt="nach oben" width="20" height="16" align="top" /></a></td>	 
+	 </tr>	
+	</table>
+  </td>
+ </tr>
+	$comment_autorinfo
+ <tr>
+  <td class="commentleft" valign="top" width="15%">Kommentar</td>
+  <td class="commentright" width="85%">
+	<table border="0" cellspacing="0" cellpadding="0" width="100%">
+	 <tr>
+	  <td width="80%" valign="top"><textarea id="pkBBArea" name="content" cols="60" rows="10" tabindex="3" onfocus="pkBBSelection(this);" onclick="pkBBSelection(this);" onchange="pkBBSelection(this);" ondblclick="pkBBSelection(this);">$comment_text</textarea></td>
+	  <td width="20%" valign="top">$sign_format</td>
+	 </tr>
+	</table>
+  </td>
+ </tr>
+ 	$captcha
+ <tr>
+  <td class="left">&#160;</td>
+  <td class="right">
+  	<input type="submit" name="action" value="$lang[save]" />
+	<input type="hidden" name="save" value="$lang[save]" />
+	<input type="reset" value="$lang[reset]" /></td>
+</tr>
+</table>
+</form>

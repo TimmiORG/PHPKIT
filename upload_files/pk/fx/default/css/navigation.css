@@ -1,0 +1,53 @@
+* {
+outline:0;
+}
+
+body
+	{
+	margin:0px;
+	padding:0px;
+	background:#445588;
+	font-family:verdana;
+	font-size:12px;		
+	}
+
+div#sitebody
+	{
+	margin:0px;
+	padding:0px;
+	padding-bottom:100px;
+	}
+
+a#sitenavigation,
+a#sitenavigation:link,
+a#sitenavigation:active,
+a#sitenavigation:visited
+	{
+	color:black;
+	font-family:tahoma, verdana, arial;
+	text-decoration:none;
+	background:white;
+	margin:0px;
+	padding:2px;
+	display:block;
+	border-bottom:1px solid #E5E5E5;
+	}
+	
+a#sitenavigation:hover
+	{
+	color:#FF7500;
+	background:#F0F5FF;
+	}
+
+a.parent
+	{
+	padding-top:2px;
+	font-size:11px;
+	font-weight:bold;
+	}
+
+a.child
+	{
+	font-size:11px;
+	}
+	

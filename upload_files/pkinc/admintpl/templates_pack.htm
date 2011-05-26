@@ -1,0 +1,24 @@
+<script language="JavaScript">
+function TemplatePack() {if(document.templateselect.templatepack_id.options[document.templateselect.templatepack_id.selectedIndex].value != -1) document.templateselect.submit();}
+</script>
+
+<table class="standard" cellspacing="1" cellpadding="4" width="100%">
+ <tr>
+  <td class="heads" colspan="2">Vorlagenpaket bearbeiten</td>
+ </tr>
+ 	<form name="templateselect" method="post" action="include.php?path=templates">
+	<input type="hidden" name="ispack" value="1" />
+ <tr> 
+  <td class="left" width="50%">Vorlagenpaket</td>
+  <td class="right" width="50%">
+  	<select name="templatepack_id" size="1" onchange="TemplatePack()" />
+	<option value="default" $selectdefault>$LANG[templatepack_default]</option>
+	<option value="0" $select0>$LANG[templatepack_modified]</option>
+	$pack_select
+	<input type="submit" value="$LANG[select]" />
+	<input type="submit" name="action" value="$LANG[new]" />
+	<input type="hidden" name="newpack" value="$LANG[new]" /></td>
+ </tr>
+	$templatepack_body
+ 	</form>
+</table>

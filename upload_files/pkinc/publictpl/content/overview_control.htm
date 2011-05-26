@@ -1,0 +1,66 @@
+<table class="contentbody" cellspacing="1" cellpadding="4" width="100%">
+ <tr>
+  <td class="heads" align="left" colspan="3">
+	<table border="0" cellspacing="0" cellpadding="1" width="100%">
+	 <tr>
+	  <td align="left"><font class="heads">$submit_link</font></td>
+	  <td align="right" nowrap="nowrap"><font class="headssmall">$content_side</font></td>
+	 </tr>
+	</table>
+  </td>
+ </tr>
+ <tr>
+  <td class="left" align="left" valign="top" rowspan="2" width="33%">
+	<font class="small"><b>Titelauswahl:</b><br />
+	$content_control_letter</font></td>
+  <td class="left" align="left" valign="top" rowspan="2" width="34%">
+	<font class="small"><b>Sortierung:</b></font><br />
+	<table border="0" cellspacing="1" cellpadding="0">
+	 <tr>
+	  <td><font class="small"><b>&nbsp;Titel</b></font></td>
+	  <td><font class="small">&nbsp;<a href="include.php?path=contentarchive&amp;type=$type&amp;catid=$catid&amp;letter=$letter&amp;entries=$entries&amp;searchtext=$searchtext&amp;order=title">ABC</a> / <a href="include.php?path=contentarchive&amp;type=$type&amp;catid=$catid&amp;letter=$letter&amp;entries=$entries&amp;searchtext=$searchtext&amp;order=titled">ZXY</a></font></td>
+	 </tr>
+	 <tr>
+	  <td><font class="small"><b>&nbsp;Datum</b></font></td>
+	  <td><font class="small">&nbsp;<a href="include.php?path=contentarchive&amp;type=$type&amp;catid=$catid&amp;letter=$letter&amp;entries=$entries&amp;searchtext=$searchtext&amp;order=date">Neueste</a> / <a href="include.php?path=contentarchive&amp;type=$type&amp;catid=$catid&amp;letter=$letter&amp;entries=$entries&amp;searchtext=$searchtext&amp;order=dated">&Auml;lteste</a></font></td>
+	 </tr>
+	</table>
+  </td>
+  <td class="right" align="right" valign="top" width="33%" nowrap="nowrap">
+	<form method="post" action="include.php?path=search&amp;mode=result">
+	<input type="hidden" name="search_type[0]" value="$type" />
+	<input type="text" name="search_text" class="small" size="20" value="$content_type suchen" onblur="if (value =='') {value = '$content_type suchen'}" onfocus="if (value == '$content_type suchen') {value =''}" />
+	<input type="submit" name="action" value="$LANG[bl_go]" class="small" />
+	<input type="hidden" name="action" value="$LANG[bl_go]" />	
+	<input type="hidden" name="search" value="$LANG[bl_go]" class="small" />
+	<br />
+	<font class="small"><a class="small" href="include.php?path=search">Erweiterte Suche</a></font>
+	</form>
+  </td>
+ </tr>
+ <tr>
+  <td class="right" align="right">
+	<form method="post" action="include.php?path=contentarchive&amp;type=$type&amp;letter=$letter&amp;entries=$entries&amp;searchtext=$searchtext&amp;order=$order">
+	<table border="0" cellspacing="0" cellpadding="1" width="100%">
+	 <tr>
+	  <td align="right" width="100%">
+		<select name="catid" size="1" class="small">
+		<option value="-1">alle Kategorien</option>
+		$overview_cats
+		</select></td>
+	  <td><input type="submit" name="action" value="$LANG[bl_go]" class="small" /></td>
+	 </tr>
+	 <tr>
+	  <td align="right">$control_themes</td>
+	  <td>&nbsp;</td>
+	 </tr>
+	</table>
+	</form>
+  </td>
+ </tr>
+</table>
+<table border="0" cellspacing="0" cellpadding="0">
+ <tr>
+  <td><img border="0" height="5" width="1" alt="" src="images/blank.gif" /></td>
+ </tr>
+</table>

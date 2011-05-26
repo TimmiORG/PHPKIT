@@ -1,0 +1,14 @@
+ <tr>
+  <td class="$row" align="center">$im_status</td>
+  <td class="$row"><a href="include.php?path=privatemessages&amp;imid=$iminfo[im_id]">$iminfo_title</a></td>
+  <td class="$row" align="center">$iminfo_autor</td>
+  <td class="$row" align="center" nowrap="nowrap"><font class="small">$iminfo_time</font></td>
+  <td class="$row" align="center">
+  	<table border="0" cellspacing="0" cellpadding="0" width="100%">
+	 <tr>
+	  <td width="50%" align="center"><a href="include.php?path=privatemessages&amp;reply=$iminfo[im_id]&amp;writeim=1"><img align="top" border="0" alt="Antworten" src="images/reply.gif" width="20" height="16" /></a></td>
+	  <td width="50%" align="center"><input class="checkbox" type="checkbox" name="delim_received[]" value="$iminfo[im_id]" /></td>
+	 </tr>
+	</table>
+  </td>
+ </tr>

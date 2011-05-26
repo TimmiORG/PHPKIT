@@ -1,0 +1,1511 @@
+<script language="Javascript" src="fx/form.js"></script>
+
+<form name="style" method="post" action="include.php?path=style">
+<input type="hidden" name="styleid" value="$styleid" />
+
+<table class="standard" border="0" cellspacing="1" cellpadding="4" width="100%">
+ <tr>
+  <td class="heads" colspan="2">
+	<div class="headspagelinks">
+		<a href="#basic"><img src="$image_pagedown" /></a>
+		<a href="#foot"><img src="$image_pagebottom" /></a>
+	</div>  
+  	Design bearbeiten</td>
+ </tr>
+ <tr>
+  <td class="even" colspan="2">
+  	<div style="width:260px;float:left;">
+		<a href="#basic">Hintergrund- &amp; Basisangaben</a><br />
+		<a href="#decoration">Dekorationsbereiche</a><br />
+		<a href="#branding">Kopf- &amp; Logobereich</a><br />
+		<br />
+		<a href="#mainnav">Hauptnavigation (oben)</a><br />
+		<a href="#leftcontents">Linker Inhaltsbereich (Navigation)</a><br />
+		<a href="#rightcontents">Rechter Inhaltsbereich (Navigation)</a><br />
+		<a href="#addnav">Erg&auml;nzende Navigation (unten)</a><br />
+	</div>
+	<div style="width:260px;float:left;">
+		<a href="#contents">Hauptinhaltsbereich (Allgemeines)</a><br />
+		<a href="#contentlinks">Hauptinhaltsbereich (Verweise / Hyperlinks)</a><br />
+		<a href="#contentforms">Hauptinhaltsbereich (Formulare)</a><br />
+		<a href="#contenthls">Hauptinhaltsbereich (&Uuml;berschriften / Tabellenk&ouml;pfe)</a><br />
+		<a href="#contentmisc">Hauptinhaltsbereich (Sonstiges)</a><br />
+		<br />
+		<a href="#siteinfo">Website-Informationen (Copyright)</a><br />
+		<a href="#save">Speichern</a>
+	</div>
+   	</td>
+ </tr>
+ <tr>
+  <td class="left">Name des Designs<br />
+	<span class="small">Geben Sie hier einen Namen f&uuml;r das Design an.</span></td>
+  <td class="right">
+	<input type="text" name="style_name" value="$style_name" size="25" class="w90" />
+ </tr>
+ <tr>
+  <td class="left">Vorlagenpaket<br />
+	<span class="small">W&auml;hlen Sie hier das zu verwendende Vorlagenpaket aus.</span></td>
+  <td class="right">
+	<select name="style_template" size="1" class="w90" />
+	<option value="-1" $template_select_d>$LANG[templatepack_default]</option>
+	<option value="0" $template_select_0>$LANG[templatepack_modified]</option>
+	$templatepack_list
+	</td>
+ </tr>
+ <tr>
+  <td class="left">Grafikverzeichnis<br />
+  	<span class="small">Pfadangabe zum Grafikverzeichnis ausgehend vom Installationsverzeichnis.</span></td>
+  <td class="right">
+  	<input type="text" name="style_images" value="$styleinfo[style_images]" size="25" class="w90" /></td>
+ </tr>
+ <tr>
+  <td class="left">Optionale CSS-Datei<br />
+	<span class="small">Pfadangabe ausgehend vom Installationsverzeichnis.</span></td>
+  <td class="right">
+	<input type="text" name="style_css" value="$style_css" size="25" class="w90" />
+ </tr>
+ <tr>
+  <td class="left" valign="top">Optionale Angaben<br />
+	<span class="small">Zus&auml;tzliche CSS-Definitionen als Erg&auml;nzungen.<br />
+	Pfadangaben ausgehend vom Installationsverzeichnis, oder verwenden Sie <b>{IMAGEDIR}</b> als Pfatzhalter f&uuml;r das o.g. Grafikverzeichis.</span></td>
+  <td class="right">
+	<textarea name="style_addcss" cols="30" rows="20" class="w90 code">$style_addcss</textarea></td>
+ </tr>
+ <tr>
+  <td class="left">Benutzerauswahl<br />
+	<span class="small">Soll die Auswahl durch Benutzer erlaubt sein? Hierf&uuml;r muss unter &quot;Konfiguration&quot; &#187; &quot;Benutzereinstellungen&quot; die Auswahl freigegeben sein.</span></td>
+  <td class="right">
+	<input class="radio" type="radio" name="style_user" value="1" $style_user1 /> Ja &nbsp;
+	<input class="radio" type="radio" name="style_user" value="0" $style_user0 /> Nein</td>
+ </tr>
+</table>
+<br />
+
+<!--  basic  -->
+<a name="basic"></a>
+<table class="standard" border="0" cellspacing="1" cellpadding="4" width="100%">
+ <tr>
+  <td class="heads" colspan="2">
+	<div class="headspagelinks">
+		<a href="#head"><img src="$image_pagetop" /></a>
+		<a href="#head"><img src="$image_pageup" /></a>
+		<a href="#decoration"><img src="$image_pagedown" /></a>
+		<a href="#foot"><img src="$image_pagebottom" /></a>
+	</div>
+	Hintergrund- &amp; Basisangaben
+  </td>
+ </tr>
+ <tr>
+  <td class="left">Seitenbreite<br />
+	<span class="small">Bestimmt die Breite der Seite.</span></td>
+  <td class="right">
+	<select name="style_width" class="w90">
+	<option value="770" $width770>Feste Breite: 770 Pixel (Bildschirmaufl&ouml;sung 800x600)</option>
+	<option value="980" $width980>Feste Breite: 980 Pixel (Bildschirmaufl&ouml;sung 1024x768)</option>
+<!--	<option value="95%" $width95>Variable Breite: 95% der Bildschirmbreite</option>
+	<option value="98%" $width98>Variable Breite: 98% der Bildschirmbreite</option>-->	
+	<option value="100%" $width100>Variable Breite: 100%, komplette Bildschirmbreite</option>
+	</select></td>
+ </tr> 
+ <tr>
+  <td class="left">Ausrichtung<br />
+	<span class="small">Legt die Ausrichtung des Seitenk&ouml;rpers fest.</span></td>
+  <td class="right">
+	<select name="style_align" class="w90">
+	<option value="left" $alignleft>Linksb&uuml;ndig ausrichten</option>
+	<option value="center" $aligncenter>Zentriert ausrichten</option>
+	<option value="right" $alignright>Rechtsb&uuml;ndig ausrichten</option>
+	</select></td>
+ </tr>
+ <tr>
+  <td class="left">Randabst&auml;nde<br />
+	<span class="small">Angabe in Pixeln in der Reihenfolge: oben, links, rechts, unten.</span></td>
+  <td class="right">
+  	<table border="0" cellpadding="2" cellspacing="0">
+	 <tr>
+	  <td colspan="2" align="center"><input type="text" name="bodymargintop" value="$styleinfo[bodymargintop]" maxlength="3" size="6" /></td>
+	 </tr>
+	 <tr>
+	  <td><input type="text" name="bodymarginleft" value="$styleinfo[bodymarginleft]" maxlength="3" size="6" /></td>
+	  <td><input type="text" name="bodymarginright" value="$styleinfo[bodymarginright]" maxlength="3" size="6" /></td>
+	 </tr>
+	 <tr>
+	  <td colspan="2" align="center"><input type="text" name="bodymarginbottom" value="$styleinfo[bodymarginbottom]" maxlength="3" size="6" /></td>
+	 </tr>
+	</table>	
+	</td>
+ </tr> 
+ <tr>
+  <td class="left">Hintergrundfarbe<br />
+	<span class="small">&nbsp;</span></td>
+  <td class="right">
+	<input type="text" id="bodybgcolor" name="bodybgcolor" value="$styleinfo[bodybgcolor]" onchange="pkColorShow(this.id);" maxlength="6" size="6" />
+	<input type="button" id="showbodybgcolor" style="background:#$styleinfo[bodybgcolor];" value="&#160;&#160;&#160;&#160;&#160;" disabled="disabled" /></td> 
+ </tr>
+  <tr>
+  <td class="left">Hintergrundgrafik<br />
+	<span class="small">Pfadangabe ausgehend vom Grafikverzeichnis des Designs.</span></td>
+  <td class="right">
+	<input type="text" name="bodybgimage" value="$styleinfo[bodybgimage]" size="25" class="w90" /></td>
+ </tr>
+ <tr>
+  <td class="left">Wiederholung der Hintergrundgrafik</td>
+  <td class="right">
+	<select name="bodybgimagerepeat" class="w90">
+	<option value="repeat" $bgimagerepeat>Waagerecht und senkrecht wiederholen</option>
+	<option value="repeat-x" $bgimagerepeat_x>Eine Zeile lang waagerecht wiederholen (X-Achse)</option>
+	<option value="repeat-y" $bgimagerepeat_y>Eine Spalte lang senkrecht wiederholen (Y-Achse)</option>
+	<option value="no-repeat" $bgimagerepeat_no>Nicht wiederholen, nur als Einzelbild anzeigen</option>	
+	</select></td>
+ </tr>   
+ <tr>
+  <td class="left">Standardschriftart<br />
+	<span class="small">&nbsp;</span></td>
+  <td class="right">
+	<input type="text" name="bodyfont" value="$styleinfo[bodyfont]" size="25" class="w90" /></td>
+ </tr>
+ <tr>
+  <td class="left">Textfarbe<br />
+	<span class="small">&nbsp;</span></td>
+  <td class="right">
+	<input type="text" id="bodyfontcolor" name="bodyfontcolor" value="$styleinfo[bodyfontcolor]" onchange="pkColorShow(this.id);" maxlength="6" size="6" />
+	<input type="button" id="showbodyfontcolor" style="background:#$styleinfo[bodyfontcolor];" value="&#160;&#160;&#160;&#160;&#160;" disabled="disabled" /></td>  
+ </tr>
+ <tr>
+  <td class="left">Gro&szlig;e Textgr&ouml;&szlig;e<br />
+	<span class="small">&nbsp;</span></td>
+  <td class="right">
+	<input type="text" name="fontsizebig" value="$styleinfo[fontsizebig]" maxlength="2" size="6" /></td>
+ </tr>
+ <tr>
+  <td class="left">Normale Textgr&ouml;&szlig;e<br />
+	<span class="small">&nbsp;</span></td>
+  <td class="right">
+	<input type="text" name="fontsize" value="$styleinfo[fontsize]" maxlength="2" size="6" /></td>
+ </tr>
+ <tr>
+  <td class="left">Kleine Textgr&ouml;&szlig;e<br />
+	<span class="small">&nbsp;</span></td>
+  <td class="right">
+	<input type="text" name="fontsizesmall" value="$styleinfo[fontsizesmall]" maxlength="2" size="6" /></td>
+ </tr>
+ <tr>
+  <td class="left">Basisfarbe der Scrolleiste<br />
+	<span class="small">Nur Internet Explorer (5.5+).</span></td>
+  <td class="right">
+	<input type="text" id="scrollbarcolor" name="scrollbarcolor" value="$styleinfo[scrollbarcolor]" onchange="pkColorShow(this.id);" maxlength="6" size="6" />
+	<input type="button" id="showscrollbarcolor" style="background:#$styleinfo[scrollbarcolor];" value="&#160;&#160;&#160;&#160;&#160;" disabled="disabled" /></td>
+ </tr>
+ <tr>
+  <td class="left">Trennlinenfarbe<br />
+	<span class="small">&nbsp;</span></td>
+  <td class="right">
+	<input type="text" id="hrcolor" name="hrcolor" value="$styleinfo[hrcolor]" onchange="pkColorShow(this.id);" maxlength="6" size="6" />
+	<input type="button" id="showhrcolor" style="background:#$styleinfo[hrcolor];" value="&#160;&#160;&#160;&#160;&#160;" disabled="disabled" /></td>   
+ </tr>
+ <tr>
+  <td class="left">Datum anzeigen<br />
+	<span class="small">Soll das Datum im Kopfbereich angezeigt werden?</span></td>
+  <td class="right">
+  	<table border="0" cellspacing="0" cellpadding="0">
+	 <tr>
+	  <td><input class="radio" type="radio" name="site_date" value="1"$date1/></td>
+	  <td><span class="small">Ja</span></td>
+	  <td>&nbsp;&nbsp;</td>
+	  <td><input class="radio" type="radio" name="site_date" value="0"$date0/></td>
+	  <td><span class="small">Nein</span></td>
+	 </tr>
+	</table>
+  </td>
+ </tr>
+ <tr>
+  <td class="left">Erstellungszeit anzeigen<br />
+	<span class="small">M&ouml;chten Sie, dass die Erstellungszeit angezeigt wird, die zum generieren der Seiten n&ouml;tig ist?</span></td>
+  <td class="right">
+  	<table border="0" cellspacing="0" cellpadding="0">
+	 <tr>
+	  <td><input class="radio" type="radio" name="site_parsertime" value="1"$parser1 /></td>
+	  <td><span class="small">Ja</span></td>
+	  <td>&nbsp;&nbsp;</td>
+	  <td><input class="radio" type="radio" name="site_parsertime" value="0"$parser0/></td>
+	  <td><span class="small">Nein</span></td>
+	 </tr>
+	</table>
+  </td>
+ </tr> 
+</table>
+<br />
+<!-- end basic -->
+
+
+
+<!--  decoration  -->
+<a name="decoration"></a>
+<table class="standard" border="0" cellspacing="1" cellpadding="4" width="100%">
+ <tr>
+  <td class="heads" colspan="2">
+  	<div class="headspagelinks">
+		<a href="#head"><img src="$image_pagetop" /></a>
+		<a href="#basic"><img src="$image_pageup" /></a>
+		<a href="#branding"><img src="$image_pagedown" /></a>
+		<a href="#foot"><img src="$image_pagebottom" /></a>
+	</div>
+	Dekorationsbereiche
+  </td>
+ </tr>
+ <tr>
+  <td class="left">Breite des Dekorationsbereiches<br />
+	<span class="small">Angabe in Pixeln.</span></td>
+  <td class="right">
+	<input type="text" name="pagedecorationwidth" value="$styleinfo[pagedecorationwidth]" maxlength="4" size="6" /></td>
+ </tr>
+ <tr>
+  <td class="left">Hintergrundfarbe des Dekorationsbereiches<br />
+	<span class="small">&nbsp;</span></td>
+  <td class="right">
+	<input type="text" id="pagedecorationbgcolor" name="pagedecorationbgcolor" value="$styleinfo[pagedecorationbgcolor]" onchange="pkColorShow(this.id);" maxlength="6" size="6" />
+	<input type="button" id="showpagedecorationbgcolor" style="background:#$styleinfo[pagedecorationbgcolor];" value="&#160;&#160;&#160;&#160;&#160;" disabled="disabled" /></td>   
+ </tr>
+  <tr>
+  <td class="left">Hintergrundgrafik des Dekorationsbereiches<br />
+	<span class="small">Pfadangabe ausgehend vom Grafikverzeichnis des Designs.</span></td>
+  <td class="right">
+	<input type="text" name="pagedecorationbgimage" value="$styleinfo[pagedecorationbgimage]" size="25" class="w90" /></td>
+ </tr>
+ <tr>
+  <td class="left">H&ouml;he des oberen Dekorationsbereiches<br />
+	<span class="small">Angabe in Pixeln.</span></td>
+  <td class="right">
+	<input type="text" name="pageheaderheight" value="$styleinfo[pageheaderheight]" maxlength="3" size="6" /></td>
+ </tr>
+ <tr>
+  <td class="left">Hintergrundfarbe des oberen Dekorationsbereiches<br />
+	<span class="small">&nbsp;</span></td>
+  <td class="right">
+	<input type="text" id="pageheaderbgcolor" name="pageheaderbgcolor" value="$styleinfo[pageheaderbgcolor]" onchange="pkColorShow(this.id);" maxlength="6" size="6" />
+	<input type="button" id="showpageheaderbgcolor" style="background:#$styleinfo[pageheaderbgcolor];" value="&#160;&#160;&#160;&#160;&#160;" disabled="disabled" /></td>   	
+ </tr>
+  <tr>
+  <td class="left">Hintergrundgrafik des oberen Dekorationsbereiches<br />
+	<span class="small">Pfadangabe ausgehend vom Grafikverzeichnis des Designs.</span></td>
+  <td class="right">
+	<input type="text" name="pageheaderbgimage" value="$styleinfo[pageheaderbgimage]" size="25" class="w90" /></td>
+ </tr>
+ <tr>
+  <td class="left">H&ouml;he des unteren Dekorationsbereiches<br />
+	<span class="small">Angabe in Pixeln.</span></td>
+  <td class="right">
+	<input type="text" name="pagefooterheight" value="$styleinfo[pagefooterheight]" maxlength="3" size="6" /></td>
+ </tr>
+ <tr>
+  <td class="left">Hintergrundfarbe des unteren Dekorationsbereiches<br />
+	<span class="small">&nbsp;</span></td>
+  <td class="right">
+	<input type="text" id="pagefooterbgcolor" name="pagefooterbgcolor" value="$styleinfo[pagefooterbgcolor]" onchange="pkColorShow(this.id);" maxlength="6" size="6" />
+	<input type="button" id="showpagefooterbgcolor" style="background:#$styleinfo[pagefooterbgcolor];" value="&#160;&#160;&#160;&#160;&#160;" disabled="disabled" /></td>
+ </tr>
+  <tr>
+  <td class="left">Hintergrundgrafik des unteren Dekorationsbereiches<br />
+	<span class="small">Pfadangabe ausgehend vom Grafikverzeichnis des Designs.</span></td>
+  <td class="right">
+	<input type="text" name="pagefooterbgimage" value="$styleinfo[pagefooterbgimage]" size="25" class="w90" /></td>
+ </tr>
+</table>
+<br />
+<!--  end decoration  -->
+
+
+
+<!--  branding  -->
+<a name="branding"></a>
+<table class="standard" border="0" cellspacing="1" cellpadding="4" width="100%">
+ <tr>
+  <td class="heads" colspan="2">
+  	<div class="headspagelinks">
+	  	<a href="#head"><img src="$image_pagetop" /></a>
+  		<a href="#decoration"><img src="$image_pageup" /></a>
+		<a href="#mainnav"><img src="$image_pagedown" /></a>
+		<a href="#foot"><img src="$image_pagebottom" /></a>
+	</div>	
+	Kopf- &amp; Logobereich
+  </td>
+ </tr>
+ <tr>
+  <td class="left">H&ouml;he des Kopf- und Logobereiches<br />
+	<span class="small">Angabe in Pixeln.</span></td>
+  <td class="right">
+	<input type="text" name="brandingheight" value="$styleinfo[brandingheight]" maxlength="3" size="6" /></td>
+ </tr>  
+ <tr>
+  <td class="left">Logo-Grafik<br />
+	<span class="small">Tragen Sie hier die Pfadangabe zu Ihrer Logo-Grafik ein, ausgehend vom Grafikverzeichnis des Designs.</span></td>
+  <td class="right">
+	<input type="text" name="brandingimage" value="$styleinfo[brandingimage]" size="25" class="w90" /></td>
+ </tr>
+ <tr>
+  <td class="left">Positionierung des Logos<br />
+	<span class="small">Legt Sie hier den Ausrichtung der Logo-Grafik fest.</span></td>
+  <td class="right">
+	<select name="brandingimageposition" class="w90">
+	<option value="" $brandingimagepositionleft>Linksb&uuml;ndig ausrichten</option>
+	<option value="center" $brandingimagepositioncenter>Zentriert ausrichten</option>
+	<option value="right" $brandingimagepositionright>Rechtsb&uuml;ndig ausrichten</option>
+	</select></td>
+ </tr>
+ <tr>
+  <td class="left">Vertikale Positionierungskorrektur<br />
+	<span class="small">Verschiebung des Logos entlang der Y-Achse. Angabe in Pixeln.</span></td>
+  <td class="right">
+	<input type="text" name="brandingimagepositiontop" value="$styleinfo[brandingimagepositiontop]" maxlength="4" size="6" /></td>
+ </tr>
+ <tr>
+  <td class="left">Horizontale Positionierungskorrektur<br />
+	<span class="small">Verschiebung des Logos entlang der X-Achse. Angabe in Pixeln.</span></td>
+  <td class="right">
+	<input type="text" name="brandingimagepositionleft" value="$styleinfo[brandingimagepositionleft]" maxlength="4" size="6" /></td>
+ </tr>
+ <tr>
+  <td class="left">Hintergrundfarbe<br />
+	<span class="small">&nbsp;</span></td>
+  <td class="right">
+	<input type="text" id="brandingbgcolor" name="brandingbgcolor" value="$styleinfo[brandingbgcolor]" onchange="pkColorShow(this.id);" maxlength="6" size="6" />
+	<input type="button" id="showbrandingbgcolor" style="background:#$styleinfo[brandingbgcolor];" value="&#160;&#160;&#160;&#160;&#160;" disabled="disabled" /></td>  
+ </tr>
+ <tr>
+  <td class="left">Hintergrundgrafik<br />
+	<span class="small">Pfadangabe ausgehend vom Grafikverzeichnis des Designs.</span></td>
+  <td class="right">
+	<input type="text" name="brandingbgimage" value="$styleinfo[brandingbgimage]" size="25" class="w90" /></td>
+ </tr>
+ <tr>
+  <td class="left">Wiederholung der Hintergrundgrafik</td>
+  <td class="right">
+	<select name="brandingbgimagerepeat" class="w90">
+	<option value="repeat" $brandingbgimagerepeat>Waagerecht und senkrecht wiederholen</option>
+	<option value="repeat-x" $brandingbgimagerepeat_x>Eine Zeile lang waagerecht wiederholen (X-Achse)</option>
+	<option value="repeat-y" $brandingbgimagerepeat_y>Eine Spalte lang senkrecht wiederholen (Y-Achse)</option>
+	<option value="no-repeat" $brandingbgimagerepeat_no>Nicht wiederholen, nur als Einzelbild anzeigen</option>	
+	</select></td>
+ </tr>
+ <tr>
+  <td class="left">Hintergrundfarbe der Werbe-/ Bannereinblendungen<br />
+	<span class="small">&nbsp;</span></td>
+  <td class="right">
+	<input type="text" id="adviewbgcolor" name="adviewbgcolor" value="$styleinfo[adviewbgcolor]" onchange="pkColorShow(this.id);" maxlength="6" size="6" />
+	<input type="button" id="showadviewbgcolor" style="background:#$styleinfo[adviewbgcolor];" value="&#160;&#160;&#160;&#160;&#160;" disabled="disabled" /></td>
+ </tr>
+</table>
+<br />
+<!-- end branding -->
+
+
+
+<!-- mainnav  -->
+<a name="mainnav"></a>
+<table class="standard" border="0" cellspacing="1" cellpadding="4" width="100%">
+ <tr>
+  <td class="heads" colspan="2">
+  	<div class="headspagelinks">
+		<a href="#head"><img src="$image_pagetop" /></a>
+		<a href="#branding"><img src="$image_pageup" /></a>
+		<a href="#leftcontents"><img src="$image_pagedown" /></a>
+		<a href="#foot"><img src="$image_pagebottom" /></a>
+	</div>
+	Hauptnavigation (oben)
+  </td>
+ </tr>
+  <tr>
+  <td class="left">H&ouml;he der Kategorieleiste<br />
+	<span class="small">Angabe in Pixeln.</span></td>
+  <td class="right">
+	<input type="text" name="contenttophlheight" value="$styleinfo[contenttophlheight]" maxlength="4" size="6" /></td>
+ </tr>
+ <tr>
+  <td class="left">Randabstand<br />
+	<span class="small">Angabe in Pixeln.</span></td>
+  <td class="right">
+	<input type="text" name="contenttophlpadding" value="$styleinfo[contenttophlpadding]" maxlength="4" size="6" /></td>
+ </tr> 
+ <tr>
+  <td class="left">Abstand<br />
+	<span class="small">Linker &amp; Rechter Randabstand. Angabe in Pixeln.</span></td>
+  <td class="right">
+	<input type="text" name="contenttophlspacing" value="$styleinfo[contenttophlspacing]" maxlength="4" size="6" /></td>
+ </tr> 
+ <tr>
+  <td class="left">Ausrichtung der Kategorieleiste<br />
+	<span class="small">Legt Sie hier den Ausrichtung der Inhalte der Hauptnavigation fest.</span></td>
+  <td class="right">
+	<select name="contenttophlalign" class="w90">
+	<option value="left" $contenttophlalignleft>Linksb&uuml;ndig ausrichten</option>
+	<option value="center" $contenttophlaligncenter>Zentriert ausrichten</option>
+	<option value="right" $contenttophlalignright>Rechtsb&uuml;ndig ausrichten</option>
+	</select></td>
+ </tr> 
+ <tr>
+  <td class="left">Hintergrundfarbe der Kategorieleiste<br />
+	<span class="small">&nbsp;</span></td>
+  <td class="right">
+	<input type="text" id="contenttophlbgcolor" name="contenttophlbgcolor" value="$styleinfo[contenttophlbgcolor]" onchange="pkColorShow(this.id);" maxlength="6" size="6" />
+	<input type="button" id="showcontenttophlbgcolor" style="background:#$styleinfo[contenttophlbgcolor];" value="&#160;&#160;&#160;&#160;&#160;" disabled="disabled" /></td>
+ </tr>
+ <tr>
+  <td class="left">Hintergrundgrafik der Kategorieleiste<br />
+	<span class="small">Pfadangabe ausgehend vom Grafikverzeichnis des Designs.</span></td>
+  <td class="right">
+	<input type="text" name="contenttophlbgimage" value="$styleinfo[contenttophlbgimage]" size="25" class="w90" /></td>
+ </tr>
+ <tr>
+  <td class="left">Schriftart der Kopfzelle<br />
+	<span class="small">&nbsp;</span></td>
+  <td class="right">
+	<input type="text" name="contenttophlfont" value="$styleinfo[contenttophlfont]" size="25" class="w90" /></td>
+ </tr> 
+ <tr>
+  <td class="left">Schriftgr&ouml;&szlig;e der Kopfzelle<br />
+	<span class="small">&nbsp;</span></td>
+  <td class="right">
+	<input type="text" name="contenttophlfontsize" value="$styleinfo[contenttophlfontsize]" maxlength="2" size="6" /></td>
+ </tr>
+ <tr>
+  <td class="left">Schriftfarbe<br />
+	<span class="small">&nbsp;</span></td>
+  <td class="right">
+	<input type="text" id="contenttophlcolor" name="contenttophlcolor" value="$styleinfo[contenttophlcolor]" onchange="pkColorShow(this.id);" maxlength="6" size="6" />
+	<input type="button" id="showcontenttophlcolor" style="background:#$styleinfo[contenttophlcolor];" value="&#160;&#160;&#160;&#160;&#160;" disabled="disabled" /></td>
+ </tr>
+ <tr>
+  <td class="left">Hoverfarbe<br />
+	<span class="small">Schriftfarbe bei Mausber&uuml;hrungen.</span></td>
+  <td class="right">
+	<input type="text" id="contenttophlcolorhover" name="contenttophlcolorhover" value="$styleinfo[contenttophlcolorhover]" onchange="pkColorShow(this.id);" maxlength="6" size="6" />
+	<input type="button" id="showcontenttophlcolorhover" style="background:#$styleinfo[contenttophlcolorhover];" value="&#160;&#160;&#160;&#160;&#160;" disabled="disabled" /></td>
+ </tr>
+  <tr>
+  <td class="left">H&ouml;he der Verweisleiste<br />
+	<span class="small">Angabe in Pixeln.</span></td>
+  <td class="right">
+	<input type="text" name="contenttopheight" value="$styleinfo[contenttopheight]" maxlength="4" size="6" /></td>
+ </tr>
+ </tr>
+ <tr>
+  <td class="left">Randabstand<br />
+	<span class="small">Angabe in Pixeln.</span></td>
+  <td class="right">
+	<input type="text" name="contenttoppadding" value="$styleinfo[contenttoppadding]" maxlength="4" size="6" /></td>
+ </tr> 
+ <tr>
+  <td class="left">Abstand<br />
+	<span class="small">Linker &amp; Rechter Randabstand. Angabe in Pixeln.</span></td>
+  <td class="right">
+	<input type="text" name="contenttopspacing" value="$styleinfo[contenttopspacing]" maxlength="4" size="6" /></td>
+ </tr> 
+ <tr>
+  <td class="left">Ausrichtung der Verweisleiste<br />
+	<span class="small">Legt Sie hier den Ausrichtung der Inhalte der Hauptnavigation fest.</span></td>
+  <td class="right">
+	<select name="contenttopalign" class="w90">
+	<option value="left" $contenttopalignleft>Linksb&uuml;ndig ausrichten</option>
+	<option value="center" $contenttopaligncenter>Zentriert ausrichten</option>
+	<option value="right" $contenttopalignright>Rechtsb&uuml;ndig ausrichten</option>
+	</select></td>
+ </tr> 
+ <tr>
+  <td class="left">Hintergrundfarbe der Verweisleiste<br />
+	<span class="small">&nbsp;</span></td>
+  <td class="right">
+	<input type="text" id="contenttopbgcolor" name="contenttopbgcolor" value="$styleinfo[contenttopbgcolor]" onchange="pkColorShow(this.id);" maxlength="6" size="6" />
+	<input type="button" id="showcontenttopbgcolor" style="background:#$styleinfo[contenttopbgcolor];" value="&#160;&#160;&#160;&#160;&#160;" disabled="disabled" /></td>
+ </tr>
+ <tr>
+  <td class="left">Hintergrundgrafik der Verweisleiste<br />
+	<span class="small">Pfadangabe ausgehend vom Grafikverzeichnis des Designs.</span></td>
+  <td class="right">
+	<input type="text" name="contenttopbgimage" value="$styleinfo[contenttopbgimage]" size="25" class="w90" /></td>
+ </tr>
+ <tr>
+  <td class="left">Schriftart der Kopfzelle<br />
+	<span class="small">&nbsp;</span></td>
+  <td class="right">
+	<input type="text" name="contenttopfont" value="$styleinfo[contenttopfont]" size="25" class="w90" /></td>
+ </tr> 
+ <tr>
+  <td class="left">Schriftgr&ouml;&szlig;e der Kopfzelle<br />
+	<span class="small">&nbsp;</span></td>
+  <td class="right">
+	<input type="text" name="contenttopfontsize" value="$styleinfo[contenttopfontsize]" maxlength="2" size="6" /></td>
+ </tr>
+ <tr>
+  <td class="left">Schriftfarbe<br />
+	<span class="small">&nbsp;</span></td>
+  <td class="right">
+	<input type="text" id="contenttopcolor" name="contenttopcolor" value="$styleinfo[contenttopcolor]" onchange="pkColorShow(this.id);" maxlength="6" size="6" />
+	<input type="button" id="showcontenttopcolor" style="background:#$styleinfo[contenttopcolor];" value="&#160;&#160;&#160;&#160;&#160;" disabled="disabled" /></td>
+ </tr>
+ <tr>
+  <td class="left">Linkfarbe<br />
+	<span class="small">&nbsp;</span></td>
+  <td class="right">
+	<input type="text" id="contenttopcolorlink" name="contenttopcolorlink" value="$styleinfo[contenttopcolorlink]" onchange="pkColorShow(this.id);" maxlength="6" size="6" />
+	<input type="button" id="showcontenttopcolorlink" style="background:#$styleinfo[contenttopcolorlink];" value="&#160;&#160;&#160;&#160;&#160;" disabled="disabled" /></td>
+ </tr> 
+ <tr>
+  <td class="left">Hoverfarbe<br />
+	<span class="small">Schriftfarbe bei Mausber&uuml;hrungen.</span></td>
+  <td class="right">
+	<input type="text" id="contenttopcolorhover" name="contenttopcolorhover" value="$styleinfo[contenttopcolorhover]" onchange="pkColorShow(this.id);" maxlength="6" size="6" />
+	<input type="button" id="showcontenttopcolorhover" style="background:#$styleinfo[contenttopcolorhover];" value="&#160;&#160;&#160;&#160;&#160;" disabled="disabled" /></td>
+ </tr>
+</table>
+<br />
+<!-- end mainnav -->
+
+
+
+<!-- leftcontents -->
+<a name="leftcontents"></a>
+<table class="standard" border="0" cellspacing="1" cellpadding="4" width="100%">
+ <tr>
+  <td class="heads" colspan="2">
+  	<div class="headspagelinks">
+		<a href="#head"><img src="$image_pagetop" /></a>
+		<a href="#mainnav"><img src="$image_pageup" /></a>
+		<a href="#contents"><img src="$image_pagedown" /></a>
+		<a href="#foot"><img src="$image_pagebottom" /></a>
+	</div>
+	Linker Inhaltsbereich (Navigation)
+  </td>
+ </tr>
+ <tr>
+  <td class="left">Breite der linken Inhaltsbereiches<br />
+	<span class="small">Angabe in Pixeln. F&uuml;r eine flexible Breite verwenden Sie die Angabe &quot;auto&quot;.</span></td>
+  <td class="right">
+	<input type="text" name="contentleftwidth" value="$styleinfo[contentleftwidth]" maxlength="4" size="6" /></td>
+ </tr>
+ <tr>
+  <td class="left">Hintergrundfarbe des linken Inhaltsbereiches<br />
+	<span class="small">&nbsp;</span></td>
+  <td class="right">
+	<input type="text" id="contentleftbgcolor" name="contentleftbgcolor" value="$styleinfo[contentleftbgcolor]" onchange="pkColorShow(this.id);" maxlength="6" size="6" />
+	<input type="button" id="showcontentleftbgcolor" style="background:#$styleinfo[contentleftbgcolor];" value="&#160;&#160;&#160;&#160;&#160;" disabled="disabled" /></td>
+ </tr>
+ <tr>
+  <td class="left">Hintergrundgrafik<br />
+	<span class="small">Pfadangabe ausgehend vom Grafikverzeichnis des Designs.</span></td>
+  <td class="right">
+	<input type="text" name="contentleftbgimage" value="$styleinfo[contentleftbgimage]" size="25" class="w90" /></td>
+ </tr>
+ <tr>
+  <td class="left">Wiederholung der Hintergrundgrafik</td>
+  <td class="right">
+	<select name="contentleftbgimagerepeat" class="w90">
+	<option value="repeat" $contentleftbgimagerepeatrepeat>Waagerecht und senkrecht wiederholen</option>
+	<option value="repeat-x" $contentleftbgimagerepeat_x>Eine Zeile lang waagerecht wiederholen (X-Achse)</option>
+	<option value="repeat-y" $contentleftbgimagerepeat_y>Eine Spalte lang senkrecht wiederholen (Y-Achse)</option>
+	<option value="no-repeat" $contentleftbgimagerepeat_no>Nicht wiederholen, nur als Einzelbild anzeigen</option>	
+	</select></td>
+ </tr>
+ <tr>
+  <td class="left">Randabstand<br />
+	<span class="small">Angabe in Pixeln.</span></td>
+  <td class="right">
+	<input type="text" name="contentleftpadding" value="$styleinfo[contentleftpadding]" maxlength="4" size="6" /></td>
+ </tr>
+ <tr>
+  <td class="left">Einzug<br />
+	<span class="small">Schrifteinzug der Titel, Angabe in Pixeln.</span></td>
+  <td class="right">
+	<input type="text" name="contentlefthlindent" value="$styleinfo[contentlefthlindent]" maxlength="2" size="6" /></td>
+ </tr>
+ <tr>
+  <td class="left">Ausrichtung der Kategorietitel<br />
+	<span class="small">Legen Sie hier die Ausrichtung der Titel fest.</span></td>
+  <td class="right">
+	<select name="contentlefthlalign" class="w90">
+	<option value="left" $contentlefthlalignleft>Linksb&uuml;ndig ausrichten</option>
+	<option value="center" $contentlefthlaligncenter>Zentriert ausrichten</option>
+	<option value="right" $contentlefthlalignright>Rechtsb&uuml;ndig ausrichten</option>
+	</select></td>
+ </tr>
+ <tr>
+  <td class="left">Schriftart<br />
+	<span class="small">&nbsp;</span></td>
+  <td class="right">
+	<input type="text" name="contentlefthlfont" value="$styleinfo[contentlefthlfont]" size="25" class="w90" /></td>
+ </tr>
+ <tr>
+  <td class="left">Schriftgr&ouml;&szlig;e<br />
+	<span class="small">&nbsp;</span></td>
+  <td class="right">
+	<input type="text" name="contentlefthlfontsize" value="$styleinfo[contentlefthlfontsize]" maxlength="2" size="6" /></td>
+ </tr>
+ <tr>
+  <td class="left">Schriftfarbe<br />
+	<span class="small">&nbsp;</span></td>
+  <td class="right">
+	<input type="text" id="contentlefthlcolor" name="contentlefthlcolor" value="$styleinfo[contentlefthlcolor]" onchange="pkColorShow(this.id);" maxlength="6" size="6" />
+	<input type="button" id="showcontentlefthlcolor" style="background:#$styleinfo[contentlefthlcolor];" value="&#160;&#160;&#160;&#160;&#160;" disabled="disabled" /></td>
+ </tr>
+ <tr>
+  <td class="left">Hoverfarbe<br />
+	<span class="small">Schriftfarbe bei Mausber&uuml;hrungen.</span></td>
+  <td class="right">
+	<input type="text" id="contentlefthlcolorhover" name="contentlefthlcolorhover" value="$styleinfo[contentlefthlcolorhover]" onchange="pkColorShow(this.id);" maxlength="6" size="6" />
+	<input type="button" id="showcontentlefthlcolorhover" style="background:#$styleinfo[contentlefthlcolorhover];" value="&#160;&#160;&#160;&#160;&#160;" disabled="disabled" /></td>
+ </tr>
+ <tr>
+  <td class="left">Hintergrundfarbe der Kategorieleiste<br />
+	<span class="small">&nbsp;</span></td>
+  <td class="right">
+	<input type="text" id="contentlefthlbgcolor" name="contentlefthlbgcolor" value="$styleinfo[contentlefthlbgcolor]" onchange="pkColorShow(this.id);" maxlength="6" size="6" />
+	<input type="button" id="showcontentlefthlbgcolor" style="background:#$styleinfo[contentlefthlbgcolor];" value="&#160;&#160;&#160;&#160;&#160;" disabled="disabled" /></td>
+ </tr>
+ <tr>
+  <td class="left">Hintergrundgrafik der Kategorieleisten<br />
+	<span class="small">Pfadangabe ausgehend vom Grafikverzeichnis des Designs.</span></td>
+  <td class="right">
+	<input type="text" name="contentlefthlbgimage" value="$styleinfo[contentlefthlbgimage]" size="25" class="w90" /></td>
+ </tr>
+ <tr>
+  <td class="left">Einzug<br />
+	<span class="small">Schrifteinzug der Verweise, Angabe in Pixeln.</span></td>
+  <td class="right">
+	<input type="text" name="contentleftindent" value="$styleinfo[contentleftindent]" maxlength="2" size="6" /></td>
+ </tr>
+ <tr>
+  <td class="left">Ausrichtung der Verweise<br />
+	<span class="small">Legen Sie hier die Ausrichtung der Verweise fest.</span></td>
+  <td class="right">
+	<select name="contentleftalign" class="w90">
+	<option value="left" $contentleftalignleft>Linksb&uuml;ndig ausrichten</option>
+	<option value="center" $contentleftaligncenter>Zentriert ausrichten</option>
+	<option value="right" $contentleftalignright>Rechtsb&uuml;ndig ausrichten</option>
+	</select></td>
+ </tr>
+ <tr>
+  <td class="left">Schriftart<br />
+	<span class="small">&nbsp;</span></td>
+  <td class="right">
+	<input type="text" name="contentleftfont" value="$styleinfo[contentleftfont]" size="25" class="w90" /></td>
+ </tr>
+ <tr>
+  <td class="left">Schriftgr&ouml;&szlig;e<br />
+	<span class="small">&nbsp;</span></td>
+  <td class="right">
+	<input type="text" name="contentleftfontsize" value="$styleinfo[contentleftfontsize]" maxlength="2" size="6" /></td>
+ </tr>
+ <tr>
+  <td class="left">Schriftfarbe<br />
+	<span class="small">&nbsp;</span></td>
+  <td class="right">
+	<input type="text" id="contentleftcolor" name="contentleftcolor" value="$styleinfo[contentleftcolor]" onchange="pkColorShow(this.id);" maxlength="6" size="6" />
+	<input type="button" id="showcontentleftcolor" style="background:#$styleinfo[contentleftcolor];" value="&#160;&#160;&#160;&#160;&#160;" disabled="disabled" /></td>
+ </tr>
+ <tr>
+  <td class="left">Linkfarbe<br />
+	<span class="small">&nbsp;</span></td>
+  <td class="right">
+	<input type="text" id="contentleftcolorlink" name="contentleftcolorlink" value="$styleinfo[contentleftcolorlink]" onchange="pkColorShow(this.id);" maxlength="6" size="6" />
+	<input type="button" id="showcontentleftcolorlink" style="background:#$styleinfo[contentleftcolorlink];" value="&#160;&#160;&#160;&#160;&#160;" disabled="disabled" /></td>
+ </tr> 
+ <tr>
+  <td class="left">Hoverfarbe<br />
+	<span class="small">Schriftfarbe bei Mausber&uuml;hrungen.</span></td>
+  <td class="right">
+	<input type="text" id="contentleftcolorhover" name="contentleftcolorhover" value="$styleinfo[contentleftcolorhover]" onchange="pkColorShow(this.id);" maxlength="6" size="6" />
+	<input type="button" id="showcontentleftcolorhover" style="background:#$styleinfo[contentleftcolorhover];" value="&#160;&#160;&#160;&#160;&#160;" disabled="disabled" /></td>
+ </tr>
+ <tr>
+  <td class="left">Hintergrundfarbe der Verweise<br />
+	<span class="small">&nbsp;</span></td>
+  <td class="right">
+	<input type="text" id="contentleftcbgcolor" name="contentleftcbgcolor" value="$styleinfo[contentleftcbgcolor]" onchange="pkColorShow(this.id);" maxlength="6" size="6" />
+	<input type="button" id="showcontentleftcbgcolor" style="background:#$styleinfo[contentleftcbgcolor];" value="&#160;&#160;&#160;&#160;&#160;" disabled="disabled" /></td>
+ </tr>
+ <tr>
+  <td class="left">Hintergrundgrafik der Verweise<br />
+	<span class="small">Pfadangabe ausgehend vom Grafikverzeichnis des Designs.</span></td>
+  <td class="right">
+	<input type="text" name="contentleftcbgimage" value="$styleinfo[contentleftcbgimage]" size="25" class="w90" /></td>
+ </tr>
+ <tr>
+  <td class="left">Abstand der Navigationsboxen<br />
+	<span class="small">Legt den vertikalen Abstand der Boxen in der linken Navigation fest. Angabe in Pixeln.</span></td>
+  <td class="right">
+	<input type="text" name="contentleftboxspacer" value="$styleinfo[contentleftboxspacer]" maxlength="2" size="6" /></td>
+ </tr>
+</table>
+<br />
+<!-- end leftcontents -->
+
+
+<!-- contents -->
+<a name="contents"></a>
+<table class="standard" border="0" cellspacing="1" cellpadding="4" width="100%">
+ <tr>
+  <td class="heads" colspan="2">
+  	<div class="headspagelinks">
+		<a href="#head"><img src="$image_pagetop" /></a>
+		<a href="#leftcontents"><img src="$image_pageup" /></a>
+		<a href="#contentlinks"><img src="$image_pagedown" /></a>
+		<a href="#foot"><img src="$image_pagebottom" /></a>
+	</div>
+	Hauptinhaltsbereich (Allgemeines)
+  </td>
+ </tr>
+ <tr>
+  <td class="left">Hintergrundfarbe<br />
+	<span class="small">&nbsp;</span></td>
+  <td class="right">
+	<input type="text" id="contentmainbgcolor" name="contentmainbgcolor" value="$styleinfo[contentmainbgcolor]" onchange="pkColorShow(this.id);" maxlength="6" size="6" />
+	<input type="button" id="showcontentmainbgcolor" style="background:#$styleinfo[contentmainbgcolor];" value="&#160;&#160;&#160;&#160;&#160;" disabled="disabled" /></td>
+ </tr>
+ <tr>
+  <td class="left">Hintergrundgrafik<br />
+	<span class="small">Pfadangabe ausgehend vom Grafikverzeichnis des Designs.</span></td>
+  <td class="right">
+	<input type="text" name="contentmainbgimage" value="$styleinfo[contentmainbgimage]" size="25" class="w90" /></td>
+ </tr>
+ <tr>
+  <td class="left">Wiederholung der Hintergrundgrafik</td>
+  <td class="right">
+	<select name="contentmainbgimagerepeat" class="w90">
+	<option value="repeat" $contentmainbgimagerepeat>Waagerecht und senkrecht wiederholen</option>
+	<option value="repeat-x" $contentmainbgimagerepeat_x>Eine Zeile lang waagerecht wiederholen (X-Achse)</option>
+	<option value="repeat-y" $contentmainbgimagerepeat_y>Eine Spalte lang senkrecht wiederholen (Y-Achse)</option>
+	<option value="no-repeat" $contentmainbgimagerepeat_no>Nicht wiederholen, nur als Einzelbild anzeigen</option>	
+	</select></td>
+ </tr>
+ <tr>
+  <td class="left">Randabstand<br />
+	<span class="small">Angabe in Pixeln.</span></td>
+  <td class="right">
+	<input type="text" name="contentmainpadding" value="$styleinfo[contentmainpadding]" maxlength="4" size="6" /></td>
+ </tr>
+</table>
+<br />
+<!-- end contents -->
+
+
+
+
+<!-- contentlinks -->
+<a name="contentlinks"></a>
+<table class="standard" border="0" cellspacing="1" cellpadding="4" width="100%">
+ <tr>
+  <td class="heads" colspan="2">
+  	<div class="headspagelinks">
+		<a href="#head"><img src="$image_pagetop" /></a>
+		<a href="#contents"><img src="$image_pageup" /></a>
+		<a href="#contentforms"><img src="$image_pagedown" /></a>
+		<a href="#foot"><img src="$image_pagebottom" /></a>
+	</div>
+	Hauptinhaltsbereich (Verweise / Hyperlinks)
+  </td>
+ </tr>
+ <tr>
+  <td class="left">Linkfarbe<br />
+	<span class="small">Textfarbe der besuchten und unbesuchten Links.</span></td>
+  <td class="right">
+  	<input type="text" id="linkfontcolor" name="linkfontcolor" value="$styleinfo[linkfontcolor]" onchange="pkColorShow(this.id);" maxlength="6" size="6" />
+	<input type="button" id="showlinkfontcolor" style="background:#$styleinfo[linkfontcolor];" value="&#160;&#160;&#160;&#160;&#160;" disabled="disabled" /></td>
+ </tr>
+ <tr>
+  <td class="left">Hover-Linkfarbe<br />
+	<span class="small">Textfarbe beim &uuml;berfahren mit der Maus.</span></td>
+  <td class="right">
+  	<input type="text" id="linkhovercolor" name="linkhovercolor" value="$styleinfo[linkhovercolor]" onchange="pkColorShow(this.id);" maxlength="6" size="6" />
+	<input type="button" id="showlinkhovercolor" style="background:#$styleinfo[linkhovercolor];" value="&#160;&#160;&#160;&#160;&#160;" disabled="disabled" /></td>
+ </tr>
+ <tr>
+  <td class="left">Schriftgr&ouml;&szlig;e<br />
+	<span class="small">&nbsp;</span></td>
+  <td class="right">
+	<input type="text" name="linkfontsize" value="$styleinfo[linkfontsize]" maxlength="2" size="6" /></td>
+ </tr>
+ <tr>
+  <td class="left">Schriftart<br />
+	<span class="small">&nbsp;</span></td>
+  <td class="right">
+	<input type="text" name="linkfont" value="$styleinfo[linkfont]" size="25" class="w90" /></td>
+ </tr> 
+</table>
+<br />
+<!-- contentlinks -->
+
+
+
+<!-- contentforms -->
+<a name="contentforms"></a>
+<table class="standard" border="0" cellspacing="1" cellpadding="4" width="100%">
+ <tr>
+  <td class="heads" colspan="2">
+  	<div class="headspagelinks">
+		<a href="#head"><img src="$image_pagetop" /></a>
+		<a href="#contentlinks"><img src="$image_pageup" /></a>
+		<a href="#contenthls"><img src="$image_pagedown" /></a>
+		<a href="#foot"><img src="$image_pagebottom" /></a>
+	</div>
+	Hauptinhaltsbereich (Formulare)
+  </td>
+ </tr>
+ <tr>
+  <td class="left">Hintergrundfarbe<br />
+	<span class="small">&nbsp;</span></td>
+  <td class="right">
+  	<input type="text" id="inputbgcolor" name="inputbgcolor" value="$styleinfo[inputbgcolor]" onchange="pkColorShow(this.id);" maxlength="6" size="6" />
+	<input type="button" id="showinputbgcolor" style="background:#$styleinfo[inputbgcolor];" value="&#160;&#160;&#160;&#160;&#160;" disabled="disabled" /></td>  
+ </tr>
+ <tr>
+  <td class="left">Schriftfarbe<br />
+	<span class="small">&nbsp;</span></td>
+  <td class="right">
+   	<input type="text" id="inputfontcolor" name="inputfontcolor" value="$styleinfo[inputfontcolor]" onchange="pkColorShow(this.id);" maxlength="6" size="6" />
+	<input type="button" id="showinputfontcolor" style="background:#$styleinfo[inputfontcolor];" value="&#160;&#160;&#160;&#160;&#160;" disabled="disabled" /></td>
+ </tr>
+ <tr>
+  <td class="left">Schriftgr&ouml;&szlig;e<br />
+	<span class="small">&nbsp;</span></td>
+  <td class="right">
+	<input type="text" name="inputfontsize" value="$styleinfo[inputfontsize]" maxlength="2" size="6" /></td>
+ </tr>
+ <tr>
+  <td class="left">Schriftart<br />
+	<span class="small">&nbsp;</span></td>
+  <td class="right">
+	<input type="text" name="inputfont" value="$styleinfo[inputfont]" size="25" class="w90" /></td>
+ </tr> 
+</table>
+<br />
+<!-- contentforms -->
+
+
+
+
+<!-- contenthls -->
+<a name="contenthls"></a>
+<table class="standard" border="0" cellspacing="1" cellpadding="4" width="100%">
+ <tr>
+  <td class="heads" colspan="2">
+  	<div class="headspagelinks">
+		<a href="#head"><img src="$image_pagetop" /></a>
+		<a href="#contentforms"><img src="$image_pageup" /></a>
+		<a href="#contentmisc"><img src="$image_pagedown" /></a>
+		<a href="#foot"><img src="$image_pagebottom" /></a>
+	</div>
+	Hauptinhaltsbereich (&Uuml;berschriften / Tabellenk&ouml;pfe)
+  </td>
+ </tr>
+ <tr>
+  <td class="left">Hintergrundgrafik<br />
+	<span class="small">Pfadangabe ausgehend vom Grafikverzeichnis des Designs.</span></td>
+  <td class="right">
+	<table border="0" cellspacing="0" cellpadding="0">
+	 <tr>
+	  <td><input type="text" name="tdheadsbgimage" value="$styleinfo[tdheadsbgimage]" size="25" /></td>
+	  <td>&nbsp;</td>
+	  <td style="background: url($tdheadsbgimage);"><a target="_blank" href="$tdheadsbgimage"><img border="0" height="25" width="25" src="../images/blank.gif" /></a></td>
+	 </tr>
+	</table>
+  </td>
+ </tr>
+ <tr>
+  <td class="left">Hintergrundfarbe<br />
+	<span class="small">&nbsp;</span></td>
+  <td class="right">
+   	<input type="text" id="tdheadsbgcolor" name="tdheadsbgcolor" value="$styleinfo[tdheadsbgcolor]" onchange="pkColorShow(this.id);" maxlength="6" size="6" />
+	<input type="button" id="showtdheadsbgcolor" style="background:#$styleinfo[tdheadsbgcolor];" value="&#160;&#160;&#160;&#160;&#160;" disabled="disabled" /></td>  
+ </tr>
+ <tr>
+  <td class="left">Textfarbe<br />
+	<span class="small">&nbsp;</span></td>
+  <td class="right">
+   	<input type="text" id="tdheadscolor" name="tdheadscolor" value="$styleinfo[tdheadscolor]" onchange="pkColorShow(this.id);" maxlength="6" size="6" />
+	<input type="button" id="showtdheadscolor" style="background:#$styleinfo[tdheadscolor];" value="&#160;&#160;&#160;&#160;&#160;" disabled="disabled" /></td>  
+ </tr>
+ <tr>
+  <td class="left">Textfarbe 2<br />
+	<span class="small">Verwendung u.a. bei Hyperlinks.</span></td>
+  <td class="right">
+   	<input type="text" id="tdheadscolor2" name="tdheadscolor2" value="$styleinfo[tdheadscolor2]" onchange="pkColorShow(this.id);" maxlength="6" size="6" />
+	<input type="button" id="showtdheadscolor2" style="background:#$styleinfo[tdheadscolor2];" value="&#160;&#160;&#160;&#160;&#160;" disabled="disabled" /></td>
+ </tr>
+ <tr>
+  <td class="left">Schriftgr&ouml;&szlig;e<br />
+	<span class="small">&nbsp;</span></td>
+  <td class="right">
+	<input type="text" name="tdheadsfontsize" value="$styleinfo[tdheadsfontsize]" maxlength="2" size="6" /></td>
+ </tr>
+ <tr>
+  <td class="left">Schriftart<br />
+	<span class="small">&nbsp;</span></td>
+  <td class="right">
+	<input type="text" name="tdheadsfont" value="$styleinfo[tdheadsfont]" size="25" class="w90" /></td>
+ </tr> 
+</table>
+<br />
+<!-- contenthls -->
+
+
+
+
+<!-- contentmisc -->
+<a name="contentmisc"></a>
+<table class="standard" border="0" cellspacing="1" cellpadding="4" width="100%">
+ <tr>
+  <td class="heads" colspan="2">
+  	<div class="headspagelinks">
+		<a href="#head"><img src="$image_pagetop" /></a>
+		<a href="#contenthls"><img src="$image_pageup" /></a>
+		<a href="#rightcontents"><img src="$image_pagedown" /></a>
+		<a href="#foot"><img src="$image_pagebottom" /></a>
+	</div>
+	Hauptinhaltsbereich (Sonstiges)
+  </td>
+ </tr>
+ <tr>
+  <td class="left">Tabellenhintergrundfarbe<br />
+	<span class="small">Verwendung zur Erzeugung von  Haarlinien zwischen Tabellenzellen.</span></td>
+  <td class="right">
+   	<input type="text" id="tablebgcolor" name="tablebgcolor" value="$styleinfo[tablebgcolor]" onchange="pkColorShow(this.id);" maxlength="6" size="6" />
+	<input type="button" id="showtablebgcolor" style="background:#$styleinfo[tablebgcolor];" value="&#160;&#160;&#160;&#160;&#160;" disabled="disabled" /></td>  
+ </tr>
+ <tr>
+  <td class="left">Textfarbe<br />
+	<span class="small">&nbsp;</span></td>
+  <td class="right">
+   	<input type="text" id="tdfontcolor" name="tdfontcolor" value="$styleinfo[tdfontcolor]" onchange="pkColorShow(this.id);" maxlength="6" size="6" />
+	<input type="button" id="showtdfontcolor" style="background:#$styleinfo[tdfontcolor];" value="&#160;&#160;&#160;&#160;&#160;" disabled="disabled" /></td>
+ </tr>
+ <tr>
+  <td class="left">Schriftgr&ouml;&szlig;e<br />
+	<span class="small">&nbsp;</span></td>
+  <td class="right">
+	<input type="text" name="tdfontsize" value="$styleinfo[tdfontsize]" maxlength="2" size="6" /></td>
+ </tr>
+ <tr>
+  <td class="left">Schriftart<br />
+	<span class="small">&nbsp;</span></td>
+  <td class="right">
+	<input type="text" name="tdfont" value="$styleinfo[tdfont]" size="25" class="w90" /></td>
+ </tr>
+ <tr>
+  <td class="left">Tabellenzelle &quot;Standard&quot;<br />
+	<span class="small">Verwendung als Hintergrund f&uuml;r allgemeine Inhalte.</span></td>
+  <td class="right">
+   	<input type="text" id="tdstandardbgcolor" name="tdstandardbgcolor" value="$styleinfo[tdstandardbgcolor]" onchange="pkColorShow(this.id);" maxlength="6" size="6" />
+	<input type="button" id="showtdstandardbgcolor" style="background:#$styleinfo[tdstandardbgcolor];" value="&#160;&#160;&#160;&#160;&#160;" disabled="disabled" /></td>  
+ </tr>
+ <tr>
+  <td class="left">Tabellenzelle &quot;Highlight&quot;<br />
+	<span class="small">Verwendung bei Warn- und Fehlermeldungen.</span></td>
+  <td class="right">
+   	<input type="text" id="tdhighlightbgcolor" name="tdhighlightbgcolor" value="$styleinfo[tdhighlightbgcolor]" onchange="pkColorShow(this.id);" maxlength="6" size="6" />
+	<input type="button" id="showtdhighlightbgcolor" style="background:#$styleinfo[tdhighlightbgcolor];" value="&#160;&#160;&#160;&#160;&#160;" disabled="disabled" /></td>  
+ </tr>
+ <tr>
+  <td class="left">Tabellenzelle &quot;Links&quot;<br />
+	<span class="small">Linke Spalte in Formularen.</span></td>
+  <td class="right">
+     	<input type="text" id="tdleftbgcolor" name="tdleftbgcolor" value="$styleinfo[tdleftbgcolor]" onchange="pkColorShow(this.id);" maxlength="6" size="6" />
+	<input type="button" id="showtdleftbgcolor" style="background:#$styleinfo[tdleftbgcolor];" value="&#160;&#160;&#160;&#160;&#160;" disabled="disabled" /></td>
+ </tr>
+ <tr>
+  <td class="left">Tabellenzelle &quot;Rechts&quot;<br />
+	<span class="small">Rechte Spalte in Formularen.</span></td>
+  <td class="right">
+   	<input type="text" id="tdrightbgcolor" name="tdrightbgcolor" value="$styleinfo[tdrightbgcolor]" onchange="pkColorShow(this.id);" maxlength="6" size="6" />
+	<input type="button" id="showtdrightbgcolor" style="background:#$styleinfo[tdrightbgcolor];" value="&#160;&#160;&#160;&#160;&#160;" disabled="disabled" /></td>  
+ </tr>
+ <tr>
+  <td class="left">Tabellenzelle &quot;odd&quot;<br />
+	<span class="small">Erste Zeile bei Auflistungen.</span></td>
+  <td class="right">
+   	<input type="text" id="tdoddbgcolor" name="tdoddbgcolor" value="$styleinfo[tdoddbgcolor]" onchange="pkColorShow(this.id);" maxlength="6" size="6" />
+	<input type="button" id="showtdoddbgcolor" style="background:#$styleinfo[tdoddbgcolor];" value="&#160;&#160;&#160;&#160;&#160;" disabled="disabled" /></td>
+ </tr>
+ <tr>
+  <td class="left">Tabellenzelle &quot;even&quot;<br />
+	<span class="small">Zweite Zeile bei Auflistungen.</span></td>
+  <td class="right">
+   	<input type="text" id="tdevenbgcolor" name="tdevenbgcolor" value="$styleinfo[tdevenbgcolor]" onchange="pkColorShow(this.id);" maxlength="6" size="6" />
+	<input type="button" id="showtdevenbgcolor" style="background:#$styleinfo[tdevenbgcolor];" value="&#160;&#160;&#160;&#160;&#160;" disabled="disabled" /></td>  
+ </tr>
+ <tr>
+  <td class="left">Tabellenzelle &quot;odd2&quot;<br />
+	<span class="small">Dritte Zeile bei Auflistungen.</span></td>
+  <td class="right">
+   	<input type="text" id="tdodd2bgcolor" name="tdodd2bgcolor" value="$styleinfo[tdodd2bgcolor]" onchange="pkColorShow(this.id);" maxlength="6" size="6" />
+	<input type="button" id="showtdodd2bgcolor" style="background:#$styleinfo[tdodd2bgcolor];" value="&#160;&#160;&#160;&#160;&#160;" disabled="disabled" /></td>  
+ </tr>
+ <tr>
+  <td class="left">Tabellenzelle &quot;even2&quot;<br />
+	<span class="small">Vierte Zeile bei Auflistungen.</span></td>
+  <td class="right">
+   	<input type="text" id="tdeven2bgcolor" name="tdeven2bgcolor" value="$styleinfo[tdeven2bgcolor]" onchange="pkColorShow(this.id);" maxlength="6" size="6" />
+	<input type="button" id="showtdeven2bgcolor" style="background:#$styleinfo[tdeven2bgcolor];" value="&#160;&#160;&#160;&#160;&#160;" disabled="disabled" /></td>  
+ </tr>
+ <tr>
+  <td class="left">Tabellenzelle Zitate<br />
+	<span class="small">Hintergrundfarbe bei Zitaten.</span></td>
+  <td class="right">
+   	<input type="text" id="tdquote" name="tdquote" value="$styleinfo[tdquote]" onchange="pkColorShow(this.id);" maxlength="6" size="6" />
+	<input type="button" id="showtdquote" style="background:#$styleinfo[tdquote];" value="&#160;&#160;&#160;&#160;&#160;" disabled="disabled" /></td>  
+ </tr>
+ <tr>
+  <td class="left">Schriftgr&ouml;&szlig;e Zitate<br />
+	<span class="small">&nbsp;</span></td>
+  <td class="right">
+	<input type="text" name="tdquotefontsize" value="$styleinfo[tdquotefontsize]" maxlength="2" size="6" /></td>
+ </tr>
+ <tr>
+  <td class="left">Schriftart Zitate<br />
+	<span class="small">&nbsp;</span></td>
+  <td class="right">
+	<input type="text" name="tdquotefont" value="$styleinfo[tdquotefont]" size="25" class="w90" /></td>
+ </tr> 
+</table>
+<br />
+<!-- contentmisc -->
+
+
+
+<!-- rightcontents -->
+<a name="rightcontents"></a>
+<table class="standard" border="0" cellspacing="1" cellpadding="4" width="100%">
+ <tr>
+  <td class="heads" colspan="2">
+  	<div class="headspagelinks">
+		<a href="#head"><img src="$image_pagetop" /></a>
+		<a href="#contentmisc"><img src="$image_pageup" /></a>
+		<a href="#addnav"><img src="$image_pagedown" /></a>
+		<a href="#foot"><img src="$image_pagebottom" /></a>
+	</div>
+	Rechter Inhaltsbereich (Navigation)
+  </td>
+ </tr>
+ <tr>
+  <td class="left">Breite des rechten Inhaltsbereiches<br />
+	<span class="small">Angabe in Pixeln. F&uuml;r eine flexible Breite verwenden Sie die Angabe &quot;auto&quot;.</span></td>
+  <td class="right">
+	<input type="text" name="contentrightwidth" value="$styleinfo[contentrightwidth]" maxlength="4" size="6" /></td>
+ </tr>
+ <tr>
+  <td class="left">Hintergrundfarbe<br />
+	<span class="small">&nbsp;</span></td>
+  <td class="right">
+	<input type="text" id="contentrightbgcolor" name="contentrightbgcolor" value="$styleinfo[contentrightbgcolor]" onchange="pkColorShow(this.id);" maxlength="6" size="6" />
+	<input type="button" id="showcontentrightbgcolor" style="background:#$styleinfo[contentrightbgcolor];" value="&#160;&#160;&#160;&#160;&#160;" disabled="disabled" /></td>  
+ </tr>
+ <tr>
+  <td class="left">Hintergrundgrafik<br />
+	<span class="small">Pfadangabe ausgehend vom Grafikverzeichnis des Designs.</span></td>
+  <td class="right">
+	<input type="text" name="contentrightbgimage" value="$styleinfo[contentrightbgimage]" size="25" class="w90" /></td>
+ </tr>
+ <tr>
+  <td class="left">Wiederholung der Hintergrundgrafik</td>
+  <td class="right">
+	<select name="contentrightbgimagerepeat" class="w90">
+	<option value="repeat" $contentrightbgimagerepeat>Waagerecht und senkrecht wiederholen</option>
+	<option value="repeat-x" $contentrightbgimagerepeat_x>Eine Zeile lang waagerecht wiederholen (X-Achse)</option>
+	<option value="repeat-y" $contentrightbgimagerepeat_y>Eine Spalte lang senkrecht wiederholen (Y-Achse)</option>
+	<option value="no-repeat" $contentrightbgimagerepeat_no>Nicht wiederholen, nur als Einzelbild anzeigen</option>	
+	</select></td>
+ </tr>
+ <tr>
+  <td class="left">Randabstand<br />
+	<span class="small">Angabe in Pixeln.</span></td>
+  <td class="right">
+	<input type="text" name="contentrightpadding" value="$styleinfo[contentrightpadding]" maxlength="4" size="6" /></td>
+ </tr>
+ <tr>
+  <td class="left">Einzug<br />
+	<span class="small">Schrifteinzug der Titel, Angabe in Pixeln.</span></td>
+  <td class="right">
+	<input type="text" name="contentrighthlindent" value="$styleinfo[contentrighthlindent]" maxlength="2" size="6" /></td>
+ </tr>
+ <tr>
+  <td class="left">Ausrichtung der Titel<br />
+	<span class="small">Legen Sie hier die Ausrichtung der Titel fest.</span></td>
+  <td class="right">
+	<select name="contentrighthlalign" class="w90">
+	<option value="left" $contentrighthlalignleft>Linksb&uuml;ndig ausrichten</option>
+	<option value="center" $contentrighthlaligncenter>Zentriert ausrichten</option>
+	<option value="right" $contentrighthlalignright>Rechtsb&uuml;ndig ausrichten</option>
+	</select></td>
+ </tr>
+ <tr>
+  <td class="left">Schriftart<br />
+	<span class="small">&nbsp;</span></td>
+  <td class="right">
+	<input type="text" name="contentrighthlfont" value="$styleinfo[contentrighthlfont]" size="25" class="w90" /></td>
+ </tr>
+ <tr>
+  <td class="left">Schriftgr&ouml;&szlig;e<br />
+	<span class="small">&nbsp;</span></td>
+  <td class="right">
+	<input type="text" name="contentrighthlfontsize" value="$styleinfo[contentrighthlfontsize]" maxlength="2" size="6" /></td>
+ </tr>
+ <tr>
+  <td class="left">Schriftfarbe<br />
+	<span class="small">&nbsp;</span></td>
+  <td class="right">
+	<input type="text" id="contentrighthlcolor" name="contentrighthlcolor" value="$styleinfo[contentrighthlcolor]" onchange="pkColorShow(this.id);" maxlength="6" size="6" />
+	<input type="button" id="showcontentrighthlcolor" style="background:#$styleinfo[contentrighthlcolor];" value="&#160;&#160;&#160;&#160;&#160;" disabled="disabled" /></td>
+ </tr>
+ <tr>
+  <td class="left">Hoverfarbe<br />
+	<span class="small">Schriftfarbe bei Mausber&uuml;hrungen.</span></td>
+  <td class="right">
+	<input type="text" id="contentrighthlcolorhover" name="contentrighthlcolorhover" value="$styleinfo[contentrighthlcolorhover]" onchange="pkColorShow(this.id);" maxlength="6" size="6" />
+	<input type="button" id="showcontentrighthlcolorhover" style="background:#$styleinfo[contentrighthlcolorhover];" value="&#160;&#160;&#160;&#160;&#160;" disabled="disabled" /></td>
+ </tr>
+ <tr>
+  <td class="left">Hintergrundfarbe der Kategorieleiste<br />
+	<span class="small">&nbsp;</span></td>
+  <td class="right">
+	<input type="text" id="contentrighthlbgcolor" name="contentrighthlbgcolor" value="$styleinfo[contentrighthlbgcolor]" onchange="pkColorShow(this.id);" maxlength="6" size="6" />
+	<input type="button" id="showcontentrighthlbgcolor" style="background:#$styleinfo[contentrighthlbgcolor];" value="&#160;&#160;&#160;&#160;&#160;" disabled="disabled" /></td>
+ </tr>
+ <tr>
+  <td class="left">Hintergrundgrafik der Kategorieleisten<br />
+	<span class="small">Pfadangabe ausgehend vom Grafikverzeichnis des Designs.</span></td>
+  <td class="right">
+	<input type="text" name="contentrighthlbgimage" value="$styleinfo[contentrighthlbgimage]" size="25" class="w90" /></td>
+ </tr>
+ <tr>
+  <td class="left">Einzug<br />
+	<span class="small">Schrifteinzug der Verweise, Angabe in Pixeln.</span></td>
+  <td class="right">
+	<input type="text" name="contentrightindent" value="$styleinfo[contentrightindent]" maxlength="2" size="6" /></td>
+ </tr>
+ <tr>
+  <td class="left">Ausrichtung der Verweise<br />
+	<span class="small">Legen Sie hier die Ausrichtung der Inhalte fest.</span></td>
+  <td class="right">
+	<select name="contentrightalign" class="w90">
+	<option value="left" $contentrightalignleft>Linksb&uuml;ndig ausrichten</option>
+	<option value="center" $contentrightaligncenter>Zentriert ausrichten</option>
+	<option value="right" $contentrightalignright>Rechtsb&uuml;ndig ausrichten</option>
+	</select></td>
+ </tr>
+ <tr>
+  <td class="left">Schriftart<br />
+	<span class="small">&nbsp;</span></td>
+  <td class="right">
+	<input type="text" name="contentrightfont" value="$styleinfo[contentrightfont]" size="25" class="w90" /></td>
+ </tr>
+ <tr>
+  <td class="left">Schriftgr&ouml;&szlig;e<br />
+	<span class="small">&nbsp;</span></td>
+  <td class="right">
+	<input type="text" name="contentrightfontsize" value="$styleinfo[contentrightfontsize]" maxlength="2" size="6" /></td>
+ </tr>
+ <tr>
+  <td class="left">Schriftfarbe<br />
+	<span class="small">&nbsp;</span></td>
+  <td class="right">
+	<input type="text" id="contentrightcolor" name="contentrightcolor" value="$styleinfo[contentrightcolor]" onchange="pkColorShow(this.id);" maxlength="6" size="6" />
+	<input type="button" id="showcontentrightcolor" style="background:#$styleinfo[contentrightcolor];" value="&#160;&#160;&#160;&#160;&#160;" disabled="disabled" /></td>
+ </tr>
+ <tr>
+  <td class="left">Linkfarbe<br />
+	<span class="small">&nbsp;</span></td>
+  <td class="right">
+	<input type="text" id="contentrightcolorlink" name="contentrightcolorlink" value="$styleinfo[contentrightcolorlink]" onchange="pkColorShow(this.id);" maxlength="6" size="6" />
+	<input type="button" id="showcontentrightcolorlink" style="background:#$styleinfo[contentrightcolorlink];" value="&#160;&#160;&#160;&#160;&#160;" disabled="disabled" /></td>
+ </tr> 
+ <tr>
+  <td class="left" >Hoverfarbe<br />
+	<span class="small">Schriftfarbe bei Mausber&uuml;hrungen.</span></td>
+  <td class="right">
+	<input type="text" id="contentrightcolorhover" name="contentrightcolorhover" value="$styleinfo[contentrightcolorhover]" onchange="pkColorShow(this.id);" maxlength="6" size="6" />
+	<input type="button" id="showcontentrightcolorhover" style="background:#$styleinfo[contentrightcolorhover];" value="&#160;&#160;&#160;&#160;&#160;" disabled="disabled" /></td>
+ </tr>
+ <tr>
+  <td class="left">Hintergrundfarbe der Verweise<br />
+	<span class="small">&nbsp;</span></td>
+  <td class="right">
+	<input type="text" id="contentrightcbgcolor" name="contentrightcbgcolor" value="$styleinfo[contentrightcbgcolor]" onchange="pkColorShow(this.id);" maxlength="6" size="6" />
+	<input type="button" id="showcontentrightcbgcolor" style="background:#$styleinfo[contentrightcbgcolor];" value="&#160;&#160;&#160;&#160;&#160;" disabled="disabled" /></td>
+ </tr>
+ <tr>
+  <td class="left">Hintergrundgrafik der Verweise<br />
+	<span class="small">Pfadangabe ausgehend vom Grafikverzeichnis des Designs.</span></td>
+  <td class="right">
+	<input type="text" name="contentrightcbgimage" value="$styleinfo[contentrightcbgimage]" size="25" class="w90" /></td>
+ </tr>
+ <tr>
+  <td class="left">Abstand der Navigationsboxen<br />
+	<span class="small">Legt den vertikalen Abstand der Boxen in der rechten Navigation fest. Angabe in Pixeln.</span></td>
+  <td class="right">
+	<input type="text" name="contentrightboxspacer" value="$styleinfo[contentrightboxspacer]" maxlength="2" size="6" /></td>
+ </tr>
+</table>
+<br />
+<!-- end rightcontents -->
+
+
+
+<!-- addnav -->
+<a name="addnav"></a>
+<table class="standard" border="0" cellspacing="1" cellpadding="4" width="100%">
+ <tr>
+  <td class="heads" colspan="2">
+  	<div class="headspagelinks">
+		<a href="#head"><img src="$image_pagetop" /></a>
+		<a href="#contents"><img src="$image_pageup" /></a>
+		<a href="#siteinfo"><img src="$image_pagedown" /></a>
+		<a href="#foot"><img src="$image_pagebottom" /></a>
+	</div>
+	Erg&auml;nzende Navigation (unten)
+  </td>
+ </tr>
+  <tr>
+  <td class="left">H&ouml;he der Kategorieleiste<br />
+	<span class="small">Angabe in Pixeln.</span></td>
+  <td class="right">
+	<input type="text" name="contentbottomhlheight" value="$styleinfo[contentbottomhlheight]" maxlength="4" size="6" /></td>
+ </tr>
+ <tr>
+  <td class="left">Randabstand<br />
+	<span class="small">Angabe in Pixeln.</span></td>
+  <td class="right">
+	<input type="text" name="contentbottomhlpadding" value="$styleinfo[contentbottomhlpadding]" maxlength="4" size="6" /></td>
+ </tr> 
+ <tr>
+  <td class="left">Abstand<br />
+	<span class="small">Linker &amp; Rechter Randabstand. Angabe in Pixeln.</span></td>
+  <td class="right">
+	<input type="text" name="contentbottomhlspacing" value="$styleinfo[contentbottomhlspacing]" maxlength="4" size="6" /></td>
+ </tr> 
+ <tr>
+  <td class="left">Ausrichtung der Kategorieleiste<br />
+	<span class="small">Legt Sie hier den Ausrichtung der Inhalte der Hauptnavigation fest.</span></td>
+  <td class="right">
+	<select name="contentbottomhlalign" class="w90">
+	<option value="left" $contentbottomhlalignleft>Linksb&uuml;ndig ausrichten</option>
+	<option value="center" $contentbottomhlaligncenter>Zentriert ausrichten</option>
+	<option value="right" $contentbottomhlalignright>Rechtsb&uuml;ndig ausrichten</option>
+	</select></td>
+ </tr>
+ <tr>
+  <td class="left">Hintergrundfarbe der Kategorieleiste<br />
+	<span class="small">&nbsp;</span></td>
+  <td class="right">
+	<input type="text" id="contentbottomhlbgcolor" name="contentbottomhlbgcolor" value="$styleinfo[contentbottomhlbgcolor]" onchange="pkColorShow(this.id);" maxlength="6" size="6" />
+	<input type="button" id="showcontentbottomhlbgcolor" style="background:#$styleinfo[contentbottomhlbgcolor];" value="&#160;&#160;&#160;&#160;&#160;" disabled="disabled" /></td>
+ </tr>
+ <tr>
+  <td class="left">Hintergrundgrafik der Kategorieleiste<br />
+	<span class="small">Pfadangabe ausgehend vom Grafikverzeichnis des Designs.</span></td>
+  <td class="right">
+	<input type="text" name="contentbottomhlbgimage" value="$styleinfo[contentbottomhlbgimage]" size="25" class="w90" /></td>
+ </tr>
+ <tr>
+  <td class="left">Schriftart der Kopfzelle<br />
+	<span class="small">&nbsp;</span></td>
+  <td class="right">
+	<input type="text" name="contentbottomhlfont" value="$styleinfo[contentbottomhlfont]" size="25" class="w90" /></td>
+ </tr> 
+ <tr>
+  <td class="left">Schriftgr&ouml;&szlig;e der Kopfzelle<br />
+	<span class="small">&nbsp;</span></td>
+  <td class="right">
+	<input type="text" name="contentbottomhlfontsize" value="$styleinfo[contentbottomhlfontsize]" maxlength="2" size="6" /></td>
+ </tr>
+ <tr>
+  <td class="left">Schriftfarbe<br />
+	<span class="small">&nbsp;</span></td>
+  <td class="right">
+	<input type="text" id="contentbottomhlcolor" name="contentbottomhlcolor" value="$styleinfo[contentbottomhlcolor]" onchange="pkColorShow(this.id);" maxlength="6" size="6" />
+	<input type="button" id="showcontentbottomhlcolor" style="background:#$styleinfo[contentbottomhlcolor];" value="&#160;&#160;&#160;&#160;&#160;" disabled="disabled" /></td>
+ </tr>
+ <tr>
+  <td class="left">Hoverfarbe<br />
+	<span class="small">Schriftfarbe bei Mausber&uuml;hrungen.</span></td>
+  <td class="right">
+	<input type="text" id="contentbottomhlcolorhover" name="contentbottomhlcolorhover" value="$styleinfo[contentbottomhlcolorhover]" onchange="pkColorShow(this.id);" maxlength="6" size="6" />
+	<input type="button" id="showcontentbottomhlcolorhover" style="background:#$styleinfo[contentbottomhlcolorhover];" value="&#160;&#160;&#160;&#160;&#160;" disabled="disabled" /></td>
+ </tr> 
+  <tr>
+  <td class="left">H&ouml;he der Verweisleiste<br />
+	<span class="small">Angabe in Pixeln.</span></td>
+  <td class="right">
+	<input type="text" name="contentbottomheight" value="$styleinfo[contentbottomheight]" maxlength="4" size="6" /></td>
+ </tr>
+ </tr>
+ <tr>
+  <td class="left">Randabstand<br />
+	<span class="small">Angabe in Pixeln.</span></td>
+  <td class="right">
+	<input type="text" name="contentbottompadding" value="$styleinfo[contentbottompadding]" maxlength="4" size="6" /></td>
+ </tr> 
+ <tr>
+  <td class="left">Abstand<br />
+	<span class="small">Linker &amp; Rechter Randabstand. Angabe in Pixeln.</span></td>
+  <td class="right">
+	<input type="text" name="contentbottomspacing" value="$styleinfo[contentbottomspacing]" maxlength="4" size="6" /></td>
+ </tr> 
+ <tr>
+  <td class="left">Ausrichtung der Verweisleiste<br />
+	<span class="small">Legt Sie hier den Ausrichtung der Inhalte der Hauptnavigation fest.</span></td>
+  <td class="right">
+	<select name="contentbottomalign" class="w90">
+	<option value="left" $contentbottomalignleft>Linksb&uuml;ndig ausrichten</option>
+	<option value="center" $contentbottomaligncenter>Zentriert ausrichten</option>
+	<option value="right" $contentbottomalignright>Rechtsb&uuml;ndig ausrichten</option>
+	</select></td>
+ </tr> 
+ <tr>
+  <td class="left">Hintergrundfarbe der Verweisleiste<br />
+	<span class="small">&nbsp;</span></td>
+  <td class="right">
+	<input type="text" id="contentbottombgcolor" name="contentbottombgcolor" value="$styleinfo[contentbottombgcolor]" onchange="pkColorShow(this.id);" maxlength="6" size="6" />
+	<input type="button" id="showcontentbottombgcolor" style="background:#$styleinfo[contentbottombgcolor];" value="&#160;&#160;&#160;&#160;&#160;" disabled="disabled" /></td>
+ </tr>
+ <tr>
+  <td class="left">Hintergrundgrafik der Verweisleiste<br />
+	<span class="small">Pfadangabe ausgehend vom Grafikverzeichnis des Designs.</span></td>
+  <td class="right">
+	<input type="text" name="contentbottombgimage" value="$styleinfo[contentbottombgimage]" size="25" class="w90" /></td>
+ </tr>
+ <tr>
+  <td class="left">Schriftart der Verweise<br />
+	<span class="small">&nbsp;</span></td>
+  <td class="right">
+	<input type="text" name="contentbottomfont" value="$styleinfo[contentbottomfont]" size="25" class="w90" /></td>
+ </tr> 
+ <tr>
+  <td class="left">Schriftgr&ouml;&szlig;e der Verweise<br />
+	<span class="small">&nbsp;</span></td>
+  <td class="right">
+	<input type="text" name="contentbottomfontsize" value="$styleinfo[contentbottomfontsize]" maxlength="2" size="6" /></td>
+ </tr>
+ <tr>
+  <td class="left">Schriftfarbe<br />
+	<span class="small">&nbsp;</span></td>
+  <td class="right">
+	<input type="text" id="contentbottomcolor" name="contentbottomcolor" value="$styleinfo[contentbottomcolor]" onchange="pkColorShow(this.id);" maxlength="6" size="6" />
+	<input type="button" id="showcontentbottomcolor" style="background:#$styleinfo[contentbottomcolor];" value="&#160;&#160;&#160;&#160;&#160;" disabled="disabled" /></td>
+ </tr>
+ <tr>
+  <td class="left">Linkfarbe<br />
+	<span class="small">&nbsp;</span></td>
+  <td class="right">
+	<input type="text" id="contentbottomcolorlink" name="contentbottomcolorlink" value="$styleinfo[contentbottomcolorlink]" onchange="pkColorShow(this.id);" maxlength="6" size="6" />
+	<input type="button" id="showcontentbottomcolorlink" style="background:#$styleinfo[contentbottomcolorlink];" value="&#160;&#160;&#160;&#160;&#160;" disabled="disabled" /></td>
+ </tr>
+ <tr>
+  <td class="left">Hoverfarbe<br />
+	<span class="small">Schriftfarbe bei Mausber&uuml;hrungen.</span></td>
+  <td class="right">
+	<input type="text" id="contentbottomcolorhover" name="contentbottomcolorhover" value="$styleinfo[contentbottomcolorhover]" onchange="pkColorShow(this.id);" maxlength="6" size="6" />
+	<input type="button" id="showcontentbottomcolorhover" style="background:#$styleinfo[contentbottomcolorhover];" value="&#160;&#160;&#160;&#160;&#160;" disabled="disabled" /></td>
+ </tr>
+</table>
+<br />
+<!-- end addnav -->
+
+
+<!-- siteinfo -->
+<a name="siteinfo"></a>
+<table class="standard" border="0" cellspacing="1" cellpadding="4" width="100%">
+ <tr>
+  <td class="heads" colspan="2">
+  	<div class="headspagelinks">
+		<a href="#head"><img src="$image_pagetop" /></a>
+		<a href="#addnav"><img src="$image_pageup" /></a>
+		<a href="#siteinfo"><img src="$image_pagedown" /></a>
+		<a href="#foot"><img src="$image_pagebottom" /></a>
+	</div>
+	Website-Informationen (Copyright)
+  </td>
+ </tr>
+ <tr>
+  <td class="left">Schriftart<br />
+	<span class="small">&#160;</span></td>
+  <td class="right">
+	<input type="text" name="sitecopyrightfont" value="$styleinfo[sitecopyrightfont]" size="25" class="w90" /></td>
+ </tr>
+ <tr>
+  <td class="left">Schriftgr&ouml;&szlig;e<br />
+	<span class="small">&#160;</span></td>
+  <td class="right">
+	<input type="text" name="sitecopyrightfontsize" value="$styleinfo[sitecopyrightfontsize]" maxlength="2" size="6" /></td>
+ </tr>
+ <tr>
+  <td class="left">Schriftfarbe<br />
+	<span class="small">&#160;</span></td>
+  <td class="right">
+	<input type="text" id="sitecopyrightcolor" name="sitecopyrightcolor" value="$styleinfo[sitecopyrightcolor]" onchange="pkColorShow(this.id);" maxlength="6" size="6" />
+	<input type="button" id="showsitecopyrightcolor" style="background:#$styleinfo[sitecopyrightcolor];" value="&#160;&#160;&#160;&#160;&#160;" disabled="disabled" /></td>
+ </tr>
+<!-- -->
+ <tr>
+  <td class="left">Hintergrundfarbe<br />
+	<span class="small">&#160;</span></td>
+  <td class="right">
+	<input type="text" id="sitecopyrightbgcolor" name="sitecopyrightbgcolor" value="$styleinfo[sitecopyrightbgcolor]" onchange="pkColorShow(this.id);" maxlength="6" size="6" />
+	<input type="button" id="showsitecopyrightbgcolor" style="background:#$styleinfo[sitecopyrightbgcolor];" value="&#160;&#160;&#160;&#160;&#160;" disabled="disabled" /></td>  
+ </tr>
+  <tr>
+  <td class="left">Hintergrundgrafik<br />
+	<span class="small">Legt die Hintergrundgrafik der Website-Informationen fest. Pfadangabe ausgehend vom Grafikverzeichnis des Designs.</span></td>
+  <td class="right">
+	<input type="text" name="sitecopyrightbgimage" value="$styleinfo[sitecopyrightbgimage]" size="25" class="w90" /></td>
+ </tr>
+ <tr>
+  <td class="left">Ausrichtung<br />
+	<span class="small">Legt die horizontale Ausrichtung der Website-Informationen fest.</span></td>
+  <td class="right">
+	<select name="sitecopyrightalign" class="w90">
+	<option value="left" $sitecopyrightalignleft>Linksb&uuml;ndig ausrichten</option>
+	<option value="center" $sitecopyrightaligncenter>Zentriert ausrichten</option>
+	<option value="right" $sitecopyrightalignright>Rechtsb&uuml;ndig ausrichten</option>
+	</select></td>
+ </tr>
+</table>
+<br />
+<!-- end siteinfo -->
+
+
+
+
+<!-- save -->
+<a name="save"></a>
+<table class="standard" border="0" cellspacing="1" cellpadding="4" width="100%">
+ <tr>
+  <td class="heads" colspan="2">
+  	<div class="headspagelinks">
+		<a href="#head"><img src="$image_pagetop" /></a>
+		<a href="#siteinfo"><img src="$image_pageup" /></a>
+	</div>
+	Speichern
+  </td>
+ </tr>
+ <tr>
+  <td class="left">Als Kopie speichern<br />
+	<span class="small">M&ouml;chten Sie die &Auml;nderungen als neues Design speichern?</span></td>
+  <td class="right">
+  	<table border="0" cellspacing="0" cellpadding="0">
+	 <tr>
+	  <td><input class="radio" type="radio" name="style_copy" value="1" /></td>
+	  <td><span class="small">Ja</span></td>
+	  <td>&nbsp;&nbsp;</td>
+	  <td><input class="radio" type="radio" name="style_copy" value="0" checked /></td>
+	  <td><span class="small">Nein</span></td>
+	 </tr>
+	</table>
+  </td>
+ </tr>
+ <tr>
+  <td class="heads" align="center" colspan="2">
+	<input type="submit" name="action" value="$LANG[save]" accesskey="s" />
+	<input type="hidden" name="save" value="$LANG[save]" />
+	<input type="submit" name="action" value="$LANG[cancel]" />
+	<input type="hidden" name="cancel" value="$LANG[cancel]" /></td>
+ </tr>
+</table>
+</form> 

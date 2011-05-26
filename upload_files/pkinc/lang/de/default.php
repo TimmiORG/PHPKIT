@@ -1,0 +1,275 @@
+<?php
+# PHPKIT WCMS | Web Content Management System
+#
+#
+# YOU ARE NOT AUTHORISED TO CREATE ILLEGAL COPIES OF THIS
+# FILE AND/OR TO REMOVE THIS INFORMATION
+#
+# SIE SIND NICHT BERECHTIGT, UNRECHTMÄSSIGE KOPIEN DIESER
+# DATEI ZU ERSTELLEN UND/ODER DIESE INFORMATIONEN ZU ENTFERNEN
+#
+# This file / the PHPKIT software is no freeware! For further 
+# information please visit our website or contact us via email:
+#
+# Diese Datei / die PHPKIT Software ist keine Freeware! Für weitere
+# Informationen besuchen Sie bitte unsere Website oder kontaktieren uns per E-Mail:
+#
+# email     : info@phpkit.com
+# website   : http://www.phpkit.com
+# licence   : http://www.phpkit.com/licence
+# copyright : Copyright (c) 2002-2009 mxbyte gbr | http://www.mxbyte.com
+
+
+return array(
+'__CHARSET__'								=> 'utf-8',
+'__LANGCODE__'								=> 'de-DE',
+'__NUMBER_DECIMAl_SEP__'					=> ',',
+'__NUMBER_THOUSANDS_SEP__'					=> '.',
+
+
+'accept'									=> 'Akzeptiert',
+'access_refuse'								=> 'Zugriff verweigert',
+'activate'									=> 'Aktivieren',
+'Activated'									=> 'Aktiviert',
+'administration'							=> 'Administration',
+'age'										=> 'Alter',
+'all'										=> 'alle',
+'allowed'									=> 'erlaubt',
+'and'										=> 'und',
+'article'									=> 'Artikel',
+'articles'									=> 'Artikel',
+'Author'									=> 'Autor',
+'available'									=> 'vorhanden',
+
+'back'										=> 'Zur&uuml;ck',
+'banned'									=> 'gebannt',
+'by'										=> 'von',
+#(b)utton (l)abels
+'bl_back'									=> 'Zur&uuml;ck',
+'bl_cancel'									=> 'Abbrechen',
+'bl_go'										=> 'Los',
+'bl_login'									=> 'Anmelden',
+'bl_next'									=> 'Weiter',
+'bl_proceed'								=> 'Fortfahren',
+'bl_reset'									=> 'Zur&uuml;cksetzen',
+'bl_save'									=> 'Speichern',
+'bl_send'									=> 'Senden',
+
+'cancel'									=> 'Abbrechen',
+'click_to_return'							=> 'Klicken Sie hier um zur&uuml;ck zu gelangen.',
+'closed'									=> 'geschlossen',
+'comment'									=> 'Kommentar',
+'comments'									=> 'Kommentare',
+'content'									=> 'Inhalt',
+'contents'									=> 'Inhalte',
+'copy'										=> 'Kopieren',
+'create'									=> 'Erstellen',
+'created'									=> 'erstellt',
+
+'day0'										=> 'Sonntag',
+'day1'										=> 'Montag',
+'day2'										=> 'Dienstag',
+'day3'										=> 'Mittwoch',
+'day4'										=> 'Donnerstag',
+'day5'										=> 'Freitag',
+'day6'										=> 'Samstag',
+'day7'										=> 'Sonntag',
+
+'delete'									=> 'L&ouml;schen',
+'disable'									=> 'deaktivieren',
+'disabled'									=> 'deaktiviert',
+'Deactivated'								=> 'Deaktiviert',
+'direct'									=> 'direkt',
+'do_logout'									=> 'abmelden',
+'do_Logout'									=> 'Abmelden',
+'down'										=> 'runter',
+'download'									=> 'Download',
+'downloads'									=> 'Downloads',
+
+'edit'										=> 'Editieren',
+'email'										=> 'E-Mail',
+'email_address'								=> 'E-Mail-Adresse',
+'enable'									=> 'aktivieren',
+'enabled'									=> 'aktiv',
+'Entry'										=> 'Eintrag',
+'entry'										=> 'Eintrag',
+'error'										=> 'Fehler',
+'export'									=> 'Exportieren &gt;&gt;',
+
+'female'									=> 'weiblich',
+'finish'									=> 'Fertig',
+'fixed'										=> 'fixiert',
+'forums'									=> 'Foren',
+'forward'									=> 'Weiterleiten',
+
+'go'										=> 'Los',
+'guest'										=> 'Gast',
+'guestbook'									=> 'G&auml;stebuch',
+'guests'									=> 'G&auml;ste',
+
+'hide'										=> 'verstecken',
+
+'import'									=> 'Importieren &lt;&lt;',
+'in'										=> 'in',
+'isset'										=> 'gesetzt',
+
+'link'										=> 'Verweis',
+'links'										=> 'Verweise',
+'logged_in_as'								=> 'Angemeldet als: <strong>%s</strong>',
+'login'										=> 'Anmelden',
+'logout'									=> 'Abmelden',
+
+'maincat'									=> 'Hauptkategorie',
+'male'										=> 'm&auml;nnlich',
+'month1'									=> 'Januar',
+'month2'									=> 'Februar',
+'month3'									=> 'M&auml;rz',
+'month4'									=> 'April',
+'month5'									=> 'Mai',
+'month6'									=> 'Juni',
+'month7'									=> 'Juli',
+'month8'									=> 'August',
+'month9'									=> 'September',
+'month10'									=> 'Oktober',
+'month11'									=> 'November',
+'month12'									=> 'Dezember',
+'more'										=> 'mehr',
+
+'new'										=> 'Neu',
+'news'										=> 'News',
+'newsletter'								=> 'Newsletter',
+'new_comment'								=> 'Neuer Kommentar',
+'new_comment_pn_notify'						=> "[b]%s[/b] hat soeben einen neuen Kommentar verfasst.\r\n\r\nWenn Sie den Eintrag jetzt ansehen möchten, [url=include.php?%s]klicken Sie bitte hier [/url].",
+'new_gbentry'								=> 'Neuer Gästebucheintrag',
+'new_gbentry_pn_notify'						=> "[b]%s[/b] hat soeben einen neuen Gästebucheintrag verfasst.\r\n\r\nWenn Sie den Eintrag jetzt ansehen möchten, [url=include.php?path=guestbook&gbid=%s]klicken Sie bitte hier [/url].",
+'new_instantmessage'						=> 'Neue Kurznachricht',
+'new_private_message'						=> 'Neue PN',
+'new_post'									=> 'Neuer Forenbeitrag',
+'newpost_pn_notify'							=> "[b]%s[/b] hat soeben einen neuen Forenbeitrag verfasst.\r\n\r\nWenn Sie den Eintrag jetzt ansehen möchten, [url=include.php?path=forumsthread&threadid=%s&postid=%s]klicken Sie bitte hier [/url].",
+'new_submission'							=> 'Neue Einsendung',
+'new_user'									=> 'Neuer Benutzer',
+'new_user_pn_text'							=> "[b]%s[/b] hat sich soeben als neuer Benutzer angemeldet.\r\n\r\nWenn Sie das Benutzerprofil einsehen möchten, klicken Sie bitte auf den folgenden Link: [url=include.php?path=userinfo&id=%s]Benutzerprofil von %s[/url]",
+'next'										=> 'Weiter',
+'no'										=> 'keine',
+'No'										=> 'Nein',
+'no_avatar_selected'						=> 'Kein Avatar gew&auml;hlt',
+'no_comments'								=> 'Keine Kommentare',
+'no_title'									=> 'Kein Titel',
+'not_allowed'								=> 'nicht erlaubt',
+'not_available'								=> 'nicht vorhanden',
+'not_set'									=> 'nicht gesetzt',
+'not_specified'								=> 'keine Angabe',
+
+'offline'									=> 'Offline',
+'OK'										=> 'Okay',
+'online'									=> 'Online',
+'open'										=> 'offen',
+'original'									=> 'original',
+'original_written_by'						=> 'Original geschrieben von',
+
+'page'										=> 'Seite',
+'page_next'									=> 'n&auml;chste Seite',
+'page_not_found'							=> 'Seite nicht gefunden',
+'page_prev'									=> 'vorherige Seite',
+'password'									=> 'Passwort',
+'pop_up'									=> 'Pop-Up',
+'pop_up_window'								=> 'Pop-Up-Fenster',
+'post'										=> 'Beitrag',
+'posts'										=> 'Beitr&auml;ge',
+'preview'									=> 'Vorschau',
+'previous_entries'							=> 'Bisherige Eintr&auml;ge',
+'printpreview'								=> 'Druckvorschau',
+'private_area'								=> 'Pers&ouml;nlicher Bereich',
+'private_message'							=> 'private Nachricht', 
+'private_messages'							=> 'private Nachrichten',
+'private_message_received'					=> 'Empfangene Nachricht',
+'private_message_sent'						=> 'Gesendete Nachricht',
+'profile_update'							=> 'Profil&auml;nderung',
+
+'quote'										=> 'Zitat',
+
+'read_in'									=> 'Einlesen',
+'receiver'									=> 'Empf&auml;nger',
+'receiving_not_wanted'						=> 'Empfang unerw&uuml;nscht',
+'refuse'									=> 'Abgelehnt',
+'registration'								=> 'Registrierung',
+'remove'									=> 'Entfernen',
+'remove_all'								=> 'Alle entfernen',
+'required'									=> 'erforderlich',
+'reply'										=> 'Antworten',
+'report_forumsposting_title'				=> 'Forenbeitrag melden',
+'report_forumsposting_namelink'				=> 'Klicken Sie hier um zum gemeldeten Beitrag zu gelangen',
+'reset'										=> 'Zur&uuml;cksetzen',
+
+'save'										=> 'Speichern',
+'save_logindata_permanently'				=> 'Anmeldedaten dauerhaft speichern',
+'search'									=> 'Suche',
+'search_user'								=> 'Benutzer suchen',
+'select'									=> 'Ausw&auml;hlen',
+'send'										=> 'Senden',
+'sender'									=> 'Absender',
+'shortmessage'								=> 'Kurznachricht',
+'show'										=> 'anzeigen',
+'sign'										=> 'eintragen',
+'submit'									=> 'Abschicken',
+'success'									=> 'Erfolg',
+'system_message'							=> 'Systemnachricht',
+
+'thread'									=> 'Thema',
+'threads'									=> 'Themen',
+'timeformat_spoken'							=> '%d.%m.%Y um %H:%M Uhr',
+'today'										=> 'Heute',
+'total'										=> 'Gesamt',
+
+'unreaded_thread'							=> 'ungelesener Beitrag',
+'unreaded_threads'							=> 'ungelesene Beitr&auml;ge',
+'user'										=> 'Benutzer',
+'username'									=> 'Benutzername',
+'users'										=> 'Benutzer',
+'users_and_guests'							=> 'Benutzer &amp; G&auml;ste',
+'up'										=> 'hoch',
+'upload'									=> 'Hochladen',
+
+'visitors'									=> 'Besucher',
+'vote'										=> 'Abstimmen',
+'Version'									=> 'Version',
+
+'with'										=> 'mit',
+'write_comment'								=> 'Kommentar schreiben',
+'write_private_message'						=> 'PN schreiben',
+
+'year'										=> 'Jahr',
+'Yes'										=> 'Ja',
+'yesterday'									=> 'Gestern',
+'you_got_no_new_private_messages'			=> 'Keine neuen privaten Nachrichten',
+
+#forum areas
+'forum_editpost'							=> 'Beitrag editieren',
+'forum_favorits'							=> 'favorisierte Themen',
+'forum_moderate'							=> 'Thema moderieren',
+'forum_report'								=> 'Beitrag melden',
+'forum_search'								=> 'Suche',
+'forum_searchresult'						=> 'Suchergebnisse',
+'forum_showinfo'							=> 'Foren-Information',
+'forum_topuser'								=> 'Foren-Topuser',
+'forum_team'								=> 'Foren-Team',
+'forum_new_answer'							=> 'Antwort erstellen',
+'forum_new_thread'							=> 'Thema erstellen',
+
+#user status
+'mainadmin'									=> 'Hauptadmin',
+'admin'										=> 'Administrator',
+'admin_male'								=> 'Administrator',
+'admin_female'								=> 'Administratorin',
+'mod'										=> 'Moderator',
+'mod_male'									=> 'Moderator',
+'mod_female'								=> 'Moderatorin',
+'member'									=> 'Mitglied',
+'member_male'								=> 'Mitglied',
+'member_female'								=> 'Mitglied',
+'user'										=> 'User',
+'user_male'									=> 'User',
+'user_female'								=> 'Userin',
+'guest_status'								=> 'Gast',
+);
+?>

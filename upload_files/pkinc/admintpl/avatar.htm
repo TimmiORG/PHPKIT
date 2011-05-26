@@ -1,0 +1,28 @@
+<script language="JavaScript">
+function AvatarGroup()
+	{if(document.avatargroup.avatargroups.options[document.avatargroup.avatargroups.selectedIndex].value != -1) document.avatargroup.submit();}
+</script>
+
+<table class="standard" border="0" cellspacing="1" cellpadding="4" width="100%">
+ <tr>
+  <td class="heads" colspan="2">Avatare verwalten</td>
+ </tr>
+	<form name="avatargroup" method="post" action="include.php?path=useravatar">
+ <tr>
+  <td class="left" width="50%" valign="top">Anzeige ausw&auml;hlen</td>
+  <td class="right" width="50%">
+	<select class="w90" name="avatargroups" onchange="AvatarGroup()" size="7">
+		<option value="all">Alle Avatare anzeigen</option>
+		<option value="user">Nur individuelle Avatare anzeigen</option>
+		<option value="basic">F&uuml;r alle Benutzer verf&uuml;gbare Avatare anzeigen</option>
+		<option value="member">Ab Benutzerstatus "Mitglied" verf&uuml;gbare Avatare anzeigen</option>
+		<option value="mod">Ab Benutzerstatus "Moderator" verf&uuml;gbare Avate anzeigen</option>
+		<option value="admin">Nur f&uuml;r den Benutzerstatus "Administrator" verf&uuml;gbare Avatare anzeigen</option>
+		<option value="upload">Neuen Avatar hochladen</option>
+	</select>
+	<input class="small" type="submit" value="Ausw&auml;hlen" />
+  </td>
+ </tr>
+	</form>
+	$avatar_show
+</table>

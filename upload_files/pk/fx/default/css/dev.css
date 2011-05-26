@@ -1,0 +1,9 @@
+body#pknav,
+div#frameheader,
+th.heads,
+td.heads,
+th.designbodyhead,
+td.designbodyhead
+	{
+	background-color:#CC0000;
+	}

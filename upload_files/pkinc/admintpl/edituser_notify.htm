@@ -1,0 +1,22 @@
+<table class="standard" border="0" cellspacing="1" cellpadding="4" width="100%">
+	<form method="post" action="include.php?path=useredit&writenotify=1">
+	<input type="hidden" name="editid" value="$editid" />
+	
+ <tr>
+  <td class="heads" colspan="2">Benachrichtigung verfassen</td>
+ </tr>
+ <tr>
+  <td class="left" valign="top" width="50%">Nachricht<br />
+  	<font class="small">Geben Sie hier eine Begr&uuml;ndung f&uuml;r die Bearbeitung bzw. die Erstellung des Benutzerkontos ein. Kann frei bleiben wenn Sie keine zus&auml;tzlichen Anmerkungen machen wollen.</font></td>
+  <td class="right" width="50%">
+  	<textarea name="notify_message" rows="8" cols="30" class="w90"></textarea></td>
+ </tr>
+ <tr>
+  <td class="heads" colspan="2" align="center">
+  	<input type="submit" name="action" value="$lang[send]" />
+  	<input type="hidden" name="send" value="$lang[send]" />
+	<input type="submit" name="action" value="$lang[cancel]" />
+	<input type="hidden" name="cancel" value="$lang[cancel]" /></td>
+ </tr>
+	</form>
+</table>

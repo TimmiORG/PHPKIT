@@ -1,0 +1,36 @@
+<table class="standard" cellspacing="1" cellpadding="4" width="100%">
+ <tr>
+  <td class="heads" colspan="3">$lang_registration</td>
+ </tr>
+	$error_message
+ 	<form method="post" action="include.php?path=registration">
+	<input type="hidden" name="action" value="$action" />
+ <tr>
+  <td class="left" width="15%" nowrap="nowrap">$lang_username</td>
+  <td class="right" width="35%"><input type="text" name="newuser" value="$newuser" size="8" style="width: 90%" /></td>
+  <td class="right small" width="50%">$lang_registration_username_hlp</td>
+ </tr>
+ <tr>
+  <td class="left" rowspan="2" nowrap="nowrap">$lang_password</td>
+  <td class="right"><input type="password" name="newpass" size="8" style="width: 90%" /></td>
+  <td class="right small" rowspan="2">$lang_registration_password_hlp</td>
+ </tr>
+ <tr>
+  <td class="right"><input type="password" name="newpass2" size="8" style="width: 90%" /></td>
+ </tr>
+ <tr>
+  <td class="left" rowspan="2" nowrap="nowrap">$lang_email_address</td>
+  <td class="right"><input type="text" name="newemail" value="$newemail" size="8" style="width: 90%;" /></td>
+  <td class="right small" rowspan="2">$lang_registration_emailaddress_hlp</td>
+ </tr>
+ <tr>
+  <td class="right"><input type="text" name="newemail2" value="$newemail2" size="8" style="width: 90%" /></td>
+ </tr>
+ 
+  	$captcha
+  <td class="heads" colspan="4" align="center">
+	<input type="submit" name="action" value="$lang[send]" />
+	<input type="hidden" name="send" value="$lang[send]" /></td>
+ 
+	</form>
+</table>

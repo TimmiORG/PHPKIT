@@ -1,0 +1,26 @@
+<script type="text/javascript">
+function FAQCat()
+	{
+	if(document.faqcat.catid.options[document.faqcat.catid.selectedIndex].value != -1)
+		{
+		document.faqcat.submit();
+		}
+	}
+</script>
+<table class="contentbody" border="0" cellspacing="1" cellpadding="4" width="100%">
+ <tr>
+  <td class="heads">
+	<form name="faqcat" method="get" action="include.php">
+	<input type="hidden" name="path" value="faq" />
+	<input type="hidden" name="faqid" value="showcat" />
+	<table border="0" cellspacing="0" cellpadding="0" width="100%">
+	 <tr>
+	  <td nowrap="nowrap"><font class="heads">$LANG[faq_page_title]</font></td>
+	  <td align="right" nowrap="nowrap">&nbsp;$faq_catselect</td>
+	 </tr>
+	</table>
+	</form>
+  </td>
+ </tr>
+ 	$faq_body
+</table>

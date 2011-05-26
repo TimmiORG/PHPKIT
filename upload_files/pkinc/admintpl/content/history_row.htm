@@ -1,0 +1,13 @@
+ <tr>
+  <td class="$row"><input class="checkbox" type="checkbox" name="content_id[]" value="$contentinfo[content_id]" $set /></td>
+  <td class="$row" align="center">$content_status</td>
+  <td class="$row"><a href="include.php?path=contentcompose&step=3&contentid=$contentinfo[content_id]">$content_title</a></td>
+  <td class="$row"><a href="include.php?path=contentarchive&searchcat=$catinfo[contentcat_id]&action=$lang[search]">$catinfo[contentcat_name]</a>
+	$contenttheme_info</td>
+  <td class="$row" nowrap><font class=small>$content_date<br /> $content_time</font></td>
+  <td class="$row"><font class=small><a class="small" href="include.php?path=contentarchive&action=$lang[search]&searchtype=$contentinfo[content_option]">$content_type</a></font></td>
+  <td class="$row" align="right"><font class="small">$contentinfo[content_id]</font></td>
+  <td class="$row" align="center"><font class="small"><b>
+	<a href="include.php?path=contentcompose&contentid=$contentinfo[content_id]">editieren</a><br />
+	<a href="include.php?path=contentarchive&mode=delete&contentid=$contentinfo[content_id]&contenttype=$contentinfo[content_option]">l&ouml;schen</a></b></font></td>
+ </tr>

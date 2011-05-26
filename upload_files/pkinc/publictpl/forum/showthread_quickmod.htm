@@ -1,0 +1,21 @@
+<form method="post" action="include.php?path=forumsthread">
+<input type="hidden" name="threadid" value="$threadid" />
+<table border="0" cellspacing="0" cellpadding="0">
+ <tr>
+  <td align="left" colspan="2" nowrap="nowrap">
+	<select size="1" name="quick_mod">
+	<option value="-1" selected="selected">Thema moderieren:</option>
+	<option value="-1">_________________</option>
+	<option value="cs0">Thema schlie&szlig;en</option>
+	<option value="cs1">Thema &ouml;ffnen</option>
+	<option value="cs2">Thema fixieren &amp; &ouml;ffnen</option>
+	<option value="cs3">Thema fixieren &amp; schlie&szlig;en</option>
+	<option value="del">Thema l&ouml;schen</option>
+	<option value="-1">_________________</option>
+	<option value="-1">Thema verschieben:</option>
+	$quickmod_catlist
+	</select>
+	<input type="submit" name="actionmod" value="$lang_go" /></td>
+ </tr>
+</table>
+</form>

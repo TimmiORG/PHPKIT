@@ -1,0 +1,27 @@
+<table border="0" class="standard" cellspacing="1" cellpadding="4" width="100%">
+ <tr>
+  <td class="heads" colspan="2">Design importieren</td>
+ </tr>
+ 	$import_message
+ 	<form method="post" enctype="multipart/form-data" action="$form_action" />
+	<input type="hidden" name="doimport" value="1" />
+ <tr>
+  <td class="left" width="50%">Design hochladen und importieren<br />
+  	<font class="small">W&auml;hlen Sie die Designdatei auf Ihrem Rechner aus, die Sie importieren m&ouml;chten.<br />
+	G&uuml;ltige Designdatei besitzen die Dateiendung .pkxstyle.</font></td> 
+  <td class="right" width="50%"><input type="file" name="import_file" size="25" class="w90" /></td> 
+ </tr>	
+ <tr>
+  <td class="left">Design vom Server importieren<br />
+  	<font class="small">Trage Sie hier den Pfad ausgehend vom Installationsverzeichnis zur Designdatei ein (Dateiname inkl. Dateiendung).<br />
+	Bsp.: <strong>pkinc/rep/design/design-name.pkxstyle</strong></font></td>  
+  <td class="right"><input type="text" name="import_sfile" size="25" class="w90" /></td> 
+ </tr>	
+ <tr>
+  <td class="heads" align="center" colspan="2">
+  	<input type="submit" name="action" value="$lang[import]" />
+  	<input type="hidden" name="import" value="$lang[import]" />	
+	<input type="submit" name="action" value="$lang[cancel]" />
+	<input type="hidden" name="cancel" value="$lang[cancel]" /></td>
+ </tr>
+</table>

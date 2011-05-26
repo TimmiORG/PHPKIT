@@ -1,0 +1,20 @@
+ <tr>
+  <td class="$row" width="100%">
+   	<table border="0" cellspacing="0" cellpadding="2" width="100%">
+	 <tr>
+	  <td width="95%"><font class="small">$comment_time &nbsp;|&nbsp; <b>IP:</b> $comment_ip &nbsp;|&nbsp; geschrieben von: $comment_autor</font></td>
+	  <td width="5%" align="right" nowrap><b>
+	  	<a class="small" target="_blank" href="../include.php?$comment_link&subid=$commentinfo[comment_subid]&comcat=$commentinfo[comment_cat]">zum Kommentar</a> &nbsp;
+	  	<a class="small" href="include.php?path=comment&editid=$commentinfo[comment_id]&entries=$entries">bearbeiten</a> &nbsp;
+		<a class="smallhighlight" href="include.php?path=comment&deleteid=$commentinfo[comment_id]&entries=$entries">l&ouml;schen</a></b></td>
+	 </tr>
+	 <tr>
+	  <td colspan="2"><img border="0" height="1" width="100%" src="../images/black.gif" alt="" /></td>
+	 </tr>
+	 <tr>
+	  <td colspan="2">$comment_text<br />
+	  	<br /></td>	 
+	 </tr>	
+	</table>  
+  </td> 
+ </tr>

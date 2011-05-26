@@ -1,0 +1,20 @@
+<table class="standard" border="0" cellspacing="1" cellpadding="4" width="100%">
+	<form name="templateselect" method="post" post="include.php?path=templates">
+	<input type="hidden" name="modipack" value="$modipack" />
+
+ <tr>
+  <td class="heads" colspan="2">Vorlagenpaket umbennenen</td>
+ </tr>
+ <tr>
+  <td class="left" width="50%">Vorlagenpaketname</td>
+  <td class="right" width="50%">
+	<input type="text" name="templatepack_name" value="$templatepack_name" size="25" class="w90" />
+ </tr>
+ <tr>
+  <td class="heads" colspan="2" align="center">
+	<input type="submit" name="packaction" value="$lang[save]" />
+	<input type="reset" value="$lang[reset]" />
+	</td>
+ </tr>
+	</form>
+</table>

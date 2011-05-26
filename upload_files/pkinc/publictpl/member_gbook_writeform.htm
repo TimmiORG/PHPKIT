@@ -1,0 +1,26 @@
+<script type="text/javascript" src="fx/main.js"></script>
+
+<table class="userbody" cellspacing="1" cellpadding="4" width="100%">
+ <tr>
+  <td class="heads">Begr&uuml;ssungstext bearbeiten</td>
+ </tr>
+	<form name="myform" method="post" action="include.php?path=userguestbook">
+	<input type="hidden" name="save_gbwelcome" value="1" />
+ <tr>
+  <td class="right">
+	<table border="0" cellspacing="2" cellpadding="0" width="100%">
+	 <tr>
+	  <td width="80%" valign="top"><textarea id="pkBBArea" name="content" cols="60" rows="15" onfocus="pkBBSelection(this);" onclick="pkBBSelection(this);" onchange="pkBBSelection(this);" ondblclick="pkBBSelection(this);">$userinfo[user_gbwelcome]</textarea></td>
+	  <td width="20%" valign="top">$sign_format</td>
+	 </tr>
+	</table>
+  </td> 
+ </tr>
+ <tr>
+  <td class="left" align="center">
+	<input type="submit" name="action" value="$LANG[save]" />
+	<input type="hidden" name="save" value="$LANG[save]" />
+	<input type="reset" value="$LANG[reset]" /></td> 
+ </tr>
+	</form>
+</table>

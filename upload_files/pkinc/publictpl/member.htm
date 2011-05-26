@@ -1,0 +1,56 @@
+<table class="userhead" width="100%" cellspacing="1" cellpadding="4">
+ <tr>
+  <td class="heads" colspan="8">
+	<table border="0" cellspacing="0" cellpadding="0" width="100%">
+	 <tr>
+	  <td width="50%"><font class="heads">$user_navigation $lang_users</font></td>
+	  <td width="50%" align="right"><font class="heads">$total_user $lang_users</font></td>
+	 </tr>
+	</table>
+  </td>
+ </tr>
+ <tr>
+  <td class="standard" colspan="8" align="center">
+	<form name="user_search" method="get" action="include.php">
+	<input type="hidden" name="path" value="userslist" />
+	<table border="0" cellspacing="0" cellpadding="0" width="100%">
+	 <tr>
+	  <td width="20%" nowrap="nowrap">
+		<input class="small" type="text" name="usernick" size="20" value="$lang_search_user" onblur="if (value =='') {value = '$lang_search_user'}" onfocus="if (value == '$lang_search_user') {value =''}" />
+		<input class="small" type="submit" value="$LANG[bl_go]" /></td>
+	  <td width="80%" align="right"><font class="small">$total_side</font></td>
+	 </tr>
+	</table>
+	</form>
+  </td>
+ </tr>
+ <tr>
+  <td class="odd" colspan="8" align="center">
+	<table border="0" cellspacing="0" cellpadding="0" width="100%">
+	<tr>
+	  <td colspan="3" align="center">
+		<font class="small">$member_letterlinks</font></td>
+	 </tr>
+	</table>
+  </td>
+ </tr>
+ <tr>
+  <th class="heads" width="5%" nowrap="nowrap">
+	<a class="headssmall" href="include.php?path=userslist&amp;order=os$order2&amp;usernick=$usernick&amp;letter=$letter"><img border="0" width="13" height="8" src="images/arrow$order2.gif" alt="" /></a></th>
+  <th class="heads" width="30%" nowrap="nowrap" align="left">
+	<a class="headssmall" href="include.php?path=userslist&amp;order=nick$order1&amp;usernick=$usernick&amp;letter=$letter"><b>Benutzername</b></a>
+	<a class="headssmall" href="include.php?path=userslist&amp;order=nick$order1&amp;usernick=$usernick&amp;letter=$letter"><img border="0" width="13" height="8" src="images/arrow$order1.gif" alt="" /></a></th>
+  <th class="heads" width="10%"><font class="headssmall"><b>Profil</b></font></th>
+  <th class="heads" width="10%"><font class="headssmall"><b>Mail</b></font></th>
+  <th class="heads" width="10%"><font class="headssmall"><b>PN</b></font></th>
+  <th class="heads" width="10%"><font class="headssmall"><b>Home</b></font></th>
+  <th class="heads" width="10%"><font class="headssmall"><b>Freund</b></font></th>
+  <th class="heads" width="15%" nowrap="nowrap">
+	<a class="headssmall" href="include.php?path=userslist&amp;order=signin$order3&amp;usernick=$usernick&amp;letter=$letter"><b>Angemeldet</b></a>
+	<a class="headssmall" href="include.php?path=userslist&amp;order=signin$order3&amp;usernick=$usernick&amp;letter=$letter"><img border="0" width="13" height="8" src="images/arrow$order3.gif" alt="" /></a></th>
+ </tr>
+	$member_overview_rows
+ <tr>
+  <td colspan="8" class="standard"><font class="small">$total_side</font></td>
+ </tr>
+</table>

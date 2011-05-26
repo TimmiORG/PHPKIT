@@ -1,0 +1,26 @@
+<form name="config" method="post" action="$form_action">
+<table class="standard" cellspacing="1" cellpadding="4" width="100%">
+ <colgroup>
+  <col width="33%" />
+  <col width="67%" />
+ </colgroup>
+ $parsed_config_modes
+ <tr>
+  <td class="heads" colspan="2">Lizenzschl&uuml;ssel</td>
+ </tr>
+ <tr>
+  <td class="even" style="padding:25px;" colspan="2">$lang_licencekey_explain</td>
+ </tr>
+ <tr>
+  <td class="left" style="width:33%;">Lizenzschl&uuml;ssel<br />
+  	<font class="small">$lang_licencekey_desc</font></td>
+  <td class="right" style="width:67%;"><input type="text" name="licencekey" value="$licencekey" size="25" maxlength="32" class="w90" /></td>
+ </tr>
+ <tr>
+  <td class="heads" colspan="2" align="center">
+	<input type="submit" name="action" value="$LANG[save]" />
+	<input type="hidden" name="save" value="$LANG[save]" />
+	<input type="reset" value="$LANG[reset]" /></td>
+ </tr>
+</table>
+</form>

@@ -1,0 +1,23 @@
+<script language="JavaScript">
+function CatSelect() {
+ if(document.catselect.content_cat.options[document.catselect.content_cat.selectedIndex].value != -1) document.catselect.submit();}
+</script>
+
+<table cellspacing="1" cellpadding="4" width="100%" class="standard">
+ <tr>
+  <td class="heads" colspan="2">Inhalt verfassen - Schritt 2/4</td>
+ </tr>
+	<form name="catselect" method="post" action="include.php?path=contentcompose">
+		<input type="hidden" name="step" value="$step" />
+		<input type="hidden" name="content_type" value="$content_type" />
+		<input type="hidden" name="contentid" value="$contentinfo[content_id]" />
+ <tr>
+  <td class="left" width="50%">Kategorie $step2_info</td>
+  <td class="right" width="50%">
+	<select class="w90" name="content_cat" size="5" onchange="CatSelect()">
+		$cat_option
+	</select></td>
+ </tr>
+	$compose_navigation
+	</form>
+</table>

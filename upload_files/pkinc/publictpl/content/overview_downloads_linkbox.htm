@@ -1,0 +1,36 @@
+ <tr>
+  <td class="$row"><b>$content_link</b></td>
+  <td class="$row" align="center"><font class="small"><b>Info</b></font></td>
+ </tr>
+ <tr>
+  <td class="$row" valign="top" width="100%">
+	$content_catimage<font class="contenttext">$content_headline...</font></td>
+  <td class="$row" valign="top">
+	<table border="0" cellspacing="0" cellpadding="1" width="100%">
+	 <tr>
+	  <td><b><font class="small">Gr&ouml;sse</font></b></td>
+	  <td align="right"><font class="small">$file_size</font></td>
+	 </tr>
+	 <tr>
+	  <td><b><font class="small">Datum</font></b></td>
+	  <td align="right"><font class="small">$content_time</font></td>
+	 </tr>
+	 <tr>
+	  <td><b><font class="small">Downloads</font></b></td>
+	  <td align="right"><font class="small">$contentinfo[content_views]</font></td>
+	 </tr>
+		$content_rating
+	 <tr>
+	  <td colspan="2" align="center">
+		<table border="0" cellspacing="0" cellpadding="2">
+		 <tr>
+		  <td><b>[<a href="?path=download&amp;contentid=$contentinfo[content_id]">Details</a>]</b></td>
+		  <td>&nbsp;</td>
+		  <td><b>[<a target="_blank" href="?path=download&amp;contentid=$contentinfo[content_id]&amp;download=go">Download</a>]</b></td>
+		 </tr>
+		</table>
+ 	  </td>
+	 </tr>
+	</table>
+  </td>
+ </tr>

@@ -1,0 +1,23 @@
+<script language="JavaScript">
+function pkPresetConfirm()
+	{
+	bool=confirm(unescape("$lang_preset_confirm"));
+
+	if(bool)
+		document.getElementById('set1').checked=true;
+	else
+		document.getElementById('set0').checked=true;
+	}
+</script>
+<br />
+<br />
+<table border="0" cellspacing="0" cellpadding="4" width="100%">
+ <tr>
+  <td width="1"><input id="set0" type="radio" name="preset" value="0"$checked0/></td>
+  <td><a class="none" href="javascript:pkSetOption('set0');"><div><b>$lang_preset_none</b></div></a></td>
+ </tr>
+ <tr>
+  <td><input id="set1" type="radio" name="preset" value="1"$checked1$presetconfirm/></td>
+  <td><a class="none" href="javascript:;" onmousedown="pkSetOption('set1');" $presetconfirm ><div><b>$lang_preset_insert</b></div></a></td>
+ </tr> 
+</table>

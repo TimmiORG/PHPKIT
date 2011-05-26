@@ -1,0 +1,29 @@
+ <tr>
+  <td colspan="2" align="center">
+	<table border="0" cellspacing="0" cellpadding="2">
+		<form method="get" action="include.php">
+		<input type="hidden" name="path" value="content">
+		<input type="hidden" name="mode" value="vote">
+		<input type="hidden" name="contentid" value="$contentinfo[content_id]">
+		<input type="hidden" name="type" value="$contentinfo[content_option]">
+	 <tr>
+	  <td>
+		<select class=small name="content_vote" size="1">
+		<option value="-1">Bewerten</option>
+		<option value="1">1 schlecht</option>
+		<option>2</option>
+		<option>3</option>
+		<option>4</option>
+		<option>5</option>
+		<option>6</option>
+		<option>7</option>
+		<option>8</option>
+		<option>9</option>
+		<option value="10">10 sehr gut</option>
+		</select></td>
+	  <td><input type="submit" name="action" value="Go" /></td>
+	 </tr>
+		</form>
+	</table>
+  </td>
+ </tr>

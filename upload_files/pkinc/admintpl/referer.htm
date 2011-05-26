@@ -1,0 +1,38 @@
+<table class="standard" border="0" cellspacing="1" cellpadding="4" width="100%">
+ <tr>
+  <td class="heads" colspan="4">
+	<table border="0" cellspacing="0"cellpadding="0" width="100%">
+	 <tr>
+	  <td nowrap><font class="heads">Referrer-Links</font></td>
+ 	  <td align="right"><font class="headssmall">$sidelink_top</font></td> 
+	 </tr>
+	</table>
+  </td>
+ </tr>
+	<form method="post" action="$form_action">
+	<input type="hidden" name="entries" value="$entries" />
+	<input type="hidden" name="delete" value="$lang[delete]" />
+	<input type="hidden" name="remove_all" value="$lang[remove_all]" />
+     
+ <tr>
+  <td class="highlight" width="85%"><font class="small"><b>Referrer</b></font></td>
+  <td class="highlight" width="5%" align="center"><font class="small"><b>Uhrzeit</b></font></td>
+  <td class="highlight" width="5%" align="center"><font class="small"><b>Datum</b></font></td>
+  <td class="highlight" width="5%" align="center"><img border="0" height="16" width="20" alt="Auswahl der zu l&ouml;schenden Referrer-Links - Es werden alle identischen Eintr&auml;ge entfernt" src="../images/delete.gif" /></td>
+ </tr>
+	$referer_row
+ <tr>
+  <td class="standard" colspan="4">
+	<table border="0" cellspacing="0" cellpadding="0" width="100%">
+	 <tr>
+	  <td width="100%" nowrap><font class="small">$sidelink_bottom $counter Eintr&auml;ge</font></td>
+	  <td align="right" nowrap>
+		<input type="submit" name="action" value="$lang[remove_all]" class="smallhighlight" />
+		<input type="submit" name="action" value="$lang[delete]" class="smallhighlight" /><br />
+		<font class="small">Ausgew&auml;hlte und identische Eintr&auml;ge entfernen</font></td>
+	 </tr>
+	</table>
+  </td>
+ </tr>
+	</form>
+</table>

@@ -1,0 +1,26 @@
+<script language="JavaScript">
+function NavCat() {
+ if(document.navigationcat.select_navcat.options[document.navigationcat.select_navcat.selectedIndex].value != -1) document.navigationcat.submit();
+ }
+</script>
+<table class="standard" cellspacing="1" cellpadding="4" width="100%">
+ <tr>
+  <td class="heads" colspan=2>Navigationskategorien verwalten</td>
+ </tr>
+	<form name="navigationcat" method="post" action="include.php?path=navigationcategory">
+ <tr>
+  <td class="left" width="50%" valign="top">Aktion w&auml;hlen</td>
+  <td class="right" width="50%">
+	<select class="w90" name="select_navcat" onchange="NavCat()" size="8">
+		<option value="">Kategorien sortieren/anordnen</option>
+		<option value="new">Neue Kategorie anlegen</option>
+		<option value="-1">_____________________</option>
+		<option value="-1">oder bestehende Kategorie &auml;ndern</option>
+		$navigationcat_option
+	</select><br />
+	<input class="small" type="submit" value="Ausw&auml;hlen" />
+  </td>
+ </tr>
+	</form>
+	$navigation_show
+</table>

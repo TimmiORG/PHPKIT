@@ -1,0 +1,28 @@
+<table border="0" cellspacing="1" cellpadding="4" width="100%" class="standard">
+ <tr>
+  <td class="heads" colspan="2">Grafik hochladen</td>
+ </tr>
+	$upload_info
+	<form method="post" enctype="multipart/form-data" action="include.php?path=mediaarchive&upload=1">
+ <tr>
+  <td class="left" width="50%">Grafikname<br />
+  	<span class="small">Vollst&auml;ndiger Dateiname, inklusive Dateiendung. Kann freibleiben.</span></td>
+  <td class="right" width="50%">
+	<input type="text" name="image_name" class="w90" /></td>
+ </tr>
+ <tr>
+  <td class="left">Datei w&auml;hlen<br />
+  	<span class="small">Maximal zugelassene Dateigr&ouml;&szlig;e: $max_filesize. (Serverabh&auml;ngig)</span></td>
+  <td class="right">
+	<input type="file" name="image_file" class="w90" />
+	<input type="hidden" name="MAX_FILE_SIZE" value="$max_file_size" /></td>
+ </tr>
+ <tr>
+  <td class="heads" colspan="2" align="center">
+	<input type="submit" name="action" value="$LANG[upload]" />
+	<input type="hidden" name="upload" value="$LANG[upload]" />
+	<input type="submit" name="action" value="$LANG[cancel]" />
+	<input type="hidden" name="cancel" value="$LANG[cancel]" /></td>
+ </tr>
+	</form>
+</table>

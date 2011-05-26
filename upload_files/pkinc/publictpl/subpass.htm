@@ -1,0 +1,25 @@
+<form method="post" action="include.php?path=login&amp;mode=lostpassword">
+<table class="standard" width="100%" cellspacing="1" cellpadding="4">
+ <tr>
+  <td class="heads" colspan="3">Passwort anfordern</td>
+ </tr>
+ <tr>
+  <td class="left" align="center" colspan="3"><font class="small">$message</font></td>
+ </tr>
+ <tr>
+  <td class="left" width="20%" nowrap="nowrap">E-Mail-Adresse</td>
+  <td class="right" width="40%">
+	 <input class="w90" type="text" name="lostem" size="15" /></td>
+  <td class="right" width="50%">
+	<font class="small">Geben Sie hier die E-Mail-Adresse mit der Sie sich angemeldet haben.</font></td>
+ </tr>
+ <tr>
+  <td class="heads" align="center" colspan="3">
+	<input type="submit" name="action" value="$lang[submit]" />
+	<input type="hidden" name="submit" value="$lang[submit]" />
+	<input type="submit" name="action" value="$lang[cancel]" />
+	<input type="hidden" name="cancel" value="$lang[cancel]" />
+  </td>
+ </tr>
+</table>
+</form>

@@ -1,0 +1,304 @@
+ <tr>
+  <td class="left">Seitenname<br />
+	<span class="small">Name der Website. Wird verwendet um die Seite zu personalisieren.</span></td>
+  <td class="right">
+	<input type="text" name="site_name" value="$site_name" size="25" class="w90" /></td>
+ </tr>
+ <tr>
+  <td class="left">Websiteslogan<br />
+	<span class="small">Das Motto oder der Webeslogan der Website.</span></td>
+  <td class="right">
+	<input type="text" name="site_slogan" value="$site_slogan" size="25" class="w90" /></td>
+ </tr>
+ <tr>
+  <td class="left">Standard Seitentitel<br />
+	<span class="small">Seitentitel der in der Titelleiste des Browser angezeigt wird, wenn f&uuml;r die aufgerufene Seite kein individueller Titel vorliegt.</span></td>
+  <td class="right">
+	<input type="text" name="site_title" value="$site_title" size="25" class="w90" /></td>
+ </tr>
+ <tr>
+  <td class="left">Pr&auml;fix des Seitentitels<br />
+	<span class="small">Pr&auml;fix das dem Seitentitel vorangestellt wird.</span></td>
+  <td class="right">
+	<input type="text" name="site_title_prefix" value="$site_title_prefix" size="25" class="w90" /></td>
+ </tr> 
+ <tr>
+  <td class="left">Suffix des Seitentitels<br />
+	<span class="small">Suffix das an den Seitentitel angeh&auml;ngt wird.</span></td>
+  <td class="right">
+	<input type="text" name="site_title_suffix" value="$site_title_suffix" size="25" class="w90" /></td>
+ </tr>
+ <tr>
+  <td class="left">Website-URL<br />
+	<span class="small">URL der Website in vollst&auml;ndiger Form (Bsp.: http://www.host.de/home).</span></td>
+  <td class="right">
+	<input type="text" name="site_url" value="$site_url" size="25" class="w90" /></td>
+ </tr>
+ <tr>
+  <td class="left">Alias der Website-URL<br />
+	<span class="small">URL der Website, zur Verwendung in Texten und E-Mails (Bsp.: www.host.de).</span></td>
+  <td class="right">
+	<input type="text" name="site_urls" value="$site_urls" size="25" class="w90" /></td>
+ </tr>
+ <tr>
+  <td class="left">E-Mail-Adresse der Website<br />
+	<span class="small">E-Mail-Adresse die als Absender bei ausgehenden E-Mails angezeigt wird. Verwenden sie eine E-Mail-Adresse, die der Installationsdomain zugeh&ouml;rig ist. Dies vermeidet, dass E-Mails vom Server zur&uuml;ckgewiesen werden.</span></td>
+  <td class="right">
+	<input type="text" name="site_email" value="$site_email" size="25" class="w90" /></td>
+ </tr>
+ <tr>
+  <td class="left">Website-Informationen<br />
+  	<span class="small">Tragen Sie hier Ihr Copyright und &auml;hnliche Angaben ein. Diese Informationen werden im Fussbereich jeder Seite angezeigt. HTML-Verwendung m&ouml;glich.</span></td>
+  <td class="right">
+  	<textarea name="site_copy" cols="30" rows="8" class="w90">$site_copy</textarea></td>
+ </tr>
+ <tr>
+  <td class="left">$LANG[config_site_closure_label]<br />
+  	<span class="small">$LANG[config_site_closure_desc]</span></td>
+  <td class="right">
+  	<textarea name="site_closure" cols="30" rows="8" class="w90">$site_closure</textarea></td>
+ </tr> 
+ <tr>
+  <td class="highlight" colspan="2">$LANG[config_cookie_settings]</td>
+ </tr>
+ <tr>
+  <td class="left">$LANG[config_cookie_domain_label]<br />
+	<span class="small">$LANG[config_cookie_domain_desc]</span></td>
+  <td class="right">
+	<input type="text" name="cookie_domain" value="$cookie_domain" size="25" class="w90" /></td>
+ </tr> 
+  <tr>
+  <td class="left">$LANG[config_cookie_path_label]<br />
+	<span class="small">$LANG[config_cookie_path_desc]</span></td>
+  <td class="right">
+	<input type="text" name="cookie_path" value="$cookie_path" size="25" class="w90" /></td>
+ </tr>
+ <tr>
+  <td class="highlight" colspan="2">$LANG[config_time_settings]</td>
+ </tr>
+ <tr>
+  <td class="left">Zeitzone<br />
+	<span class="small">W&auml;hlen Sie die Zeitzone des Servers.</span></td>
+  <td class="right">
+	<select name="time_gmtzone" size="1" class="w90">
+	<option value="-12" $info_m12>(GMT -12:00) Eniwetok, Kwajalein</option>
+	<option value="-11" $info_m11>(GMT -11:00) Midway-Inseln, Samoa</option>
+	<option value="-10" $info_m10>(GMT -10:00) Hawaii</option>
+	<option value="-9" $info_m9>(GMT -09:00) Alaska</option>
+	<option value="-8" $info_m8>(GMT -08:00) Tijuana, Lod Angeles, Seattle, Vancouver</option>
+	<option value="-7" $info_m7>(GMT -07:00) Arizona, Denver, Salt Lake City, Calgary</option>
+	<option value="-6" $info_m6>(GMT -06:00) Mexiko-Stadt, Saskatchewan, Zentralamerika</option>
+	<option value="-5" $info_m5>(GMT -05:00)  Bogot&aacute;, Lima, Quito, Indiana (Ost), New York, Toronto</option>
+	<option value="-4" $info_m4>(GMT -04:00) Caracas, La Paz, Montreal, Quebec, Santiago</option>
+	<option value="-3.5" $info_m35>(GMT -03:30) Neufundland</option>
+	<option value="-3" $info_m3>(GMT -03:00) Brasilia, Buenos Aires, Georgetown, Gr&ouml;nland</option>
+	<option value="-2" $info_m2>(GMT -02:00) Mittelatlantik</option>
+	<option value="-1" $info_m1>(GMT -01:00) Azoren, Kapverdische Inseln</option>
+	<option value="0" $info_0>(GMT) Casablance, Monrovia, Dublin, Edinburgh, Lissabon, London</option>
+	<option value="1" $info_p1>(GMT +01:00) Amsterdam, Berlin, Bern, Rom, Stockholm, Wien, Paris</option>
+	<option value="2" $info_p2>(GMT +02:00) Athen, Istanbul, Minsk, Kairo, Jerusalem</option>
+	<option value="3" $info_p3>(GMT +03:00) Bagdad, Moskau, Nairobi</option>
+	<option value="3.5" $info_p35>(GMT +03:30) Teheran</option>
+	<option value="4" $info_p4>(GMT +04:00) Muskat, Tiflis</option>
+	<option value="4.5" $info_p45>(GMT +04:30) Kabul</option>
+	<option value="5" $info_p5>(GMT +05:00) Islamabad</option>
+	<option value="5.5" $info_p55>(GMT +05:30) Kalkutta, Neu-Delhi</option>
+	<option value="5.75" $info_p575>(GMT +05:45) Katmandu</option>
+	<option value="6" $info_p6>(GMT +06:00) Almaty, Nowosibirsk, Dhaka</option>
+	<option value="6.5" $info_p65>(GMT +06:30) Rangun</option>
+	<option value="7" $info_p7>(GMT +07:00) Bangkok, Hanoi, Jakarta</option>
+	<option value="8" $info_p8>(GMT +08:00) Ulan Bator, Singapur, Peking, Hongkong</option>
+	<option value="9" $info_p9>(GMT +09:00) Irkutsk, Osaka, Sapporo, Tokyo, Seoul</option>
+	<option value="9.5" $info_p95>(GMT +09:30) Adelaide, Darwin</option>
+	<option value="10" $info_p10>(GMT +10:00) Brisbane, Canberra, Melbourne, Sydney, Wladiwostok</option>
+	<option value="11" $info_p11>(GMT +11:00) Salomonen, Neukaledonien</option>
+	<option value="12" $info_p12>(GMT +12:00) Auckland, Wellington, Fidschi, Kamtschatka</option>
+	</select>
+	</td>
+ </tr>
+ <tr>
+  <td class="left">Zeitabweichung<br />
+	<span class="small">Nehmen Sie Anpassungen der Serverzeit vor. Angabe in Sekunden (Bsp.: -3600 = 1 Stunde fr&uuml;her).</span></td>
+  <td class="right">
+	<input type="text" name="time_offset" value="$config[time_offset]" size="10" class="" /></td>
+ </tr>
+ <tr>
+  <td class="left">Sommer- und Winterzeitwechsel<br />
+  	<span class="small">Soll automatisch zwischen Sommer- und Winterzeit gewechselt werden? Deaktivieren, wenn der Webserver diesen Wechsel automatisch vollzieht.</span></td>
+  <td class="right">
+  	<table border="0" cellspacing="0" cellpadding="0">
+	 <tr>
+	  <td><input class="radio" type="radio" name="time_summertime" value="1" $time_summertime1 /></td>
+	  <td>&nbsp;</td>
+      <td><span class="small">$LANG[Yes]</span></td>
+	  <td>&nbsp;&nbsp;</td>
+	  <td><input class="radio" type="radio" name="time_summertime" value="0" $time_summertime0 /></td>
+	  <td>&nbsp;</td>
+	  <td><span class="small">$LANG[No]</span></td>
+	 </tr>
+	</table>
+  </td>
+ </tr>
+ <tr>
+  <td class="highlight" colspan="2">$LANG[config_image_resize_settings]</td>
+ </tr> 
+ <tr>
+  <td class="left">$LANG[config_image_resize_text_label]<br />
+	<span class="small">$LANG[config_image_resize_text_desc]<br />
+	$LANG[PHP_extension_gdlib_required]: $lang_gdstatus</span></td>
+<!--  
+  Bildgr&ouml;ssenanpassung<br />
+  	<span class="small">M&ouml;chten Sie, dass auf der Website bei Benutzereingaben, Grafiken in ihrer Gr&ouml;sse angepasst werden?<br />
+	PHP-Erweiterung gdLib erforderlich ()</span>-->
+  <td class="right">
+  	<table border="0" cellspacing="0" cellpadding="0">
+	 <tr>
+	  <td><input class="radio" type="radio" name="text_imgresize" value="1" $text_imgresize1 /></td>
+	  <td>&nbsp;</td>
+      <td><span class="small">$LANG[Activated]</span></td>
+	  <td>&nbsp;&nbsp;</td>
+	  <td><input class="radio" type="radio" name="text_imgresize" value="0" $text_imgresize0 /></td>
+	  <td>&nbsp;</td>
+	  <td><span class="small">$LANG[Deactivated]</span></td>
+	 </tr>
+	</table>
+  </td>
+ </tr>
+ 
+ <tr>
+  <td class="left">$LANG[config_image_resize_user_label]<br />
+	<span class="small">$LANG[config_image_resize_user_desc]<br />
+	$LANG[PHP_extension_gdlib_required]: $lang_gdstatus</span></td>
+  <td class="right">
+  	<table border="0" cellspacing="0" cellpadding="0">
+	 <tr>
+	  <td><input class="radio" type="radio" name="user_imgresize" value="1" $user_imgresize1 /></td>
+	  <td>&nbsp;</td>
+      <td><span class="small">$LANG[Activated]</span></td>
+	  <td>&nbsp;&nbsp;</td>
+	  <td><input class="radio" type="radio" name="user_imgresize" value="0" $user_imgresize0 /></td>
+	  <td>&nbsp;</td>
+	  <td><span class="small">$LANG[Deactivated]</span></td>
+	 </tr>
+	</table>
+  </td>
+ </tr>
+ <tr>
+  <td class="left">$LANG[config_image_resize_size_label]<br />
+  	<span class="small">$LANG[config_image_resize_size_desc]</span></td>
+  <td class="right"> 
+ 	<table border="0" cellspacing="0" cellpadding="1">
+ 	 <tr>
+	  <td><input type="text" name="image_resize_height" value="$image_resize_height" maxlength="5" size="4" /></td>
+	  <td>&nbsp;x&nbsp;</td>
+	  <td><input type="text" name="image_resize_width" value="$image_resize_width" maxlength="5" size="4" /></td>
+	 </tr>
+	</table>
+   </td>
+ </tr> 
+ <tr>
+  <td class="highlight" colspan="2">$LANG[config_miscellaneous_settings]</td>
+ </tr>
+ <tr>
+  <td class="left">Design der Website<br />
+	<span class="small">Hier k&ouml;nnen Sie das Design ausw&auml;hlen das als Standard f&uuml;r die Website verwendet wird.</span></td>
+  <td class="right">
+	<select name="site_style" size="1" class="w90">
+	$site_style_list
+	</select>
+  </td>
+ </tr>
+ <tr>
+  <td class="left">Sicherheitsgrafik verwenden<br />
+  	<span class="small">M&ouml;chten Sie, dass auf der Website bei Benutzereingaben, zus&auml;tzlich eine Sicherheitsgrafik eingeblendet wird?<br />
+	PHP-Erweiterung gdLib erforderlich ($lang_gdstatus)</span></td>
+  <td class="right">
+  	<table border="0" cellspacing="0" cellpadding="0">
+	 <tr>
+	  <td><input class="radio" type="radio" name="captcha" value="1" $captcha1 /></td>
+	  <td>&nbsp;</td>
+      <td><span class="small">Ja</span></td>
+	  <td>&nbsp;&nbsp;</td>
+	  <td><input class="radio" type="radio" name="captcha" value="0" $captcha0 /></td>
+	  <td>&nbsp;</td>
+	  <td><span class="small">Nein</span></td>
+	 </tr>
+	</table>
+  </td>
+ </tr>
+ <tr>
+  <td class="left">Automatischer Textumbruch<br />
+	<span class="small">M&ouml;chten Sie, dass auf der Website bei Benutzereingaben, Text nach einer bestimmten Zeichenanzahl automatisch umgebrochen werden?
+	Tragen Sie die Anzahl der maximal erlauben Zeichen ein, bevor ein Umbruch erzwungen wird (0 deaktiviert diese Funktion).</span></td>
+  <td class=right>
+	<input type="text" name="user_textwrap" value="$config[user_textwrap]" size="6" maxlength="4">
+ </tr> 
+ <tr>
+  <td class="left">Automatische Administrationsanmeldung<br />
+  	<span class="small">Aktivieren Sie die automatische Anmeldung nur wenn Sie die Administration auf anderem Wege sch&uuml;tzen, z.B. unter Verwendung einer .htaccess-Datei.</span></td>
+  <td class="right">
+  	<table border="0" cellspacing="0" cellpadding="0">
+	 <tr>
+	  <td><input class="radio" type="radio" name="session_adminautolog" value="1" $session_adminautolog1 /></td>
+	  <td>&nbsp;</td>
+      <td><span class="small">Ja</span></td>
+	  <td>&nbsp;&nbsp;</td>
+	  <td><input class="radio" type="radio" name="session_adminautolog" value="0" $session_adminautolog0 /></td>
+	  <td>&nbsp;</td>
+	  <td><span class="small">Nein</span></td>
+	 </tr>
+	</table>
+  </td>
+ </tr> 
+ <tr>
+  <td class="left">Werbebanner anzeigen<br />
+	<span class="small">Bestimmt ob die Bannerwerbefl&auml;che im Kopf der Seite genutzt werden soll.<br />
+		Nur bei <strong>g&uuml;tigem Lizenzschl&uuml;ssel</strong>, der die Berechtigung zur kommerziellen Benutzung beinhaltet.</span></td>
+  <td class="right">
+   	<table border="0" cellspacing="0" cellpadding="0">
+	 <tr>
+	  <td><input class="radio" type="radio" name="site_adview" value="1" $site_adview1 /></td>
+	  <td>&nbsp;</td>
+      <td><span class="small">Ja</span></td>
+	  <td>&nbsp;&nbsp;</td>
+	  <td><input class="radio" type="radio" name="site_adview" value="0" $site_adview0 /></td>
+	  <td>&nbsp;</td>
+	  <td><span class="small">Nein</span></td>
+	 </tr>
+	</table></td>
+ </tr>
+ <tr>
+  <td class="left">Version automatisch pr&uuml;fen<br />
+  	<span class="small">Wenn aktiviert wird regelm&auml;&szlig;ig nach Updates gesucht.</span></td>
+  <td class="right">
+  	<table border="0" cellspacing="0" cellpadding="0">
+	 <tr>
+	  <td><input class="radio" type="radio" name="version_check" value="1" $vcheck1 /></td>
+	  <td>&nbsp;</td>
+      <td><span class="small">Ja</span></td>
+	  <td>&nbsp;&nbsp;</td>
+	  <td><input class="radio" type="radio" name="version_check" value="0" $vcheck0 /></td>
+	  <td>&nbsp;</td>
+	  <td><span class="small">Nein</span></td>
+	 </tr>
+	</table>
+  </td>
+ </tr> 
+ <tr>
+  <td class="left">Templatenamen im Quelltext<br />
+	<span class="small">Wenn diese Option aktivert ist, wird am Anfang und Ende jedes Templates der Name der Datei als 
+	Kommentar in den Quelltext eingef&uuml;gt. Verwenden Sie diese Option ausschlie&szlig;lich zur Fehlersuche und 
+	deaktivieren Sie die Option um Bandbreite zu sparen und den Seitenaufbau nicht zu verlangsamen.</span></td>
+  <td class="right">
+   	<table border="0" cellspacing="0" cellpadding="0">
+	 <tr>
+	  <td><input class="radio" type="radio" name="templatename" value="1" $templatename1 /></td>
+	  <td>&nbsp;</td>
+      <td><span class="small">Ja</span></td>
+	  <td>&nbsp;&nbsp;</td>
+	  <td><input class="radio" type="radio" name="templatename" value="0" $templatename0 /></td>
+	  <td>&nbsp;</td>
+	  <td><span class="small">Nein</span></td>
+	 </tr>
+	</table></td>
+ </tr>  

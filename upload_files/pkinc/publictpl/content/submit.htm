@@ -1,0 +1,49 @@
+<script type="text/javascript" src="fx/main.js"></script>
+<form name="myform" method="post" action="include.php?path=contentsubmit&amp;type=$type">
+<input type="hidden" name="type" value="$type" />
+<input type="hidden" name="content_autorid" value="$content_autorid" />
+<table class="contentbody" cellspacing="1" cellpadding="4" width="100%">
+ <tr>
+  <td class="heads" colspan="2">$typename einsenden</td>
+ </tr>
+ <tr>
+  <td class="left" colspan="2" align="center"><br />
+  	$submit_message<br />
+	<br /></td>
+ </tr>
+ <tr>
+  <td class="left" width="25%">Autor</td>
+  <td class="right" width="75%">
+	<input type="text" size="20" name="content_autor" value="$content_autor" /></td>
+ </tr>
+ <tr>
+  <td class="left">E-Mail</td>
+  <td class="right">
+	<input type="text" size="20" name="content_email" value="$content_email" /></td>
+ </tr>
+ <tr>
+  <td class="left">Titelvorschlag</td>
+  <td class="right">
+	<input type="text" size="30" name="content_title" value="$content_title" /></td>
+ </tr>
+ <tr>
+  <td class="left" valign="top">Text</td>
+  <td class="right">
+	<table border="0" cellspacing="0" cellpadding="0" width="100%">
+	 <tr>
+	  <td width="80%" valign="top"><textarea id="pkBBArea" name="content" cols="60" rows="20" onfocus="pkBBSelection(this);" onclick="pkBBSelection(this);" onchange="pkBBSelection(this);" ondblclick="pkBBSelection(this);">$content</textarea></td>
+	  <td width="20%" valign="top">$sign_format</td>
+	 </tr>
+	</table>
+  </td>
+ </tr>
+	$submit_body
+	$captcha
+ <tr>
+  <td class="heads" colspan="2" align="center">
+	<input type="submit" name="action" value="$lang[submit]" />
+	<input type="hidden" name="submit" value="$lang[submit]" />
+	<input type="reset" value="$lang[reset]" /></td>
+ </tr>
+</table>
+</form>

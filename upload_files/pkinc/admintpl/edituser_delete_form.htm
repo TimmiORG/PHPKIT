@@ -1,0 +1,42 @@
+<form method="post" action="include.php?path=useredit">
+<input type="hidden" name="delete" value="$lang[delete]" />
+<input type="hidden" name="editid" value="$editid" />
+<table class="standard" cellspacing="1" cellpadding="4" width="100%">
+ <tr>
+  <td class="heads" colspan="2">Benutzerkonto &quot;<strong>$usernick</strong>&quot; l&ouml;schen</td>
+ </tr>
+ <tr>
+  <td class="left" width="50%">Benutzerkonto wirklich l&ouml;schen?<br />
+	<font class="small">Das Benutzerkonto wird aus der Datenbank gel&ouml;scht und kann nicht wieder hergestellt werden!</font></td>
+  <td class="right" width="50%">
+	<select name="confirm_delete" size="2" class="w90">
+		<option value="no" selected="selected">Nicht l&ouml;schen</option>
+		<option value="confirmed">Benutzerkonto l&ouml;schen</option>
+	</select></td>
+ </tr>
+ <tr>
+  <td class="left">Benachrichtigen<br />
+	<font class="small">W&auml;hlen Sie diese Option aus, wenn Sie den Benutzer &uuml;ber die L&ouml;schung per E-Mail informieren wollen.</font></td>
+  <td class="right">
+	<table border="0" cellspacing="0" cellpadding="2">
+	 <tr>
+	  <td><input class="radio" type="radio" value="1" name="edit_notify"$notify_true /></td>
+	  <td>Ja, Benutzer per E-Mail benachrichtigen</td>
+	  <td>&nbsp;</td>
+	  <td><input class="radio" type="radio" value="0" name="edit_notify"$notify_false /></td>
+	  <td>Nein, nicht benachrichtigen</td>
+	 </tr>
+	</table>
+ </tr>
+ <tr>
+  <td class="left">Nachricht<br />
+	<font class="small">Benachrichtigung die per E-Mail verschickt wird.</font></td>
+  <td class="right"><textarea cols="30" rows="10" name="confirmed_notifytext" class="w90"></textarea></td>
+ </tr>
+ <tr>
+  <td class="heads" colspan="2" align="center">
+	<input type="submit" name="action" value="$lang[delete]" class="highlight" />
+	<input type="submit" value="$lang[cancel]"></td>
+ </tr>
+</table>
+</form>

@@ -1,0 +1,135 @@
+div, form
+	{
+	margin:0;
+	padding:0;
+	}
+	
+input[type=text], input[type=password]
+	{
+	border:1px solid #454545;
+	}
+
+#pkouterpage
+	{
+	margin-top:150px;
+	text-align:center;
+	}
+
+#pkpage
+	{
+	width:570px;
+	margin:auto;
+	text-align:left;
+	}
+	
+#pkcopyright
+	{
+	width:770px;
+	margin:auto;
+	margin-top:25px;
+	color:black;
+	font-size:11px;
+	font-family:verdana;
+	text-align:center;
+	}
+
+#pkevent
+	{
+	margin:0;
+	padding:0;
+	width:auto;
+	}
+	
+#pkeventmessage
+	{
+	margin:0;
+	margin-top:20px;
+	margin-bottom:20px;
+	padding:5px;
+	border:1px solid #506080;
+	}
+	
+div.warning
+	{
+	border:1px solid red;
+	background-color:#FFFFCC;
+	color:#000000;
+	}
+
+.pkeventhl
+	{
+	margin:0;
+	margin:0px;
+	padding:5px;
+	border:0;
+	border-left:25px solid #506080;
+	color:#506080;
+	font-size:12px;
+	font-weight:bold;
+	font-family:Verdana, Arial, sans-serif;
+	}
+
+#pkeventmessagehl
+	{
+	margin:0;
+	margin:0px;
+	border:0;
+	font-size:12px;
+	font-weight:bold;
+	font-family:Verdana, Arial, sans-serif;
+	}
+
+#pkeventmessage p
+	{
+	padding:10px;
+	}
+
+.warning
+	{
+	color:#FF0000;
+	font-weight:bold;
+	}
+
+	
+.pksubject
+	{
+	padding:10px;
+	padding-top:10px;	
+	padding-bottom:25px;
+	border:2px solid #506080;
+	border-right:2px solid #657595;
+	border-bottom:2px solid #657595;
+	background:#FFFFFF;
+	}
+
+h5#formdesc
+	{
+	margin:0;
+	margin-bottom:8px;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+	width:auto;
+	font-weight:bold;
+	font-family:Verdana, Arial, sans-serif;	
+	text-align:center;
+	display:block;	
+	}
+	
+.login
+	{
+	background-image:url(./../event/login.jpg);
+	background-position:right bottom;
+	background-repeat:no-repeat;
+	}
+
+h5.error,
+strong.error
+	{
+	color:#FF0000;
+	}
+
+input.error
+	{
+	border:1px solid #FF0000;
+	}

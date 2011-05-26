@@ -1,0 +1,23 @@
+<script language="JavaScript">
+function ContType() {
+ if(document.typeselect.content_type.options[document.typeselect.content_type.selectedIndex].value != -1) document.typeselect.submit();}
+</script>
+
+<table class="standard" cellspacing="1" cellpadding="4" width="100%">
+	<form name="typeselect" method="post" action="include.php?path=contentcompose">
+	<input type="hidden" name="step" value="$step" />
+	<input type="hidden" name="contentid" value="$contentinfo[content_id]" />
+ <tr>
+  <td class="heads" colspan="2">Inhalt verfassen - Schritt 1/4</td>
+ </tr>
+ <tr>
+  <td class="left" width="50%">Inhaltstyp w&auml;hlen</td>
+  <td class="right" width="50%">
+	<select name="content_type" size="5" class="w90" onchange="ContType()">
+		$options
+	</select>
+  </td>
+ </tr>
+ 	$compose_navigation
+	</form>
+</table>

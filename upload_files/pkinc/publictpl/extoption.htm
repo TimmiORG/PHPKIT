@@ -1,0 +1,45 @@
+<form method="post" action="include.php?path=userprofile&amp;mode=options">
+<table class="userbody" cellspacing="1" cellpadding="4" width="100%">
+ <tr>
+  <td class="heads" colspan="2">$user_navigation Erweiterte Einstellungen</td>
+ </tr>
+	$avatar_eod
+ <tr>
+  <td class="left" width="50%">PN-Nutzung<br />
+	<font class="small">Wenn Sie keine privaten Nachrichten (PN) w&uuml;nschen, schalten Sie diese Option ab.</font></td>
+  <td class="right" width="50%">
+	<input class="radio" type="radio" name="new_imoption" value="1" $im_option1 /> <font class="small">angeschaltet</font> &nbsp;
+	<input class="radio" type="radio" name="new_imoption" value="0" $im_option0 /> <font class="small">abgeschaltet</font></td>
+ </tr>
+ <tr>
+  <td class="left">PN-Benachrichtigung<br />
+	<font class="small">E-Mail-Benachrichtigung, wenn eine neue private Nachricht f&uuml;r Sie vorliegt.</font></td>
+  <td class="right">
+	<input class="radio" type="radio" name="new_imnotify" value="1" $im_imnotify1 /> <font class="small">angeschaltet</font> &nbsp;
+	<input class="radio" type="radio" name="new_imnotify" value="0" $im_imnotify0 /> <font class="small">abgeschaltet</font></td>
+ </tr>
+ <tr>
+  <td class="left">Mitgliederinformation<br />
+	<font class="small">Legt fest, ob Mitgliederinformationen erw&uuml;nscht sind.</font></td>
+  <td class="right">
+	<input class="radio" type="radio" name="new_nloption" value="1" $nl_option1 /> <font class="small">angeschaltet</font> &nbsp;
+	<input class="radio" type="radio" name="new_nloption" value="0" $nl_option0 /> <font class="small">abgeschaltet</font></td>
+ </tr>
+ <tr>
+  <td class="left">Signaturen<br />
+	<font class="small">Signaturen aller User anzeigen.</font></td>
+  <td class="right">
+	<input class="radio" type="radio" name="new_sigoption" value="1" $im_sigoption1> <font class="small">angeschaltet</font> &nbsp;
+	<input class="radio" type="radio" name="new_sigoption" value="0" $im_sigoption0> <font class="small">abgeschaltet</font></td>
+ </tr>
+	$ghost_eod
+	$style_option
+	$extoption_delete
+ <tr>
+  <td class="heads" colspan="2" align="center">
+	<input type="submit" name="action" value="$lang[save]" />
+	<input type="hidden" name="save" value="$lang[save]" />
+	<input type="reset" value="$lang[reset]" /></td>
+ </tr>
+</table>
+</form>

@@ -1,0 +1,32 @@
+<script language="JavaScript">
+function returnText() {
+ opener.document.$return_form.$return_element.value += document.showtext.showtext.value;
+ opener.$return_form.$return_element.focus();
+ }
+</script>
+
+<table class="standard" cellspacing="1" cellpadding="4" width="100%">
+ <tr>
+  <td class="heads">
+   	<table border="0" cellspacing="0" cellpadding="0" width="100%">
+	 <tr>
+	  <td nowrap><font class="heads">Datei einlesen</font></td>	 
+	  <td align="right" nowrap><font class="headssmall">[ <a class="headssmall" href="javascript:self.close()">Fenster schlie&szlig;en</a> ]</font></td>
+	 </tr>
+	</table>
+  </td>
+ </tr>
+	$showtext	
+ 	<form method="post" enctype="multipart/form-data" action="include.php?path=popup&mode=readfile">
+	<input type="hidden" name="window_w_size" value="$window_w_size" />
+	<input type="hidden" name="window_h_size" value="$window_h_size" />
+	<input type="hidden" name="option" value="$option" />
+ <tr> 
+  <td class="right">
+	<input type="file" name="readfile" class="w100" /></td>
+ </tr>
+ <tr>
+  <td class="heads" align="center"><input type="submit" name="action" value="$lang[read_in]" /><input type="hidden" name="read_in" value="$lang[read_in]" /></td>
+ </tr>
+ 	</form>
+</table>

@@ -1,0 +1,22 @@
+<table class="standard" cellspacing="1" cellpadding="4" width="100%">
+ <tr>
+  <td class="heads" colspan="4">Ergebnis der Abstimmung: $votetheme[votetheme_title]</td>
+ </tr>
+ <tr>
+  <td class="highlight" width="1%" align="center"><font class="small"><b><a title="Sortierung" href="include.php?path=pollarchive&result=$voteid&order=$order">#</a></b></font></td>
+  <td class="highlight" width="89%"><font class="small"><b>Antwortm&ouml;glichkeit</b></font></td>
+  <td class="highlight" align="center" width="5%"><font class="small"><b>Prozent</b></font></td>
+  <td class="highlight" align="center" width="5%"><font class="small"><b>Stimmen</b></font></td>
+ </tr>
+	$result_row
+ <tr>
+  <td class="heads" colspan="4">
+  	<table border="0" cellspacing="0" cellpadding="0" width="100%">
+	 <tr>
+	  <td nowrap="nowrap"><font class="heads"><a class="heads" href="include.php?path=pollcompose&voteid=$voteid">Abstimmung bearbeiten</a> / <a class="heads" href="include.php?path=pollcompose&step=2&voteid=$voteid">Antworten bearbeiten</a></font></td>
+	  <td align="right" nowrap="nowrap"><font class="heads"><a class="heads" href="include.php?path=pollarchive">Zur&uuml;ck zum Archiv</a></font></td> 
+	 </tr>
+	</table>
+  </td>
+ </tr>
+</table>

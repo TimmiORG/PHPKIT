@@ -1,0 +1,45 @@
+<form method="post" action="include.php?path=guestbook&amp;mode=edit">
+<input type="hidden" name="id" value="$gbookinfo[gbook_id]" />
+<table class="standard" cellspacing="1" cellpadding="4" width="100%">
+ <tr>
+  <td class="heads" colspan="2">Eintrag bearbeiten</td>
+ </tr>
+ <tr>
+  <td class="left" width="50%">Autor 
+	$autor_message</td>
+  <td class="right" width="50%">
+	<input type="text" size="25" name="gbook_autor" value="$gbookinfo[gbook_autor]" class="w90" /></td>
+ </tr>
+ <tr>
+  <td class="left">E-Mail-Adresse</td>
+  <td class="right">
+	<input type="text" size="25" name="gbook_email" value="$gbookinfo[gbook_email]" class="w90" /></td>
+ </tr>
+ <tr>
+  <td class="left">Homepage</td>
+  <td class="right">
+	<input type="text" size="25" name="gbook_hpage" value="$gbookinfo[gbook_hpage]" class="w90" /></td>
+ </tr>
+ <tr>
+  <td class="left">ICQ</td>
+  <td class="right">
+	<input type="text" size="10" name="gbook_icqnr" value="$gbook_icq" maxlength="10" /></td>
+ </tr>
+ <tr>
+  <td class="left">Titel</td>
+  <td class="right">
+	<input type="text" size="25" name="gbook_title" value="$gbookinfo[gbook_title]" class="w90" /></td>
+ </tr>
+ <tr>
+  <td class="right" colspan="2" align="center">
+	<textarea name="gbook_text" cols="30" rows="10" class="w90">$gbook_text</textarea></td>
+ </tr>
+ <tr>
+  <td class="heads" colspan="2" align="center">
+	<input type="submit" name="action" value="$lang[save]" />
+	<input type="hidden" name="save" value="$lang[save]" />
+	<input type="submit" name="action" value="$lang[cancel]" />
+	<input type="hidden" name="cancel" value="$lang[cancel]" /></td>
+ </tr>
+</table>
+</form>

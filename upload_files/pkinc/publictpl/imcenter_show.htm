@@ -1,0 +1,26 @@
+<form method="post" action="include.php?path=privatemessages">
+<input type="hidden" name="imid" value="$iminfo[im_id]" />
+<table class="standard" cellspacing="1" cellpadding="4" width="100%">
+  <tr>
+    <td class="heads" colspan="2">$user_navigation <a class="heads" href="include.php?path=privatemessages">PN-Center</a> &#187; $im_type Kurznachricht</td>
+ </tr>
+ <tr>
+  <td class="highlight" align="center" width="15%">$lang_pn_message_fromto</td> 
+  <td class="highlight" width="85%">$lang_pn_message_title</td>
+ </tr>
+ <tr>
+  <td class="standard" rowspan="2" align="center" valign="top">$im_autor</td>
+  <td class="standard"><b>$im_title &#149; $im_time &nbsp;&nbsp; $im_viewtime</b></td>
+ </tr>
+ <tr>
+  <td class="standard">
+  	$im_text<br />
+	<br />
+	$info_sig<br />
+	<br /></td>
+ </tr>
+ <tr>
+  <td class="heads" colspan="2" align="center">$im_option</td> 
+ </tr>
+</table>
+</form>	

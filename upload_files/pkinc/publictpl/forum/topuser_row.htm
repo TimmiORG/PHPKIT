@@ -1,0 +1,15 @@
+ <tr>
+  <td class="$row">
+	<table border="0" cellspacing="0" cellpadding="0" width="100%">
+	 <tr>
+	  <td>$info_os</td>
+	  <td>&nbsp;</td>
+	  <td width="100%"><a href="include.php?path=userinfo&amp;id=$userinfo[user_id]">$userinfo[user_nick]</a></td>
+	 </tr>
+	</table>
+  </td>
+  <td class="$row" align="right">$userinfo_rank</td>
+  <td class="$row" align="right">$userinfo_status</td>
+  <td class="$row" align="right" width="9%">$userinfo_posts</td>
+  <td class="$row" align="right" width="1%"><a href="include.php?path=forumsearch&amp;mode=result&amp;userid=$userinfo[user_id]"><img border="0" alt="nach weiteren Posts von $userinfo[user_nick] suchen" src="$config[forum_button]/searchuser.gif" /></a></td>
+ </tr>

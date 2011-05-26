@@ -1,0 +1,81 @@
+<script type="text/javascript" language="javascript">
+function setOptions(theform, theselect, docheck) {
+ var selectObject=document.forms[theform].elements[theselect];
+ var selectCount=selectObject.length;
+ for (var i = 0; i < selectCount; i++) {selectObject.options[i].selected=docheck;}
+ return true;
+}
+</script>
+
+<table class="standard" border="0" cellspacing="1" cellpadding="4" width="100%">
+ <tr>
+  <td class="heads" colspan="2">Datenbank pflegen</td>
+ </tr>
+ <tr>
+  <td class="left" width="50%" valign="top">Aktion w&auml;hlen<br />
+  	<font class="small">Es werden alle in der Datenbank befindlichen Tabellen entsprechend der ausgew&auml;hlten Aktion behandelt.</font></td>
+  <td class="right" width="50%" align="center" nowrap>
+  	<a href="include.php?path=database&query=CHECK">&Uuml;berpr&uuml;fen</a>&nbsp;&nbsp;&nbsp;
+	<a href="include.php?path=database&query=REPAIR">Reparieren</a>&nbsp;&nbsp;&nbsp;
+	<a href="include.php?path=database&query=OPTIMIZE">Optimieren</a></td>
+ </tr>
+	<form name="database_dump" method="post" action="include.php?path=database">
+	<input type="hidden" name="export" value="$lang[export]" />
+ <tr>
+  <td class="heads" colspan="2">Datenbankexport</td>
+ </tr>
+ <tr>
+  <td class="left" width="50%" valign="top">Datenbanktabellen ausw&auml;hlen<br />
+	<font class="small">Mehrfachauswahl durch gleichzeitiges dr&uuml;cken der STRG/CTRL-Taste m&ouml;glich.</font></td>
+  <td class="right" width="50%">
+	<select name="export_tabs[]" size="10" class="w90" multiple>
+	$tablist
+	</select><br />
+     <a href="#" onclick="setOptions('database_dump','export_tabs[]', true); return false;">Alle ausw&auml;hlen</a>
+	&nbsp;&nbsp;
+	<a href="#" onclick="setOptions('database_dump','export_tabs[]', false); return false;">Auswahl entfernen</a>
+	&nbsp;&nbsp;
+	$tabcount Tabellen gefunden
+  </td>
+ </tr>
+ <tr>
+  <td class="left" valign="top">Export-Optionen</td>
+  <td class="right">
+	<table border="0" cellspacing="1" cellpadding="0">
+	 <tr>
+ 	  <td><input class="radio" type="radio" name="export_structure" value="2" /></td>
+	  <td nowrap>Nur Struktur</td>
+	  <td rowspan="3">&nbsp;&nbsp;&nbsp;</td>
+ 	  <td><input class="checkbox" type="checkbox" name="export_drop" value="1" /></td>
+	  <td nowrap>mit "DROP TABLE"</td>
+	 </tr>
+  	 <tr>
+ 	  <td><input class="radio" type="radio" name="export_structure" value="1" checked /></td>
+	  <td nowrap>Struktur und Daten</td>
+ 	  <td><input class="checkbox" type="checkbox" name="export_delete" value="1" /></td>
+	  <td nowrap>mit "DELETE ALL"</td>
+	 </tr>
+	 <tr> 	
+ 	  <td><input class="radio" type="radio" name="export_structure" value="0" /></td>
+	  <td nowrap>Nur Daten</td>
+ 	  <td><input class="checkbox" type="checkbox" name="export_fullinserts" value="1" /></td>
+	  <td nowrap>vollst&auml;ndige "INSERTS"</td>
+	 </tr>
+	</table>
+ </tr>
+ <tr>
+  <td class="left">Speichern</td>
+  <td class="right">
+	<select name="export_option" size="1">
+	<option value="0">Herunterladen</option>
+	<option value="1">auf Server</option>
+	</select></td>
+ </tr>
+ <tr>
+  <td class="heads" colspan="2" align="center">
+	<input type="submit" name="action" value="$lang[export]" />
+	<input type="hidden" name="export" value="$lang[export]" />
+	<input type="reset" value="$lang[reset]" /></td>
+ </tr>
+	</form>
+</table>

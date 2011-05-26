@@ -1,0 +1,27 @@
+	<form method="post" action="include.php?path=contentcategory&mode=theme">
+	<input type="hidden" name="themeid" value="new" />
+ <tr>
+  <td class="heads" colspan="2">Neuen Themenbereich erstellen</td>
+ </tr>
+ <tr>
+  <td class="left" width="50%">Titel<br />
+  	<font class="small">Bezeichnung des neuen Themenbereiches.</font></td>
+  <td class="right" width="50%">
+	<input type="text" name="theme_name" class="w90" size="25" /></td>
+ </tr> 
+ <tr>
+  <td class="left">Kategorie<br />
+  	<font class="small">Der neue Themenbereich wird in der gew&auml;hlten Kategorie erstellt.</font></td>
+  <td class="right">
+	<select name="theme_catid" size="1" class="w90">
+	$new_cats
+	</select></td>
+ </tr>
+ <tr>
+  <td class="heads" colspan="2" align="center">
+	<input type="submit" name="action" value="$lang[save]" />
+	<input type="hidden" name="save" value="$lang[save]" />
+	<input type="submit" name="action" value="$lang[cancel]" />
+	<input type="hidden" name="cancel" value="$lang[cancel]" /></td>
+ </tr>
+	</form>

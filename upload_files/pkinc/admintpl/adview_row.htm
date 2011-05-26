@@ -1,0 +1,36 @@
+ <tr>
+  <td class="$row" colspan="2">
+	<table border="0" cellspacing="0" cellpadding="0" width="100%">
+   	 <tr>
+	  <td align="center">
+		<iframe width="468" height="60" scrolling="no" src="include.php?path=advertising&mode=view&id=$adview[adview_id]&row=$row" frameborder="0">
+		<table border="0" cellspacing="0" cellpadding="0">
+		 <tr>
+		  <td>$adview_code</td>
+		 </tr>
+		</table>
+		</iframe></td>
+	 </tr>
+	</table>
+	<table border="0" cellspacing="0" cellpadding="2" align="center" width="100%">
+	 <tr>
+	  <td width="25%" nowrap><b>H&auml;ufigkeit der Einblendung:</b></td>
+	  <td width="25%">$adview_relation%</td>
+	  <td width="25%"><b>Einblendungen:</b></td>
+	  <td width="25%">$adview[adview_views]</td>
+	 </tr>
+	 <tr>
+	  <td><b>Einblendungsrelation:</b></td>
+	  <td>$adview_relation2</td>
+	  <td><b>Status:</b></td>
+	  <td>$adview_status</td>
+	 </tr>
+	 <tr>
+	  <td><b>aktiv seit:</b></td>
+	  <td nowrap>$adview_time</td>
+	  <td><b>Option:</b></td>
+	  <td nowrap><a href="include.php?path=advertising&editid=$adview[adview_id]">editieren / l&ouml;schen</a></td>
+	 </tr>
+	</table>
+  </td>
+ </tr>

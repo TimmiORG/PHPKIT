@@ -1,0 +1,31 @@
+<form method="post" action="$form_action">
+<input type="hidden" name="suggest_url" value="$suggest_url" />
+<table class="standard" border="0" cellspacing="1" cellpadding="4" width="100%">
+ <tr>
+  <td class="heads" colspan="2">Empfehlung versenden</td>
+ </tr>
+ <tr>
+  <td class="left" width="20%">Empf&auml;nger</td>
+  <td class="right" width="80%">
+  	<input type="text" size="20" name="suggest_name" value="$suggest_name" /></td> 
+ </tr>
+ <tr>
+  <td class="left" nowrap="nowrap">E-Mail-Adresse</td>
+  <td class="right">
+  	<input type="text" size="20" name="suggest_email" value="$suggest_email" /></td> 
+ </tr>
+ <tr>
+  <td class="left" valign="top">Nachricht</td>
+  <td class="right">
+  	<textarea name="suggest_text" cols="40" rows="10" class="w90" wrap="soft">$suggest_text</textarea></td> 
+ </tr>
+	$captcha
+ <tr>
+  <td class="heads" colspan="2" align="center">
+  	<input type="submit" name="action" value="$LANG[send]" />
+  	<input type="hidden" name="send" value="$LANG[send]" />
+  	<input type="submit" name="action" value="$LANG[cancel]" />
+  	<input type="hidden" name="cancel" value="$LANG[cancel]" /></td>
+ </tr>
+</table>
+</form>

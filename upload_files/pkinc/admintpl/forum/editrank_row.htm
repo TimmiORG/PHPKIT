@@ -1,0 +1,14 @@
+	<form method="post" action="include.php?path=forumrank">
+	<input type="hidden" name="rankid" value="$rank[forumrank_id]" />
+<tr>
+  <td class="$row">
+	<input type="text" name="newrank_post" value="$posts" size="10" class="w90" /></td>
+  <td class="$row">
+	<input type="text" name="newrank_title" value="$title" size="25" class="w90" /></td>
+  <td class="$row" nowrap>
+	<input type="submit" name="action" value="$lang[save]" class="small">
+	<input type="hidden" name="save" value="$lang[save]" />
+	<input type="submit" name="action" value="$lang[delete]" class="smallhighlight">
+	<input type="hidden" name="delete" value="$lang[delete]" /></td>
+</tr>
+	</form>

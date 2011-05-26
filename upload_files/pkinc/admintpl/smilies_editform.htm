@@ -1,0 +1,44 @@
+<table class="standard" border="0" cellspacing="1" cellpadding="4" width="100%">
+ <tr>
+  <td class="heads" colspan="2">Smilies $ACTION</td>
+ </tr>
+	$error_msg
+	<form method="post" action="include.php?path=smilies" enctype="multipart/form-data">
+	<input type="hidden" name="smilieid" value="$smilies[smilie_id]" />
+	<input type="hidden" name="create" value="$LANG[create]" />
+ <tr>
+  <td class="left" width="50%">Code</td>
+  <td class="right" width="50%">
+	<input type="text" name="smilie_code" value="$smilies[smilie_code]" class="w90" maxlength="25" size="25" /></td>
+ </tr>
+ <tr>
+  <td class="left">Pfadangabe<br />
+	<font class="small">Dateipfad ausgehend von Installationsverzeichnis.<br />
+	Wahlweise k&ouml;nnen Sie direkt eine neue Grafik hochladen.</font></td>
+  <td class="right">
+	<input type="text" name="smilie_path" value="$smilies[smilie_path]" class="w90" maxlength="255" size="25" /><br />
+	<input type="file" name="smilie_upload" class="w90" size="12" /></td>
+ </tr>
+ <tr>
+  <td class="left">Bedeutung</td>
+  <td class="right">
+	<input type="text" name="smilie_title" value="$smilies[smilie_title]" class="w90" maxlength="255" size="25" /></td>
+ </tr>
+ <tr>
+  <td class="left">Anzeige</td>
+  <td class="right">
+	<select name="smilie_option" size="2" class="w90">
+	<option value="1" $option1>Direkte Anzeige neben dem Eingabefeld</option>
+	<option value="0" $option0>Anzeige im Pop-Up-Fenster</option>
+	</select></td>
+ </tr>
+ <tr>
+  <td class="heads" colspan="2" align="center">
+	<input type="submit" name="action" value="$LANG[save]" />
+	<input type="hidden" name="save" value="$LANG[save]" />
+	<input type="submit" name="action" value="$LANG[cancel]" />
+	<input type="hidden" name="cancel" value="$LANG[cancel]" /></td>
+ </tr>
+	</form>
+</table>
+ 

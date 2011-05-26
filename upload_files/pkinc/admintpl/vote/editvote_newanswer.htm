@@ -1,0 +1,22 @@
+<table class="standard" border="0" cellspacing="1" cellpadding="4" width="100%">
+	<form method="post" action="include.php?path=pollcompose&step=2&voteid=$voteid">
+ <tr>
+  <td class="heads" colspan="4">Neue Antwortm&ouml;glichkeit erstellen</td>
+ </tr>
+ <tr>
+  <td class="left" width="10%">Antwort</td>
+  <td class="left" width="75%">
+	<input type="text" name="vote_newanswer" size="25" class="w90" /></td>
+  <td class="right" width="10%">Sortiernummer</td>
+  <td class="right" width="5%">
+	<input type="text" name="vote_order" value="$order" size="4" /></td>
+ </tr>
+ <tr>
+  <td class="heads" align="center" colspan="4">
+	<input type="submit" name="action" value="$lang[save]" />
+	<input type="hidden" name="newanswer" value="$lang[save]" />
+	<input type="submit" name="action" value="$lang[back]" />
+	<input type="hidden" name="back" value="$lang[back]" /></td>
+ </tr>
+ 	</form>
+</table>

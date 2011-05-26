@@ -1,0 +1,29 @@
+<table class="standard" border="0" cellspacing="1" cellpadding="4" width="100%">
+ <tr>
+  <td class="heads" colspan="6">Smilies</td>
+ </tr>
+ <tr>
+  <th class="standard" width="1%">&nbsp;</th>
+  <th class="standard" width="10%">Smilie</th> 
+  <th class="standard" width="10%">Code</th>
+  <th class="standard" width="30%">Bedeutung</th>
+  <th class="standard" width="40%">Pfadangabe</th>
+  <th class="standard" width="9%">Anzeige</th>
+ </tr>
+	<form method="post" action="include.php?path=smilies">
+	$smilies_row
+ <tr>
+  <td class="heads" colspan="6">
+	<select name="action" size="1">
+	<option value="$lang[create]">Erstellen</option>
+	<option value="$lang[edit]">Bearbeiten</option>
+	<option value="$lang[delete]">L&ouml;schen</option>
+	<option value="showdir">Verzeichnisinhalt anzeigen</option>
+	</select>
+	<input type="submit" value="Los" />
+	<input type="hidden" name="create" value="$lang[create]" />
+	<input type="hidden" name="edit" value="$lang[edit]" />
+	<input type="hidden" name="delete" value="$lang[delete]" /></td>
+ </tr>
+	</form>
+</table>

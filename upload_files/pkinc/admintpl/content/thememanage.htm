@@ -1,0 +1,31 @@
+<script language="JavaScript">
+function selectTheme() {
+ if(document.thememanage.themeselect.options[document.thememanage.themeselect.selectedIndex].value != -1) document.thememanage.submit();}
+</script>
+
+<table class="standard" cellspacing="1" cellpadding="4" width="100%">
+ <tr>
+  <td class="heads" colspan="2">Artikelthemen verwalten</td>
+ </tr>
+	<form name="thememanage" method="post" action="include.php?path=contentcategory&mode=theme">
+ <tr>
+  <td class="left" width="50%" valign="top">Aktion ausw&auml;hlen</td>
+  <td class="right" width="50%">
+	<select class="w90" name="themeselect" size="7" onchange="selectTheme()">
+		<option value="new">Neuen Themenbereich erstellen</option>
+		<optgroup label="oder bestehendes Thema editieren">
+		$themes
+		</optgroup>
+	</select>
+	<table border="0" cellspacing="0" cellpadding="0" width="90%">
+	 <tr>
+	  <td><input class="small" type="submit" value="$LANG[select]" /></td>
+	  <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+	  <td align="right"><font class="small">* Anzahl der Inhalte</font></td>
+	 </tr>
+	</table>
+  </td>
+ </tr>
+	</form>
+	$edit_themes
+</table>

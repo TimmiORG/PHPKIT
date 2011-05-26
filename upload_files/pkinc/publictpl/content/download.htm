@@ -1,0 +1,73 @@
+<table class="contenthead" cellspacing="1" cellpadding="4" width="100%">
+ <tr>
+  <td class="heads" width="80%">$content_article_head</td>
+  <td class="heads" width="20%">Download-Infos</td>
+ </tr>
+ <tr>
+  <td class="standard" valign="top">
+ 	$content_catimage 
+	<font class="big">$contentinfo[content_title]</font><br />
+	<font class="small">$content_time von $autor_info</font><br />
+	<br />	
+	<div class="contenttext">$content_teaser$content_article_body</div>
+   </td>
+  <td class="highlight" valign="top">
+  
+	<a href="?path=download&amp;contentid=$contentid&amp;download=go"><img src="fx/default/icons/button-disk-large.png" alt="Download starten" style="margin: 4px auto; display: block;" /></a>
+  
+	<table class="standard" border="0" cellspacing="1" cellpadding="1" width="100%">
+	 <tr>
+	  <td class="standard">
+		<table border="0" cellspacing="0" cellpadding="2" width="100%">
+		 <tr>
+		  <td><font class="small"><b>Gr&ouml;sse</b></font></td>
+		  <td align="right"><font class="small">$file_size</font></td>
+		 </tr>	
+		 <tr>
+		  <td><font class="small"><b>Downloads</b></font></td>
+		  <td align="right"><font class="small">$contentinfo[content_views]</font></td>
+		 </tr>
+		 <tr>
+		  <td><font class="small"><b>Datum</b></font></td>
+		  <td align="right" nowrap="nowrap"><font class="small">$content_time</font></td>
+		 </tr>
+			$content_comment
+		 <tr>
+		  <td nowrap="nowrap" colspan="2"><a class="small" title="Download empfehlen" href="?path=contact&amp;mode=suggest&amp;suggest_path=$suggest_url"><b>Download empfehlen</b></a></td>
+		 </tr>
+			$content_rate
+			$content_rating_info
+			$content_submit
+	   </table>
+	   </td>
+     </tr>
+	</table>
+	<br />
+	
+	<table class="standard" border="0" cellspacing="1" cellpadding="1" width="100%">
+	 <tr>
+	   <td class="heads" align="right"><font class="headssmall">Downloadserver</font></td>
+	  </tr>
+	  <tr>
+	   <td class="standard">
+		<table border="0" cellspacing="0" cellpadding="2" width="100%">	   
+			$download_links	 
+		</table>
+	   </td>	  
+	  </tr>
+	 </table>
+	$related_boxes
+  </td>
+ </tr>
+  <tr>
+  <td class="heads" colspan="2">
+	<table border="0" cellspacing="0" cellpadding="1" width="100%">
+	 <tr>
+	  <td width="100%">&nbsp;</td>
+	  <td><font class="headssmall"><a class="headssmall" href="#head"><b>Seitenanfang</b></a></font></td>
+	  <td><a href="#head"><img src="images/pageup.gif" border="0" alt="nach oben" width="20" height="16" align="top" /></a></td>
+	 </tr>
+	</table>
+  </td>
+ </tr>
+</table>

@@ -1,0 +1,640 @@
+/* global elements */
+img, form, h1, h2, h3, h4, h5, h6, p {
+margin:0; padding:0; border:0 ! important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+font-weight:bolder;
+}
+
+dl, dt, dd {
+margin:0;
+padding:0;
+}
+	
+body, font, span, a, p, div {
+$fontsize $bodyfont $bodyfontcolor
+}
+
+td,th {
+$tdfontsize $tdfont $tdfontcolor
+}
+
+hr {
+$hrcolor
+}
+
+input, option, select, textarea {
+$inputfont $inputfontsize $inputfontcolor $inputbgcolor
+}
+
+/*body main elements*/
+html {
+height:101%;
+}
+
+body  {
+margin:0; padding:0;
+position:relative;
+height:101%;
+min-height:101%;
+$bodybgcolor $bodybgimage
+$scrollbarcolor
+text-align:$style_align; /*IE hack*/
+}
+
+#pkbody {
+min-height:101%;
+}
+
+/* primary contents*/
+#pkouterpage { /*outer body*/
+margin:0; $body_margin padding:0;
+}
+
+#pkpage,/*inner body*/
+#pkpagedecoration, #pkpageheader, #pkpagefooter {
+position:relative; top:0; left:0;
+margin-left:$margin_left; margin-right:$margin_right;
+}
+
+#pkpage {
+min-width:770px; $site_width
+text-align:left; /*IE hack*/
+}
+	
+h1.site-name,
+h2.site-slogan {
+position:absolute;
+top:-999px;
+left:-999px;
+display:none;
+}
+
+#pkbranding {
+$site_width 
+$brandingheight
+$brandingbgcolor $brandingbgimage
+$brandingalignIE
+}	
+
+#pkbrandingimage {
+position:relative; $brandingimageposition z-index:1;
+$brandingimage $brandingimagewidth $brandingimageheight
+}
+
+#pkbrandingimage img {
+border:0; $brandingimagewidth $brandingimageheight
+}
+
+#pkpageheader {
+$pagedecorationwidth $pageheaderheight 
+$pageheaderbgcolor $pageheaderbgimage
+overflow:hidden;
+}
+
+#pkpagedecoration {
+$pagedecorationwidth
+$pagedecorationbgcolor $pagedecorationbgimage
+overflow:hidden;
+}
+
+#pkpagefooter {
+$pagedecorationwidth $pagefooterheight
+$pagefooterbgcolor $pagefooterbgimage
+overflow:hidden;
+}
+
+div#pkadview {
+position:relative;
+$site_width
+$adviewbgcolor
+text-align:center;
+}
+
+div#pkadviewbox {
+width:468px; margin:auto;
+}
+
+div#pkcontent {
+position:relative; clear:both; width:auto;
+}
+	
+table.pkcontent {
+width:100%;
+border:0;
+}
+
+table.pkcontent td {
+vertical-align:top;	
+}
+
+td.pkcontent_left {
+margin:0; padding:0; $contentleftpadding
+$contentleftwidth
+$contentleftbgcolor $contentleftbgimage
+}
+
+div#pkcontent_left {
+margin:0; padding:0;
+}
+
+td.pkcontent_right {
+margin:0; padding:0; $contentrightpadding
+$contentrightwidth
+$contentrightbgcolor $contentrightbgimage
+}
+
+div#pkcontent_right {
+margin:0; padding:0;
+}
+
+td.pkcontent_main {
+width:auto; $contentmainpadding
+$contentmainbgcolor $contentmainbgimage
+}
+
+div#pkcontent_main {}
+
+div.pkcontentclear {
+width:100%; clear:both; height:1px; padding-bottom:25px;
+}
+	
+#pksitecopyright {
+padding:5px;
+$sitecopyrightfont $sitecopyrightfontsize $sitecopyrightcolor
+$sitecopyrightbgcolor $sitecopyrightbgimage
+$sitecopyrightalign
+}
+
+#pksiteparser {
+border:0;
+margin:0 $margin_right 0 $margin_left;
+padding:4px 0;
+$site_width	
+text-align:right;
+$site_parsertime_fontsize $site_parsertime
+}
+
+#pksiteparser span {
+margin:0 10px;
+}
+
+#pksitedate {
+$site_date
+}
+
+#pksiteadminlogin {
+margin:0 $margin_right 10px $margin_left;
+$site_width
+text-align:right;
+$site_adminlogin_fontsize
+}
+
+#pksiteadminlogin a {
+margin:0 10px;
+}
+	
+/*navigation*/
+ul.pkcontent_box_top, ul.pkcontent_box_sub_top, ul.pkcontent_box_left, ul.pkcontent_box_right, ul.pkcontent_box_bottom, ul.pkcontent_box_sub_bottom {
+border:0; padding:0; margin:0;
+}
+
+.pkcontent_box_top *, .pkcontent_box_sub_top *, .pkcontent_box_bottom *, .pkcontent_box_sub_bottom * {
+display:inline;
+}
+
+li.pkcontent_hl_top, li.pkcontent_hl_left, li.pkcontent_hl_right, li.pkcontent_hl_bottom
+li.pkcontent_li_top, li.pkcontent_li_left, li.pkcontent_li_right, li.pkcontent_li_bottom {
+padding:0; margin:0;
+list-style-position:outside; list-style-type:none;	
+}
+
+/*content_top main navigation*/
+div#pkcontent_top {
+padding:0; margin:0;
+$contenttophlheight
+$contenttophlalign
+$contenttophlbgcolor $contenttophlbgimage
+}
+
+a.pkcontent_hl_top {
+position:relative;
+$contenttophlpadding $contenttophlspacing
+}
+
+.pkcontent_hl_top, .pkcontent_hl_top h3, .pkcontent_hl_top a:link, .pkcontent_hl_top a:visited, .pkcontent_hl_top a:active {
+$contenttophlfont $contenttophlfontsize $contenttophlcolor
+text-decoration:none;
+}
+
+#pkcontent_sub_top a:link,
+#pkcontent_sub_top a:visited,
+#pkcontent_sub_top a:active,
+a.pkcontent_a_top:link,
+a.pkcontent_a_top:visited,
+a.pkcontent_a_top:active {
+$contenttopcolorlink
+}
+
+.pkcontent_hl_top a:hover {
+$contenttophlcolorhover
+}
+/*link col*/
+div#pkcontent_sub_top {
+padding:0; margin:0;
+$contenttopheight
+$contenttopalign
+$contenttopbgcolor $contenttopbgimage
+}
+
+li.pkcontent_li_top {
+position:relative;
+$contenttoppadding $contenttopspacing
+}
+
+.content_li_top, a.pkcontent_a_top, a.pkcontent_a_top:link, a.pkcontent_a_top:visited, a.pkcontent_a_top:active {
+$contenttopfont $contenttopfontsize $contenttopcolor
+text-decoration:none;
+}
+a.pkcontent_a_top, a.pkcontent_a_top:link, a.pkcontent_a_top:visited, a.pkcontent_a_top:active {
+$contenttopcolor
+}
+
+a.pkcontent_a_top:hover {
+$contenttopcolorhover
+}
+
+/*content_bottom additional navigation*/
+div#pkcontent_bottom {
+padding:0; margin:0;
+$contentbottomhlheight
+$contentbottomhlalign
+$contentbottomhlbgcolor $contentbottomhlbgimage
+}
+
+a.pkcontent_hl_bottom {
+position:relative;
+$contentbottomhlpadding
+$contentbottomhlspacing
+}
+
+.pkcontent_hl_bottom, .pkcontent_hl_bottom h3, .pkcontent_hl_bottom a:link, .pkcontent_hl_bottom a:visited, .pkcontent_hl_bottom a:active {
+$contentbottomhlfont $contentbottomhlfontsize $contentbottomhlcolor
+text-decoration:none;
+}
+
+.pkcontent_hl_bottom a:hover {
+$contentbottomhlcolorhover
+}
+
+/*link col*/
+div#pkcontent_sub_bottom  {
+padding:0; margin:0;
+$contentbottomheight
+$contentbottomalign
+$contentbottombgcolor $contentbottombgimage
+}
+
+li.pkcontent_li_bottom {
+position:relative;
+$contentbottompadding $contentbottomspacing
+}
+
+.content_li_bottom, a.pkcontent_a_bottom, a.pkcontent_a_bottom:link, a.pkcontent_a_bottom:visited, a.pkcontent_a_bottom:active {
+$contentbottomfont $contentbottomfontsize $contentbottomcolor
+text-decoration:none;
+}
+
+a.pkcontent_a_bottom, a.pkcontent_a_bottom:link, a.pkcontent_a_bottom:visited, a.pkcontent_a_bottom:active {
+$contentbottomcolorlink
+}
+
+a.pkcontent_a_bottom:hover {
+$contentbottomcolorhover
+}
+/*left navigation */
+li.pkcontent_hl_left {
+$contentlefthlbgcolor $contentlefthlbgimage 
+$contentlefthlalign
+}
+
+.pkcontent_hl_left h3 {
+$contentlefthlindent
+}
+
+.pkcontent_hl_left, .pkcontent_hl_left h3, a.pkcontent_hl_left:link, a.pkcontent_hl_left:visited, a.pkcontent_hl_left:active {
+$contentlefthlfont $contentlefthlfontsize $contentlefthlcolor
+text-decoration:none;
+}
+
+a.pkcontent_hl_left:hover {
+$contentlefthlcolorhover
+}
+
+li.pkcontent_li_left {
+$contentleftindent
+$contentleftalign
+$contentleftcbgcolor
+$contentleftcbgimage
+}
+
+a.pkcontent_a_left {
+text-decoration:none;	
+}
+	
+.pkcontent_li_left, .pkcontent_li_left *, a.pkcontent_a_left:link, a.pkcontent_a_left:visited, a.pkcontent_a_left:active {
+$contentleftfont $contentleftfontsize $contentleftcolor
+}
+
+
+#pkcontent_left a:link,
+#pkcontent_left a:visited,
+#pkcontent_left a:active,
+a.pkcontent_a_left:link,
+a.pkcontent_a_left:visited,
+a.pkcontent_a_left:active {
+$contentleftcolorlink
+}
+
+.pkcontent_a_left:hover, .pkcontent_li_left a:hover {
+$contentleftcolorhover
+}
+
+ul.pkcontent_box_left {
+$contentleftboxspacer
+}
+
+/*right navigation*/
+li.pkcontent_hl_right {
+$contentrighthlbgcolor
+$contentrighthlbgimage
+$contentrighthlalign
+}
+
+.pkcontent_hl_right h3 {
+$contentrighthlindent
+}
+
+.pkcontent_hl_right, .pkcontent_hl_right h3, a.pkcontent_hl_right:link, a.pkcontent_hl_right:visited, a.pkcontent_hl_right:active {
+$contentrighthlfont $contentrighthlfontsize $contentrighthlcolor
+text-decoration:none;
+}
+
+a.pkcontent_hl_right:hover {
+$contentrighthlcolorhover
+}
+
+li.pkcontent_li_right {
+$contentrightindent 
+$contentrightalign
+$contentrightcbgcolor $contentrightcbgimage
+}
+
+a.pkcontent_a_right {
+text-decoration:none;	
+}
+	
+.pkcontent_li_right, .pkcontent_li_right *, a.pkcontent_a_right:link, a.pkcontent_a_right:visited, a.pkcontent_a_right:active {
+$contentrightfont
+$contentrightfontsize
+$contentrightcolor
+}
+
+#pkcontent_right a:link,
+#pkcontent_right a:visited,
+#pkcontent_right a:active,
+a.pkcontent_a_right:link,
+a.pkcontent_a_right:visited,
+a.pkcontent_a_right:active {
+$contentrightcolorlink
+}
+
+.pkcontent_a_right:hover, .pkcontent_li_right a:hover {
+$contentrightcolorhover
+}
+
+ul.pkcontent_box_right {
+$contentrightboxspacer
+}
+
+/*misc navigation*/
+.pkcontent_hl_left, .pkcontent_hl_left *, .pkcontent_li_left, .pkcontent_li_left *, .pkcontent_hl_right, .pkcontent_hl_right *, .pkcontent_li_right, .pkcontent_li_right * {
+vertical-align:middle;
+}	
+
+.navform {
+margin:1px;
+}
+
+.navform, select.navform option {
+$_fontsizesmall
+}
+
+.navform[type=text], .navform[type=password], select.navform {
+width:90%;
+}
+/*inner content elements*/
+h1,h2 {
+$fontsizebig
+}
+
+h3,h4 {
+$fontsize
+}
+
+h5,h6 {
+$fontsizesmall
+}
+
+ul li {
+padding-left:5px;
+list-style-position:outside; list-style-type:disc;
+}
+
+.contentheadline {
+padding:4px;
+display:block;
+$tdheadscolor $tdheadsbgcolor
+}
+
+div.text {
+padding:0; $_textmargin
+}
+
+em.important, em.important * {
+font-weight:bold; font-style:normal;
+}
+
+em.synonym, em.synonym * {
+font-weight:normal; font-style:italic;
+}
+
+em.accent, em.accent * {
+font-weight:normal; font-style:normal; text-decoration:underline;
+}
+
+em.allimportant, em.allimportant * {
+font-weight:bold; font-style:italic;	
+}
+
+.small, .small * {
+$_fontsizesmall
+}
+	
+.number {
+text-align:right; 
+}
+
+.hide {
+display:none;
+}
+
+table.standard, table.userhead, table.userbody, table.userbottom, table.quote, table.contenthead, table.contentbody, table.contentbottom, table.forumhead, table.forumbody, table.forumbottom, table.event, table.commentbody {
+$tablebgcolor
+}
+
+div.outerstandard {
+$tablebgcolor;
+padding:1px;
+}
+
+div.outerstandard div.odd,
+div.outerstandard div.odd2,
+div.outerstandard div.even,
+div.outerstandard div.even2 {
+margin:1px;
+padding:5px;
+}
+
+.radio, .checkbox {
+background: none;
+}
+
+.w90 {
+width:90%;
+}
+
+.big {
+$fontsizebig
+}
+
+.bg, .bgsmall {
+$bodyfontcolor
+}
+
+.bgsmall {
+$_fontsizesmall
+}
+
+a, a.forumcat, a.forumthread {
+$linkfont $linkfontsize
+}
+
+a:link, a:visited, a.forumcat:link, a.forumcat:visited, a.forumthread:link, a.forumthread:visited {
+$linkfontcolor
+}
+
+a:hover, a:active, a.forumcat:active, a.forumcat:hover, a.forumthread:active, a.forumthread:hover {
+$linkhovercolor
+}
+
+.heads, .headssmall {
+$tdheadsfont $tdheadscolor
+}
+
+a.heads, td.heads, th.heads {
+$tdheadsfontsize
+}
+
+td.heads, th.heads {
+$tdheadsbgcolor $tdheadsbgimage
+}
+
+a.heads:link, a.heads:visited {
+$tdheadscolor
+}
+
+a.heads:active, a.heads:hover, a.headssmall:active, a.headssmall:hover {
+$tdheadscolor2
+}
+
+a.headssmall, font.headssmall {
+$_fontsizesmall
+}
+
+a.headssmall:link, a.headssmall:visited {
+$tdheadscolor
+}
+
+td.left, th.left, td.commentleft, th.commentleft {
+$tdleftbgcolor $tdfontcolor
+}
+
+td.right, th.right, td.commentright, th.commentright {
+$tdrightbgcolor $tdfontcolor
+}
+
+td.standard, th.standard, td.event, th.event {
+$tdstandardbgcolor $tdfontcolor
+}
+
+td.highlight, th.highlight {
+$tdhighlightbgcolor $tdfontcolor
+}
+
+div.odd, td.odd, th.odd, td.contentodd, th.contentodd, td.forum1, th.forum1 {
+$tdoddbgcolor $tdfontcolor
+}
+
+div.odd2, td.odd2, th.odd2, td.contentodd2, th.contentodd2, td.forum2, th.forum2 {
+$tdodd2bgcolor $tdfontcolor
+}
+
+div.even, td.even, th.even, td.contenteven, th.contenteven, td.forum3, th.forum3 {
+$tdevenbgcolor $tdfontcolor
+}
+
+div.even2, td.even2, th.even2, td.contenteven2, th.contenteven2, td.forum4, th.forum4 {
+$tdeven2bgcolor $tdfontcolor 
+}
+
+td.quote {
+$tdqoute $tdquotefont $tdquotefontsize
+}
+
+#pkBBArea {
+width:100%;
+overflow:auto;
+}
+
+
+
+dt {margin:10px 0 0 0;}
+dd {margin:3px 0 0 5%;}
+
+
+dl.tabular {
+display:block;
+width:100%;
+}
+
+dl.tabular dt {
+clear:both;
+display:block;
+float:left;
+width:33%;
+margin:0;
+}
+
+dl.tabular dd {
+display:block;
+float:left;
+width:66%;
+margin:0;
+}
+
+dl.tabular dt, dl.tabular dd {
+}
+
+$style_addcss

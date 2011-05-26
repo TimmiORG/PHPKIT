@@ -1,0 +1,158 @@
+body
+	{
+	margin:0px;
+	padding:0px;
+	padding-bottom:100px;
+	background:white;
+	background-image:url(./../bg/PHPKITwm.jpg);
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	background-position:right bottom;
+	font-family:Tahoma, Verdana, Arial;
+	font-size:11px;
+	}
+
+img {
+	border:0;
+	}
+
+body.blank
+	{
+	background:white;
+	}
+
+div#sitebody
+	{
+	padding:0px;
+	padding-top:5px;
+	padding-left:5px;
+	margin:0px;
+	width:99%;
+	}
+	
+div#event
+	{	
+	text-align:center;
+	background:white;
+	font-family:Tahoma, Verdana, Arial;
+	font-size:11px;
+	color:black;	
+	width:400px;
+	padding:25px;
+	border:1px solid red;
+	}
+	
+h4#event
+	{
+	font-size:16px;
+	display:block;
+	}
+
+span.error, span.expired, span.highlight
+	{
+	color:red;
+	}
+
+.hide
+	{
+	display:none;
+	}
+
+#pkBBArea {
+	width:98%;
+	overflow:auto;
+	}
+
+input.code,
+textarea.code {
+font-family:Consolas, "Courier New", Courier, monospace;
+}
+
+/*###### Basis-Definitionen ##################*/
+img {border:none;}
+form {display:inline;margin:0;padding:0;}
+
+
+th, td 			{ font-family:Tahoma, Verdana, Arial; font-size: 11px; color: #000000;}
+
+hr				{ color: #000000;}
+font 			{ font-family:Tahoma, Verdana, Arial; font-size: 11px; color: #000000;}
+font.highlight		{ color: #FF3333; font-weight: bold;}
+font.highlightfalse	{ color: #FF3333; }
+font.highlighttrue	{ color: #006600; }
+.smallhighlight	{ color: #FF3333; font-weight: bold; font-size: 11px;}
+
+a			{ font-family:Tahoma, Verdana, Arial; color: #000000;}
+a:link  	{ text-decoration: underline; }
+a:visited 	{ text-decoration: underline; }
+a:active  	{ text-decoration: underline;}
+a:hover 	{ text-decoration: none; color:#FF7500; }
+.heads a:hover		{ text-decoration: none; color:#FF7500; }
+.heads a:active  	{ text-decoration: none;}
+
+textarea				{ font-family:Arial; font-size: 12px; color: #000000;}
+input, option, select	{ font-family:Arial; font-size: 12px; color:#000000;}
+input.highlight			{ color: #FF3333; font-weight: bold;}
+input.smallhighlight	{ color: #FF3333; font-weight: bold; font-size: 11px;}
+input.radio,
+ input.checkbox		{ background: none;}
+.w90				{ width: 95%;}
+.w100				{ width: 100%;}
+
+table.standard		{ background: #CFCFCF;}
+
+/*###### Body-Bereich - Standards #######*/
+
+.heads			{ color: #FFFFFF; font-weight: bold; font-family: Tahoma, Verdana, Arial; vertical-align:top;}
+.headssmall		{ color: #FFFFFF; font-weight: bold; font-size: 11px;}
+
+div.headspagelinks {margin:0;padding:0;float:right;display:inline;}
+
+th.heads, td.heads	{ background: #506080;}
+.heads 			{ font-family:Tahoma, Verdana, Arial; color:#FFFFFF;}
+th.standard,
+ td.standard 		{ background:#F9F9FF;}
+th.highlight,
+ td.highlight		{ background: #F0F0F9;}
+.highlight, .highlight * {font-weight:bold;}
+
+ 
+.left { background:#F9F9F9;vertical-align:top;font-weight:bold;}
+.left .small {font-weight:normal;}		
+
+td.left {width:250px;}
+th.right, td.right {background:#FFFFFF;vertical-align:top;width:auto;}
+
+th.odd,
+ td.odd   			{ background: #FFFFFF;vertical-align:top;}
+th.even,
+ td.even 			{ background: #F9F9F9;vertical-align:top;}
+th.odd2,
+ td.odd2   		{ background: #FFFFFF;vertical-align:top;}
+th.even2,
+ td.even2 			{ background: #F9F9F9;vertical-align:top;}
+
+
+table.event		{ background: #000000;}
+th.event,
+ td.event			{ background: #EDEDED;}
+
+.big				{ font-size: 14px; font-weight: bold;}
+.small			{ font-size: 11px;}
+.center			{text-align:center;}
+a.none, .none			{text-decoration: none;}
+
+table.quote		{ background: #000000;}
+th.quote,	
+ td.quote			{ background: #D5D5D5;}
+
+
+/*########### Druckansichten ##############*/
+table.print			{ background: #FFFFFF;}
+th.print,
+ td.print			{ background: #FFFFFF; color: #000000; font-family:Tahoma, Verdana, Arial; font-size: 13px;}
+th.printheads,
+ td.printheads		{ background: #336699; color: #FFFFFF; font-family:Tahoma, Verdana, Arial; font-size: 13px; font-weight: bold;}
+font.print			{ color: #000000; font-family: Times, Times New Roman, Arial, Verdana; font-size: 13px;}
+font.printsmall		{ color: #000000; font-family: Times, Times New Roman, Arial, Verdana; font-size: 12px;}
+/*#############################################*/

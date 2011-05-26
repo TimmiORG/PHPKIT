@@ -1,0 +1,31 @@
+<table class="standard" cellspacing="1" cellpadding="4" width="100%">
+	<form name="adview" method="post" action="include.php?path=advertising">
+	<input type="hidden" name="adview_id" value="$adview[adview_id]" />
+	<input type="hidden" name="save" value="$lang[save]" />
+	<input type="hidden" name="delete" value="$lang[delete]" />
+ <tr>
+  <td class="heads" colspan="2">Neue Einblendung</td>
+ </tr>
+ <tr>
+  <td colspan="2" class="right">Bannercode<div align="center">
+	<textarea name="adview_code" class="w90" cols="40" rows="4">$adview_editcode</textarea></div></td>
+ </tr>
+ <tr>
+  <td class="left" width="50%">Relation der Einblendung</td>
+  <td class="right" width="50%">
+	<input type="text" size="7" maxlength="5" name="adview_relation" value="$adview[adview_relation]" /></td>
+ </tr>
+ <tr>
+  <td class="left">Optionen</td>
+  <td class="right" nowrap>
+	<input class="checkbox" type="checkbox" name="adview_status" value="1" $adview_checked /> <font class="small">aktiviert</font><br />
+	<input class="checkbox" type="checkbox" name="adview_reset" value="1" /> <font class="small">zur&uuml;cksetzen</font></td>
+ </tr>
+ <tr>
+  <th class="heads" colspan="2">
+	<input type="submit" name="action" value="$lang[save]" />
+	<input type="submit" name="action" value="$lang[delete]" class="highlight" /></th>
+ </tr>
+	</form>
+$adview_banner
+</table>

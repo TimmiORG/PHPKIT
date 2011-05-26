@@ -1,0 +1,43 @@
+ <tr>
+  <td class="$row">
+	<table border="0" cellspacing="0" cellpadding="0" width="100%">
+	 <tr>
+	  <td width="20">$info_os</td>
+	  <td><b>$gbook_autor</b></td>
+	 </tr>
+	</table>
+  </td>
+  <td class="$row" colspan="2"><b>$gbook_title</b></td>
+ </tr>
+ <tr>
+  <td class="$row" valign="top" rowspan="2">
+	<table border="0" cellspacing="0" cellpadding="0">
+	 <tr>
+	  <td nowrap="nowrap">
+		<font class="small">eingetragen am<br />
+		$gbook_time</font></td>
+	 </tr>
+	</table>
+  </td>
+  <td class="$row" width="70%">
+	$gbook_text
+	$info_sig</td>
+  <td class="$row" rowspan="2" width="5%" align="right" valign="top"><font class="big"><b>$gbook_number</b></font></td>
+ </tr>
+ <tr>
+  <td class="$row">
+	<table border="0" cellspacing="0" cellpadding="0" width="100%">
+	 <tr>
+	  <td align="left">
+		$gbook_email
+		$gbook_hpage
+		$gbook_icq
+		<a target="printable" href="include.php?path=guestbook&amp;mode=print&amp;id=$gbookinfo[gbook_id]" title="druckbare Version"><img height="16" width="20" border="0" alt="druckbare Version anzeigen" src="images/print.gif" /></a>
+		$gbook_admin
+		$gbook_ip
+	  </td>
+		$gbook_comment
+	 </tr>
+	</table>
+  </td>
+ </tr>

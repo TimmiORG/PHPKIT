@@ -1,0 +1,41 @@
+<table class="contentbody" cellspacing="1" cellpadding="4" width="100%">
+ <tr>
+  <td class="heads"><a class="heads" href="include.php?path=news&amp;catid=$contentcatinfo[contentcat_id]&amp;type=2">$contentcat_name</a> &#187; $cont_title</td>
+ </tr>
+ <tr>
+  <td class="contentodd">
+	$news_image
+	<p class="contenttitle">
+	<font class="big">$cont_title</font><br />
+	<font class="small">$news_time von $autor_info</font></p>
+	<br />
+	<div class="contenttext">$news_text</div>
+	$news_source
+  </td>
+ </tr>
+ <tr>
+  <td class="contenteven">
+	<table border="0" cellspacing="0" cellpadding="0" width="100%">
+	 <tr>
+	  <td width="33%">
+	  	<a href="include.php?path=comment&amp;comcat=cont&amp;subid=$contentinfo[content_id]">$news_comments</a>
+		</td>
+	  <td width="33%" align="center" nowrap="nowrap">
+		<a href="include.php?path=contact&amp;mode=suggest&amp;suggest_path=$suggest_url">News empfehlen</a>
+		</td>
+	  <td width="33%" align="right" nowrap="nowrap">
+		<a target="printable" href="include.php?path=content&amp;mode=print&amp;contentid=$contentinfo[content_id]">Druckbare Version</a>
+		</td>
+	  <td width="1%" align="right">
+	  	<a href="#head"><img src="images/pageup.gif" border="0" alt="nach oben" width="20" height="16" align="top" /></a>
+		</td>
+	 </tr>
+	</table>
+  </td>
+ </tr>
+</table>
+<table border="0" cellspacing="0" cellpadding="0">
+ <tr>
+  <td><img border="0" height="5" width="1" alt="" src="images/blank.gif" /></td>
+ </tr>
+</table>

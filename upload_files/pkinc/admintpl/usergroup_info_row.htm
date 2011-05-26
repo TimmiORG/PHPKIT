@@ -1,0 +1,27 @@
+	<form method="post" action="include.php?path=usergroup&grpid=$group[usergroup_id]">
+ <tr>
+  <td class="$row" width="100%"><a href="include.php?path=usergroup&grpid=$group[usergroup_id]"><b>$usergroup_name</b></a></td>
+  <td class="$row" nowrap>
+  	<input name="action" type="submit" value="$lang[edit]" class="small" />
+	<input type="hidden" name="edit" value="$lang[edit]" />
+	<input type="submit" name="action" value="$lang[delete]" class="smallhighlight" />
+	<input type="hidden" name="delete" value="$lang[delete]" /></td>
+ </tr>
+ <tr>
+  <td class="$row" valign="top"><b>Beschreibung:</b><br />
+  	$usergroup_description</td>
+  <td class="$row">
+  	<table border="0" cellspacing="0" cellpadding="1" width="100%">
+     <tr>
+      <td><select name="usergroup_member" size="6">
+	  	<option value="-1">Benutzer in dieser Gruppe:</option>
+	  	<option value="-1">_________________________</option>
+		$group_member
+		</select></td>
+	  <td valign="bottom" width="100%"><input name="action" type="submit" value="$lang[remove]" class="small" /> 
+		<input type="hidden" name="remove" value="$lang[remove]" /></td>	 
+	 </tr>	
+	</table>
+  </td>
+ </tr>
+	</form>

@@ -1,0 +1,53 @@
+<script language="JavaScript">
+function FAQCat() {
+ if(document.faqcat.catid.options[document.faqcat.catid.selectedIndex].value != -1) document.faqcat.submit();}
+</script>
+<table class="standard" border="0" cellspacing="1" cellpadding="4" width="100%">
+ <tr>
+  <td class="heads" colspan="2">FAQ-Kategorien</td>
+ </tr>
+	<form name="faqcat" method="post" action="include.php?path=faqcategory">
+	<input type="hidden" name="select" value="$LANG[select]" />
+ <tr>
+  <td class="left" width="50%" valign="top">Aktion w&auml;hlen</td>
+  <td class="right" width="50%">
+	<select class="w90" name="catid" onchange="FAQCat()" size="6">
+		<option value="new">Neue Kategorie erstellen</option>
+		<optgroup label="oder bestehende Kategorie &auml;ndern">
+		$faqcat_option
+		</optgroup>
+	</select><br />
+	<input class="small" type="submit" value="$LANG[select]" />
+  </td>
+ </tr>
+	</form>
+ <tr>
+  <td class="heads" colspan="2">Kategorie erstellen/&auml;ndern</td>
+ </tr>
+	<form method="post" action="include.php?path=faqcategory">
+		<input type="hidden" name="catid" value="$catid" />
+ <tr>
+  <td class="left">Titel</td>
+  <td class="right">
+	<input class="w90" type="text" size="40" name="faqcat_title" value="$faqcat_title" /></td>
+ </tr>
+ <tr>
+  <td class="left">Eintr&auml;ge<br />
+	<font class="small">W&auml;hlen Sie aus was mit den Eintr&auml;gen der Kategorie geschehen soll wenn die Kategorie gel&ouml;scht wird.</font></td>
+  <td class="right">
+  	<select class="w90" name="newcatid" size="1">
+		<option value="0">Zusammen mit der Kategorie l&ouml;schen</option>
+		<optgroup label="In eine andere Kategorie verschieben">
+		$faqnewcat_option
+		</optgroup>	
+	</select></td>
+ </tr> 
+ <tr>
+  <td class="heads" align="center" colspan="2">
+	<input type="submit" name="action" value="$LANG[save]" />
+	<input type="hidden" name="save" value="$LANG[save]" />
+	<input type="submit" name="action" value="$LANG[delete]" class="highlight" />
+	<input type="hidden" name="delete" value="$LANG[delete]" /></td>
+ </tr>
+	</form>
+</table>

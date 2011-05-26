@@ -1,0 +1,81 @@
+<form method="post" action="include.php?path=search&amp;mode=result">
+<table class="contentbody" cellspacing="1" cellpadding="4" width="100%">
+ <tr>
+  <td class="heads" colspan="3">Suche</td>
+ </tr>
+ <tr>
+  <td class="left" width="50%"><font class="small"><b>Suchbegriff</b></font></td>
+  <td class="left" width="25%"><font class="small"><b>Inhalte durchsuchen</b></font></td>
+  <td class="left" width="25%"><font class="small"><b>Sortierung</b></font></td>
+ </tr>
+ <tr>
+  <td class="right" valign="top">
+	<table border="0" cellspacing="2" cellpadding="0" width="100%">
+	 <tr>
+	  <td colspan="2">
+		<input type="text" name="search_text" value="$search_text" size="15" style="width:90%" /><br />
+		<font class="small">Begriffe durch OR (-) bzw. AND (+) verkn&uuml;pfen.</font></td>
+	 </tr>
+	</table>
+  </td>
+  <td class="right" valign="top">
+	<table border="0" cellspacing="2" cellpadding="0" width="100%">
+	 <tr>
+	  <td width="1%">
+		<input type="radio" name="search_textoption" value="0" style="border:0;background:none;"$search_textoption0 /></td>
+	  <td width="99%"><font class="small">Titel und Text</font></td>
+	 </tr>
+	 <tr>
+	  <td>
+		<input type="radio" name="search_textoption" value="1" style="border:0;background:none;"$search_textoption1 /></td>
+	  <td><font class="small">nur Titel</font></td>
+	 </tr>
+	</table>
+  </td>
+  <td class="right" valign="top">
+	<table border="0" cellspacing="2" cellpadding="0" width="100%">
+	 <tr>
+	  <td width="1%"><input type="radio" name="rorder" value="0" style="border:0;background:none;"$rorder0 /></td>
+	  <td width="99%"><font class="small">neueste zuerst</font></td>
+	 </tr>
+	 <tr>
+	  <td>
+		<input type="radio" name="rorder" value="1" style="border:0;background:none;"$rorder1 /></td>
+	  <td>
+		<font class="small">&auml;lteste zuerst</font></td>
+	 </tr>
+	</table>
+  </td>
+ </tr>
+ <tr>
+  <td class="left" colspan="3"><font class="small"><b>Einschr&auml;nkungen</b></font></td>
+ </tr>
+ <tr>
+  <td class="right" valign="top">
+ 	<select name="search_type[]" size="6" style="width: 90%" multiple="multiple">
+	<option value="-1"$search_type_1>Alles durchsuchen</option>
+	<option value="0"$search_type0>Inhalte</option>
+	<option value="1"$search_type1>Artikel</option>
+	<option value="2"$search_type2>News</option>
+	<option value="3"$search_type3>Links</option>
+	<option value="4"$search_type4>Downloads</option>
+	</select>
+	<br />
+	<font class="small">Mehrfachauswahl durch dr&uuml;cken der STRG/CTRL-Taste.</font></td>
+  <td class="right" colspan="2" valign="top">
+ 	<select name="search_cat[]" size="6" style="width: 90%" multiple="multiple">
+	<option value="-1">Alle Kategorien durchsuchen</option>
+	$cat_option
+	</select><br />
+	<font class="small">Mehrfachauswahl durch dr&uuml;cken der STRG/CTRL-Taste.</font></td>
+ </tr>
+ 	$captcha
+ <tr>
+  <td class="heads" colspan="3" align="center">
+	<input type="submit" name="action" value="$LANG[search]" />
+	<input type="hidden" name="action" value="$LANG[search]" />
+	<input type="hidden" name="search" value="$LANG[search]" />
+	<input type="reset" value="$LANG[reset]" /></td>
+ </tr>
+</table>
+</form>

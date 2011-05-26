@@ -1,0 +1,24 @@
+<form method="post" action="include.php?path=templates">
+<input type="hidden" name="template_id" value="$gettemplate[template_id]" />
+<input type="hidden" name="templatepack_id" value="$templatepack_id" />
+<input type="hidden" name="delete" value="$lang[delete]" />
+
+<table class="standard" border="0" cellspacing="1" cellpadding="4" width="100%">
+ <tr>
+  <td class="heads" colspan="2">Vorlage l&ouml;schen</td>
+ </tr>
+ <tr>
+  <td class="left" width="50%">Vorlage <b>$template_name</b> wirklich l&ouml;schen?</td>
+  <td class="right" width="50%">
+	<select name="confirm" size="2" class="w90">
+	<option value="no">Vorlage nicht l&ouml;schen</option>
+	<option value="true">endg&uuml;ltig l&ouml;schen</option>
+	</select></td>
+ </tr>
+ <tr>
+  <td class="heads" colspan="2" align="center">
+	<input type="submit" name="action" value="$lang[delete]" class="highlight" />
+	<input type="submit" name="action" value="$lang[cancel]" /></td>
+ </tr>
+</table>
+</form>

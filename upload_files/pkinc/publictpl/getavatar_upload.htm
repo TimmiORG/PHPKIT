@@ -1,0 +1,29 @@
+<form action="include.php?path=userprofile&amp;mode=avatar&amp;upload=1" enctype="multipart/form-data" method="post">
+<table class="userbody" cellspacing="1" cellpadding="4" width="100%">
+ <tr>
+  <td class="heads" colspan="2">$user_navigation 
+	<a class="heads" href="include.php?path=userprofile&amp;mode=options">Erweiterte Einstellungen</a> &#187; Avatar hochladen</td>
+ </tr>
+ <tr>
+  <td class="standard" align="center" colspan="2">
+	<a href="include.php?path=userprofile&amp;mode=avatar">Avatar ausw&auml;hlen</a></td>
+ </tr>
+ <tr>
+  <td class="highlight" colspan="2" align="center"><br />
+  	$avatar_message<br />
+	<br /></td>
+ </tr>
+ <tr>
+  <td class="left" width="50%">Datei ausw&auml;hlen</td>
+  <td class="right" width="50%">
+	<input type="file" name="upload_pic" class="w90" /></td>
+ </tr>
+ <tr>
+  <td class="heads" colspan="2" align="center">
+	<input type="submit" name="action" value="$lang[upload]" />
+	<input type="hidden" name="upload_action" value="$lang[upload]" />
+	<input type="submit" name="action" value="$lang[cancel]" />
+	<input type="hidden" name="cancel" value="$lang[cancel]" /></td>
+ </tr>
+</table>
+</form>

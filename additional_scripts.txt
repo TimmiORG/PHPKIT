@@ -1,0 +1,45 @@
+PHPKIT WCMS Zusatzdateien (Version 1.6.5)
+-----------------------------------------------------------
+
+Der Ordner "additional_scripts" enthält Zusatzsdateien die
+beim Betrieb von PHPKIT auf ihrem Server nützlich sein
+können. 
+
+Für die ordnungsgemäße Funktionalität der Website sind sie
+jedoch nicht erforderlich. Jede Datei stellt Ihnen eine 
+bestimmte Funktionalität zur Verfügung. Diese sind
+nachfolgend beschrieben.
+
+
+WARNUNG:
+LADEN SIE DIESE DATEIEN NUR AUF IHREN WEBSERVER WENN SIE
+DIE JEWEILS BEREITGESTELLTE FUNKTION BENÖTIGEN. LESEN SIE
+DIE BESCHREIBUNGEN ZU DEN EINZELNEN DATEIEN SORGFÄLLTIG.
+
+
+
+pksppw.php
+-----------
+
+Beschreibung:
+Löscht das Setup-Passwort.
+
+Verwendung:
+Datei ins Root-/Installationsverzeichnis ihrer PHPKIT 
+Installation kopieren (Upload mittels FTP).
+
+Ausführen der Datei im Webbrowser.
+
+
+pkblocker.php
+-----------
+
+Beschreibung:
+Sicherheitsdatei die verhindert, dass die Funktionen der
+Scripte aus dem "additional_scripts" Verzeichnis 
+unbeabsichtig ausgeführt werden.
+
+Verwendung:
+Damit die Funktionalitäten der anderen Dateien zur
+Verfügung stehen, darf sich diese Datei nich gemeinsam mit 
+den anderen im selben Verzeichnis befinden.

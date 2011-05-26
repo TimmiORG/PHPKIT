@@ -1,0 +1,24 @@
+<form method="post" action="include.php?path=forumseditpost">
+<input type="hidden" name="postid" value="$postid" />
+<table class="forumbody" cellspacing="1" cellpadding="4" width="100%">
+ <tr>
+  <td class="heads" colspan="2">Beitrag l&ouml;schen</td>
+ </tr>
+ <tr>
+  <td class="left" width="50%">
+	Soll der Beitrag wirklich gel&ouml;scht werden?</td>
+  <td class="right" width="50%">
+	<select name="delete_confirm" size="2" class="w90">
+	<option value="no" selected="selected">Nicht l&ouml;schen</option>
+	<option value="confirmed">Beitrag wirklich l&ouml;schen</option>
+	</select></td>
+ </tr>
+ <tr>
+  <td class="heads" colspan="2" align="center">
+	<input type="submit" name="action" value="$LANG[delete]" />
+	<input type="hidden" name="delete" value="$LANG[delete]" />
+	<input type="submit" name="action" value="$LANG[cancel]" />
+	<input type="hidden" name="cancel" value="$LANG[cancel]" /></td>
+ </tr>
+</table>
+</form>

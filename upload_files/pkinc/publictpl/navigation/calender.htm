@@ -1,0 +1,33 @@
+<form method="get" action="$form_action">
+$form_additional_fields
+<table border="0" cellspacing="0" cellpadding="0" width="100%">	
+ <tr>
+  <td align="center" nowrap="nowrap">
+	<select name="calender_month" class="small" size="1">
+		$calender_option_month
+	</select>
+	<select name="calender_year" class="small" size="1">
+		$calender_option_year
+	</select></td>
+ </tr>
+</table>
+<table class="standard" cellspacing="1" cellpadding="0" width="100%">
+ <tr>
+  <th class="highlight" width="14%">M</th>
+  <th class="highlight" width="14%">D</th>
+  <th class="highlight" width="14%">M</th>
+  <th class="highlight" width="14%">D</th>
+  <th class="highlight" width="14%">F</th>
+  <th class="highlight" width="15%">S</th>
+  <th class="highlight" width="15%">S</th>
+ </tr>
+	$calender_row
+</table>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+ <tr>
+  <td width="20%">$prev_form</td>
+  <td width="60%" align="center"><input type="submit" name="action" value="anzeigen" class="navform" /></td>
+  <td width="20%" align="right">$next_form</td>
+ </tr>
+</table>
+</form>

@@ -1,0 +1,30 @@
+<table class="standard" border="0" cellspacing="1" cellpadding="4" width="100%">
+	<form method="post" action="include.php?path=userprofilefields">
+	<input type="hidden" name="id" value="$profilefield[profilefields_id]" />
+ <tr>
+  <td class="heads" colspan="2">Profilfeld l&ouml;schen</td>
+ </tr>
+ <tr>
+  <td class="left">M&ouml;chten Sie das Profilfeld <b>$fieldname</b> wirklich l&ouml;schen?<br />
+  	<font class="small">Wenn das Profilfeld gel&ouml;scht wird, gehen alle Benutzereingaben in diesem Feld unwiederrufbar verloren!</font></td>
+  <td class="right">
+  	<table border="0" cellspacing="1" cellpadding="0">
+	 <tr>
+	  <td><input class="radio" type="radio" name="drop_confirm" value="1" /></td>
+	  <td>Ja</td>
+	  <td>&nbsp;&nbsp;&nbsp;</td>
+	  <td><input class="radio" type="radio" name="drop_confirm" value="0" checked /></td>
+	  <td>Nein</td>
+	 </tr>
+	</table>
+  </td>
+ </tr>
+ <tr>
+  <td class="heads" colspan="2" align="center">
+  	<input type="submit" name="action" value="$lang[delete]" class="highlight" />
+	<input type="hidden" name="delete" value="$lang[delete]" />
+  	<input type="submit" name="action" value="$lang[cancel]" />
+	<input type="hidden" name="cancel" value="$lang[cancel]" /></td>
+ </tr>
+ 	</form>
+</table>
