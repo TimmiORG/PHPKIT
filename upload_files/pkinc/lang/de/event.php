@@ -32,8 +32,11 @@ return array(
 
 #access_refused
 'eventtitle_access_refused'		=> 'Zugriff verweigert',
-'event_access_refused'			=> 'Der Zugriff auf die von Ihnen angew&auml;hlte Seite wurde unterbunden. Dies kann einen der folgenden Gr&uuml;nde haben :<br /><br />
-<table border="0" cellspacing="0" cellpadding="5"><tr><td><ul><li>Sie haben sich nicht angemeldet oder haben sich noch nicht registriert.</li><li>Sie verf&uuml;gen nicht &uuml;ber die notwendigen Rechte, um diese Seite betreten zu k&ouml;nnen.</li><li>Ihre Sitzung wurde wegen zu langer Inaktivit&auml;t beendet.</li><li>Jemand anderes verwendet Ihr Benutzerkonto.</li></ul></td></tr></table>',
+'event_access_refused'			=> '<p>Der Zugriff auf die von Ihnen angew&auml;hlte Seite wurde unterbunden. Dies kann einen der folgenden Gr&uuml;nde haben:</p>
+<ul><li>Sie haben sich nicht angemeldet oder sind noch nicht registriert.</li>
+<li>Sie verf&uuml;gen nicht &uuml;ber die notwendigen Rechte, um diese Seite betreten zu k&ouml;nnen.</li>
+<li>Ihre Sitzung wurde wegen zu langer Inaktivit&auml;t beendet.</li>
+<li>Jemand anderes verwendet Ihr Benutzerkonto.</li></ul>',
 
 #login (success)
 'eventtitle_login'				=> 'Anmeldung erfolgreich',
@@ -41,15 +44,15 @@ return array(
 
 #login (failed)
 'eventtitle_login_false'		=> 'Anmeldung fehlgeschlagen',
-'event_login_false'				=> 'Ihre Anmeldung konnte nicht erfolgreich durchgef&uuml;hrt werden.<br /><br />F&uuml;r die Nutzung dieses Onlineangebotes ist es erforderlich das Cookies in Ihrem Browser/Firewall aktiviert sind.<br />L&ouml;schen Sie ggf. vor der n&auml;chsten Anmeldung alle Cookies dieser Website.<br /><br /><span class="small bold"><a href="'.pkLink('login').'">Klicken Sie bitte hier, um sich erneut anzumelden.</a></span>',
+'event_login_false'				=> '<p>Ihre Anmeldung konnte nicht erfolgreich durchgef&uuml;hrt werden.</p><p>F&uuml;r die Nutzung dieses Onlineangebotes ist es erforderlich, dass Cookies in Ihrem Browser/Firewall aktiviert sind.<br />L&ouml;schen Sie ggf. vor der n&auml;chsten Anmeldung alle Cookies dieser Website.</p><p><a href="'.pkLink('login').'" class="small bold">Klicken Sie bitte hier, um sich erneut anzumelden.</a></p>',
 
 #logout (success)
 'eventtitle_logout'				=> 'Abmeldung',
-'event_logout'					=> 'Sie haben sich erfolgreich abgemeldet. Auf Wiedersehen bis zu Ihrem n&auml;chsten Besuch.',
+'event_logout'					=> 'Sie haben sich erfolgreich abgemeldet. Auf Wiedersehen, bis zu Ihrem n&auml;chsten Besuch.',
 
 #logout (failed)
 'eventtitle_logout_false'		=> 'Abmeldung fehlgeschlagen',
-'event_logout_false'			=> 'Ihre Abmeldung konnte nicht erfolgreich durchgef&uuml;hrt werden.<br /><br />F&uuml;r die Nutzung dieses Onlineangebotes ist es erforderlich das Cookies in Ihrem Browser/Firewall aktiviert sind.<br />L&ouml;schen Sie ggf. vor der n&auml;chsten Anmeldung alle Cookies dieser Website.<br /><br /><span class="small bold"><a href="'.pkLink('','','logout=1').'">F&uuml;r einen neuen Versuch sich abzumelden, klicken Sie bitte hier.</a></span>',
+'event_logout_false'			=> '<p>Ihre Abmeldung konnte nicht erfolgreich durchgef&uuml;hrt werden.</p><p>F&uuml;r die Nutzung dieses Onlineangebotes ist es erforderlich, dass Cookies in Ihrem Browser/Firewall aktiviert sind.<br />L&ouml;schen Sie ggf. vor der n&auml;chsten Anmeldung alle Cookies dieser Website.</p><p><a href="'.pkLink('','','logout=1').'" class="small bold">F&uuml;r einen neuen Versuch sich abzumelden, klicken Sie bitte hier.</a></p>',
 
 #registration successful
 'eventtitle_registration_successful' => 'Registrierung erfolgreich',
@@ -108,13 +111,13 @@ return array(
 'event_suggestion_sent'=>'Vielen Dank!<br /><br />Ihre Empfehlung wurde erfolgreich gesendet.',
 #27
 'eventtitle_account_inactive'=>'Benutzerkonto nicht aktiviert',
-'event_account_inactive'=>'Ihr Benutzerkonto wurde noch nicht aktiviert.<br /><br />Sie werden von uns per E-Mail &uuml;ber die Aktivierung Ihres Benutzerkontos benachrichtigt.',
+'event_account_inactive'=>'<p>Ihr Benutzerkonto wurde noch nicht aktiviert.</p><p>Sie werden von uns per E-Mail &uuml;ber die Aktivierung Ihres Benutzerkontos benachrichtigt.</p>',
 #28
 'eventtitle_forum_closed'=>'Forum geschlossen',
 'event_forum_closed'=>'Das Forum wurde durch den Webmaster geschlossen.',
 #29
 'eventtitle_mainadmin_account_delete'=>'Aktion verweigert',
-'event_mainadmin_account_delete'=>'Aus Sicherheitsgr&uuml;nden darf das Benutzerkonto des Hauptadminstrators nicht gel&ouml;scht werden.',
+'event_mainadmin_account_delete'=>'Aus Sicherheitsgr&uuml;nden darf das Benutzerkonto des Hauptadministrators nicht gel&ouml;scht werden.',
 #30 
 'eventtitle_account_deleted'=>'Benutzerkonto gel&ouml;scht',
 'event_account_deleted'=>'Ihr Benutzerkonto wurde gel&ouml;scht.',
@@ -143,7 +146,7 @@ return array(
 'event_forum_closed'=>'Dieses Forum wurde geschlossen.<br />Das Erstellen von Antworten und neuen Themen ist nicht m&ouml;glich.',
 #38
 'eventtitle_entry_repeat'=>'Antworten nicht m&ouml;glich',
-'event_entry_repeat'=>'Sie d&uuml;rfen nicht noch einmal antworten. Der letzte Beitrag in diesem Thema stammt bereits von Ihnen.<br />Editieren Sie Ihren letzten Beitrag oder warten Sie bis jemand anderes Antwortet.',
+'event_entry_repeat'=>'Sie d&uuml;rfen nicht noch einmal antworten. Der letzte Beitrag in diesem Thema stammt bereits von Ihnen.<br />Editieren Sie Ihren letzten Beitrag oder warten Sie bis jemand anderes antwortet.',
 #39
 'eventtitle_buddy_addself'=>'Fehler',
 'event_buddy_addself'=>'Sie k&ouml;nnen sich nicht selber zu Ihren Freunden hinzuf&uuml;gen.',
@@ -161,7 +164,7 @@ return array(
 'event_privatemessage_not_found'=>'Die von Ihnen gew&uuml;nschte private Nachricht konnte nicht gefunden werden.',
 #44
 'eventtitle_privatemessages_disabled'=>'Kurznachrichten deaktiviert',
-'event_privatemessages_disabled'=>'Sie haben die Nutzung der privaten Nachrichten abgeschaltet. Sie k&ouml;nnen erst private Nachrichten versenden, wenn Sie in den &quot;Erweiterten Einstellungen&quot; Ihres Benutzerprofils die Nutzung reaktivieren.<br /><br /><a href="include.php?path=userprofile&mode=options">Klicken Sie hier wenn sie dies jetzt vornehmen m&ouml;chten.</a>',
+'event_privatemessages_disabled'=>'<p>Sie haben die Nutzung der privaten Nachrichten abgeschaltet. Sie k&ouml;nnen erst private Nachrichten versenden, wenn Sie in den &quot;Erweiterten Einstellungen&quot; Ihres Benutzerprofils die Nutzung reaktivieren.</p><p><a href="include.php?path=userprofile&mode=options">Klicken Sie hier, wenn sie dies jetzt vornehmen m&ouml;chten.</a></p>',
 #45
 'eventtitle_comment_wait_loop'=>'Bitte warten',
 'event_comment_wait_loop'=>'Sie m&uuml;ssen nach dem Schreiben eines Kommentars '.pkGetConfigf('comment_floodctrl').' Minute(n) warten, bis Sie einen weiteren Kommentar schreiben d&uuml;rfen.',
@@ -187,7 +190,7 @@ return array(
 'eventtitle_searchterm_too_short'=>'Suchbegriff zu kurz',
 'event_searchterm_too_short'=>'Der von Ihnen eingegebene Suchbegriff ist zu kurz gehalten. Bitte w&auml;hlen Sie einen anderen Begriff der mindestens '.pkGetConfigF('search_min_length').' Zeichen lang ist.',
 'eventtitle_searchresult_limited'=>'Suche eingegrenzt',
-'event_searchresult_limited'=>'Der von Ihnen eingegebene Suchbegriff hat mehr als '.pkGetConfigF('search_max').' Treffer ergeben. Es werden Ihnen nur die ersten '.pkGetConfigF('search_max').' Suchergebnisse angezeigt. F&uuml;hren Sie die Suche erneut aus um ein genaueres Ergenis zu erhalten.',
+'event_searchresult_limited'=>'Der von Ihnen eingegebene Suchbegriff hat mehr als '.pkGetConfigF('search_max').' Treffer ergeben. Es werden Ihnen nur die ersten '.pkGetConfigF('search_max').' Suchergebnisse angezeigt. F&uuml;hren Sie die Suche erneut aus, um ein genaueres Ergenis zu erhalten.',
 'eventtitle_account_not_displayable'=>'Profil nicht anzeigbar',
 'event_account_not_displayable'=>'Das angew&auml;hlte Benutzerprofil kann nicht angezeigt werden. Das Benutzerkonto ist nicht vorhanden oder wurde m&ouml;glicherweise noch nicht aktiviert.',
 'eventtitle_entries_incomplete'=>'Eintragungen unvollst&auml;ndig',

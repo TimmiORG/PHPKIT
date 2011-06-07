@@ -47,6 +47,11 @@ else
 	$postid = 0;
 }
 
+if(pkGetUservalue( 'id' ) == 0)
+{
+	pkHeaderLocation( 'forumsthread', '', 'threadid=' . $forumpost[ 'forumpost_threadid' ] );
+}
+
 if( !userrights( $forumcat[ 'forumcat_mods' ] ) && (
 		$forumpost[ 'forumpost_autorid' ] > 0 && $forumpost[ 'forumpost_autorid' ] != pkGetUservalue( 'id' ) ) )
 {
@@ -60,8 +65,7 @@ $ACTION = ( isset( $_POST[ 'action' ] ) ) ? $_POST[ 'action' ] : 'view';
 
 if( !empty($_POST[ 'cancel' ]) && $ACTION == $_POST[ 'cancel' ] )
 {
-	pkHeaderLocation( 'forumsthread', '', 'threadid=' .
-	                                      $forumpost[ 'forumpost_threadid' ] . '&postid=' . $postid, 'post' . $postid );
+	pkHeaderLocation( 'forumsthread', '', 'threadid=' .  $forumpost[ 'forumpost_threadid' ] . '&postid=' . $postid, 'post' . $postid );
 }
 
 if($ENV->_post( 'delete_post' ) == 1 )

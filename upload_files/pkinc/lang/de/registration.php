@@ -5,13 +5,13 @@
 # YOU ARE NOT AUTHORISED TO CREATE ILLEGAL COPIES OF THIS
 # FILE AND/OR TO REMOVE THIS INFORMATION
 #
-# SIE SIND NICHT BERECHTIGT, UNRECHTMÄSSIGE KOPIEN DIESER
+# SIE SIND NICHT BERECHTIGT, UNRECHTMï¿½SSIGE KOPIEN DIESER
 # DATEI ZU ERSTELLEN UND/ODER DIESE INFORMATIONEN ZU ENTFERNEN
 #
 # This file / the PHPKIT software is no freeware! For further 
 # information please visit our website or contact us via email:
 #
-# Diese Datei / die PHPKIT Software ist keine Freeware! Für weitere
+# Diese Datei / die PHPKIT Software ist keine Freeware! Fï¿½r weitere
 # Informationen besuchen Sie bitte unsere Website oder kontaktieren uns per E-Mail:
 #
 # email     : info@phpkit.com
@@ -34,7 +34,7 @@ return array(
 'registration_error_4'				=> 'Mit der angegebenen E-Mail-Adresse ist bereits ein Benutzer angemeldet.',
 'registration_error_5'				=> 'Die angegebene E-Mail-Adresse ist nicht g&uuml;ltig.',
 'registration_error_6'				=> 'Die eingetragenen E-Mail-Adressen stimmen nicht &uuml;berein.',
-'registration_error_7'				=> 'Bitte geben Sie ein Passwort an.6',
+'registration_error_7'				=> 'Bitte geben Sie ein Passwort an.',
 'registration_error_8'				=> 'Die angegebenen Passw&ouml;rter stimmen nicht &uuml;berein.',
 'registration_error_9'				=> 'Der Sicherheitscode wurde falsch eingegeben!',
 );

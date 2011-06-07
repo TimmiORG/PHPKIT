@@ -5,13 +5,13 @@
 # YOU ARE NOT AUTHORISED TO CREATE ILLEGAL COPIES OF THIS
 # FILE AND/OR TO REMOVE THIS INFORMATION
 #
-# SIE SIND NICHT BERECHTIGT, UNRECHTMÄSSIGE KOPIEN DIESER
+# SIE SIND NICHT BERECHTIGT, UNRECHTMï¿½SSIGE KOPIEN DIESER
 # DATEI ZU ERSTELLEN UND/ODER DIESE INFORMATIONEN ZU ENTFERNEN
 #
 # This file / the PHPKIT software is no freeware! For further 
 # information please visit our website or contact us via email:
 #
-# Diese Datei / die PHPKIT Software ist keine Freeware! Für weitere
+# Diese Datei / die PHPKIT Software ist keine Freeware! Fï¿½r weitere
 # Informationen besuchen Sie bitte unsere Website oder kontaktieren uns per E-Mail:
 #
 # email     : info@phpkit.com
@@ -104,7 +104,7 @@ return array(
 'master_data'					=> 'Stammdaten',
 'mailer_settings'				=> 'E-Mail-Versand',
 'meta_settings'					=> 'Meta-Angaben',
-'notify_settings'				=> 'Benachrichtungseinstellungen',
+'notify_settings'				=> 'Benachrichtigungseinstellungen',
 'referer_settings'				=> 'Referrer-Einstellungen',
 'register_settings'				=> 'Registrierung',
 );

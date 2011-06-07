@@ -29,5 +29,8 @@ return array(
 'user_config_pm_max_desc'					=> 'Anzahl der maximalen Anzahl privater Nachrichten die ein Benutzer speichern kann.', #unused yet
 'user_config_pm_ratetime_label'				=> 'Vorhaltezeit privater Nachrichten',
 'user_config_pm_ratetime_desc'				=> 'Wieviele Tage sollen private Nachrichten im System f&uuml;r Benutzer zug&auml;nglich sein, bevor die Nachrichten automatisch gel&ouml;scht werden? Geben Sie zum deaktivieren der automatischen L&ouml;schung 0 ein.',
+
+'user_search_error' => '<h3 class="heads">Es trat ein Fehler auf</h3><p>Benutzerkonto wurde nicht gefunden</p>',
+
 );
 ?>

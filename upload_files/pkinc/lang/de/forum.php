@@ -5,13 +5,13 @@
 # YOU ARE NOT AUTHORISED TO CREATE ILLEGAL COPIES OF THIS
 # FILE AND/OR TO REMOVE THIS INFORMATION
 #
-# SIE SIND NICHT BERECHTIGT, UNRECHTMÄSSIGE KOPIEN DIESER
+# SIE SIND NICHT BERECHTIGT, UNRECHTMï¿½SSIGE KOPIEN DIESER
 # DATEI ZU ERSTELLEN UND/ODER DIESE INFORMATIONEN ZU ENTFERNEN
 #
 # This file / the PHPKIT software is no freeware! For further 
 # information please visit our website or contact us via email:
 #
-# Diese Datei / die PHPKIT Software ist keine Freeware! Für weitere
+# Diese Datei / die PHPKIT Software ist keine Freeware! Fï¿½r weitere
 # Informationen besuchen Sie bitte unsere Website oder kontaktieren uns per E-Mail:
 #
 # email     : info@phpkit.com
@@ -54,5 +54,9 @@ return array(
 
 #config
 'forum_settings'					=> 'Foreneinstellungen',
+
+// forumsfavorites
+'forum_favorites_limit'				=> '<div class="warning"><h3>Es ist ein Fehler aufgetreten!</h3><p>Ihre maximale Anzahl an Favorite wurde erreicht! L&ouml;schen Sie bitte eines Ihrer Favoriten, um weitere speichern zu k&ouml;nnen.</p></div>',
+'forum_favorites_duplicated'		=> '<div class="important"><h3>Favorit bereits vorhanden!</h3><p>Dieser Beitrag wurde bereits zu Ihren Favoriten hinzugef&uuml;gt</p></div>',
 );
 ?>

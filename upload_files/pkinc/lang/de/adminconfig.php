@@ -5,13 +5,13 @@
 # YOU ARE NOT AUTHORISED TO CREATE ILLEGAL COPIES OF THIS
 # FILE AND/OR TO REMOVE THIS INFORMATION
 #
-# SIE SIND NICHT BERECHTIGT, UNRECHTMÄSSIGE KOPIEN DIESER
+# SIE SIND NICHT BERECHTIGT, UNRECHTMï¿½SSIGE KOPIEN DIESER
 # DATEI ZU ERSTELLEN UND/ODER DIESE INFORMATIONEN ZU ENTFERNEN
 #
 # This file / the PHPKIT software is no freeware! For further 
 # information please visit our website or contact us via email:
 #
-# Diese Datei / die PHPKIT Software ist keine Freeware! Für weitere
+# Diese Datei / die PHPKIT Software ist keine Freeware! Fï¿½r weitere
 # Informationen besuchen Sie bitte unsere Website oder kontaktieren uns per E-Mail:
 #
 # email     : info@phpkit.com
@@ -29,9 +29,9 @@ return array(
 
 'config_site_forntpage_elements_label'		=> 'Elemente der Startseite',
 'config_site_forntpage_elements_desc'		=> 'Tragen Sie hier die Pfadangabe, ausgehend vom Installationsverzeichnis, zu den Dateien ein,
-												die auf der Startseite angezeigt werden sollen (angezeigt unter dem Begr&uuml;ssungstext, wenn aktiviert).<br />
-												Systemseiten binden sie unter Angabe des Dateinamens (ohne Dateiendung) ein,
-												<a class="small" href="javascript:;" onClick="morelinkswindow(500,650,\'short\');">eine Auswahl finden sie hier</a>.<br />
+												die auf der Startseite angezeigt werden sollen (angezeigt unter dem Begr&uuml;&szlig;ungstext, wenn aktiviert).<br />
+												Systemseiten binden Sie unter Angabe des Dateinamens (ohne Dateiendung) ein,
+												<a class="small" href="javascript:;" onClick="morelinkswindow(500,650,\'short\');">eine Auswahl finden Sie hier</a>.<br />
 												<br />
 												Mehrere Angaben m&ouml;glich. Je Zeile nur eine Angabe.',
 'config_site_frontpage_link_label'			=> 'Link zur Startseite',
@@ -40,13 +40,13 @@ return array(
 'config_site_frontpage_title_desc'			=> 'Der Titel wird in der Titelleiste des Browsers angezeigt.',
 'config_site_frontpage_welcome_text'		=> 'Begr&uuml;ssungstext',
 
-'config_site_closure_label'					=> 'Seitenabschlu&szlig;',
-'config_site_closure_desc'					=> 'Hier k&ouml;nnen Sie HTML f&uuml;r den Seitenabschlu&szlig; eingeben, z.B. zur Einbindung von externen Statistiken. Ihre Eingaben werden vor dem schlie&szlig;enden Body-Tag ausgegeben.',
+'config_site_closure_label'					=> 'Seitenabschluss',
+'config_site_closure_desc'					=> 'Hier k&ouml;nnen Sie HTML f&uuml;r den Seitenabschluss eingeben, z.B. zur Einbindung von externen Statistiken. Ihre Eingaben werden vor dem schlie&szlig;enden Body-Tag ausgegeben.',
 
 'config_avatar_path_error' 					=> '<br /><span class="smallhighlight">Das gew&auml;hlte Verzeichnis erf&uuml;llt nicht alle Bedingungen!</span>',
 
 'config_contact_page_title_label'			=> 'Titel des Kontaktformulars',
-'config_contact_page_title_desc'			=> 'Tragen Sie hier einen Titel f&uuml;r das Kontaktformular ein. Geben Sie keinen Titel an wird der Standardtitel verwendet.',
+'config_contact_page_title_desc'			=> 'Tragen Sie hier einen Titel f&uuml;r das Kontaktformular ein. Geben Sie keinen Titel an, wird der Standardtitel verwendet.',
 'config_contact_page_text_label'			=> 'Text des Kontaktformulars',
 'config_contact_page_text_desc'				=> 'Hier k&ouml;nnen Sie einen Text eingeben der &uuml;ber dem Kontaktformular ausgegeben wird. Geben Sie keinen Text ein, wird der Standardtext angezeigt. Die Verwendung von HTML und BB-Code ist m&ouml;glich.',
 
@@ -60,7 +60,7 @@ return array(
 
 'config_SMTP_settings'						=> 'SMTP-Einstellungen',
 'config_SMTP_server_label'					=> 'SMTP-E-Mail-Server',
-'config_SMTP_server_desc'					=> 'Ausgangsmailserver f&uuml;r SMTP-Verbindungen. Lassen Sie das Eingabefeld frei um den Serverseitig eingestellten Mailserver zu verwenden. Beachten Sie bitte, dass passwortgesch&uuml;tzte SMTP-Verbindungen nicht unterst&uuml;tzt werden.',
+'config_SMTP_server_desc'					=> 'Ausgangsmailserver f&uuml;r SMTP-Verbindungen. Lassen Sie das Eingabefeld frei, um den Serverseitig eingestellten Mailserver zu verwenden. Beachten Sie bitte, dass passwortgesch&uuml;tzte SMTP-Verbindungen nicht unterst&uuml;tzt werden.',
 
 'licencekey_valid'							=> 'Ein g&uuml;ltiger Lizenzschl&uuml;ssel wurde eingetragen.',
 'licencekey_invalid'						=> 'Tragen Sie hier Ihren individuellen Lizenzschl&uuml;ssel, inklusive der Bindestriche, ein.',
@@ -68,9 +68,9 @@ return array(
 <p>Bis zur Eintragung eines entsprechenden Lizenzschl&uuml;ssels steht Ihnen die Bannerverwaltung nicht zur Verf&uuml;gung. Bitte beachten Sie, dass die Anbringung von Verweisen auf kommerzielle Angebote ohne Privat- bzw. Basis-Lizenz nicht gestattet ist.</p>
 <p>Sie haben die M&ouml;glichkeit, die oben genannte Form der Lizenzierung mit der Berechtigung zur Entfernung des sichtbaren Copyrightverweises zu kombinieren oder auch einzeln zu erwerben. Bei Eingabe eines g&uuml;ltigen Lizenzschl&uuml;ssels zur Copyrightentfernung, werden automatisch alle sichtbaren Copyrightverweise im &ouml;ffentlichen Bereich der Website f&uuml;r Sie entfernt.</p> 
 <p>Sie besitzen noch keinen eigenen Lizenzschl&uuml;ssel oder m&ouml;chten einen verloren gegangenen Lizenzschl&uuml;ssel wieder herstellen lassen? Folgen Sie dem Verweis auf unsere Website, um Informationen zum Erwerb oder zur Wiederbeschaffung von Lizenzschl&uuml;sseln zu erhalten. Ihren individuellen Lizenzschl&uuml;ssel k&ouml;nnen Sie auf <a target="_blank" href="http://www.phpkit.com/de/bestellung">www.phpkit.com</a> bestellen.</p>',
-'licencekey_explain_thank1'					=> '<p>Wir bedanken uns bei Ihnen f&uuml;r den Lizenzerwerb. Nachfolgend wird Ihnen der individuelle Lizenzschl&uuml;ssel dieser Installation angezeigt.</p><p>Die Lizenzierungspflicht für alle Nicht-Privatpersonen ist erfüllt. Mit dem Erwerb der Berechtigung zur kommerziellen Benutzung, wurde die Werbebanner-Verwaltung freigeschaltet.</p>',
+'licencekey_explain_thank1'					=> '<p>Wir bedanken uns bei Ihnen f&uuml;r den Lizenzerwerb. Nachfolgend wird Ihnen der individuelle Lizenzschl&uuml;ssel dieser Installation angezeigt.</p><p>Die Lizenzierungspflicht f&uuml;r alle Nicht-Privatpersonen ist erf&uuml;llt. Mit dem Erwerb der Berechtigung zur kommerziellen Benutzung, wurde die Werbebanner-Verwaltung freigeschaltet.</p>',
 'licencekey_explain_thank2'					=> '<p>Wir bedanken uns bei Ihnen f&uuml;r den Lizenzerwerb. Nachfolgend wird Ihnen der individuelle Lizenzschl&uuml;ssel dieser Installation angezeigt.</p><p>Die sichtbaren Copyrightvermerke im &ouml;ffentlichen Bereich, wurden f&uuml;r Sie deaktiviert.</p>',
-'licencekey_explain_thank4'					=> '<p>Wir bedanken uns bei Ihnen f&uuml;r den Lizenzerwerb. Nachfolgend wird Ihnen der individuelle Lizenzschl&uuml;ssel dieser Installation angezeigt.</p><p>Die Lizenzierungspflicht für alle Nicht-Privatpersonen ist erfüllt. Mit dem Erwerb der Berechtigung zur kommerziellen Benutzung, wurde die Werbebanner-Verwaltung freigeschaltet. Die sichtbaren Copyrightvermerke im &ouml;ffentlichen Bereich, wurden f&uuml;r Sie deaktiviert.</p>',
+'licencekey_explain_thank4'					=> '<p>Wir bedanken uns bei Ihnen f&uuml;r den Lizenzerwerb. Nachfolgend wird Ihnen der individuelle Lizenzschl&uuml;ssel dieser Installation angezeigt.</p><p>Die Lizenzierungspflicht f&uuml;r alle Nicht-Privatpersonen ist erf&uuml;llt. Mit dem Erwerb der Berechtigung zur kommerziellen Benutzung, wurde die Werbebanner-Verwaltung freigeschaltet. Die sichtbaren Copyrightvermerke im &ouml;ffentlichen Bereich, wurden f&uuml;r Sie deaktiviert.</p>',
 
 'meta_config_author_label'					=> 'Autor',
 'meta_config_author_desc'					=> 'Der Name des Autors der Website.',
@@ -87,11 +87,11 @@ return array(
 'meta_config_favicon_label'					=> 'Favoriten-Icon',
 'meta_config_favicon_desc'					=> 'Pfadangabe zu einer Icon-Datei, welches in der Adresszeile bzw. den Favoriten des Browsers angezeigt werden soll.',
 'meta_config_robots_label'					=> 'Suchmaschinen-Robots',
-'meta_config_robots_desc'					=> 'Legt fest wie Suchmaschinen-Robots Ihre Seite indizieren. M&ouml;gliche Angaben: all, index, follow, nofollow, none etc.',
+'meta_config_robots_desc'					=> 'Legt fest, wie Suchmaschinen-Robots Ihre Seite indizieren. M&ouml;gliche Angaben: all, index, follow, nofollow, none etc.',
 'meta_config_robots_revisit_label'			=> 'Wiederbesuch',
 'meta_config_robots_revisit_desc'			=> 'Nach welchem Zeitraum sollen Suchmaschinen-Robots die Website wieder aufsuchen, zum Beispiel: 2 weeks oder 21 days.',
 'meta_config_custom_label' 					=> 'Eigene Headerangaben',
-'meta_config_custom_desc' 					=> 'Hier k&ouml;nnen Sie weitere Headerangaben eintragen. Diese werden im &lt;head&gt;-Bereich angezeigt. Hier können Sie weitere Meta-Tags definieren oder Javascripts verlinken.',
+'meta_config_custom_desc' 					=> 'Hier k&ouml;nnen Sie weitere Headerangaben eintragen. Diese werden im &lt;head&gt;-Bereich angezeigt. Hier k&ouml;nnen Sie weitere Meta-Tags definieren oder Javascripts verlinken.',
 
 'config_time_settings'						=> 'Zeiteinstellungen',
 'config_image_resize_settings'				=> 'Automatische Skalierung von Grafiken',
@@ -100,7 +100,7 @@ return array(
 'config_image_resize_text_label'			=> 'Anpassung in Benutzereingaben',
 'config_image_resize_text_desc'				=> 'Wenn aktiviert, werden Grafiken in &ouml;ffentlichen Texten (<em class="sample">Bsp: Kommentare</em>)  in der Gr&ouml;&szlig;e angepasst. Grafiken in Texten der Inhaltsverwaltung werden nicht skaliert.',
 'config_image_resize_size_label'			=> 'Maximale Abmessungen',
-'config_image_resize_size_desc'				=> 'Legen Sie hier die Abmessungen f&uuml;r H&ouml;he und Breite fest, auf die gr&ouml;&szlig;e Grafiken angepasst werden.',
+'config_image_resize_size_desc'				=> 'Legen Sie hier die Abmessungen f&uuml;r die H&ouml;he und Breite fest, auf die gr&ouml;&szlig;ere Grafiken angepasst werden sollen.',
 
 'PHP_extension_gdlib_required'				=> 'PHP-Erweiterung gdLib ben&ouml;tigt',
 );

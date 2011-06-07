@@ -357,7 +357,7 @@ function pkGetLangError($key)
 #return bool
 function pkUrlCheck($str)
 {
-	return preg_match("/^(http|https|ftp|ftps)?:\/\/([a-z0-9-����]+\.)+([a-z]{2,6})/si", trim($str));
+	return preg_match("/^(http|https|ftp|ftps)?:\/\/([a-z0-9-äöüß]+\.)+([a-z]{2,6})/si", trim($str));
 }
 
 #END function pkUrlCheck
@@ -404,6 +404,7 @@ function pkStringRandom($length)
 #@Return:		string
 #@Desc:			Creates a Link.
 function pkPrivateLinkmaker($amp, $base, $path, $mode, $add, $full = true)
+	//	 pkPrivateLinkmaker('&', pkWWWSELF, $path, $mode, $add) . ($anchor ? '#' . $anchor : '');
 {
 	#testing this feature
 	$cfg = pkGetConfig('site_link_base');
@@ -642,8 +643,8 @@ function pkLinkUnEntities($string)
 function pkEntitiesReplace($string)
 {
 	$hash = array(
-		'&gt;' => '<', '&lt;' => '>', '&szlig;' => '�', '&uuml;' => '�', '&Uuml;' => '�', '&auml;' => '�',
-		'&Auml;' => '�', '&ouml;' => '�', '&Ouml;' => '�', '&quot;' => '"', '&acute;' => '�', '&#39;' => "'",
+		'&gt;' => '<', '&lt;' => '>', '&szlig;' => 'ß', '&uuml;' => 'ü', '&Uuml;' => 'Ü', '&auml;' => 'ä',
+		'&Auml;' => 'Ä', '&ouml;' => 'ö', '&Ouml;' => 'Ö', '&quot;' => '"', '&acute;' => '´', '&#39;' => "'",
 		'&#36;' => '$', '&amp;' => '&'
 	);
 

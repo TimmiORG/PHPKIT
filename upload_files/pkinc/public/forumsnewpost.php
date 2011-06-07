@@ -427,10 +427,12 @@ elseif( ( $catid != 0 && ( userrights( $forumcat[ 'forumcat_mods' ] ) || userrig
 			$smilies = new smilies( );
 			$sign_format .= $smilies->getSmilies( 1 );
 
+			$smilies = '';
 			if( !empty( $_POST[ 'post_smilies' ] ) && intval( $_POST[ 'post_smilies' ] ) == 1 || $ACTION == 'view' )
 			{
-				$smilies = 'checked';
+				$smilies = 'checked = "checked"';
 			}
+
 
 			eval( "\$option_smilies= \"" . pkTpl( "forum/newpost_option_smilies" ) . "\";" );
 		}

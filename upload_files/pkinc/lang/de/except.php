@@ -5,13 +5,13 @@
 # YOU ARE NOT AUTHORISED TO CREATE ILLEGAL COPIES OF THIS
 # FILE AND/OR TO REMOVE THIS INFORMATION
 #
-# SIE SIND NICHT BERECHTIGT, UNRECHTMÄSSIGE KOPIEN DIESER
+# SIE SIND NICHT BERECHTIGT, UNRECHTMï¿½SSIGE KOPIEN DIESER
 # DATEI ZU ERSTELLEN UND/ODER DIESE INFORMATIONEN ZU ENTFERNEN
 #
 # This file / the PHPKIT software is no freeware! For further 
 # information please visit our website or contact us via email:
 #
-# Diese Datei / die PHPKIT Software ist keine Freeware! Für weitere
+# Diese Datei / die PHPKIT Software ist keine Freeware! Fï¿½r weitere
 # Informationen besuchen Sie bitte unsere Website oder kontaktieren uns per E-Mail:
 #
 # email     : info@phpkit.com
@@ -22,7 +22,7 @@
 
 return array(
 'exception_title_nodb'					=> 'Datenbank nicht erreichbar',
-'exception_text_nodb'					=> 'Diese Website ist zur Zeit nicht erreichbar, da keine Verbindung mit der Datenbank zustande gekommen ist. M&ouml;glicher Weise ist die Datenbank zur Zeit &uuml;berlastet oder nicht aktiv.<br /><br />F&uuml;r die Unerreichbarkeit m&ouml;chten wir uns entschuldigen und Sie bitten es zu einem sp&auml;teren Zeit erneut zu versuchen.',
+'exception_text_nodb'					=> '<p>Diese Website ist zur Zeit nicht erreichbar, da keine Verbindung mit der Datenbank zustande gekommen ist. M&ouml;glicherweise ist die Datenbank zur Zeit &uuml;berlastet oder nicht aktiv.</p><p>F&uuml;r die Unerreichbarkeit m&ouml;chten wir uns entschuldigen und Sie bitten, es zu einem sp&auml;teren Zeitpunkt erneut zu versuchen.</p>',
 'exception_title_ban'					=> 'Benutzerkonto/IP-Adresse gesperrt',
 'exception_text_ban'					=> 'Ihnen wird der Zugang zur Website verwehrt. Ihr Benutzerkonto bzw. Ihre IP-Adresse wurde von den Administratoren gesperrt!',
 'exception_title_forumsiteclosed'		=> 'Foren geschlossen',

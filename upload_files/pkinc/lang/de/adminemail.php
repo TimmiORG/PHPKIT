@@ -5,13 +5,13 @@
 # YOU ARE NOT AUTHORISED TO CREATE ILLEGAL COPIES OF THIS
 # FILE AND/OR TO REMOVE THIS INFORMATION
 #
-# SIE SIND NICHT BERECHTIGT, UNRECHTMÄSSIGE KOPIEN DIESER
+# SIE SIND NICHT BERECHTIGT, UNRECHTMÃ„SSIGE KOPIEN DIESER
 # DATEI ZU ERSTELLEN UND/ODER DIESE INFORMATIONEN ZU ENTFERNEN
 #
 # This file / the PHPKIT software is no freeware! For further 
 # information please visit our website or contact us via email:
 #
-# Diese Datei / die PHPKIT Software ist keine Freeware! Für weitere
+# Diese Datei / die PHPKIT Software ist keine Freeware! F&uuml;r weitere
 # Informationen besuchen Sie bitte unsere Website oder kontaktieren uns per E-Mail:
 #
 # email     : info@phpkit.com
@@ -22,53 +22,53 @@
 
 return array(
 #CONTENT SUBMITED
-'contentsubmited_mail_title'		 			=> 'Eingesendeter Beitrag auf %s',
+'contentsubmited_mail_title'		 			=> 'Eingesandter Beitrag auf %s',
 'contentsubmited_mail_body_accepted' 			=> 'Hallo %s,
 
-Der von Ihnen eingsendete Beitrag wurde in unsere Datenbank aufgenommen und wird in Kürze in auf %s zu finden sein.
+Der von Ihnen eingesandte Beitrag wurde in unsere Datenbank aufgenommen und wird in K&uuml;rze auf der %s Website zu finden sein.
 
-Wir bedanken uns recht herzlich für Ihre Einsendung.
+Wir bedanken uns recht herzlich f&uuml;r Ihre Einsendung.
 
 %s
 
 
-Mit freundlichen Grüßen
+Mit freundlichen Gr&uuml;&szlig;en
 
 Das %s Website-Team
 %s',#1.author, 2.sitename,3.link,4.siteurl
 
 'contentsubmited_mail_body_declined'			=> 'Hallo %s,
 
-Der von Ihnen eingesendete Beitrag wurde geprüft, konnte aber nicht aufgenommen werden.
+Der von Ihnen eingesandte Beitrag wurde gepr&uuml;ft, konnte aber nicht aufgenommen werden.
 
-Trotzdem bedanken wir uns für den Vorschlag und die damit verbundene Mühe.
+Trotzdem bedanken wir uns f&uuml;r den Vorschlag und die damit verbundene M&uuml;he.
 
 
-Mit freundlichen Grüßen
+Mit freundlichen Gr&uuml;&szlig;en
 
 Das %s Website-Team
 %s',#1.author
 
 
 #USER ACTIVATE
-'user_activate_mail_title'						=> 'Registrierung für die %s Website',
+'user_activate_mail_title'						=> 'Registrierung f&uuml;r die %s Website',
 'user_activate_mail_text'						=> 'Willkommen %s,
 
 
-Ihr Benutzerkonto für die %s Website wurde freigeschaltet.
+Ihr Benutzerkonto f&uuml;r die %s Website wurde freigeschaltet.
 
-Benutzen Sie diesen Link um sich direkt anzumleden: 
+Benutzen Sie diesen Link, um sich direkt anzumleden:
 
 %s
 
 
-Beachten Sie bitte, das Ihr Browser die Annahme von 
-Cookies akzeptieren muss, damit Sie sich einloggen können!
+Beachten Sie bitte, dass Ihr Browser die Annahme von
+Cookies akzeptieren muss, damit Sie sich einloggen k&ouml;nnen!
 
 
 
 
-Mit freundlichen Grüßen
+Mit freundlichen Gr&uuml;&szlig;en
 
 
 Das %s Team
@@ -81,18 +81,18 @@ Das %s Team
 
 Ihr Benutzerkonto auf %s wurde soeben durch einen Administrator bearbeitet.
 %s
-Benutzen Sie für die nächste Anmeldung bitte den folgenden Link:
+Benutzen Sie f&uuml;r die n&auml;chste Anmeldung bitte den folgenden Link:
 
 %s
 
 
-Mit freundlichen Grüßen
+Mit freundlichen Gr&uuml;&szlig;en
 
 
 Das %s Team
 %s',#1.username,2.sitename,3.note,4.link,5.sitename6.siteurl
 'user_edit_mail_textadd'						=> '
-Als Begründung für die Bearbeitung wurde folgendes angegeben:
+Als Begr&uuml;ndung f&uuml;r die Bearbeitung wurde folgendes angegeben:
 
 %s
 
@@ -100,25 +100,25 @@ Als Begründung für die Bearbeitung wurde folgendes angegeben:
 ',
 
 #USER EDIT (DELETE)
-'user_delete_mail_title'						=> 'Benutzerkonto %s auf %s gelöscht',#1.username,2.sitename
+'user_delete_mail_title'						=> 'Benutzerkonto %s auf %s gel&ouml;scht',#1.username,2.sitename
 'user_delete_mail_text'							=> 'Hallo,
 
 
-das Benutzerkonto "%s" auf der %s Website wurde gelöscht. 
+das Benutzerkonto "%s" auf der %s Website wurde gel&ouml;scht. 
 
 %s
 
 
-Mit freundlichen Grüßen
+Mit freundlichen Gr&uuml;&szlig;en
 
 
 Das %s Team
 %s',#1.username,2.sitename,3.notifytext,4.sitename,5.siteurl
 
-'user_delete_mail_text_reason'					=> 'Für die Löschung des Benutzerkontos wurde die folgende Begründung angegeben:
+'user_delete_mail_text_reason'					=> 'F&uuml;r die L&ouml;schung des Benutzerkontos wurde die folgende Begr&uuml;ndung angegeben:
 
 %s',
-'user_delete_mail_text_noreason'				=> 'Eine Begründung für die Löschung des Benutzerkontos wurde nicht angegeben.',
+'user_delete_mail_text_noreason'				=> 'Eine Begr&uuml;ndung f&uuml;r die L&ouml;schung des Benutzerkontos wurde nicht angegeben.',
 
 
 #INFOMAIL 

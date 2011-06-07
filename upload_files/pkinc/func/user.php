@@ -33,6 +33,12 @@ function pkUserDelete($id)
 	
 	global $SQL;
 
+	# delete user avatar
+	$useravatar = pkDIRROOT.pkGetConfig('avatar_path')."/avauser_".$id.".";
+    @unlink($useravatar.'gif');
+    @unlink($useravatar.'jpg');
+    @unlink($useravatar.'png');
+
 	$SQL->query("DELETE FROM ".pkSQLTAB_USER." WHERE user_id='".$id."'");
 	$SQL->query("DELETE FROM ".pkSQLTAB_USER_PRIVATEMESSAGE." WHERE im_to='".$id."'");
 	$SQL->query("DELETE FROM ".pkSQLTAB_USER_FRIENDLIST." WHERE buddy_userid='".$id."' OR buddy_friendid='".$id."'");

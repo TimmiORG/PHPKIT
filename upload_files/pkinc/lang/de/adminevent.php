@@ -5,13 +5,13 @@
 # YOU ARE NOT AUTHORISED TO CREATE ILLEGAL COPIES OF THIS
 # FILE AND/OR TO REMOVE THIS INFORMATION
 #
-# SIE SIND NICHT BERECHTIGT, UNRECHTMÄSSIGE KOPIEN DIESER
+# SIE SIND NICHT BERECHTIGT, UNRECHTMï¿½SSIGE KOPIEN DIESER
 # DATEI ZU ERSTELLEN UND/ODER DIESE INFORMATIONEN ZU ENTFERNEN
 #
 # This file / the PHPKIT software is no freeware! For further 
 # information please visit our website or contact us via email:
 #
-# Diese Datei / die PHPKIT Software ist keine Freeware! Für weitere
+# Diese Datei / die PHPKIT Software ist keine Freeware! Fï¿½r weitere
 # Informationen besuchen Sie bitte unsere Website oder kontaktieren uns per E-Mail:
 #
 # email     : info@phpkit.com
@@ -37,11 +37,11 @@ return array(
 'event_thirdparty_warning'					=> 'Warnung!',
 'eventmessage_thirdparty_warning'			=> 'Die Installation von Erweiterungen von Drittanbietern kann die Server- &amp; Systemsicherheit gef&auml;hrden! Verwenden Sie dies nur, wenn Sie der Quelle der Erweiterung vertrauen. Weitergehende Information zu diesem Thema finden Sie in den <a target="_blank" href="http://www.phpkit.com/de/security">PHPKIT Sicherheitsmitteilungen</a>.',
 'event_thirdparty_submission_warning'		=> 'Warnung!',
-'eventmessage_thirdparty_submission_warning'	=> 'Eingesendete Beitr&auml;ge Dritter k&ouml;nnen sch&auml;dlichen Code enthalten und die Server- &amp; Systemsicherheit gef&auml;hrden! Pr&uuml;fen Sie diese sehr genau und achten Sie besonders auf versteckte Elemente z.B. Quellcodekommentare und externe Verweise. Weitergehende Information zu diesem Thema finden Sie in den <a target="_blank" href="http://www.phpkit.com/de/security">PHPKIT Sicherheitsmitteilungen</a>.',
+'eventmessage_thirdparty_submission_warning'	=> 'Eingesandte Beitr&auml;ge Dritter k&ouml;nnen sch&auml;dlichen Code enthalten und die Server- &amp; Systemsicherheit gef&auml;hrden! Pr&uuml;fen Sie diese sehr genau und achten Sie besonders auf versteckte Elemente z.B. Quellcodekommentare und externe Verweise. Weitergehende Information zu diesem Thema finden Sie in den <a target="_blank" href="http://www.phpkit.com/de/security">PHPKIT Sicherheitsmitteilungen</a>.',
 'event_thirdparty_adview_warning'			=> 'Warnung!',
 'eventmessage_thirdparty_adview_warning'	=> 'Code Dritter kann sch&auml;dliche Elemente enthalten und die Server- &amp; Systemsicherheit gef&auml;hrden! Pr&uuml;fen Sie diesen sehr genau und achten Sie besonders auf versteckte Elemente z.B. Quellcodekommentare, Scripte und externe Verweise. Verwenden Sie diesen nur, wenn Sie der Quelle vertrauen. Weitergehende Information zu diesem Thema finden Sie in den <a target="_blank" href="http://www.phpkit.com/de/security">PHPKIT Sicherheitsmitteilungen</a>.',
 'event_style_old_file'						=> 'Veraltete Datei',
-'eventmessage_style_old_file'				=> 'Der Dateitype &quot;.pks&quot; wird aus Sicherheitsgr&uuml;nden nicht unterst&uuml;tzt.',
+'eventmessage_style_old_file'				=> 'Der Dateityp &quot;.pks&quot; wird aus Sicherheitsgr&uuml;nden nicht unterst&uuml;tzt.',
 
 'credits' => '<div style="border:1px solid #506080;text-align:center;font-family:verdana;font-size:13px;line-height:150%;padding:10px;margin:10px;"><p>Wir m&ouml;chten uns an dieser Stelle bei allen, die uns direkt oder indirekt bei der Arbeit an <strong>PHPKIT</strong> unterst&uuml;tzt haben, unseren besonderen Dank ausdr&uuml;cken.</p>
 <br /><p>Stefan Heckler<br />Olaf Johansson<br />Marcus Jurk<br />Bernd Kaschubowski<br />Manuela Kaschubowski<br />Nick Lange<br />Walter Lange<br />Roland M&ouml;rke<br />Marcus Merchel<br />Christine Rudolph<br />Anja Brinkmann<br />Gerti Schott<br />Sirko Trassat<br />und Neue Medien M&uuml;nnich</p></div>'

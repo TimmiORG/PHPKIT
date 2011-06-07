@@ -46,7 +46,7 @@ return array(
 #COMMENT MAIL NOTIFY
 'comment_mail_notify'							=> 'Auf %s hat %s einen neuen Kommentar erstellt.
 
-Klicken Sie bitte  auf den folgenden Link um sich den Eintrag anzusehen: %s',#1.sitename 2. author 3.link
+Klicken Sie bitte auf den folgenden Link, um sich den Eintrag anzusehen: %s',#1.sitename 2. author 3.link
 
 #CONTACT 
 'contact_main_subject'							=> 'Feedback f&uuml;r %s: %s',
@@ -64,16 +64,16 @@ Klicken Sie bitte  auf den folgenden Link um sich den Eintrag anzusehen: %s',#1.
 'newpost_notify_mail_title'						=> '%s - Neuer Forenbeitrag: %s',#1.sitename, 2.threadtitle
 'newpost_notify_mail_body'						=> 'Auf %s hat %s einen neuen Forenbeitrag erstellt.
 
-Klicken Sie bitte auf den folgenden Link um sich den Eintrag anzusehen:
+Klicken Sie bitte auf den folgenden Link, um sich den Eintrag anzusehen:
 %s
 '.$dontanswer,#1.sitename, 2.author, 3.link
 
 
 #FORUM NEWPOST SUBSCRIBER
 'newpost_subscriber_mail_title'					=> '%s - Neuer Forenbeitrag: %s',#1.sitename, 2.threadtitle
-'newpost_subscriber_mail_body'					=> 'Auf %s hat %s einen neuen Foreneintrag in dem von Ihnen beobachteten Thema $%s erstellt.
+'newpost_subscriber_mail_body'					=> 'Auf %s hat %s einen neuen Forenbeitrag in dem von Ihnen beobachteten Thema %s erstellt.
 
-Klicken Sie auf den folgenden Link um sich den Bettrag jetzt anzusehen:
+Klicken Sie auf den folgenden Link, um sich den Beitrag jetzt anzusehen:
 %s
 
 
@@ -88,10 +88,9 @@ Das %s Team
 'forumnotify_thread_reply_title'				=> '%s - Neuer Forenbeitrag im Thema: %s',
 'forumnotify_thread_reply_text'					=> 'Guten Tag,
 
-Soeben wurde auf Thema "%s" von %s, in unserem Forum geantwortet.
-Klicken Sie bitte auf den folgenden Link um sich den Eintrag anzusehen:
+soeben wurde auf das Thema "%s" von %s in unserem Forum geantwortet.
+Klicken Sie bitte auf den folgenden Link, um sich den Eintrag anzusehen:
 %s
-
 
 Sie haben diese E-Mail erhalten, weil Sie bei neuen Beitr&auml;gen benachrichtigt werden wollten.
 Wenn Sie keine weiteren Benachrichtigungen mehr erhalten m&uuml;chten, so klicken Sie bitte hier:
@@ -102,8 +101,8 @@ Wenn Sie keine weiteren Benachrichtigungen mehr erhalten m&uuml;chten, so klicke
 #FORUMNOTIFY REPLY
 'forumnotify_thread_reply_text_mailnotify'		=> 'Guten Tag,
 
-Soeben wurde auf das Thema "%s" von %s, in unserem Forum geantwortet.
-Klicken Sie bitte auf den folgenden Link um sich den Eintrag anzusehen:
+soeben wurde auf das Thema "%s" von %s in unserem Forum geantwortet.
+Klicken Sie bitte auf den folgenden Link, um sich den Eintrag anzusehen:
 %s
 
 
@@ -136,7 +135,6 @@ ich habe eine Seite gefunden, die dich interessieren k&ouml;nnte:
 'lostpassword_mail_title'						=> 'Passwort vergessen bei %s',
 'lostpassword_mail_text'						=> 'Hallo %s,
 
-
 wie angefordert, erhalten Sie hiermit einen Link zu Ihrem Benutzerprofil f&uuml;r unsere Coummnity. Bitte vergessen Sie nicht, ein neues, individuelles Passwort in Ihrem Benutzerprofil festzulegen.
 
 Benutzen Sie bitte den folgenden Link, um sich direkt einzuloggen:
@@ -161,9 +159,9 @@ Sollten Sie Schwierigkeiten haben oder der Link nicht korrekt dargestellt werden
 Benutzen Sie dann bitte die folgenden Daten:',#1.mail link, 2.login link
 
 
-'registration_mail_body_activate_false'			=> 'Ihr Benutzeraccount wird umgehend von einem der %s Administratoren gepr&uuml;ft. Sie erhalten nach der Freischaltung eine weitere E-Mail als Benachrichtigung.
+'registration_mail_body_activate_false'			=> 'Ihr Benutzerkonto wird umgehend von einem der %s Administratoren gepr&uuml;ft. Sie erhalten nach der Freischaltung eine weitere E-Mail als Benachrichtigung.
 
-Die Daten Ihres Benutzeraccounts mit der ID %s lauten:',#1. sitename, 2.userid
+Die Daten Ihres Benutzerkontos mit der ID %s lauten:',#1. sitename, 2.userid
 
 'registration_mail_body'						=> 'Willkommen %s,
 
@@ -221,7 +219,7 @@ E-Mail-Adresse: %s
 ID: %s
 
 
-Benutzen Sie den folgenden Link um zu seinem Benutzerprofil zu gelangen: %s',#1.sitename,2.username,3.emailaddress,4.userid,5.link
+Benutzen Sie den folgenden Link, um zu seinem Benutzerprofil zu gelangen: %s',#1.sitename,2.username,3.emailaddress,4.userid,5.link
 
 
 #USER LOST PASSWORD
@@ -231,7 +229,7 @@ Benutzen Sie den folgenden Link um zu seinem Benutzerprofil zu gelangen: %s',#1.
 
 Sollten Sie diese E-Mail nicht angefordert haben bzw. Ihr Passwort nicht vergessen haben, k&ouml;nnen Sie diese E-Mail l&ouml;schen. Sie brauchen nichts weiter tun, Ihr Passwort wurde nicht ver&auml;ndert.
 
-Wenn Sie diese E-Mail angefordert haben, erhalten Sie hiermit einen Zugangscode um ein neues Passwort f&uuml;r die %s Website festzulegen. Klicken Sie hierzu auf den folgenden Direktlink.
+Wenn Sie diese E-Mail angefordert haben, erhalten Sie hiermit einen Zugangscode, um ein neues Passwort f&uuml;r die %s Website festzulegen. Klicken Sie hierzu auf den folgenden Direktlink.
 
 %s
 
@@ -262,7 +260,7 @@ auf %s liegt eine neue Kurznachricht von %s f&uuml;r Sie bereit.
 Betreff der Nachricht: %s
 
 
-Klicken Sie bitte auf den folgenden Link um sich die Nachricht anzusehen:
+Klicken Sie bitte auf den folgenden Link, um sich die Nachricht anzusehen:
 %s
 
 
@@ -272,7 +270,7 @@ Beachten Sie bitte, dass Sie sich ggf. erst einloggen m&uuml;ssen damit Sie die 
 
 #CONTENT SUBMITED
 'content_submit_notify_mailtitle'				=> 'Neue Einsendung auf %s: %s',
-'content_submit_notify_mail'					=> 'Es wurde auf %s ein %s eingesendet und liegt zur &uuml;berpr&uuml;fung und Bearbeitung bereit.
+'content_submit_notify_mail'					=> 'Es wurde auf %s ein %s eingesandt und liegt zur &uuml;berpr&uuml;fung und Bearbeitung bereit.
 
 Autor: %s
 E-Mail-Adresse: %s
@@ -285,15 +283,14 @@ Benutzen Sie den folgenden Link, um die Einsendung in der Administration zu kont
 'guestbook_comment_mail_title'					=> 'Kommentar zu Ihrem G&auml;stebucheintrag auf %s',#sitename
 'guestbook_comment_mail_text'					=> 'Hallo %s,
 
-
-Gerade wurde ein Kommentar zu Ihrem G&auml;stebucheintrag auf %s verfasst.
+gerade wurde ein Kommentar zu Ihrem G&auml;stebucheintrag auf %s verfasst.
 
 %s schrieb:
 
 %s
 
 
-Klicken Sie bitte auf den folgenden Link um sich den Kommentar auf %s anzusehen:
+Klicken Sie bitte auf den folgenden Linkk, um sich den Kommentar auf %s anzusehen:
 %s
 
 
@@ -307,6 +304,6 @@ Das %s Team
 #GUESTBOOK NOTIFY MAIL
 'guestbook_notify_mail_text'					=>'Auf %s hat %s einen neuen G&auml;stebucheintrag erstellt.
 
-Klick Sie auf den folgenden Link um sich den Eintrag anzusehen: %s',#!.sitename,2.author,3.link
+Klick Sie auf den folgenden Link, um sich den Eintrag anzusehen: %s',#!.sitename,2.author,3.link
 );
 ?>

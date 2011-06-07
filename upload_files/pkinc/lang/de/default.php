@@ -56,7 +56,7 @@ return array(
 'bl_send'									=> 'Senden',
 
 'cancel'									=> 'Abbrechen',
-'click_to_return'							=> 'Klicken Sie hier um zur&uuml;ck zu gelangen.',
+'click_to_return'							=> 'Klicken Sie hier, um zur&uuml;ck zu gelangen.',
 'closed'									=> 'geschlossen',
 'comment'									=> 'Kommentar',
 'comments'									=> 'Kommentare',
@@ -198,7 +198,7 @@ return array(
 'required'									=> 'erforderlich',
 'reply'										=> 'Antworten',
 'report_forumsposting_title'				=> 'Forenbeitrag melden',
-'report_forumsposting_namelink'				=> 'Klicken Sie hier um zum gemeldeten Beitrag zu gelangen',
+'report_forumsposting_namelink'				=> 'Klicken Sie hier, um zum gemeldeten Beitrag zu gelangen',
 'reset'										=> 'Zur&uuml;cksetzen',
 
 'save'										=> 'Speichern',
@@ -267,9 +267,9 @@ return array(
 'member'									=> 'Mitglied',
 'member_male'								=> 'Mitglied',
 'member_female'								=> 'Mitglied',
-'user'										=> 'User',
-'user_male'									=> 'User',
-'user_female'								=> 'Userin',
+'user'										=> 'Benutzer',
+'user_male'									=> 'Benutzer',
+'user_female'								=> 'Benutzerin',
 'guest_status'								=> 'Gast',
 );
 ?>

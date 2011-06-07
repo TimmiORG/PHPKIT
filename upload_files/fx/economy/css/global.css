@@ -67,7 +67,7 @@ color:white;
 }
 
 #pkbody {
-width:1000px;
+width:100%;
 margin:0 auto;
 background:transparent url(./fx/economy/bg/page.png) repeat-y center;
 }
