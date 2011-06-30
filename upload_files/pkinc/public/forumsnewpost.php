@@ -11,7 +11,7 @@
 # This file / the PHPKIT software is no freeware! For further 
 # information please visit our website or contact us via email:
 #
-# Diese Datei / die PHPKIT Software ist keine Freeware! F�r weitere
+# Diese Datei / die PHPKIT Software ist keine Freeware! Für weitere
 # Informationen besuchen Sie bitte unsere Website oder kontaktieren uns per E-Mail:
 #
 # email     : info@phpkit.com
@@ -26,7 +26,7 @@ if( !defined( 'pkFRONTEND' ) || pkFRONTEND != 'public' )
 
 include( pkDIRPUBLICINC . 'forumsheader' . pkEXT );
 
-$cat_option = $iconoption = $post_error = $post_title = $post_text = $notify = $option_vote = $row = $replyto = '';
+$cat_option = $iconoption = $post_error = $post_title = $post_text = $notify = $option_vote = $row = $replyto = $option_notify = '';
 
 if( $config[ 'forum_doublepost' ] != 1 && $threadid > 0 && pkGetUservalue( 'id' ) )
 {
@@ -299,7 +299,7 @@ elseif( ( $catid != 0 && ( userrights( $forumcat[ 'forumcat_mods' ] ) || userrig
 			if( emailcheck( $post_email ) )
 			{
 				$SQL->query( "INSERT INTO " . pkSQLTAB_FORUM_NOTIFY . " (forumnotify_userid,forumnotify_email,forumnotify_threadid) VALUES ('" . $SQL->i( pkGetUservalue( 'id' ) ) . "','" . $SQL->f( $post_email ) . "','" . $SQL->i( $threadid ) . "')" );
-			}
+			} 
 		}
 
 		$FORUM->setReaded( $catid, $threadid, pkTIME );
@@ -396,6 +396,7 @@ elseif( ( $catid != 0 && ( userrights( $forumcat[ 'forumcat_mods' ] ) || userrig
 		if( pkGetUservalue( 'id' ) )
 		{
 			$usernick = pkGetUservalueF( 'nick' );
+                        eval( "\$option_notify= \"" . pkTpl( "forum/newpost_option_notify_form" ) . "\";" );
 			eval( "\$user_info= \"" . pkTpl( "forum/newpost_user" ) . "\";" );
 		}
 		else
@@ -406,7 +407,7 @@ elseif( ( $catid != 0 && ( userrights( $forumcat[ 'forumcat_mods' ] ) || userrig
 			}
 
 			eval( "\$user_info= \"" . pkTpl( "forum/newpost_guest" ) . "\";" );
-			eval( "\$option_notify= \"" . pkTpl( "forum/newpost_option_notify_form" ) . "\";" );
+			
 		}
 
 		unset( $sign_format );

@@ -1143,12 +1143,13 @@ function mailsender($receiver = '', $subject, $message, $header = '', $addheader
 	$receiver = empty($receiver) ? mailalias(pkGetConfig('site_email'), pkGetConfig('site_name')) : $receiver;
 	$header = empty($header) ? 'From: ' . mailalias(pkGetConfig('site_email'), pkGetConfig('site_name')) . "\n" : $header;
 
-	$header = "MIME-Version: 1.0" . "\n" . "Content-Type: " . $content_type . "; charset=ISO-8859-1" . "\n" . "Content-Transfer-Encoding: 8bit" . "\n" . $header;
+	$header = "MIME-Version: 1.0" . "\n" . "Content-Type: " . $content_type . "; charset=utf-8" . $header;
 
-	$subject = utf8_decode($subject);
+	$subject = utf8_encode($subject);
 	$subject = mailencode($subject);
 
-	$message = utf8_decode($message);
+	$message = utf8_encode($message);
+
 
 	#lines are allowed with max 70 chars - wrap longer lines
 	$array = explode("\n", $message);
@@ -1177,7 +1178,7 @@ function mailsender($receiver = '', $subject, $message, $header = '', $addheader
 	{
 		$message .= "\r\n\r\n\r\n" . stripslashes(pkGetConfig('site_mail_txt'));
 	}
-
+       
 	return mail($receiver, $subject, $message, $header);
 }
 
@@ -1203,7 +1204,7 @@ function mailencode($string)
 	if (preg_match($pattern, $string))
 	{
 		$string = preg_replace($pattern . 'e', '"=" .strtoupper(dechex(ord("$1")))', $string);
-		$string = '=?ISO-8859-1?Q?' . $string . '?=';
+		$string = '=?utf-?Q?' . $string . '?=';
 	}
 
 	return $string;

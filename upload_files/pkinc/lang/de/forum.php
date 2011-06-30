@@ -43,6 +43,7 @@ return array(
 'newpost_error_author'				=> '<li>Sie haben keinen Namen angegeben</li>',
 'newpost_error_captcha'				=> '<li>Sie haben den Sicherheitscode falsch eingegeben</li>',
 'newpost_error_name'				=> '<li>Der Name wird bereits von einem Mitglied verwendet oder ist nicht erlaubt</li>',
+'newpost_error_email'				=> '<li>Die E-Mail-Adresse ist ung&uuml;ltig</li>',
 
 'posts_and_threads_in_forums'		=> '%s Beitr&auml;ge &amp; %s Themen in %s Foren',
 
