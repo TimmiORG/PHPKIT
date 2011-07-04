@@ -1133,9 +1133,11 @@ function mailsender($receiver = '', $subject, $message, $header = '', $addheader
 		case 'htm' :
 		case 'html' :
 			$content_type = 'text/html';
+                        $message = utf8_encode($message);
 			break;
 		default :
-			$content_type = 'text/plain';
+			$content_type = 'text/plain';                        
+                        $message = html_entity_decode($message, ENT_NOQUOTES, "UTF-8");
 			break;
 	}
 
@@ -1143,14 +1145,18 @@ function mailsender($receiver = '', $subject, $message, $header = '', $addheader
 	$receiver = empty($receiver) ? mailalias(pkGetConfig('site_email'), pkGetConfig('site_name')) : $receiver;
 	$header = empty($header) ? 'From: ' . mailalias(pkGetConfig('site_email'), pkGetConfig('site_name')) . "\n" : $header;
 
-	$header = "MIME-Version: 1.0" . "\n" . "Content-Type: " . $content_type . "; charset=utf-8" . $header;
+	$header = "MIME-Version: 1.0" . "\n" . "Content-Type: " . $content_type . "; charset=utf-8;\r\n" . $header;
 
-	$subject = utf8_encode($subject);
+        $subject = html_entity_decode($subject, ENT_NOQUOTES, "UTF-8");
+	//$subject = utf8_encode($subject);
 	$subject = mailencode($subject);
+        
 
-	$message = utf8_encode($message);
-
-
+       
+        /*echo "<pre>";
+        var_dump($header, $subject, $message);
+        exit;
+        */
 	#lines are allowed with max 70 chars - wrap longer lines
 	$array = explode("\n", $message);
 	foreach ($array as $i => $str)
