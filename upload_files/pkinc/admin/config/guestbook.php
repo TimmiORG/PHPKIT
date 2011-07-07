@@ -29,7 +29,7 @@ if($ACTION==$_POST['save'])
 	$save_values['gbook_epp'] = $gbook_epp;
 
 	$save_values['gbook_title']			= $ENV->_post('gbook_title');
-	$save_values['gbook_welcome']		= $ENV->_post('gbook_welcome');
+	$save_values['gbook_welcome']		= sanitize($ENV->_post('gbook_welcome'));
 	$save_values['gbook_eod']			= $ENV->_post_ibool('gbook_eod');
 	$save_values['gbook_commenteod']	= $ENV->_post_ibool('gbook_commenteod');
 	$save_values['gbook_smilies']		= $ENV->_post_ibool('gbook_smilies');

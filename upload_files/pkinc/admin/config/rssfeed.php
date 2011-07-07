@@ -36,7 +36,7 @@ if($ACTION==$_POST['save'])
 
 
 	$save_values['rss_page_headline'] = $ENV->_post('rss_page_headline');
-	$save_values['rss_page_text'] = $ENV->_post('rss_page_text');
+	$save_values['rss_page_text'] = sanitize($ENV->_post('rss_page_text'));
 	return; #dont forget this
 	}
 

@@ -22,7 +22,9 @@
 
 //saniztize Input
 if (strlen($_POST['searchtext'])){
-    $_POST['searchtext'] = sanitize($_POST['searchtext']);
+    $_POST['searchtext'] = sanitize($_POST['searchtext']);    
+}
+if (strlen($_REQUEST['searchtext'])){
     $_REQUEST['searchtext'] = sanitize($_REQUEST['searchtext']);
 }
 
