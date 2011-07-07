@@ -20,6 +20,13 @@
 # copyright : Copyright (c) 2002-2009 mxbyte gbr | http://www.mxbyte.com
 
 
+//saniztize Input
+if (strlen($_POST['searchtext'])){
+    $_POST['searchtext'] = sanitize($_POST['searchtext']);
+    $_REQUEST['searchtext'] = sanitize($_REQUEST['searchtext']);
+}
+
+
 if(!defined('pkFRONTEND') || pkFRONTEND!='admin')
 	die('Direct access to this location is not permitted.');
 

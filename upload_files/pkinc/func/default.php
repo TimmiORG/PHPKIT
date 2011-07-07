@@ -2347,4 +2347,23 @@ function pkLicencekeyCheck($key)
 	return (md5($key) == 'pkLICENCEKEYCRYPT') ? true : false;
 }
 
+
+function sanitize($data){
+
+    //remove spaces from the input
+
+    $data=trim($data);
+
+    //convert special characters to html entities
+    //most hacking inputs in XSS are HTML in nature, so converting them to special characters so that they are not harmful
+
+    $data=htmlspecialchars($data);
+
+    //sanitize before using any MySQL database queries
+    //this will escape quotes in the input.
+
+    $data = mysql_real_escape_string($data);
+    return $data;
+}
+
 ?>
