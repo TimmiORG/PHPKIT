@@ -1522,9 +1522,11 @@ function checkusername($name, $opt = '')
 		$ch = explode("\n", $censor_username);
 		$ch = array_filter($ch);
 		$ch = array_filter($ch, 'trim');
+                
 		foreach ($ch as $c)
 		{
-			if (strstr(strtolower($name), strtolower(parseregiexp($c))))
+                    
+			if (strstr(strtolower($name), trim(strtolower(parseregiexp($c)))))
 			{
 				return false;
 			}
@@ -1535,6 +1537,7 @@ function checkusername($name, $opt = '')
 				return false;
 			}
 		}
+
 	}
 
 	if (!pkGetUservalue('id') && $opt == 1)
@@ -2347,11 +2350,15 @@ function pkLicencekeyCheck($key)
 	return (md5($key) == 'pkLICENCEKEYCRYPT') ? true : false;
 }
 
-
+/**
+ * Sanitizing Input to prevent Cross-Side-Scripting
+ * 
+ * @param String $data
+ * @return String 
+ */
 function sanitize($data){
 
     //remove spaces from the input
-
     $data=trim($data);
 
     //convert special characters to html entities
@@ -2364,6 +2371,28 @@ function sanitize($data){
 
     $data = mysql_real_escape_string($data);
     return $data;
+}
+
+/**
+ * Function recursively returns arrays into strings if the contents are either Strings or Arrays. Objects are being skipped.
+ * 
+ * @param Array $array
+ * @return String 
+ */
+function arrayToString($array){
+    $output = "";
+    if (is_array($array)){
+        foreach ($array as $key => $value){
+            if (is_array($value))
+                arrayToString ($value);
+            else{
+                $output .= "\r\n".$key.": ".$value;
+            }
+        }
+    }elseif(is_string($array)) {
+        $output .= $array;
+    }
+    return $output;
 }
 
 ?>

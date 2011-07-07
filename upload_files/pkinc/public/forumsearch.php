@@ -5,13 +5,13 @@
 # YOU ARE NOT AUTHORISED TO CREATE ILLEGAL COPIES OF THIS
 # FILE AND/OR TO REMOVE THIS INFORMATION
 #
-# SIE SIND NICHT BERECHTIGT, UNRECHTM�SSIGE KOPIEN DIESER
+# SIE SIND NICHT BERECHTIGT, UNRECHTMÄSSIGE KOPIEN DIESER
 # DATEI ZU ERSTELLEN UND/ODER DIESE INFORMATIONEN ZU ENTFERNEN
 #
 # This file / the PHPKIT software is no freeware! For further 
 # information please visit our website or contact us via email:
 #
-# Diese Datei / die PHPKIT Software ist keine Freeware! F�r weitere
+# Diese Datei / die PHPKIT Software ist keine Freeware! Für weitere
 # Informationen besuchen Sie bitte unsere Website oder kontaktieren uns per E-Mail:
 #
 # email     : info@phpkit.com
@@ -23,6 +23,7 @@ if ( !defined( 'pkFRONTEND' ) || pkFRONTEND != 'public' )
 {
 	die( 'Direct access to this location is not permitted.' );
 }
+
 
 $search_text = '';
 $modehash = array(
@@ -753,54 +754,67 @@ switch ( $mode )
 		break;
 	#END case result
 	default :
-		$SESSION->deset( 'save_rposts' );
+            
+                
+                $result = $SQL->fetch_array( $SQL->query( "SELECT * FROM pk__config WHERE id = 'forum_searcheod'") );
+                $is_forum_search_visible = unserialize($result['value']);
+                
+                if ($is_forum_search_visible){
+            
+                    $SESSION->deset( 'save_rposts' );
 
-		if ( isset( $_REQUEST[ 'error' ] ) && $_REQUEST[ 'error' ] == 'search_noresult' )
-		{
-			pkEvent( 'search_noresult', 0 );
-		}
-		elseif ( isset( $_REQUEST[ 'error' ] ) && $_REQUEST[ 'error' ] == 'securitycode_invalid' )
-		{
-			pkEvent( 'securitycode_invalid', 0 );
-		}
-		elseif ( isset( $_REQUEST[ 'error' ] ) && $_REQUEST[ 'error' ] == 'searchterm_too_short' )
-		{
-			pkEvent( 'searchterm_too_short', 0 );
-		}
+                    if ( isset( $_REQUEST[ 'error' ] ) && $_REQUEST[ 'error' ] == 'search_noresult' )
+                    {
+                            pkEvent( 'search_noresult', 0 );
+                    }
+                    elseif ( isset( $_REQUEST[ 'error' ] ) && $_REQUEST[ 'error' ] == 'securitycode_invalid' )
+                    {
+                            pkEvent( 'securitycode_invalid', 0 );
+                    }
+                    elseif ( isset( $_REQUEST[ 'error' ] ) && $_REQUEST[ 'error' ] == 'searchterm_too_short' )
+                    {
+                            pkEvent( 'searchterm_too_short', 0 );
+                    }
 
-		$cat_option = '';
+                    $cat_option = '';
 
-		if ( is_array( $forumcat_cache_byname ) )
-		{
-			foreach ( $forumcat_cache_byname as $forumcat )
-			{
-				if ( $FORUM->getCategoryRrights( $forumcat[ 'forumcat_id' ] ) )
-				{
-					$cat_option .= '<option value="' . $forumcat[ 'forumcat_id' ] . '">' . str_repeat( '-', $forumcat[ 'level'] ) . ' ' . pkEntities(
-						$forumcat[ 'forumcat_name' ] ) . '</option>';
-				}
-			}
-		}
+                    if ( is_array( $forumcat_cache_byname ) )
+                    {
+                            foreach ( $forumcat_cache_byname as $forumcat )
+                            {
+                                    if ( $FORUM->getCategoryRrights( $forumcat[ 'forumcat_id' ] ) )
+                                    {
+                                            $cat_option .= '<option value="' . $forumcat[ 'forumcat_id' ] . '">' . str_repeat( '-', $forumcat[ 'level'] ) . ' ' . pkEntities(
+                                                    $forumcat[ 'forumcat_name' ] ) . '</option>';
+                                    }
+                            }
+                    }
 
-		$order0 = $rorder1 = $rshow0 = $rshow1 = $search_useroption1 = $search_useroption0 = '';
+                    $order0 = $rorder1 = $rshow0 = $rshow1 = $search_useroption1 = $search_useroption0 = '';
 
-		$form_action = pkLink( 'forumsearch', 'result' );
+                    $form_action = pkLink( 'forumsearch', 'result' );
 
-		$site_name = pkGetConfigF( 'site_name' );
-		$search_text = pkEntities( urldecode( $ENV->_get( 'search_text' ) ) );
-		$search_user = pkEntities( urldecode( $ENV->_get( 'search_user' ) ) );
-		$userid = $ENV->_get_id( 'userid' );
+                    $site_name = pkGetConfigF( 'site_name' );
+                    $search_text = pkEntities( urldecode( $ENV->_get( 'search_text' ) ) );
+                    $search_user = pkEntities( urldecode( $ENV->_get( 'search_user' ) ) );
+                    $userid = $ENV->_get_id( 'userid' );
 
-		$search_useroption ? $search_useroption1 = ' checked="checked"' : $search_useroption0 = ' checked="checked"';
-		$search_textoption ? $search_textoption1 = ' checked="checked"' : $search_textoption0 = ' checked="checked"';
+                    $search_useroption ? $search_useroption1 = ' checked="checked"' : $search_useroption0 = ' checked="checked"';
+                    $search_textoption ? $search_textoption1 = ' checked="checked"' : $search_textoption0 = ' checked="checked"';
 
-		$rorder ? $rorder1 = ' checked="checked"' : $rorder0 = ' checked="checked"';
-		$rshow ? $rshow1 = ' checked="checked"' : $rshow0 = ' checked="checked"';
+                    $rorder ? $rorder1 = ' checked="checked"' : $rorder0 = ' checked="checked"';
+                    $rshow ? $rshow1 = ' checked="checked"' : $rshow0 = ' checked="checked"';
 
-		$captcha = pkCaptchaField( NULL, 2, 3 );
+                    $captcha = pkCaptchaField( NULL, 2, 3 );
 
-		eval( "\$site_body.= \"" . pkTpl( "forum/search" ) . "\";" );
-		break;
+                    eval( "\$site_body.= \"" . pkTpl( "forum/search" ) . "\";" );
+                    break;
+                }
+                //Forum-search not visible
+                else{
+                    eval( "\$site_body.= \"" . pkTpl( "forum/error_search_not_available" ) . "\";" );
+                    break;
+                }
 	#END default
 }
 

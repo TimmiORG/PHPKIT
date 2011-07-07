@@ -5,13 +5,13 @@
 # YOU ARE NOT AUTHORISED TO CREATE ILLEGAL COPIES OF THIS
 # FILE AND/OR TO REMOVE THIS INFORMATION
 #
-# SIE SIND NICHT BERECHTIGT, UNRECHTMÄSSIGE KOPIEN DIESER
+# SIE SIND NICHT BERECHTIGT, UNRECHTMÃ„SSIGE KOPIEN DIESER
 # DATEI ZU ERSTELLEN UND/ODER DIESE INFORMATIONEN ZU ENTFERNEN
 #
 # This file / the PHPKIT software is no freeware! For further 
 # information please visit our website or contact us via email:
 #
-# Diese Datei / die PHPKIT Software ist keine Freeware! Für weitere
+# Diese Datei / die PHPKIT Software ist keine Freeware! FÃ¼r weitere
 # Informationen besuchen Sie bitte unsere Website oder kontaktieren uns per E-Mail:
 #
 # email     : info@phpkit.com
@@ -179,8 +179,11 @@ if($ACTION==$_POST['save'] && trim($_POST['edit_nick'])!='' && trim($_POST['edit
 	$info_nick=$SQL->fetch_array($SQL->query("SELECT COUNT(*) FROM ".pkSQLTAB_USER." WHERE user_nick='".$SQL->f($_POST['edit_nick'])."'".$notlike));
 	$info_email=$SQL->fetch_array($SQL->query("SELECT COUNT(*) FROM ".pkSQLTAB_USER." WHERE user_email='".$SQL->f($_POST['edit_email'])."'".$notlike));
 
-
-	if($info_name[0]==0 && $info_nick[0]==0 && $info_email[0]==0)
+        
+        $user_states = array('ban'=>0,'guest'=>1,'user'=>2,'member'=>3,'mod'=>4,'admin'=>5);
+        
+        if($info_name[0]==0 && $info_nick[0]==0 && $info_email[0]==0 && $user_states[pkGetUservalue('status')] >= $user_states[$_POST['edit_status']]) # Status Vergabe Fix
+	
 		{
 		if(intval($_POST['editid'])===1) 
 			$edit_status='admin';
@@ -323,6 +326,8 @@ if($ACTION==$_POST['save'] && trim($_POST['edit_nick'])!='' && trim($_POST['edit
 		eval("\$error_message= \"".pkTpl("edituser_error_2")."\";");
 	elseif($info_email[0]!=0)
 		eval("\$error_message= \"".pkTpl("edituser_error_3")."\";");
+        elseif($user_states[pkGetUservalue('status')] < $user_states[$_POST['edit_status']])
+                eval("\$error_message= \"".pkTpl("edituser_error_5")."\";");
 	else
 		eval("\$error_message= \"".pkTpl("edituser_error_0")."\";");
 		

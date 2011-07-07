@@ -316,7 +316,8 @@ switch( $path )
 }
 #END switch $path
 
-$kopf_admin = '';
+$kopf_admin = $kopf_search = '';
+
 
 $newpost = $FORUM->unreadedPostings( $threadid );
 $lang_newpostings = ( $newpost ? pkHtmlLink( pkLink( 'forumsearch', 'result', 'search=new&rshow=1' ), pkGetLang( 'there_are_new_postings' ) ) : pkGetLang( 'there_are_no_new_postings' ) ) . pkGetSpecialLang( 'since_your_last_vistit', pkTimeFormat( $FORUM->getPosttime( ) ) );
@@ -345,6 +346,14 @@ if( intval( pkGetUservalue( 'id' ) ) > 0 )
 
 		eval( "\$kopf_admin= \"" . pkTpl( "forum/kopf_admin" ) . "\";" );
 	}
+        
+        $result = $SQL->fetch_array( $SQL->query( "SELECT * FROM pk__config WHERE id = 'forum_searcheod'") );
+        $is_forum_search_visible = unserialize($result['value']);
+                
+        if ($is_forum_search_visible)
+            {
+                eval( "\$kopf_search= \"" . pkTpl( "forum/kopf_search" ) . "\";" );
+            }
 
 	eval( "\$kopf_userinfo= \"" . pkTpl( "forum/kopf_userinfo" ) . "\";" );
 	eval( "\$kopf_logreg= \"" . pkTpl( "forum/kopf_logout" ) . "\";" );

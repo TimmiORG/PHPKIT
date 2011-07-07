@@ -17,7 +17,7 @@ function JumpSelect() {
 	  <td nowrap="nowrap">
 		<select id="pkformselectjumpid" name="jumpid" size="1" onchange="if(document.getElementById('pkformselectjumpid').options[document.getElementById('pkformselectjumpid').selectedIndex].value != -1) {document.getElementById('pkformforumsjump').submit();}">
 		<option value="main" $jump_main>Foren&uuml;bersicht</option>
-		<option value="search" $jump_search>Suche</option>
+		$search_jump
 		<option value="newthread" $jump_newthread>Neues Thema</option>
 		<option value="-1">_______________</option>
 		<option value="-1" $jump_target>Zielforum w&auml;hlen:</option>

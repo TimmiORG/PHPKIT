@@ -113,6 +113,15 @@ elseif( $path == "forumsdisplay" )
 }
 $forum_jump = '';
 
+$result = $SQL->fetch_array( $SQL->query( "SELECT * FROM pk__config WHERE id = 'forum_searcheod'") );
+$is_forum_search_visible = unserialize($result['value']);
+
+if ($is_forum_search_visible)
+{
+    $search_jump = '<option value="search" '.$jump_search.'>Suche</option>';
+    
+}
+
 if( is_array( $cat_hash = $FORUM->gettree( ) ) )
 {
 	foreach( $cat_hash as $catinfo )
