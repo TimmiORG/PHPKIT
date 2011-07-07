@@ -1152,11 +1152,6 @@ function mailsender($receiver = '', $subject, $message, $header = '', $addheader
 	$subject = mailencode($subject);
         
 
-       
-        /*echo "<pre>";
-        var_dump($header, $subject, $message);
-        exit;
-        */
 	#lines are allowed with max 70 chars - wrap longer lines
 	$array = explode("\n", $message);
 	foreach ($array as $i => $str)

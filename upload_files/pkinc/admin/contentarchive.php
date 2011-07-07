@@ -5,13 +5,13 @@
 # YOU ARE NOT AUTHORISED TO CREATE ILLEGAL COPIES OF THIS
 # FILE AND/OR TO REMOVE THIS INFORMATION
 #
-# SIE SIND NICHT BERECHTIGT, UNRECHTMÄSSIGE KOPIEN DIESER
+# SIE SIND NICHT BERECHTIGT, UNRECHTMÃ„SSIGE KOPIEN DIESER
 # DATEI ZU ERSTELLEN UND/ODER DIESE INFORMATIONEN ZU ENTFERNEN
 #
 # This file / the PHPKIT software is no freeware! For further 
 # information please visit our website or contact us via email:
 #
-# Diese Datei / die PHPKIT Software ist keine Freeware! Für weitere
+# Diese Datei / die PHPKIT Software ist keine Freeware! FÃ¼r weitere
 # Informationen besuchen Sie bitte unsere Website oder kontaktieren uns per E-Mail:
 #
 # email     : info@phpkit.com
@@ -200,81 +200,71 @@ $ordertype="typea";
 $orderid="idd";
 $orderstatus="statusa";
 
-
-if($order=="titlea")
-	{
-	$order_sql=" ORDER by content_title ASC";
+switch ($order) {
+    case "titlea":
+        $order_sql=" ORDER by content_title ASC";
 	$ordertitle="titled";
 	$order="titled";
-	}
-elseif($order=="titled")
-	{
-	$order_sql=" ORDER by content_title DESC";
+        break;
+    case "titled":
+        $order_sql=" ORDER by content_title DESC";
 	$ordertitle="titlea";
 	$order="titlea";
-	}
-elseif($order=="cata")
-	{
-	$order_sql=" ORDER by content_cat ASC";
+        break;
+    case "cata":
+        $order_sql=" ORDER by content_cat ASC";
 	$ordercat="catd";
 	$order="catd";
-	}
-elseif($order=="catd")
-	{
-	$order_sql=" ORDER by content_cat DESC"; $ordercat="cata"; $order="cata";
-	}
-elseif($order=="typea")
-	{
-	$order_sql=" ORDER by content_option ASC";
+        break;
+    case "catd":
+        $order_sql=" ORDER by content_cat DESC"; $ordercat="cata"; $order="cata";
+        break;
+    case "typea":
+        $order_sql=" ORDER by content_option ASC";
 	$ordertype="typed";
 	$order="typed";
-	}
-elseif($order=="typed")
-	{
-	$order_sql=" ORDER by content_option DESC";
+        break;
+    case "typed":
+        $order_sql=" ORDER by content_option DESC";
 	$ordertype="typea";
 	$order="typea";
-	}
-elseif($order=="statusa")
-	{
-	$order_sql=" ORDER by content_status ASC";
+        break;
+    case "statusa":
+        $order_sql=" ORDER by content_status ASC";
 	$orderstatus="statusd";
 	$order="statusd";
-	}
-elseif($order=="statusd")
-	{
-	$order_sql=" ORDER by content_status DESC";
+        break;
+    case "statusd":
+        $order_sql=" ORDER by content_status DESC";
 	$orderstatus="statusa";
 	$order="statusa";
-	}
-elseif($order=="ida")
-	{
+        break;
+    case "ida":
 	$order_sql=" ORDER by content_id ASC";
 	$orderid="idd";
 	$order="idd";
-	}
-elseif($order=="idd")
-	{$order_sql=" ORDER by content_id DESC";
+        break;
+    case "idd":
+        $order_sql=" ORDER by content_id DESC";
 	$orderid="ida";
 	$order="ida";
-	}
-elseif($order=="timea")
-	{
-	$order_sql=" ORDER by content_time ASC";
+        break;
+    case "timea":
+        $order_sql=" ORDER by content_time ASC";
 	$ordertime="timed";
 	$order="timed";
-	}
-elseif($order=="timed")
-	{
-	$order_sql=" ORDER by content_time DESC";
+        break;
+    case "timed":
+        $order_sql=" ORDER by content_time DESC";
 	$ordertime="timea";
 	$order="timea";
-	}
-else
-	{
-	$order_sql=" ORDER by content_time DESC";
-	$order="timed";
-	}
+        break; 
+    default :  
+        $order_sql=" ORDER by content_time DESC";
+	$order="timed";     
+        
+}
+   
 
 
 $getcontentinfo=$SQL->query("SELECT * FROM ".pkSQLTAB_CONTENT.$sqlsearch.$order_sql." LIMIT ".$entries.", ".$epp);

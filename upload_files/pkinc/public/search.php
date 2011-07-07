@@ -373,7 +373,7 @@ switch ( $mode )
 		}
 
 		$search_text = pkEntities( urldecode( $ENV->_get( 'search_text' ) ) );
-
+                
 		$search_textoption ? $search_textoption1 = ' checked="checked"' : $search_textoption0 = ' checked="checked"';
 		$rorder ? $rorder1 = ' checked="checked"' : $rorder0 = ' checked="checked"';
 
